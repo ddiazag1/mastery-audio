@@ -1,0 +1,1323 @@
+{
+  "modules": [
+    {
+      "id": "neuro-boards",
+      "label": "Neuro Boards",
+      "icon": "🧠",
+      "conceptCount": 40,
+      "totalWords": 121449,
+      "categories": [
+        {
+          "name": "Spine",
+          "concepts": [
+            {
+              "slug": "adult-spinal-deformity-principles",
+              "title": "Adult Spinal Deformity Principles",
+              "category": "Spine",
+              "subcategory": "Deformity",
+              "difficulty": 5,
+              "wordCount": 3243,
+              "estMinutes": 21.6
+            },
+            {
+              "slug": "cervical-disc-herniation-management",
+              "title": "Cervical Disc Herniation Management",
+              "category": "Spine",
+              "subcategory": "Degenerative",
+              "difficulty": 3,
+              "wordCount": 3471,
+              "estMinutes": 23.1
+            },
+            {
+              "slug": "cervical-spine-trauma-management",
+              "title": "Cervical Spine Trauma Management",
+              "category": "Spine",
+              "subcategory": "Trauma",
+              "difficulty": 4,
+              "wordCount": 3247,
+              "estMinutes": 21.6
+            },
+            {
+              "slug": "chiari-malformation-management",
+              "title": "Chiari Malformation Management",
+              "category": "Spine",
+              "subcategory": "Congenital",
+              "difficulty": 3,
+              "wordCount": 2696,
+              "estMinutes": 18.0
+            },
+            {
+              "slug": "lumbar-stenosis-and-claudication",
+              "title": "Lumbar Stenosis and Claudication",
+              "category": "Spine",
+              "subcategory": "Degenerative",
+              "difficulty": 3,
+              "wordCount": 3171,
+              "estMinutes": 21.1
+            },
+            {
+              "slug": "metastatic-spine-disease-noms-framework",
+              "title": "Metastatic Spine Disease (NOMS Framework)",
+              "category": "Spine",
+              "subcategory": "Tumor",
+              "difficulty": 4,
+              "wordCount": 2795,
+              "estMinutes": 18.6
+            },
+            {
+              "slug": "spinal-cord-tumors-intradural",
+              "title": "Spinal Cord Tumors (Intradural)",
+              "category": "Spine",
+              "subcategory": "Tumor",
+              "difficulty": 4,
+              "wordCount": 3104,
+              "estMinutes": 20.7
+            },
+            {
+              "slug": "spinal-infections-management",
+              "title": "Spinal Infections Management",
+              "category": "Spine",
+              "subcategory": "Infection",
+              "difficulty": 3,
+              "wordCount": 3205,
+              "estMinutes": 21.4
+            },
+            {
+              "slug": "spondylolisthesis-grading-and-treatment",
+              "title": "Spondylolisthesis Grading and Treatment",
+              "category": "Spine",
+              "subcategory": "Degenerative",
+              "difficulty": 3,
+              "wordCount": 3486,
+              "estMinutes": 23.2
+            },
+            {
+              "slug": "thoracolumbar-fracture-classification",
+              "title": "Thoracolumbar Fracture Classification",
+              "category": "Spine",
+              "subcategory": "Trauma",
+              "difficulty": 4,
+              "wordCount": 2962,
+              "estMinutes": 19.7
+            }
+          ]
+        },
+        {
+          "name": "Vascular",
+          "concepts": [
+            {
+              "slug": "aneurysmal-sah-management",
+              "title": "Aneurysmal SAH Management",
+              "category": "Vascular",
+              "subcategory": "Hemorrhagic",
+              "difficulty": 4,
+              "wordCount": 3026,
+              "estMinutes": 20.2
+            },
+            {
+              "slug": "avm-grading-and-management",
+              "title": "AVM Grading and Management",
+              "category": "Vascular",
+              "subcategory": "Malformation",
+              "difficulty": 4,
+              "wordCount": 3565,
+              "estMinutes": 23.8
+            },
+            {
+              "slug": "cavernous-malformation-management",
+              "title": "Cavernous Malformation Management",
+              "category": "Vascular",
+              "subcategory": "Malformation",
+              "difficulty": 3,
+              "wordCount": 2491,
+              "estMinutes": 16.6
+            },
+            {
+              "slug": "cerebral-vasospasm-protocols",
+              "title": "Cerebral Vasospasm Protocols",
+              "category": "Vascular",
+              "subcategory": "Hemorrhagic",
+              "difficulty": 4,
+              "wordCount": 2575,
+              "estMinutes": 17.2
+            },
+            {
+              "slug": "ischemic-stroke-thrombectomy-criteria",
+              "title": "Ischemic Stroke Thrombectomy Criteria",
+              "category": "Vascular",
+              "subcategory": "Ischemic",
+              "difficulty": 4,
+              "wordCount": 2964,
+              "estMinutes": 19.8
+            }
+          ]
+        },
+        {
+          "name": "Critical Care",
+          "concepts": [
+            {
+              "slug": "brain-death-determination",
+              "title": "Brain Death Determination",
+              "category": "Critical Care",
+              "subcategory": "Determination",
+              "difficulty": 3,
+              "wordCount": 3468,
+              "estMinutes": 23.1
+            },
+            {
+              "slug": "cerebral-perfusion-pressure-optimization",
+              "title": "Cerebral Perfusion Pressure Optimization",
+              "category": "Critical Care",
+              "subcategory": "Management",
+              "difficulty": 4,
+              "wordCount": 3457,
+              "estMinutes": 23.0
+            },
+            {
+              "slug": "csf-diversion-and-evd-management",
+              "title": "CSF Diversion and EVD Management",
+              "category": "Critical Care",
+              "subcategory": "CSF",
+              "difficulty": 3,
+              "wordCount": 3532,
+              "estMinutes": 23.5
+            },
+            {
+              "slug": "icp-monitoring-indications-and-techniques",
+              "title": "ICP Monitoring Indications and Techniques",
+              "category": "Critical Care",
+              "subcategory": "Monitoring",
+              "difficulty": 3,
+              "wordCount": 2998,
+              "estMinutes": 20.0
+            },
+            {
+              "slug": "postoperative-fever-workup-in-nsg",
+              "title": "Postoperative Fever Workup in NSG",
+              "category": "Critical Care",
+              "subcategory": "Workup",
+              "difficulty": 2,
+              "wordCount": 3475,
+              "estMinutes": 23.2
+            },
+            {
+              "slug": "status-epilepticus-in-nsg-patients",
+              "title": "Status Epilepticus in NSG Patients",
+              "category": "Critical Care",
+              "subcategory": "Seizure",
+              "difficulty": 3,
+              "wordCount": 3352,
+              "estMinutes": 22.3
+            },
+            {
+              "slug": "vte-prophylaxis-in-neurosurgery",
+              "title": "VTE Prophylaxis in Neurosurgery",
+              "category": "Critical Care",
+              "subcategory": "Prevention",
+              "difficulty": 3,
+              "wordCount": 2746,
+              "estMinutes": 18.3
+            }
+          ]
+        },
+        {
+          "name": "Cranial",
+          "concepts": [
+            {
+              "slug": "brain-metastasis-treatment-algorithm",
+              "title": "Brain Metastasis Treatment Algorithm",
+              "category": "Cranial",
+              "subcategory": "Tumor",
+              "difficulty": 3,
+              "wordCount": 2752,
+              "estMinutes": 18.3
+            },
+            {
+              "slug": "glioblastoma-standard-of-care",
+              "title": "Glioblastoma Standard of Care",
+              "category": "Cranial",
+              "subcategory": "Tumor",
+              "difficulty": 4,
+              "wordCount": 3151,
+              "estMinutes": 21.0
+            },
+            {
+              "slug": "meningioma-grading-and-surgical-planning",
+              "title": "Meningioma Grading and Surgical Planning",
+              "category": "Cranial",
+              "subcategory": "Tumor",
+              "difficulty": 3,
+              "wordCount": 2655,
+              "estMinutes": 17.7
+            },
+            {
+              "slug": "pediatric-brain-tumors",
+              "title": "Pediatric Brain Tumors",
+              "category": "Cranial",
+              "subcategory": "Tumor",
+              "difficulty": 5,
+              "wordCount": 2512,
+              "estMinutes": 16.7
+            },
+            {
+              "slug": "pituitary-adenoma-approaches",
+              "title": "Pituitary Adenoma Approaches",
+              "category": "Cranial",
+              "subcategory": "Tumor",
+              "difficulty": 3,
+              "wordCount": 3231,
+              "estMinutes": 21.5
+            },
+            {
+              "slug": "posterior-fossa-tumors-in-adults",
+              "title": "Posterior Fossa Tumors in Adults",
+              "category": "Cranial",
+              "subcategory": "Tumor",
+              "difficulty": 4,
+              "wordCount": 3117,
+              "estMinutes": 20.8
+            },
+            {
+              "slug": "vestibular-schwannoma-management",
+              "title": "Vestibular Schwannoma Management",
+              "category": "Cranial",
+              "subcategory": "Tumor",
+              "difficulty": 4,
+              "wordCount": 2849,
+              "estMinutes": 19.0
+            }
+          ]
+        },
+        {
+          "name": "Functional",
+          "concepts": [
+            {
+              "slug": "deep-brain-stimulation-targets",
+              "title": "Deep Brain Stimulation Targets",
+              "category": "Functional",
+              "subcategory": "Movement",
+              "difficulty": 4,
+              "wordCount": 3508,
+              "estMinutes": 23.4
+            },
+            {
+              "slug": "epilepsy-surgery-evaluation",
+              "title": "Epilepsy Surgery Evaluation",
+              "category": "Functional",
+              "subcategory": "Epilepsy",
+              "difficulty": 4,
+              "wordCount": 2637,
+              "estMinutes": 17.6
+            },
+            {
+              "slug": "essential-tremor-vs-parkinson-tremor",
+              "title": "Essential Tremor vs Parkinson Tremor",
+              "category": "Functional",
+              "subcategory": "Movement",
+              "difficulty": 3,
+              "wordCount": 3451,
+              "estMinutes": 23.0
+            },
+            {
+              "slug": "movement-disorder-surgery-principles",
+              "title": "Movement Disorder Surgery Principles",
+              "category": "Functional",
+              "subcategory": "Movement",
+              "difficulty": 4,
+              "wordCount": 3185,
+              "estMinutes": 21.2
+            },
+            {
+              "slug": "trigeminal-neuralgia-treatment-algorithm",
+              "title": "Trigeminal Neuralgia Treatment Algorithm",
+              "category": "Functional",
+              "subcategory": "Pain",
+              "difficulty": 3,
+              "wordCount": 2762,
+              "estMinutes": 18.4
+            }
+          ]
+        },
+        {
+          "name": "Trauma",
+          "concepts": [
+            {
+              "slug": "depressed-skull-fracture-management",
+              "title": "Depressed Skull Fracture Management",
+              "category": "Trauma",
+              "subcategory": "Fracture",
+              "difficulty": 3,
+              "wordCount": 2671,
+              "estMinutes": 17.8
+            },
+            {
+              "slug": "epidural-hematoma-management",
+              "title": "Epidural Hematoma Management",
+              "category": "Trauma",
+              "subcategory": "Epidural",
+              "difficulty": 3,
+              "wordCount": 2577,
+              "estMinutes": 17.2
+            },
+            {
+              "slug": "icp-management-in-severe-tbi",
+              "title": "ICP Management in Severe TBI",
+              "category": "Trauma",
+              "subcategory": "TBI",
+              "difficulty": 4,
+              "wordCount": 2813,
+              "estMinutes": 18.8
+            },
+            {
+              "slug": "pediatric-head-trauma-and-nat",
+              "title": "Pediatric Head Trauma and NAT",
+              "category": "Trauma",
+              "subcategory": "Pediatric",
+              "difficulty": 3,
+              "wordCount": 3128,
+              "estMinutes": 20.9
+            },
+            {
+              "slug": "penetrating-brain-injury",
+              "title": "Penetrating Brain Injury",
+              "category": "Trauma",
+              "subcategory": "Penetrating",
+              "difficulty": 4,
+              "wordCount": 2591,
+              "estMinutes": 17.3
+            },
+            {
+              "slug": "subdural-hematoma-management",
+              "title": "Subdural Hematoma Management",
+              "category": "Trauma",
+              "subcategory": "Subdural",
+              "difficulty": 3,
+              "wordCount": 2830,
+              "estMinutes": 18.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ent-business",
+      "label": "ENT Business",
+      "icon": "📊",
+      "conceptCount": 30,
+      "totalWords": 98836,
+      "categories": [
+        {
+          "name": "Revenue Cycle",
+          "concepts": [
+            {
+              "slug": "accounts-receivable-management",
+              "title": "Accounts Receivable Management",
+              "category": "Revenue Cycle",
+              "subcategory": "Billing",
+              "difficulty": 3,
+              "wordCount": 3066,
+              "estMinutes": 20.4
+            },
+            {
+              "slug": "revenue-cycle-management-basics",
+              "title": "Revenue Cycle Management Basics",
+              "category": "Revenue Cycle",
+              "subcategory": "Billing",
+              "difficulty": 3,
+              "wordCount": 3393,
+              "estMinutes": 22.6
+            },
+            {
+              "slug": "rvu-fundamentals",
+              "title": "RVU Fundamentals",
+              "category": "Revenue Cycle",
+              "subcategory": "Billing",
+              "difficulty": 3,
+              "wordCount": 2887,
+              "estMinutes": 19.2
+            }
+          ]
+        },
+        {
+          "name": "Practice Finance",
+          "concepts": [
+            {
+              "slug": "ancillary-revenue-streams",
+              "title": "Ancillary Revenue Streams",
+              "category": "Practice Finance",
+              "subcategory": "Capital",
+              "difficulty": 3,
+              "wordCount": 3419,
+              "estMinutes": 22.8
+            },
+            {
+              "slug": "budgeting-and-cash-flow-forecasting",
+              "title": "Budgeting and Cash Flow Forecasting",
+              "category": "Practice Finance",
+              "subcategory": "Operations",
+              "difficulty": 3,
+              "wordCount": 3359,
+              "estMinutes": 22.4
+            },
+            {
+              "slug": "buy-vs-lease-equipment-analysis",
+              "title": "Buy vs Lease Equipment Analysis",
+              "category": "Practice Finance",
+              "subcategory": "Capital",
+              "difficulty": 4,
+              "wordCount": 3457,
+              "estMinutes": 23.0
+            },
+            {
+              "slug": "financial-statement-analysis",
+              "title": "Financial Statement Analysis",
+              "category": "Practice Finance",
+              "subcategory": "Operations",
+              "difficulty": 3,
+              "wordCount": 3142,
+              "estMinutes": 20.9
+            },
+            {
+              "slug": "practice-overhead-and-expense-ratios",
+              "title": "Practice Overhead and Expense Ratios",
+              "category": "Practice Finance",
+              "subcategory": "Operations",
+              "difficulty": 3,
+              "wordCount": 3324,
+              "estMinutes": 22.2
+            }
+          ]
+        },
+        {
+          "name": "Strategy",
+          "concepts": [
+            {
+              "slug": "building-a-practice-moat",
+              "title": "Building a Practice Moat",
+              "category": "Strategy",
+              "subcategory": "Competitive Advantage",
+              "difficulty": 4,
+              "wordCount": 3393,
+              "estMinutes": 22.6
+            },
+            {
+              "slug": "exit-strategy-and-succession-planning",
+              "title": "Exit Strategy and Succession Planning",
+              "category": "Strategy",
+              "subcategory": "Exit Planning",
+              "difficulty": 4,
+              "wordCount": 3536,
+              "estMinutes": 23.6
+            },
+            {
+              "slug": "healthcare-market-consolidation",
+              "title": "Healthcare Market Consolidation",
+              "category": "Strategy",
+              "subcategory": "Market Dynamics",
+              "difficulty": 4,
+              "wordCount": 3125,
+              "estMinutes": 20.8
+            },
+            {
+              "slug": "scaling-from-solo-to-group-practice",
+              "title": "Scaling from Solo to Group Practice",
+              "category": "Strategy",
+              "subcategory": "Growth",
+              "difficulty": 4,
+              "wordCount": 3138,
+              "estMinutes": 20.9
+            }
+          ]
+        },
+        {
+          "name": "Finance",
+          "concepts": [
+            {
+              "slug": "capital-allocation-and-roi-thinking",
+              "title": "Capital Allocation and ROI Thinking",
+              "category": "Finance",
+              "subcategory": "Capital Allocation",
+              "difficulty": 5,
+              "wordCount": 3118,
+              "estMinutes": 20.8
+            },
+            {
+              "slug": "unit-economics-of-a-surgical-practice",
+              "title": "Unit Economics of a Surgical Practice",
+              "category": "Finance",
+              "subcategory": "Unit Economics",
+              "difficulty": 4,
+              "wordCount": 3341,
+              "estMinutes": 22.3
+            }
+          ]
+        },
+        {
+          "name": "Payer Relations",
+          "concepts": [
+            {
+              "slug": "commercial-insurance-contracting",
+              "title": "Commercial Insurance Contracting",
+              "category": "Payer Relations",
+              "subcategory": "Contracting",
+              "difficulty": 4,
+              "wordCount": 3341,
+              "estMinutes": 22.3
+            },
+            {
+              "slug": "medicare-reimbursement-methodology",
+              "title": "Medicare Reimbursement Methodology",
+              "category": "Payer Relations",
+              "subcategory": "Contracting",
+              "difficulty": 4,
+              "wordCount": 2994,
+              "estMinutes": 20.0
+            },
+            {
+              "slug": "payer-mix-optimization",
+              "title": "Payer Mix Optimization",
+              "category": "Payer Relations",
+              "subcategory": "Contracting",
+              "difficulty": 3,
+              "wordCount": 2968,
+              "estMinutes": 19.8
+            },
+            {
+              "slug": "quality-metrics-mips-macra",
+              "title": "Quality Metrics (MIPS/MACRA)",
+              "category": "Payer Relations",
+              "subcategory": "Quality",
+              "difficulty": 3,
+              "wordCount": 3336,
+              "estMinutes": 22.2
+            }
+          ]
+        },
+        {
+          "name": "Practice Operations",
+          "concepts": [
+            {
+              "slug": "credentialing-and-privileging-process",
+              "title": "Credentialing and Privileging Process",
+              "category": "Practice Operations",
+              "subcategory": "Compliance",
+              "difficulty": 2,
+              "wordCount": 3260,
+              "estMinutes": 21.7
+            },
+            {
+              "slug": "hipaa-compliance-for-practices",
+              "title": "HIPAA Compliance for Practices",
+              "category": "Practice Operations",
+              "subcategory": "Compliance",
+              "difficulty": 2,
+              "wordCount": 3287,
+              "estMinutes": 21.9
+            },
+            {
+              "slug": "patient-satisfaction-metrics",
+              "title": "Patient Satisfaction Metrics",
+              "category": "Practice Operations",
+              "subcategory": "Quality",
+              "difficulty": 2,
+              "wordCount": 3032,
+              "estMinutes": 20.2
+            },
+            {
+              "slug": "practice-marketing-and-referral-development",
+              "title": "Practice Marketing and Referral Development",
+              "category": "Practice Operations",
+              "subcategory": "Growth",
+              "difficulty": 2,
+              "wordCount": 3357,
+              "estMinutes": 22.4
+            },
+            {
+              "slug": "staff-hiring-and-retention",
+              "title": "Staff Hiring and Retention",
+              "category": "Practice Operations",
+              "subcategory": "HR",
+              "difficulty": 2,
+              "wordCount": 3580,
+              "estMinutes": 23.9
+            },
+            {
+              "slug": "supply-chain-management",
+              "title": "Supply Chain Management",
+              "category": "Practice Operations",
+              "subcategory": "HR",
+              "difficulty": 2,
+              "wordCount": 3309,
+              "estMinutes": 22.1
+            },
+            {
+              "slug": "telehealth-regulations-and-billing",
+              "title": "Telehealth Regulations and Billing",
+              "category": "Practice Operations",
+              "subcategory": "Growth",
+              "difficulty": 3,
+              "wordCount": 3531,
+              "estMinutes": 23.5
+            }
+          ]
+        },
+        {
+          "name": "Practice Structure",
+          "concepts": [
+            {
+              "slug": "employment-vs-private-practice-economics",
+              "title": "Employment vs Private Practice Economics",
+              "category": "Practice Structure",
+              "subcategory": "Legal",
+              "difficulty": 3,
+              "wordCount": 3216,
+              "estMinutes": 21.4
+            },
+            {
+              "slug": "malpractice-insurance-structures",
+              "title": "Malpractice Insurance Structures",
+              "category": "Practice Structure",
+              "subcategory": "Risk",
+              "difficulty": 3,
+              "wordCount": 3474,
+              "estMinutes": 23.2
+            },
+            {
+              "slug": "partnership-agreements-and-buy-ins",
+              "title": "Partnership Agreements and Buy-Ins",
+              "category": "Practice Structure",
+              "subcategory": "Legal",
+              "difficulty": 4,
+              "wordCount": 3411,
+              "estMinutes": 22.7
+            },
+            {
+              "slug": "physician-compensation-models",
+              "title": "Physician Compensation Models",
+              "category": "Practice Structure",
+              "subcategory": "Compensation",
+              "difficulty": 3,
+              "wordCount": 3640,
+              "estMinutes": 24.3
+            },
+            {
+              "slug": "practice-valuation-methods",
+              "title": "Practice Valuation Methods",
+              "category": "Practice Structure",
+              "subcategory": "Legal",
+              "difficulty": 5,
+              "wordCount": 3402,
+              "estMinutes": 22.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership",
+      "icon": "🎯",
+      "conceptCount": 33,
+      "totalWords": 108806,
+      "categories": [
+        {
+          "name": "Rhetoric",
+          "concepts": [
+            {
+              "slug": "active-listening-and-socratic-questioning",
+              "title": "Active Listening and Socratic Questioning",
+              "category": "Rhetoric",
+              "subcategory": "Practice",
+              "difficulty": 2,
+              "wordCount": 3216,
+              "estMinutes": 21.4
+            },
+            {
+              "slug": "aristotle-rhetorical-triangle",
+              "title": "Aristotle Rhetorical Triangle",
+              "category": "Rhetoric",
+              "subcategory": "Foundations",
+              "difficulty": 2,
+              "wordCount": 3285,
+              "estMinutes": 21.9
+            },
+            {
+              "slug": "kairos-and-rhetorical-timing",
+              "title": "Kairos and Rhetorical Timing",
+              "category": "Rhetoric",
+              "subcategory": "Foundations",
+              "difficulty": 3,
+              "wordCount": 3348,
+              "estMinutes": 22.3
+            }
+          ]
+        },
+        {
+          "name": "Entrepreneurship",
+          "concepts": [
+            {
+              "slug": "building-a-personal-advisory-board",
+              "title": "Building a Personal Advisory Board",
+              "category": "Entrepreneurship",
+              "subcategory": "Network",
+              "difficulty": 2,
+              "wordCount": 3293,
+              "estMinutes": 22.0
+            },
+            {
+              "slug": "business-model-canvas",
+              "title": "Business Model Canvas",
+              "category": "Entrepreneurship",
+              "subcategory": "Strategy",
+              "difficulty": 3,
+              "wordCount": 3451,
+              "estMinutes": 23.0
+            },
+            {
+              "slug": "calculated-risk-and-decision-making-under-uncertainty",
+              "title": "Calculated Risk and Decision-Making Under Uncertainty",
+              "category": "Entrepreneurship",
+              "subcategory": "Risk",
+              "difficulty": 4,
+              "wordCount": 3459,
+              "estMinutes": 23.1
+            },
+            {
+              "slug": "first-principles-reasoning",
+              "title": "First Principles Reasoning",
+              "category": "Entrepreneurship",
+              "subcategory": "Thinking",
+              "difficulty": 3,
+              "wordCount": 3169,
+              "estMinutes": 21.1
+            },
+            {
+              "slug": "lean-startup-and-mvp-thinking",
+              "title": "Lean Startup and MVP Thinking",
+              "category": "Entrepreneurship",
+              "subcategory": "Methodology",
+              "difficulty": 3,
+              "wordCount": 3236,
+              "estMinutes": 21.6
+            },
+            {
+              "slug": "revenue-diversification-for-physicians",
+              "title": "Revenue Diversification for Physicians",
+              "category": "Entrepreneurship",
+              "subcategory": "Revenue",
+              "difficulty": 4,
+              "wordCount": 2994,
+              "estMinutes": 20.0
+            },
+            {
+              "slug": "sales-and-relationship-building-for-physicians",
+              "title": "Sales and Relationship Building for Physicians",
+              "category": "Entrepreneurship",
+              "subcategory": "Sales",
+              "difficulty": 3,
+              "wordCount": 3366,
+              "estMinutes": 22.4
+            },
+            {
+              "slug": "systems-thinking-and-leverage",
+              "title": "Systems Thinking and Leverage",
+              "category": "Entrepreneurship",
+              "subcategory": "Operations",
+              "difficulty": 3,
+              "wordCount": 3139,
+              "estMinutes": 20.9
+            }
+          ]
+        },
+        {
+          "name": "Leadership",
+          "concepts": [
+            {
+              "slug": "change-management-kotter-8-steps",
+              "title": "Change Management (Kotter 8 Steps)",
+              "category": "Leadership",
+              "subcategory": "Change",
+              "difficulty": 3,
+              "wordCount": 3790,
+              "estMinutes": 25.3
+            },
+            {
+              "slug": "conflict-resolution-strategies",
+              "title": "Conflict Resolution Strategies",
+              "category": "Leadership",
+              "subcategory": "Conflict",
+              "difficulty": 3,
+              "wordCount": 3912,
+              "estMinutes": 26.1
+            },
+            {
+              "slug": "decision-making-frameworks-ooda-loop",
+              "title": "Decision-Making Frameworks (OODA Loop)",
+              "category": "Leadership",
+              "subcategory": "Decision",
+              "difficulty": 3,
+              "wordCount": 3493,
+              "estMinutes": 23.3
+            },
+            {
+              "slug": "emotional-intelligence-framework",
+              "title": "Emotional Intelligence Framework",
+              "category": "Leadership",
+              "subcategory": "EQ",
+              "difficulty": 2,
+              "wordCount": 3622,
+              "estMinutes": 24.1
+            },
+            {
+              "slug": "giving-effective-feedback-sbi-model",
+              "title": "Giving Effective Feedback (SBI Model)",
+              "category": "Leadership",
+              "subcategory": "Communication",
+              "difficulty": 2,
+              "wordCount": 3057,
+              "estMinutes": 20.4
+            },
+            {
+              "slug": "meeting-leadership-and-facilitation",
+              "title": "Meeting Leadership and Facilitation",
+              "category": "Leadership",
+              "subcategory": "Communication",
+              "difficulty": 2,
+              "wordCount": 3103,
+              "estMinutes": 20.7
+            },
+            {
+              "slug": "mentorship-and-coaching-principles",
+              "title": "Mentorship and Coaching Principles",
+              "category": "Leadership",
+              "subcategory": "Development",
+              "difficulty": 2,
+              "wordCount": 3155,
+              "estMinutes": 21.0
+            },
+            {
+              "slug": "negotiation-fundamentals",
+              "title": "Negotiation Fundamentals",
+              "category": "Leadership",
+              "subcategory": "Negotiation",
+              "difficulty": 3,
+              "wordCount": 3525,
+              "estMinutes": 23.5
+            },
+            {
+              "slug": "personal-brand-and-professional-networking",
+              "title": "Personal Brand and Professional Networking",
+              "category": "Leadership",
+              "subcategory": "Development",
+              "difficulty": 2,
+              "wordCount": 2900,
+              "estMinutes": 19.3
+            },
+            {
+              "slug": "servant-leadership-principles",
+              "title": "Servant Leadership Principles",
+              "category": "Leadership",
+              "subcategory": "Philosophy",
+              "difficulty": 2,
+              "wordCount": 3670,
+              "estMinutes": 24.5
+            },
+            {
+              "slug": "strategic-planning-for-medical-groups",
+              "title": "Strategic Planning for Medical Groups",
+              "category": "Leadership",
+              "subcategory": "Strategy",
+              "difficulty": 4,
+              "wordCount": 3415,
+              "estMinutes": 22.8
+            },
+            {
+              "slug": "team-building-and-psychological-safety",
+              "title": "Team Building and Psychological Safety",
+              "category": "Leadership",
+              "subcategory": "Team",
+              "difficulty": 3,
+              "wordCount": 2828,
+              "estMinutes": 18.9
+            }
+          ]
+        },
+        {
+          "name": "Learning Science",
+          "concepts": [
+            {
+              "slug": "cognitive-load-theory",
+              "title": "Cognitive Load Theory",
+              "category": "Learning Science",
+              "subcategory": "Theory",
+              "difficulty": 3,
+              "wordCount": 3323,
+              "estMinutes": 22.2
+            },
+            {
+              "slug": "deliberate-practice-framework",
+              "title": "Deliberate Practice Framework",
+              "category": "Learning Science",
+              "subcategory": "Theory",
+              "difficulty": 3,
+              "wordCount": 3168,
+              "estMinutes": 21.1
+            },
+            {
+              "slug": "growth-vs-fixed-mindset",
+              "title": "Growth vs Fixed Mindset",
+              "category": "Learning Science",
+              "subcategory": "Mindset",
+              "difficulty": 2,
+              "wordCount": 3128,
+              "estMinutes": 20.9
+            },
+            {
+              "slug": "interleaving-vs-blocked-practice",
+              "title": "Interleaving vs Blocked Practice",
+              "category": "Learning Science",
+              "subcategory": "Theory",
+              "difficulty": 3,
+              "wordCount": 2865,
+              "estMinutes": 19.1
+            },
+            {
+              "slug": "retrieval-practice-and-testing-effect",
+              "title": "Retrieval Practice and Testing Effect",
+              "category": "Learning Science",
+              "subcategory": "Theory",
+              "difficulty": 3,
+              "wordCount": 3737,
+              "estMinutes": 24.9
+            },
+            {
+              "slug": "spaced-repetition-science",
+              "title": "Spaced Repetition Science",
+              "category": "Learning Science",
+              "subcategory": "Theory",
+              "difficulty": 3,
+              "wordCount": 3066,
+              "estMinutes": 20.4
+            }
+          ]
+        },
+        {
+          "name": "Time Management",
+          "concepts": [
+            {
+              "slug": "eisenhower-matrix-for-prioritization",
+              "title": "Eisenhower Matrix for Prioritization",
+              "category": "Time Management",
+              "subcategory": "Frameworks",
+              "difficulty": 2,
+              "wordCount": 3390,
+              "estMinutes": 22.6
+            },
+            {
+              "slug": "gtd-framework",
+              "title": "GTD Framework",
+              "category": "Time Management",
+              "subcategory": "Frameworks",
+              "difficulty": 2,
+              "wordCount": 3147,
+              "estMinutes": 21.0
+            },
+            {
+              "slug": "pomodoro-technique-and-focus-management",
+              "title": "Pomodoro Technique and Focus Management",
+              "category": "Time Management",
+              "subcategory": "Techniques",
+              "difficulty": 1,
+              "wordCount": 3089,
+              "estMinutes": 20.6
+            },
+            {
+              "slug": "time-blocking-and-deep-work",
+              "title": "Time Blocking and Deep Work",
+              "category": "Time Management",
+              "subcategory": "Frameworks",
+              "difficulty": 2,
+              "wordCount": 3467,
+              "estMinutes": 23.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capital-deployment",
+      "label": "Capital Deployment",
+      "icon": "💰",
+      "conceptCount": 27,
+      "totalWords": 98714,
+      "categories": [
+        {
+          "name": "Management & Systems",
+          "concepts": [
+            {
+              "slug": "building-your-advisory-team",
+              "title": "Building Your Advisory Team",
+              "category": "Management & Systems",
+              "subcategory": "Team",
+              "difficulty": 2,
+              "wordCount": 3690,
+              "estMinutes": 24.6
+            },
+            {
+              "slug": "hiring-and-managing-a-gm",
+              "title": "Hiring and Managing a GM",
+              "category": "Management & Systems",
+              "subcategory": "People",
+              "difficulty": 3,
+              "wordCount": 3498,
+              "estMinutes": 23.3
+            },
+            {
+              "slug": "kpi-dashboards-for-service-businesses",
+              "title": "KPI Dashboards for Service Businesses",
+              "category": "Management & Systems",
+              "subcategory": "Metrics",
+              "difficulty": 2,
+              "wordCount": 4187,
+              "estMinutes": 27.9
+            },
+            {
+              "slug": "servicetitan-housecall-pro-platforms",
+              "title": "ServiceTitan / HouseCall Pro Platforms",
+              "category": "Management & Systems",
+              "subcategory": "Technology",
+              "difficulty": 2,
+              "wordCount": 3755,
+              "estMinutes": 25.0
+            }
+          ]
+        },
+        {
+          "name": "Financial Literacy Foundation",
+          "concepts": [
+            {
+              "slug": "business-valuation-basics",
+              "title": "Business Valuation Basics",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Valuation",
+              "difficulty": 2,
+              "wordCount": 3469,
+              "estMinutes": 23.1
+            },
+            {
+              "slug": "ebitda-vs-free-cash-flow",
+              "title": "EBITDA vs Free Cash Flow",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Accounting",
+              "difficulty": 3,
+              "wordCount": 3501,
+              "estMinutes": 23.3
+            },
+            {
+              "slug": "opportunity-cost-framework",
+              "title": "Opportunity Cost Framework",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Decision Framework",
+              "difficulty": 2,
+              "wordCount": 3466,
+              "estMinutes": 23.1
+            },
+            {
+              "slug": "pslf-completion-strategy",
+              "title": "PSLF Completion Strategy",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Debt Strategy",
+              "difficulty": 3,
+              "wordCount": 3268,
+              "estMinutes": 21.8
+            },
+            {
+              "slug": "reading-financial-statements",
+              "title": "Reading Financial Statements",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Accounting",
+              "difficulty": 2,
+              "wordCount": 3173,
+              "estMinutes": 21.2
+            },
+            {
+              "slug": "sba-7a-loan-mechanics",
+              "title": "SBA 7(a) Loan Mechanics",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Lending",
+              "difficulty": 3,
+              "wordCount": 3827,
+              "estMinutes": 25.5
+            },
+            {
+              "slug": "tax-strategy-for-business-owners",
+              "title": "Tax Strategy for Business Owners",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Tax",
+              "difficulty": 3,
+              "wordCount": 3724,
+              "estMinutes": 24.8
+            },
+            {
+              "slug": "the-5-non-negotiables-for-20m-in-7-years",
+              "title": "The 5 Non-Negotiables for $20M in 7 Years",
+              "category": "Financial Literacy Foundation",
+              "subcategory": "Strategy",
+              "difficulty": 3,
+              "wordCount": 4471,
+              "estMinutes": 29.8
+            }
+          ]
+        },
+        {
+          "name": "Business Acquisition",
+          "concepts": [
+            {
+              "slug": "deal-structuring-and-negotiation",
+              "title": "Deal Structuring and Negotiation",
+              "category": "Business Acquisition",
+              "subcategory": "Negotiation",
+              "difficulty": 4,
+              "wordCount": 3957,
+              "estMinutes": 26.4
+            },
+            {
+              "slug": "full-acquisition-diligence-framework",
+              "title": "Full Acquisition Diligence Framework",
+              "category": "Business Acquisition",
+              "subcategory": "Due Diligence",
+              "difficulty": 4,
+              "wordCount": 3873,
+              "estMinutes": 25.8
+            },
+            {
+              "slug": "hvac-roll-up-strategy",
+              "title": "HVAC Roll-Up Strategy",
+              "category": "Business Acquisition",
+              "subcategory": "Strategy",
+              "difficulty": 4,
+              "wordCount": 3745,
+              "estMinutes": 25.0
+            },
+            {
+              "slug": "hvac-trades-business-operations",
+              "title": "HVAC/Trades Business Operations",
+              "category": "Business Acquisition",
+              "subcategory": "Operations",
+              "difficulty": 3,
+              "wordCount": 3866,
+              "estMinutes": 25.8
+            },
+            {
+              "slug": "quality-of-earnings-analysis",
+              "title": "Quality of Earnings Analysis",
+              "category": "Business Acquisition",
+              "subcategory": "Financial Diligence",
+              "difficulty": 4,
+              "wordCount": 3598,
+              "estMinutes": 24.0
+            },
+            {
+              "slug": "sba-acquisition-deal-math",
+              "title": "SBA Acquisition Deal Math",
+              "category": "Business Acquisition",
+              "subcategory": "Deal Math",
+              "difficulty": 4,
+              "wordCount": 3507,
+              "estMinutes": 23.4
+            },
+            {
+              "slug": "service-agreement-economics",
+              "title": "Service Agreement Economics",
+              "category": "Business Acquisition",
+              "subcategory": "Operations",
+              "difficulty": 3,
+              "wordCount": 3506,
+              "estMinutes": 23.4
+            }
+          ]
+        },
+        {
+          "name": "Syndication Skills",
+          "concepts": [
+            {
+              "slug": "evaluating-a-syndication-deal-deck",
+              "title": "Evaluating a Syndication Deal Deck",
+              "category": "Syndication Skills",
+              "subcategory": "Deal Analysis",
+              "difficulty": 3,
+              "wordCount": 3506,
+              "estMinutes": 23.4
+            },
+            {
+              "slug": "investor-communities-and-deal-flow",
+              "title": "Investor Communities and Deal Flow",
+              "category": "Syndication Skills",
+              "subcategory": "Network",
+              "difficulty": 2,
+              "wordCount": 3809,
+              "estMinutes": 25.4
+            },
+            {
+              "slug": "medical-office-nnn-your-unfair-advantage",
+              "title": "Medical Office NNN - Your Unfair Advantage",
+              "category": "Syndication Skills",
+              "subcategory": "Investment Strategy",
+              "difficulty": 3,
+              "wordCount": 3339,
+              "estMinutes": 22.3
+            },
+            {
+              "slug": "passive-loss-rules-for-high-income-w-2-earners",
+              "title": "Passive Loss Rules for High-Income W-2 Earners",
+              "category": "Syndication Skills",
+              "subcategory": "Tax",
+              "difficulty": 4,
+              "wordCount": 3571,
+              "estMinutes": 23.8
+            },
+            {
+              "slug": "re-syndication-asset-classes",
+              "title": "RE Syndication Asset Classes",
+              "category": "Syndication Skills",
+              "subcategory": "Asset Classes",
+              "difficulty": 3,
+              "wordCount": 3301,
+              "estMinutes": 22.0
+            },
+            {
+              "slug": "reading-a-ppm",
+              "title": "Reading a PPM",
+              "category": "Syndication Skills",
+              "subcategory": "Legal Documents",
+              "difficulty": 3,
+              "wordCount": 3490,
+              "estMinutes": 23.3
+            },
+            {
+              "slug": "syndication-red-flags-10-walk-away-signals",
+              "title": "Syndication Red Flags - 10 Walk-Away Signals",
+              "category": "Syndication Skills",
+              "subcategory": "Risk Management",
+              "difficulty": 3,
+              "wordCount": 3698,
+              "estMinutes": 24.7
+            },
+            {
+              "slug": "vetting-a-syndication-sponsor",
+              "title": "Vetting a Syndication Sponsor",
+              "category": "Syndication Skills",
+              "subcategory": "Due Diligence",
+              "difficulty": 4,
+              "wordCount": 3919,
+              "estMinutes": 26.1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totalConcepts": 130,
+  "totalWords": 427805,
+  "estHours": 47.5
+}

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Socratic Mastery Audio</title>
+<style>
+:root {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --surface2: #242424;
+  --border: #333;
+  --text: #e8e8e8;
+  --text-dim: #888;
+  --accent: #4a9eff;
+  --accent-hover: #6db3ff;
+  --green: #4caf50;
+  --orange: #ff9800;
+  --red: #f44336;
+  --purple: #9c27b0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); }
+
+/* Header */
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.header .stats {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+/* Module tabs */
+.tabs {
+  display: flex;
+  gap: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+.tab {
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  transition: all 0.2s;
+  user-select: none;
+}
+.tab:hover { color: var(--text); background: var(--surface2); }
+.tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.tab .count {
+  display: inline-block;
+  background: var(--surface2);
+  border-radius: 10px;
+  padding: 0 6px;
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
+.tab.active .count { background: rgba(74, 158, 255, 0.2); }
+
+/* Content area */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Search */
+.search-bar {
+  margin-bottom: 1.5rem;
+}
+.search-bar input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+}
+.search-bar input:focus { border-color: var(--accent); }
+.search-bar input::placeholder { color: var(--text-dim); }
+
+/* Category groups */
+.category {
+  margin-bottom: 2rem;
+}
+.category-header {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Concept cards */
+.concept-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.concept-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.concept-card:hover {
+  border-color: var(--accent);
+  background: var(--surface2);
+}
+.concept-card.active {
+  border-color: var(--accent);
+  background: rgba(74, 158, 255, 0.08);
+}
+.concept-card .info {
+  flex: 1;
+  min-width: 0;
+}
+.concept-card .title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.concept-card .meta {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+.concept-card .difficulty {
+  display: flex;
+  gap: 2px;
+}
+.concept-card .difficulty .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+}
+.concept-card .difficulty .dot.filled { background: var(--accent); }
+.concept-card .duration {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.concept-card .play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.1s;
+}
+.concept-card .play-btn:hover { transform: scale(1.1); }
+.concept-card .play-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+/* Player */
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  display: none;
+  z-index: 100;
+}
+.player.visible { display: block; }
+.player-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.player .now-playing {
+  flex: 0 0 auto;
+  max-width: 250px;
+  overflow: hidden;
+}
+.player .now-playing .title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.player .now-playing .module {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.player .controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.player .controls button {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+.player .controls button:hover { color: var(--accent); }
+.player .controls button svg { width: 20px; height: 20px; fill: currentColor; }
+.player .controls .play-pause svg { width: 28px; height: 28px; }
+.player .progress-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.player .progress-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.player .progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.player .time {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.player .speed-btn {
+  font-size: 0.75rem;
+  background: var(--surface2) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+  color: var(--text-dim) !important;
+  min-width: 40px;
+  text-align: center;
+}
+.player .speed-btn:hover { color: var(--accent) !important; }
+
+/* Reader view */
+.reader {
+  display: none;
+  margin-bottom: 6rem;
+}
+.reader.visible { display: block; }
+.reader-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.reader-header .back {
+  cursor: pointer;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+.reader-header .back:hover { color: var(--accent); }
+.reader-header h2 { font-size: 1.3rem; font-weight: 600; }
+.reader-body {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 800px;
+  white-space: pre-wrap;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+  .tab { padding: 0.6rem 1rem; font-size: 0.8rem; }
+  .concept-card { flex-wrap: wrap; }
+  .player-inner { flex-wrap: wrap; gap: 0.5rem; }
+  .player .now-playing { max-width: 100%; flex: 1 1 100%; }
+  .player .progress-area { flex: 1 1 100%; order: 10; }
+  .reader-body { padding: 1rem; font-size: 0.9rem; }
+}
+
+/* No audio fallback */
+.no-audio-msg {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+.module-list-view { margin-bottom: 5rem; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <h1>Socratic Mastery Audio</h1>
+    <div class="stats" id="stats"></div>
+  </div>
+</div>
+
+<div class="tabs" id="tabs"></div>
+
+<div class="content">
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search concepts...">
+  </div>
+  <div id="module-view" class="module-list-view"></div>
+  <div id="reader-view" class="reader"></div>
+</div>
+
+<!-- Global audio player -->
+<div class="player" id="player">
+  <div class="player-inner">
+    <div class="now-playing">
+      <div class="title" id="player-title"></div>
+      <div class="module" id="player-module"></div>
+    </div>
+    <div class="controls">
+      <button onclick="skipTime(-15)" title="Back 15s">
+        <svg viewBox="0 0 24 24"><path d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/><text x="12" y="15" text-anchor="middle" font-size="7" fill="currentColor" font-weight="bold">15</text></svg>
+      </button>
+      <button class="play-pause" onclick="togglePlayback()" id="play-pause-btn">
+        <svg viewBox="0 0 24 24" id="play-icon"><polygon points="5,3 19,12 5,21"/></svg>
+        <svg viewBox="0 0 24 24" id="pause-icon" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+      <button onclick="skipTime(30)" title="Forward 30s">
+        <svg viewBox="0 0 24 24"><path d="M12.01 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/><text x="12" y="15" text-anchor="middle" font-size="7" fill="currentColor" font-weight="bold">30</text></svg>
+      </button>
+    </div>
+    <div class="progress-area">
+      <span class="time" id="time-current">0:00</span>
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <span class="time" id="time-total">0:00</span>
+    </div>
+    <button class="speed-btn" onclick="cycleSpeed()" id="speed-btn">1x</button>
+  </div>
+</div>
+
+<audio id="audio"></audio>
+
+<script>
+// --- Data ---
+let manifest = null;
+let activeModule = null;
+let currentConcept = null;
+const audio = document.getElementById('audio');
+let playbackSpeed = 1;
+const speeds = [0.75, 1, 1.25, 1.5, 1.75, 2];
+
+// --- Init ---
+async function init() {
+  try {
+    const resp = await fetch('site-manifest.json');
+    manifest = await resp.json();
+  } catch {
+    // Fallback: try loading from content directories
+    manifest = { modules: [], totalConcepts: 0, totalWords: 0, estHours: 0 };
+  }
+  renderStats();
+  renderTabs();
+  if (manifest.modules.length > 0) {
+    setActiveModule(manifest.modules[0].id);
+  }
+  document.getElementById('search').addEventListener('input', onSearch);
+}
+
+function renderStats() {
+  const el = document.getElementById('stats');
+  el.textContent = `${manifest.totalConcepts} concepts \u00b7 ~${manifest.estHours}h audio`;
+}
+
+function renderTabs() {
+  const container = document.getElementById('tabs');
+  container.innerHTML = manifest.modules.map(m =>
+    `<div class="tab" data-module="${m.id}" onclick="setActiveModule('${m.id}')">
+      ${m.icon} ${m.label} <span class="count">${m.conceptCount}</span>
+    </div>`
+  ).join('');
+}
+
+function setActiveModule(moduleId) {
+  activeModule = moduleId;
+  document.querySelectorAll('.tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.module === moduleId);
+  });
+  document.getElementById('search').value = '';
+  showReader(false);
+  renderModuleView();
+}
+
+function renderModuleView(filter = '') {
+  const container = document.getElementById('module-view');
+  const mod = manifest.modules.find(m => m.id === activeModule);
+  if (!mod) { container.innerHTML = ''; return; }
+
+  let html = '';
+  for (const cat of mod.categories) {
+    const concepts = filter
+      ? cat.concepts.filter(c => c.title.toLowerCase().includes(filter) || c.subcategory.toLowerCase().includes(filter))
+      : cat.concepts;
+    if (concepts.length === 0) continue;
+
+    html += `<div class="category">
+      <div class="category-header">${cat.name} (${concepts.length})</div>
+      <div class="concept-list">`;
+
+    for (const c of concepts) {
+      const diffDots = Array.from({length: 5}, (_, i) =>
+        `<div class="dot${i < c.difficulty ? ' filled' : ''}"></div>`
+      ).join('');
+
+      html += `<div class="concept-card" data-slug="${c.slug}" onclick="openConcept('${activeModule}', '${c.slug}')">
+        <div class="play-btn" onclick="event.stopPropagation(); playConcept('${activeModule}', '${c.slug}', '${c.title.replace(/'/g, "\\'")}')">
+          <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+        </div>
+        <div class="info">
+          <div class="title">${c.title}</div>
+          <div class="meta">
+            ${c.subcategory} &middot; <span class="difficulty">${diffDots}</span>
+          </div>
+        </div>
+        <div class="duration">~${c.estMinutes} min</div>
+      </div>`;
+    }
+
+    html += '</div></div>';
+  }
+
+  if (!html) html = '<p style="color:var(--text-dim);text-align:center;padding:2rem">No matching concepts.</p>';
+  container.innerHTML = html;
+  container.style.display = '';
+}
+
+function onSearch(e) {
+  const q = e.target.value.toLowerCase().trim();
+  showReader(false);
+  renderModuleView(q);
+}
+
+// --- Reader View ---
+async function openConcept(moduleId, slug) {
+  const mdPath = `content/${moduleId}/${slug}.md`;
+  try {
+    const resp = await fetch(mdPath);
+    if (!resp.ok) throw new Error('not found');
+    let text = await resp.text();
+
+    // Strip frontmatter
+    if (text.startsWith('---')) {
+      const end = text.indexOf('---', 3);
+      if (end !== -1) text = text.substring(end + 3).trim();
+    }
+
+    // Find concept info
+    const mod = manifest.modules.find(m => m.id === moduleId);
+    let concept = null;
+    if (mod) {
+      for (const cat of mod.categories) {
+        concept = cat.concepts.find(c => c.slug === slug);
+        if (concept) break;
+      }
+    }
+
+    const title = concept ? concept.title : slug.replace(/-/g, ' ');
+    showReader(true, title, text, moduleId, slug);
+  } catch {
+    // If file can't be loaded, show error
+    showReader(true, slug.replace(/-/g, ' '), 'Content file not found.', moduleId, slug);
+  }
+}
+
+function showReader(show, title, text, moduleId, slug) {
+  const reader = document.getElementById('reader-view');
+  const moduleView = document.getElementById('module-view');
+
+  if (!show) {
+    reader.classList.remove('visible');
+    moduleView.style.display = '';
+    return;
+  }
+
+  moduleView.style.display = 'none';
+
+  const mod = manifest.modules.find(m => m.id === moduleId);
+  const modLabel = mod ? mod.label : moduleId;
+
+  reader.innerHTML = `
+    <div class="reader-header">
+      <span class="back" onclick="showReader(false)">&larr; Back</span>
+      <h2>${title}</h2>
+    </div>
+    <button onclick="playConcept('${moduleId}', '${slug}', '${title.replace(/'/g, "\\'")}')"
+      style="background:var(--accent);color:#fff;border:none;border-radius:6px;padding:0.5rem 1.25rem;cursor:pointer;font-size:0.9rem;margin-bottom:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+      Play Audio
+    </button>
+    <div class="reader-body">${escapeHtml(text)}</div>
+  `;
+  reader.classList.add('visible');
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// --- Audio Player ---
+function playConcept(moduleId, slug, title) {
+  const audioPath = `audio/${moduleId}/${slug}.mp3`;
+  const mod = manifest.modules.find(m => m.id === moduleId);
+  const modLabel = mod ? `${mod.icon} ${mod.label}` : moduleId;
+
+  currentConcept = { moduleId, slug, title };
+
+  audio.src = audioPath;
+  audio.playbackRate = playbackSpeed;
+  audio.play().catch(() => {
+    // Audio file may not exist yet
+    document.getElementById('player-title').textContent = title + ' (audio not found)';
+  });
+
+  document.getElementById('player-title').textContent = title;
+  document.getElementById('player-module').textContent = modLabel;
+  document.getElementById('player').classList.add('visible');
+  updatePlayPauseIcon(true);
+
+  // Highlight active card
+  document.querySelectorAll('.concept-card').forEach(c => {
+    c.classList.toggle('active', c.dataset.slug === slug);
+  });
+}
+
+function togglePlayback() {
+  if (audio.paused) {
+    audio.play();
+    updatePlayPauseIcon(true);
+  } else {
+    audio.pause();
+    updatePlayPauseIcon(false);
+  }
+}
+
+function updatePlayPauseIcon(playing) {
+  document.getElementById('play-icon').style.display = playing ? 'none' : '';
+  document.getElementById('pause-icon').style.display = playing ? '' : 'none';
+}
+
+function skipTime(seconds) {
+  audio.currentTime = Math.max(0, Math.min(audio.duration || 0, audio.currentTime + seconds));
+}
+
+function cycleSpeed() {
+  const idx = speeds.indexOf(playbackSpeed);
+  playbackSpeed = speeds[(idx + 1) % speeds.length];
+  audio.playbackRate = playbackSpeed;
+  document.getElementById('speed-btn').textContent = playbackSpeed + 'x';
+}
+
+function formatTime(s) {
+  if (isNaN(s)) return '0:00';
+  const m = Math.floor(s / 60);
+  const sec = Math.floor(s % 60);
+  return `${m}:${sec.toString().padStart(2, '0')}`;
+}
+
+// Audio events
+audio.addEventListener('timeupdate', () => {
+  const pct = (audio.currentTime / (audio.duration || 1)) * 100;
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('time-current').textContent = formatTime(audio.currentTime);
+});
+
+audio.addEventListener('loadedmetadata', () => {
+  document.getElementById('time-total').textContent = formatTime(audio.duration);
+});
+
+audio.addEventListener('ended', () => {
+  updatePlayPauseIcon(false);
+  // Auto-play next concept
+  playNext();
+});
+
+audio.addEventListener('pause', () => updatePlayPauseIcon(false));
+audio.addEventListener('play', () => updatePlayPauseIcon(true));
+
+// Progress bar click to seek
+document.getElementById('progress-bar').addEventListener('click', (e) => {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const pct = (e.clientX - rect.left) / rect.width;
+  audio.currentTime = pct * (audio.duration || 0);
+});
+
+// Auto-play next
+function playNext() {
+  if (!currentConcept) return;
+  const mod = manifest.modules.find(m => m.id === currentConcept.moduleId);
+  if (!mod) return;
+
+  const allConcepts = [];
+  for (const cat of mod.categories) {
+    for (const c of cat.concepts) allConcepts.push(c);
+  }
+
+  const idx = allConcepts.findIndex(c => c.slug === currentConcept.slug);
+  if (idx >= 0 && idx < allConcepts.length - 1) {
+    const next = allConcepts[idx + 1];
+    playConcept(currentConcept.moduleId, next.slug, next.title);
+  }
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT') return;
+  if (e.code === 'Space') { e.preventDefault(); togglePlayback(); }
+  if (e.code === 'ArrowLeft') { e.preventDefault(); skipTime(-15); }
+  if (e.code === 'ArrowRight') { e.preventDefault(); skipTime(30); }
+});
+
+// Init
+init();
+</script>
+</body>
+</html>

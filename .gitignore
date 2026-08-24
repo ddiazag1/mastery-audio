@@ -1,0 +1,17 @@
+# Audio files (too large for GitHub, host separately)
+audio/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp TTS chunk files
+*.part*.mp3
+
+# JSON concept data (fetched from Supabase)
+*_concepts.json
