@@ -21,7 +21,7 @@ questions:
     a: Not at this moment, but with a low threshold. A GCS of fourteen with airway protection does not mandate intubation, and I would rather preserve the neurological examination; but this patient can deteriorate rapidly from rebleeding or hydrocephalus, so the decision is reassessed continuously.
     probe: What would make you intubate immediately?
   - q: Which prophylactic agents have failed in trials here?
-    a: Simvastatin in STASH, 2014, over eight hundred patients, no benefit for delayed cerebral ischaemia or outcome. Prophylactic hypervolaemia in HIMALAIA. Magnesium in MASH-2. The one that works is nimodipine, established by the British aneurysm nimodipine trial in 1989.
+    a: Simvastatin in STASH, 2014, over eight hundred patients, no benefit for delayed cerebral ischaemia or outcome. Prophylactic hypervolaemia, in Lennihan 2000 and Egge 2001. Magnesium in MASH-2. The one that works is nimodipine, established by the British aneurysm nimodipine trial in 1989.
     probe: By what mechanism does nimodipine help, given it does not reliably reverse angiographic narrowing?
   - q: Wean an external ventricular drain for me.
     a: Gradually. Raise the drain level progressively from ten to fifteen to twenty centimetres of water over forty-eight to seventy-two hours, monitoring intracranial pressure and the clinical examination at each level. If pressure stays above twenty or the patient worsens as the drain is raised, the trial has failed.

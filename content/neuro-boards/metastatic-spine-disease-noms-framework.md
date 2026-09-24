@@ -15,7 +15,7 @@ questions:
     a: Six components, total zero to eighteen: location, pain character, bone lesion quality, spinal alignment, vertebral body collapse, and posterolateral involvement. Zero to six is stable; seven to twelve is indeterminate or potentially unstable warranting surgical consultation; thirteen to eighteen is unstable requiring stabilisation.
     probe: Which locations score highest and why?
   - q: Which spinal levels score three points for location?
-    a: The junctional segments: occipitocervical C1 to C2, cervicothoracic C7 to T2, and thoracolumbar T12 to L1. They score highest because the transition between a mobile and a rigid segment concentrates mechanical stress.
+    a: The junctional segments: occiput to C2, C7 to T2, T11 to L1, and L5 to S1. They score highest because the transition between a mobile and a rigid segment concentrates mechanical stress.
     probe: Which region scores lowest?
   - q: What does the revised Tokuhashi score do, and what are its cutoffs?
     a: Predicts survival to guide how aggressive to be. Six parameters — Karnofsky performance status, extraspinal bone metastases, vertebral metastases, visceral metastases, primary tumour site, and degree of cord palsy — totalling zero to fifteen. Eight or less predicts under six months and favours palliation; nine to eleven predicts six months or more and supports surgery; twelve or more predicts twelve months or more and supports excisional surgery.

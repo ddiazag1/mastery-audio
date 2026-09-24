@@ -18,7 +18,7 @@ questions:
     a: Bright on the diffusion weighted image with corresponding low signal on the apparent diffusion coefficient map. The trap is T2 shine through, where a bright DWI merely reflects underlying T2 brightness. Always cite the ADC map.
     probe: Name the differential for genuine restriction.
   - q: Date this haemorrhage: bright on T1, dark on T2.
-    a: Early subacute, roughly three to seven days, intracellular methaemoglobin. The sequence runs oxyhaemoglobin, deoxyhaemoglobin, intracellular then extracellular methaemoglobin, then haemosiderin, tracked as dark-dark, dark-bright, bright-bright, bright-dark, dark-dark on T1 then T2.
+    a: Early subacute, roughly three to seven days, intracellular methaemoglobin. The sequence runs oxyhaemoglobin, deoxyhaemoglobin, intracellular then extracellular methaemoglobin, then haemosiderin, tracked on T1 then T2 as iso-bright, dark-dark, bright-dark, bright-bright, dark-dark.
     probe: Now bright on both T1 and T2. How old?
   - q: Which sequence separates spin echo from gradient echo behaviour, and why does it matter surgically?
     a: Gradient echo omits the refocusing pulse, so local field distortion persists and blood, calcium and metal bloom. That is why susceptibility weighted imaging finds microhaemorrhage, cavernomas and diffuse axonal injury, and why it is worst near the skull base and hardware.

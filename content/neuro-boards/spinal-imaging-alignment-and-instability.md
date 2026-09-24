@@ -31,7 +31,7 @@ questions:
     a: In a Jefferson burst fracture, combined lateral overhang of the atlas lateral masses on the axis exceeding roughly seven millimetres on an open mouth view suggests transverse ligament disruption. I quote it, but modern practice weights magnetic resonance evidence of ligamentous integrity more heavily.
     probe: Why does the transverse ligament matter more than the bone here?
   - q: Give me the SLIC and TLICS thresholds and what they score.
-    a: Both score morphology, ligamentous complex integrity, and neurological status. Four or more generally favours surgery, three or less nonoperative, and four is the discretionary zone. The conceptual point is that the posterior ligamentous complex determines stability, and STIR or fat-suppressed T2 is how you assess it.
+    a: Both score morphology, ligamentous complex integrity, and neurological status. Five or more generally favours surgery, three or less nonoperative, and four is the discretionary zone. The conceptual point is that the posterior ligamentous complex determines stability, and STIR or fat-suppressed T2 is how you assess it.
     probe: What are the plain-film surrogates for posterior ligamentous complex failure?
   - q: State the sagittal balance equation and the three surgical targets.
     a: Pelvic incidence equals pelvic tilt plus sacral slope. The targets are sagittal vertical axis under five centimetres, pelvic tilt under twenty degrees, and pelvic incidence minus lumbar lordosis under ten degrees.
@@ -48,7 +48,7 @@ cases:
     q1: Describe this the way you would in the room, and say what you still need.
     a1: L1 burst fracture, forty five percent anterior height loss, thirty five percent canal compromise, eighteen degrees segmental kyphosis, with interspinous widening suggesting posterior ligamentous complex injury. I need magnetic resonance with STIR to assess that complex directly, because it determines stability and therefore whether he needs stabilisation.
     q2: MRI confirms disruption of the supraspinous and interspinous ligaments with facet capsule oedema. Score it.
-    a2: On TLICS: burst morphology scores two, posterior ligamentous complex disrupted scores three, neurologically intact scores zero, giving five. Five is above the surgical threshold of four, so despite being neurologically intact this is an unstable injury requiring stabilisation.
+    a2: On TLICS: burst morphology scores two, posterior ligamentous complex disrupted scores three, neurologically intact scores zero, giving five. Five meets the operative threshold, so despite being neurologically intact this is an unstable injury requiring stabilisation.
     q3: He is intact. Why operate at all?
     a3: Because the tension band has failed. With a disrupted posterior ligamentous complex the segment cannot resist flexion, and the predictable course is progressive kyphosis, late pain, and the risk of delayed neurological injury. Ligaments do not heal reliably the way bone does, which is precisely why the classification weights them so heavily.
     q4: What are you trying to achieve technically, and what would make you decompress?
