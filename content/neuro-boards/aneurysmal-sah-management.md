@@ -8,27 +8,35 @@ questions:
   - q: Grade this patient for me: GCS 14, severe headache, mild confusion, thick cisternal clot with intraventricular blood.
     a: Hunt and Hess grade three, WFNS grade two because it keys off the GCS, and modified Fisher grade four. I would quote all three, because they answer different questions.
     probe: Which of those three predicts vasospasm, and which predicts outcome?
+    probeA: Modified Fisher predicts vasospasm, because it measures clot burden and clot is what drives it. Hunt and Hess predicts overall outcome, because it measures the patient's neurological state. WFNS does the same job as Hunt and Hess but more reproducibly, since it keys off the GCS rather than a description. Quoting the wrong one for the wrong purpose is the commonest error here.
   - q: Why did the original Fisher scale get modified?
     a: Because original grade four, diffuse or absent subarachnoid blood with intraventricular or intracerebral haemorrhage, paradoxically implied lower vasospasm risk than grade three. The modified scale is more linearly predictive, with grades three and four carrying roughly thirty to forty percent incidence of clinical vasospasm.
     probe: So which single radiographic variable drives vasospasm risk?
+    probeA: Cisternal clot burden, specifically thick clot, with intraventricular blood adding further risk. Not the patient's clinical grade, not the size of the aneurysm, and not its location. That is the whole reason a radiographic scale exists separately from a clinical one.
   - q: Summarise ISAT and then tell me its caveats.
     a: ISAT randomised 2,143 patients with ruptured aneurysms suitable for either treatment and found coiling gave a seven percent absolute reduction in death or dependency at one year. The caveats: mostly anterior circulation with coil-favourable anatomy, slightly higher long-term rebleeding in the coiled group, and retreatment of roughly seventeen percent versus four percent for clipping.
     probe: So how do you actually choose for the patient in front of you?
+    probeA: Anatomy first, then patient. If the neck is coilable and the aneurysm is anterior circulation, I coil, because that is the ISAT population. I clip when the anatomy defeats coiling, when there is a large haematoma I need to evacuate anyway, in a young patient where durability over decades outweighs the perioperative advantage, and for middle cerebral artery aneurysms, which are typically broad-necked with branches off the dome. And I decide it in a joint neurovascular discussion, not unilaterally.
   - q: What anatomy makes an aneurysm coilable?
     a: An adequate dome-to-neck ratio of at least two to one, and no critical branch vessels arising from the neck. With that, coiling is a reasonable first-line approach; without it, the neck cannot be secured endovascularly and clipping comes back into play.
     probe: Name two situations where you would clip regardless of the ratio.
+    probeA: A large sylvian haematoma needing evacuation, where I am opening the head regardless and can secure the aneurysm in the same operation. And a middle cerebral artery bifurcation aneurysm with branches arising from the base, where coiling risks occluding an M2. I would add a third: a young patient in whom the durability of a clip matters more than the perioperative advantage of a coil.
   - q: GCS 14 and protecting her airway. Do you intubate?
     a: Not at this moment, but with a low threshold. A GCS of fourteen with airway protection does not mandate intubation, and I would rather preserve the neurological examination; but this patient can deteriorate rapidly from rebleeding or hydrocephalus, so the decision is reassessed continuously.
     probe: What would make you intubate immediately?
+    probeA: A GCS falling to eight or less, loss of airway reflexes, agitation that prevents safe transfer or imaging, respiratory compromise from neurogenic pulmonary oedema, or the need to control carbon dioxide for raised intracranial pressure. Also a practical one: if I am taking her for a prolonged endovascular procedure, she is intubated for that anyway.
   - q: Which prophylactic agents have failed in trials here?
     a: Simvastatin in STASH, 2014, over eight hundred patients, no benefit for delayed cerebral ischaemia or outcome. Prophylactic hypervolaemia, in Lennihan 2000 and Egge 2001. Magnesium in MASH-2. The one that works is nimodipine, established by the British aneurysm nimodipine trial in 1989.
     probe: By what mechanism does nimodipine help, given it does not reliably reverse angiographic narrowing?
+    probeA: The likeliest explanation is neuroprotection at the microcirculatory and cellular level rather than large-vessel dilatation: improved collateral flow through small vessels, reduced calcium-mediated excitotoxic injury, and possibly an effect on cortical spreading depolarisation. The honest answer is that the mechanism is not settled, which is itself the teaching point, because it shows angiographic narrowing and delayed cerebral ischaemia are not the same thing.
   - q: Wean an external ventricular drain for me.
     a: Gradually. Raise the drain level progressively from ten to fifteen to twenty centimetres of water over forty-eight to seventy-two hours, monitoring intracranial pressure and the clinical examination at each level. If pressure stays above twenty or the patient worsens as the drain is raised, the trial has failed.
     probe: Failed trial. What does that mean for her and what do you do?
+    probeA: It means she is likely to be shunt-dependent, though not certainly after a single failure. I would return the drain to a level she tolerates, let her recover, exclude a reversible contributor such as ongoing intraventricular blood or infection, and repeat the trial after several days. If she fails a second trial I would proceed to a ventriculoperitoneal shunt and counsel the family that this is a consequence of the haemorrhage rather than a complication of her care.
   - q: Who is at highest risk of needing a permanent shunt?
     a: Higher Fisher grade, intraventricular haemorrhage, older age, and posterior circulation haemorrhage. I would counsel the family early that shunt dependence is a real possibility rather than presenting it as a complication if it happens.
     probe: What proportion would you quote?
+    probeA: Roughly twenty to thirty percent of patients after aneurysmal subarachnoid haemorrhage require permanent diversion, and higher in the subgroup she sits in with intraventricular haemorrhage and a high Fisher grade. I would give a range rather than a single figure, and say plainly that I cannot predict her individually, only place her in a risk band.
 cases:
   - label: Day zero to day seven
     stem: A 54-year-old woman collapses with the worst headache of her life. On arrival GCS is 14, eyes 4, verbal 4, motor 6. CT shows thick cisternal subarachnoid blood with intraventricular extension. CT angiography shows a 7-millimetre anterior communicating artery aneurysm with a 3-millimetre neck.

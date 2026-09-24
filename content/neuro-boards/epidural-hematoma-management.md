@@ -8,27 +8,35 @@ questions:
   - q: Give me the surgical indications, and tell me how they combine.
     a: Volume over thirty cubic centimetres regardless of GCS; thickness over fifteen millimetres; midline shift over five millimetres; or a GCS of eight or less with focal deficit. Any single one of these alone is sufficient to mandate surgery — they are not cumulative.
     probe: He has a lucid interval then drops four GCS points. Does he meet a criterion?
+    probeA: Yes. A drop of four GCS points is neurological deterioration attributable to the haematoma, and deterioration is itself an operative indication independent of the millimetres on the scan. I would not stand at the scanner measuring thickness in a patient who is deteriorating in front of me. The measurements exist to decide about the stable patient; the unstable one has already answered the question.
   - q: What is the one exception to the suture line rule?
     a: The vertex epidural haematoma, which arises from injury to the superior sagittal sinus and can cross the midline at the vertex. It is also the one most easily missed, because axial slices cut it tangentially, so ask for coronal reformats.
     probe: Why does that change your operative planning?
+    probeA: Because the bleeding source is the superior sagittal sinus rather than the middle meningeal artery, so this is venous bleeding from a structure I cannot simply coagulate. I plan a craniotomy that straddles the midline with the flap designed to expose the sinus and allow repair or packing, cross-match blood before I start, keep the head neutral or slightly head-down to reduce the risk of air embolism, and have the anaesthetist primed for sudden major blood loss. It is a different operation from a temporal extradural, not a variation of one.
   - q: You see heterogeneous density within the clot. Name it and act.
     a: The swirl sign: hypodense areas mixed into the hyperdense clot, representing unretracted fresh liquid blood, meaning active bleeding at the moment of the scan. It does not change the decision in a surgical epidural, but it raises urgency and predicts brisk arterial bleeding on opening.
     probe: Which vessel do you expect to find?
+    probeA: The middle meningeal artery, most often its anterior division, torn where it runs in a groove on the inner table beneath a temporal or parietal fracture. Less commonly a middle meningeal vein, a diploic vein, or a dural venous sinus at the vertex or posterior fossa. In a child an extradural can occur without a fracture at all, because the plastic skull deforms and springs back.
   - q: What two variables actually determine his outcome?
     a: The preoperative GCS at the time of surgery, and the elapsed time from onset of deterioration to evacuation. Both are partly in your control, which is precisely why delay is unforgivable here.
     probe: Quote me the mortality figures.
+    probeA: Operated with a GCS above eight, mortality is under five percent. Operated with a GCS below eight with pupillary dilation, it rises to twenty to forty percent. Stratified by preoperative GCS in the Bricolo data, mortality climbs steeply as the GCS falls, which is the entire argument for speed: you are operating to catch the patient at a higher GCS than they would otherwise reach.
   - q: Quote the mortality data.
     a: Taken to surgery with a GCS above eight, mortality is under five percent. With a GCS below eight and pupillary dilation, mortality is twenty to forty percent. The Bricolo data stratify this by preoperative GCS and are the figures to know.
     probe: What does that imply about a patient deteriorating in the scanner?
+    probeA: That the deterioration is happening inside the window I can still influence, so the scan must not become a delay. I would complete the study because I need to know the side and the anatomy, but I alert theatre before the patient leaves the scanner, give hyperosmolar therapy on the table, and move directly there. The figures say his mortality is being set by the minutes I spend now, not by anything I will do later in the operation.
   - q: Eight millimetres thick, no shift, GCS 15. Now what?
     a: This does not meet operative criteria, so non-operative management with admission, serial neurological observation and repeat imaging. But I would be explicit that an epidural can expand rapidly, so this requires close monitoring in a unit that can get him to theatre immediately, not a general ward.
     probe: When would you repeat the scan, and what would change your mind?
+    probeA: I would repeat imaging within six to eight hours, and immediately at any clinical change. What would change my mind is interval expansion on the repeat scan, any new deficit, a falling GCS, worsening headache or vomiting, or a new pupillary asymmetry. I would also set a lower threshold if he has a coagulopathy, if the clot is temporal where a small volume causes early herniation, or if he is due to be somewhere I cannot observe him closely.
   - q: Why is the lucid interval so dangerous clinically?
     a: Because it produces a patient who looks well and gets deprioritised. Arterial bleeding from the middle meningeal artery expands under pressure, and the interval is simply the time before the expanding clot exhausts compensatory reserve. Deterioration is then precipitate.
     probe: In what proportion of patients does a classic lucid interval actually occur?
+    probeA: Only about a third, and that is the point. The classic lucid interval is the textbook presentation rather than the usual one. Many patients are never unconscious initially, and many never regain consciousness at all. Waiting for the classic triad before taking an extradural seriously is how patients are lost.
   - q: Your theatre is forty minutes away and he has just blown a pupil. What do you do now?
     a: Everything that buys time while moving: secure the airway, avoid hypotension and hypoxia, head up thirty degrees with unobstructed venous outflow, hyperosmolar therapy, and brief hyperventilation as a bridge only. Alert theatre and go. Time to evacuation is one of the two variables that determines his outcome.
     probe: Would you ever make a burr hole outside a formal theatre?
+    probeA: Only in genuinely exceptional circumstances: a deteriorating patient with a confirmed extradural, herniating, in a location with no neurosurgical theatre and no prospect of transfer in time. It is a salvage manoeuvre, it is performed over the clot on the side of the blown pupil, and it buys minutes rather than treating the lesion, so it must be followed by definitive evacuation. In any system where theatre is forty minutes away, the right answer is to go to theatre.
 cases:
   - label: The lucid interval
     stem: A 19-year-old is struck on the side of the head by a cricket ball. He is briefly unconscious, then alert and conversant in the ambulance with a GCS of 15. Forty minutes after arrival he becomes drowsy and vomits. GCS is now 9. The right pupil is 5 millimetres and sluggish.

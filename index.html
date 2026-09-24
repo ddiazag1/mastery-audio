@@ -430,6 +430,8 @@ a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
 }
 .q-probe { margin-top: 0.55rem; font-size: 0.85rem; color: var(--text-dim); }
 .q-probe span { color: var(--yellow, var(--orange)); font-weight: 600; }
+.q-btn-probe { display: block; margin-top: 0.5rem; }
+.q-probe-ans { margin-top: 0.5rem; padding-left: 0.7rem; border-left: 2px solid var(--yellow, var(--orange)); font-size: 0.85rem; line-height: 1.6; color: var(--text); }
 
 .cases { white-space: normal; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 2px solid var(--orange, var(--accent)); }
 .cases-head h3 { margin: 0; font-size: 1.05rem; color: var(--text); }
@@ -782,8 +784,17 @@ function questionsHtml(questions) {
   if (!questions || !questions.length) return '';
   const cards = questions.map((q, i) => {
     if (!q || !q.q) return '';
+    // The probe is the judgement follow-up, and it needs its own answer:
+    // showing the question with nothing behind it is what made the self-test
+    // feel like it stopped halfway.
     const probe = q.probe
-      ? `<div class="q-probe"><span>Then they push:</span> ${escapeHtml(q.probe)}</div>` : '';
+      ? `<div class="q-probe"><span>Then they push:</span> ${escapeHtml(q.probe)}` +
+          (q.probeA
+            ? `<button class="q-btn q-btn-probe" onclick="toggleProbe(this)">Show answer</button>` +
+              `<div class="q-probe-ans" hidden>${escapeHtml(q.probeA)}</div>`
+            : '') +
+        `</div>`
+      : '';
     return `<div class="q-card">` +
              `<div class="q-num">${i + 1}</div>` +
              `<div class="q-body">` +
@@ -810,10 +821,17 @@ function toggleAnswer(btn) {
   btn.textContent = open ? 'Show answer' : 'Hide answer';
 }
 
+function toggleProbe(btn) {
+  const ans = btn.parentNode.querySelector('.q-probe-ans');
+  const open = !ans.hidden;
+  ans.hidden = open;
+  btn.textContent = open ? 'Show answer' : 'Hide answer';
+}
+
 function toggleAllAnswers(btn) {
   const reveal = btn.textContent === 'Reveal all';
   const root = btn.closest('.selftest');
-  root.querySelectorAll('.q-ans').forEach(a => { a.hidden = !reveal; });
+  root.querySelectorAll('.q-ans, .q-probe-ans').forEach(a => { a.hidden = !reveal; });
   root.querySelectorAll('.q-btn').forEach(b => { b.textContent = reveal ? 'Hide answer' : 'Show answer'; });
   btn.textContent = reveal ? 'Hide all' : 'Reveal all';
 }
