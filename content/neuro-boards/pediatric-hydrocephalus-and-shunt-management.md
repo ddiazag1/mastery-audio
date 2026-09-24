@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Pediatrics"
 subcategory: "CSF"
 difficulty: 4
+questions:
+  - q: Localise the obstruction from the ventricular pattern.
+    a: Lateral ventricles alone means the foramina of Monro. Lateral plus third with a normal fourth localises to the aqueduct. All four dilated means a communicating process or obstruction at the fourth ventricular outlets. That distinction also determines whether endoscopic third ventriculostomy is even an option.
+    probe: Which pattern is classic aqueductal stenosis?
+  - q: What is your most valuable single tool in an infant, and why?
+    a: Serial head circumference plotted on a growth chart. With open sutures the skull expands, so the head crosses centiles before the child decompensates, and the trend matters more than any single measurement. Add fontanelle tension, split sutures, dilated scalp veins and the setting sun sign.
+    probe: How does the presentation differ once the sutures fuse?
+  - q: Who is a good candidate for endoscopic third ventriculostomy?
+    a: Obstructive hydrocephalus with an intact distal absorptive pathway. The ETV success score weighs age, aetiology and previous shunt: success improves with older age and is poor under six months and especially under one month; best for aqueductal stenosis and tectal tumours, poor for post-haemorrhagic and post-infectious hydrocephalus.
+    probe: What can you add to improve success in an infant?
+  - q: Name the ETV complications, including the one that kills late.
+    a: Injury to the basilar artery or its perforators, which can be catastrophic; injury to hypothalamus or fornix; memory disturbance; diabetes insipidus; bleeding. And late stoma closure, which can present with sudden deterioration and death, so families must be counselled that late failure can be abrupt.
+    probe: How do you demonstrate that a stoma is patent?
+  - q: A shunted child arrives unwell. What is your first sentence?
+    a: Assume shunt malfunction until proven otherwise. Failure is common and deterioration can be rapid, particularly in a shunt-dependent child with slit ventricles. Then take the family's history seriously, because a parent saying this is how it looked last time is powerful data.
+    probe: What exactly do you examine?
+  - q: The ventricles look unchanged from the old scan. Are you reassured?
+    a: No. Unchanged ventricular size does not exclude malfunction, because non-compliant ventricles may not dilate; that is the slit ventricle situation. If clinical suspicion persists I proceed to a shunt tap for opening pressure, flow and culture, a radionuclide patency study, or surgical exploration. Exploring a working shunt is a far smaller error than observing a failing one.
+    probe: Why do you compare against the child's own baseline rather than a normal range?
+  - q: Shunt infection: organisms, timing, and management.
+    a: Five to ten percent per procedure, mostly within the first few months, predominantly skin flora — coagulase negative staphylococci and Staphylococcus aureus — with gram negatives in neonates or abdominal pathology. Management is complete hardware removal with externalisation, culture-directed intravenous antibiotics, and reimplantation once the fluid is sterile.
+    probe: Why not just treat through with antibiotics?
+  - q: Explain slit ventricle syndrome and how you escalate treatment.
+    a: A shunt-dependent child chronically overdrained, with small stiff ventricles whose walls intermittently collapse onto the catheter, giving intermittent severe headaches. Escalate from valve upgrade to a higher pressure or programmable valve, add an antisiphon device, and in refractory cases subtemporal decompression or cranial expansion.
+    probe: What causes overdrainage in the first place?
+cases:
+  - label: The unwell shunted child
+    stem: A 7-year-old with a ventriculoperitoneal shunt placed in infancy for post-haemorrhagic hydrocephalus presents with two days of headache and vomiting. He is drowsy but rousable. His mother says this is exactly how his last blockage looked. A CT is reported as showing ventricles unchanged from a scan two years ago.
+    q1: What do you make of the report, and what do you do?
+    a1: I do not accept it as reassurance. Unchanged ventricular size does not exclude shunt malfunction, because non-compliant ventricles may not dilate. More importantly the mother's history is powerful data and families are often exquisitely accurate. I would treat this as malfunction until proven otherwise.
+    q2: Complete your assessment.
+    a2: Level of consciousness, fundoscopy for papilloedema, eye movements for sixth nerve palsy and upgaze paresis, and palpation of the shunt tract for the reservoir, disconnection and fluid tracking. A shunt series of plain films covering skull, neck, chest and abdomen for disconnection, fracture, migration and distal catheter position. And I would compare imaging with his own baseline rather than a population norm. Pumping the reservoir is unreliable and I would not rely on it.
+    q3: The shunt series shows a fracture of the tubing in the neck. Why does that happen in this age group?
+    a3: Growth. The catheter becomes tethered by calcification and fibrosis along its subcutaneous track, and as the child grows the tubing is placed under tension and fractures, typically at a connector or in the neck. It is why distal catheter length must be generous at initial placement to accommodate somatic growth.
+    q4: You revise it. He recovers. What do you give the family before discharge?
+    a4: A shunt card recording the valve type, setting and date, because a programmable valve may be reset by strong magnetic fields and the setting must be checked after any MRI. I would teach them the warning signs, reinforce that they were right to bring him promptly, and explain that shunts fail — most children shunted in infancy need multiple revisions across decades — and arrange structured transition to adult services in time.
 ---
 
 Let's master pediatric hydrocephalus and shunt management for the oral boards.

@@ -17,6 +17,42 @@ figures:
     credit: Bordalo M, Gulde MLS, Hagert E. (2025) International orthopaedics. PMC11971187
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11971187/
+questions:
+  - q: List the signs of a preganglionic injury.
+    a: Horner syndrome from first thoracic root avulsion; winged scapula and rhomboid weakness because long thoracic and dorsal scapular nerves arise at root level; hemidiaphragm elevation from phrenic involvement; severe deafferentation pain; paraspinal denervation on electromyography; a preserved sensory nerve action potential in a clinically anaesthetic limb; and pseudomeningoceles on myelography.
+    probe: Explain the preserved sensory potential.
+  - q: Why does preganglionic versus postganglionic decide everything?
+    a: A preganglionic avulsion has no proximal stump to sew to, so it cannot be grafted and requires nerve transfer from a donor outside the injured territory. A postganglionic rupture has a stump and can be grafted. That single distinction determines the entire reconstructive plan.
+    probe: Which roots tend to avulse and which tend to rupture, and why?
+  - q: Localise using branches, proximal to distal.
+    a: Rhomboids implicate the dorsal scapular nerve and the fifth root. Serratus anterior implicates long thoracic from the fifth, sixth and seventh roots. Diaphragm implicates phrenic and the fifth root. Supraspinatus and infraspinatus implicate the suprascapular nerve at Erb point on the upper trunk. Latissimus implicates thoracodorsal from the posterior cord.
+    probe: Deltoid weak but triceps normal. Where is the lesion?
+  - q: Erb versus Klumpke: mechanism, pattern, prognosis.
+    a: Erb involves the fifth and sixth roots from forced separation of head and shoulder, losing shoulder abduction, external rotation and elbow flexion, giving the waiter's tip posture with preserved hand function. Klumpke involves the eighth cervical and first thoracic roots from traction on an abducted arm, giving intrinsic weakness and a claw, often with Horner syndrome and a worse prognosis.
+    probe: Why is the lower plexus prognosis worse anatomically?
+  - q: Give me the timeline for investigation and operation.
+    a: Electrodiagnostics at three to four weeks, including paraspinals and sensory potentials. Imaging by computed tomographic myelography or magnetic resonance myelography, most informative at three to four weeks once haemorrhage settles. Reassess at three months. Operate by three to six months if there is no recovery.
+    probe: Why can you not simply wait and see for a year?
+  - q: State the reconstruction priorities in order.
+    a: Elbow flexion first, because it converts a flail arm into a useful one. Then shoulder stability, abduction and external rotation. Then protective hand sensation, especially median. Then wrist and finger extension, then finger flexion. Intrinsics last and generally unachievable in a severe injury.
+    probe: Which transfer would you use for the first priority?
+  - q: Which injuries do not wait for serial examination?
+    a: Sharp penetrating injury with suspected transection, explored and repaired within days. Vascular injury, explored emergently. Open contaminated or blast injury, debrided and tagged with repair at about three weeks. And a documented avulsion, which will not recover and should go early rather than after months of observation.
+    probe: How often does vascular injury accompany plexus trauma?
+  - q: He has intractable burning pain in an anaesthetic arm. Options?
+    a: Deafferentation pain after avulsion. Start with gabapentinoids, tricyclics and serotonin noradrenaline reuptake inhibitors, with psychological and rehabilitation support. Dorsal root entry zone lesioning is the established surgical treatment with good long term response. Spinal cord stimulation is generally ineffective in complete avulsion because the dorsal columns are deafferented.
+    probe: Why does that make spinal cord stimulation fail?
+cases:
+  - label: Motorcyclist, flail arm
+    stem: A 22-year-old comes off a motorcycle at speed. The right arm is flail and anaesthetic. There is ptosis and miosis on the right. Chest radiograph shows an elevated right hemidiaphragm and a fractured first rib. Radial pulse is present.
+    q1: What does this constellation tell you before any imaging?
+    a1: Horner syndrome indicates first thoracic root avulsion; the elevated hemidiaphragm indicates phrenic involvement and therefore fifth root injury; a first rib fracture indicates very high energy. Together these suggest a pan-plexus injury with preganglionic components, which carries the worst prognosis.
+    q2: What do you do in the first twenty four hours?
+    a2: Complete the trauma survey; these patients are usually polytrauma. Specifically assess the vascular status, because subclavian or axillary injury accompanies plexus trauma and is an emergency even with a present distal pulse. Look for associated cervical spine, scapular, clavicular and humeral injury and for coexisting cord injury. Then document a meticulous MRC-graded examination as the baseline.
+    q3: At four weeks, electromyography shows paraspinal denervation with preserved sensory nerve action potentials in an anaesthetic limb, and myelography shows pseudomeningoceles at C8 and T1 with intact rootlets at C5 and C6. Interpret and plan.
+    a3: C8 and T1 are preganglionic avulsions, confirmed by paraspinal denervation, preserved sensory potentials despite anaesthesia, and pseudomeningoceles. C5 and C6 are likely postganglionic and may be graftable. So this is a mixed injury: graft where there is a proximal stump, transfer where there is not.
+    q4: He asks whether he will use the hand again. Answer him.
+    a4: I would be direct. With C8 and T1 avulsed, intrinsic hand function is not realistically recoverable, and I would not promise it. The achievable goals in priority order are elbow flexion, then shoulder stability, then protective sensation. I would explain the twelve to eighteen month endplate deadline, why we operate at around three months rather than waiting, and refer him to a specialist plexus centre inside that window.
 ---
 
 Let's master brachial plexus injury evaluation and management for the oral boards.

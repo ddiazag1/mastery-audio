@@ -17,6 +17,42 @@ figures:
     credit: Isaac MFG. (2026) Insights into imaging. PMC13589733
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13589733/
+questions:
+  - q: Define core and penumbra in numbers.
+    a: Core is tissue with cerebral blood flow below about thirty percent of the contralateral side, or the volume of restricted diffusion on MRI. Penumbra is tissue with a time to maximum, T max, greater than six seconds. Mismatch is penumbra minus core; mismatch ratio is penumbra divided by core.
+    probe: What thresholds were used to select patients in the extended window?
+  - q: Which perfusion technique, and why that one?
+    a: Dynamic susceptibility contrast for relative cerebral blood volume in tumours. Dynamic contrast enhanced for permeability. Arterial spin labelling when you cannot give gadolinium, in children, or for serial studies. CT perfusion for acute stroke triage because it is fastest and most available.
+    probe: Glomerular filtration rate of twenty and you need a tumour perfusion study. Choose.
+  - q: Give me the perfusion pitfalls before I ask for them.
+    a: Vendor post-processing differences give different core volumes from identical data. A poor arterial input function distorts every map. Motion degrades everything. Chronic occlusion with good collaterals mimics penumbra. The ghost infarct core overestimates core in very early imaging. And perfusion is unreliable in the posterior circulation.
+    probe: So how do you diagnose a basilar occlusion?
+  - q: Recurrent tumour or radiation necrosis? Argue both sides with imaging.
+    a: Recurrence shows elevated relative cerebral blood volume from neovascularity and elevated choline reflecting membrane turnover. Radiation necrosis shows low perfusion and low choline with lipid and lactate, because it is destructive rather than proliferative. Amino acid PET supports the same distinction.
+    probe: Which amino acid tracers would you name?
+  - q: Name the spectroscopy peaks and what each means.
+    a: N-acetylaspartate at two point zero, a neuronal marker that falls with neuronal loss. Creatine at three point zero as the internal reference. Choline at three point two, membrane turnover, so it rises with tumour. Lactate at one point three as an inverting doublet at intermediate echo. Lipid also near one point three, meaning necrosis. Myoinositol at three point five, a glial marker. Alanine at one point five, characteristic of meningioma.
+    probe: How do you prove a peak is lactate and not lipid?
+  - q: Where do you put the biopsy needle in a heterogeneous non-enhancing glioma?
+    a: At the region of highest relative cerebral blood volume, because that is where the highest grade tissue lives. That protects against undergrading from sampling error, which is the central risk in biopsying an infiltrative lesion.
+    probe: What would you add if perfusion is equivocal?
+  - q: How much do you trust functional MRI for a resection margin?
+    a: Not at all on its own. It shows correlation, not necessity; a region that activates is not necessarily one whose removal causes a deficit. Neurovascular uncoupling near a high grade tumour or arteriovenous malformation can silence genuinely eloquent cortex. It plans the approach; direct cortical and subcortical stimulation establishes the margin.
+    probe: Which language tasks would you use, and who cannot perform them?
+  - q: What are the specific limitations of tractography?
+    a: Tensor models cannot resolve crossing fibres, which occupy much of white matter. Peritumoural oedema lowers fractional anisotropy and can make an intact tract vanish, a false negative that could lead you to resect through it. Different algorithms and thresholds give visibly different tracts. And brain shift invalidates any preoperative dataset once the dura opens.
+    probe: What do you do intraoperatively about brain shift?
+cases:
+  - label: Progression or pseudoprogression
+    stem: A 58-year-old had a right frontal glioblastoma resected four months ago, followed by concurrent chemoradiation. Surveillance MRI now shows an increase in the enhancing volume adjacent to the cavity, with more surrounding FLAIR signal. He is clinically stable on a low dose of dexamethasone.
+    q1: What is the differential and why does the timing matter?
+    a1: True progression versus pseudoprogression. Timing matters a great deal: pseudoprogression characteristically occurs within the first three to six months after chemoradiation, which is exactly where he sits, and it resolves without a change in treatment. Calling this progression now could stop effective therapy prematurely.
+    q2: Which studies do you order and what result would favour each diagnosis?
+    a2: Dynamic susceptibility contrast perfusion and spectroscopy, plus amino acid PET if available. Elevated relative cerebral blood volume with elevated choline and a raised choline to N-acetylaspartate ratio favours true progression. Low perfusion with low choline and lipid and lactate peaks favours treatment effect.
+    q3: Perfusion shows low relative cerebral blood volume and spectroscopy shows no choline elevation. What now?
+    a3: This favours pseudoprogression. I would continue current therapy, avoid escalating dexamethasone unnecessarily, and repeat imaging at a short interval, typically four to eight weeks. I would discuss him at the neuro-oncology multidisciplinary meeting rather than acting unilaterally on an imaging call.
+    q4: At the next scan it has grown further and he now has word-finding difficulty. Reassess.
+    a4: Clinical deterioration with continued growth shifts the balance toward true progression, and imaging alone will not settle it. Options are re-resection, which gives tissue and decompression and is reasonable given symptomatic mass effect, or biopsy if resection is unsafe. I would offer re-resection with the aim of tissue diagnosis and symptom relief, and plan second-line systemic therapy accordingly.
 ---
 
 Let's master advanced neuroimaging for the oral boards.

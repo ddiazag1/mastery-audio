@@ -35,6 +35,42 @@ figures:
     credit: Lampros M, Giordano F, Zagorianakou P, Alexiou GA, Voulgaris S. (2026) Children (Basel, Switzerland). PMC13114283
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13114283/
+questions:
+  - q: Where should the conus be, and by when?
+    a: At term the conus is around L2 to L3, and by roughly two to three months it has reached the adult position at or above the lower border of L1, or at most the L1-L2 disc space. A normal filum is under about two millimetres and elastic.
+    probe: Why does it appear to ascend at all?
+  - q: What is the pathophysiology, and why do children present at particular times?
+    a: Tethering fixes the caudal cord, so spinal movement and longitudinal growth impose traction, which reduces blood flow and impairs oxidative metabolism in the lumbosacral cord. That is why symptoms appear or accelerate during growth spurts, and why a previously stable child can decline.
+    probe: What does that predict about surveillance intervals?
+  - q: Enumerate the causes.
+    a: Tight or thickened filum; lipomyelomeningocele and spinal lipomas, subclassified dorsal, transitional and terminal; retethering after prior myelomeningocele repair; split cord malformation; dermal sinus tract with or without inclusion dermoid; terminal myelocystocele; meningocele manqué; caudal regression; and scarring after trauma, infection or surgery.
+    probe: Which of those is most associated with maternal diabetes?
+  - q: Which dimples worry you, and which do not?
+    a: Simple low midline sacrococcygeal dimples within the gluteal crease are common and benign. Concerning ones are high, large, off-midline, more than about two and a half centimetres from the anal verge, or accompanied by other stigmata: hairy patch, subcutaneous lipoma, capillary haemangioma, skin tag or tail.
+    probe: What must you never do to a dermal sinus tract?
+  - q: What is the most sensitive objective evidence of progression?
+    a: Formal urodynamics, not history. They detect detrusor overactivity, detrusor sphincter dyssynergia, reduced compliance, elevated leak point pressures and increased residuals before the family notices anything, and deterioration between two studies is the most defensible trigger for surgery.
+    probe: What leak point pressure would concern you, and why?
+  - q: Give the occult tethered cord controversy a fair hearing.
+    a: Some patients have the clinical syndrome with a normally positioned conus and a normal filum. Proponents argue filum section still helps; critics note the evidence is largely uncontrolled series with real placebo potential and risks operating on non-neurogenic bladder dysfunction. I would insist on objective urodynamic abnormality and exclusion of other causes, and acknowledge the uncertainty rather than pick a side.
+    probe: What would change your mind either way?
+  - q: You are operating. What do you monitor and why that specifically?
+    a: Somatosensory and motor evoked potentials, free-running and triggered electromyography of the lower limb myotomes, and critically the bulbocavernosus reflex and anal sphincter electromyography. Sphincter function is both what you are protecting and what is most easily injured, so monitoring it specifically is the detail that matters.
+    probe: How do you identify the filum and distinguish it from a nerve root?
+  - q: Consent a family honestly.
+    a: Surgery arrests progression; it does not reliably reverse established deficit. Pain responds best; urological function may stabilise or improve modestly, most when treated early; motor deficits usually stabilise but established weakness often persists; orthopaedic deformity will still need orthopaedic management. And retethering can occur, so surveillance is lifelong.
+    probe: What retethering rate would you quote?
+cases:
+  - label: The dimple that mattered
+    stem: A 6-week-old is referred with a skin dimple noted at the newborn check. It sits 4 centimetres above the anal verge, slightly off midline, with a small tuft of hair and an overlying capillary haemangioma. The neurological examination appears normal.
+    q1: Is this a benign dimple? Justify your answer.
+    a1: No. Benign dimples are low, small and midline within the gluteal crease. This one is high, off midline, more than two and a half centimetres from the anal verge, and accompanied by two further cutaneous stigmata, a hairy patch and a haemangioma. Roughly half or more of children with closed dysraphism have a cutaneous marker, and this is a cluster.
+    q2: What do you image, and what else do you order?
+    a2: At six weeks I can use ultrasound, which visualises conus position and cord motion well before the posterior elements ossify. If abnormal or equivocal I would obtain MRI of the whole spine, not just the lumbar region, because associated anomalies including syrinx, split cord and additional lesions occur at other levels. I would also obtain formal urodynamics and a renal ultrasound as a baseline.
+    q3: MRI shows a low-lying conus at L4 with a fatty filum, and a dermal sinus tract extending to the dura. Urodynamics are normal. Do you operate?
+    a3: Yes, but for the sinus rather than the tethering debate. A dermal sinus tract reaching the dura is a conduit for recurrent meningitis and intraspinal abscess and is associated with inclusion dermoids, so it must be excised in its entirety regardless of symptoms. I would never probe or inject it. The fatty filum can be sectioned at the same operation.
+    q4: Surgery goes well. What does follow-up look like, and what would bring her back to theatre?
+    a4: Lifelong surveillance, because growth can retether a cord that was successfully released. Serial neurological examination, serial urodynamics, and scoliosis monitoring. I would return to theatre for documented progressive deterioration — new weakness, increasing spasticity, progressive or atypical scoliosis, deteriorating urodynamics, or new pain — and never for the radiographically low conus alone, which is the expected postoperative anatomy.
 ---
 
 Let's master tethered cord syndrome for the oral boards.

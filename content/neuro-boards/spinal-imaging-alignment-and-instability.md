@@ -17,6 +17,42 @@ figures:
     credit: Chen K, Ma Y, Yang Z, Ruan H, Liu G. (2026) Orthopaedic surgery. PMC13138907
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13138907/
+questions:
+  - q: Before any numbers: what is spinal stability?
+    a: Not something you read off one image. It is a judgement about whether the spine can bear physiological load without progressive deformity, neurological injury or incapacitating pain, drawn from bony integrity, ligamentous integrity, and neurological status. Every classification is a structured way of combining those three.
+    probe: Which of the three is hardest to assess, and how do you assess it?
+  - q: Give me the craniocervical measurements that matter in trauma.
+    a: Basion dental interval under about twelve millimetres in adults, the single most important measurement in a paediatric trauma patient. Atlantodental interval under about three millimetres in adults, up to five in children. Powers ratio over one suggests anterior atlanto-occipital dislocation but misses distraction, so lead with the basion dental interval.
+    probe: What does a widened basion dental interval actually mean?
+  - q: Classify this odontoid fracture and tell me what worries you.
+    a: Anderson and D'Alonzo. Type one is an avulsion of the tip, generally stable but raises the question of craniocervical distraction. Type two is through the base, commonest and most problematic for nonunion, especially with displacement over five millimetres, angulation over ten degrees, age over fifty, and posterior displacement. Type three extends into the body and heals better.
+    probe: Elderly type two. Halo, fixation, or collar?
+  - q: What is the rule of Spence and how much weight do you give it?
+    a: In a Jefferson burst fracture, combined lateral overhang of the atlas lateral masses on the axis exceeding roughly seven millimetres on an open mouth view suggests transverse ligament disruption. I quote it, but modern practice weights magnetic resonance evidence of ligamentous integrity more heavily.
+    probe: Why does the transverse ligament matter more than the bone here?
+  - q: Give me the SLIC and TLICS thresholds and what they score.
+    a: Both score morphology, ligamentous complex integrity, and neurological status. Four or more generally favours surgery, three or less nonoperative, and four is the discretionary zone. The conceptual point is that the posterior ligamentous complex determines stability, and STIR or fat-suppressed T2 is how you assess it.
+    probe: What are the plain-film surrogates for posterior ligamentous complex failure?
+  - q: State the sagittal balance equation and the three surgical targets.
+    a: Pelvic incidence equals pelvic tilt plus sacral slope. The targets are sagittal vertical axis under five centimetres, pelvic tilt under twenty degrees, and pelvic incidence minus lumbar lordosis under ten degrees.
+    probe: Which of those three is fixed and cannot be changed by surgery?
+  - q: A patient has a high pelvic tilt. What does that tell you clinically?
+    a: He is compensating: retroverting the pelvis to keep the trunk over the hips. Other compensatory mechanisms are knee flexion, ankle dorsiflexion, thoracic hypokyphosis and cervical hyperlordosis. Once exhausted, he presents stooped and unable to stand for long.
+    probe: What imaging must you have to see any of this?
+  - q: When would you order flexion-extension films, and when would you refuse?
+    a: For suspected chronic dynamic instability, where translation over roughly four millimetres or angular change over ten degrees between adjacent levels is significant. I would refuse in acute trauma: muscle spasm splints the spine and produces false negatives, and the manoeuvre risks displacing an unstable injury. Use magnetic resonance instead.
+    probe: How do you clear a cervical spine in an obtunded patient?
+cases:
+  - label: Thoracolumbar burst fracture
+    stem: A 35-year-old falls from a roof. He is neurologically intact. CT shows an L1 burst fracture with 45 percent loss of anterior vertebral body height, retropulsion causing about 35 percent canal compromise, and 18 degrees of segmental kyphosis. There is interspinous widening at L1-L2.
+    q1: Describe this the way you would in the room, and say what you still need.
+    a1: L1 burst fracture, forty five percent anterior height loss, thirty five percent canal compromise, eighteen degrees segmental kyphosis, with interspinous widening suggesting posterior ligamentous complex injury. I need magnetic resonance with STIR to assess that complex directly, because it determines stability and therefore whether he needs stabilisation.
+    q2: MRI confirms disruption of the supraspinous and interspinous ligaments with facet capsule oedema. Score it.
+    a2: On TLICS: burst morphology scores two, posterior ligamentous complex disrupted scores three, neurologically intact scores zero, giving five. Five is above the surgical threshold of four, so despite being neurologically intact this is an unstable injury requiring stabilisation.
+    q3: He is intact. Why operate at all?
+    a3: Because the tension band has failed. With a disrupted posterior ligamentous complex the segment cannot resist flexion, and the predictable course is progressive kyphosis, late pain, and the risk of delayed neurological injury. Ligaments do not heal reliably the way bone does, which is precisely why the classification weights them so heavily.
+    q4: What are you trying to achieve technically, and what would make you decompress?
+    a4: Posterior instrumented stabilisation restoring segmental alignment and the tension band, short segment with the fractured level instrumented where appropriate. I would decompress only if there were a neurological deficit attributable to canal compromise; in an intact patient, retropulsed bone remodels substantially over time and indirect reduction through ligamentotaxis often improves the canal.
 ---
 
 Let's master spinal imaging, alignment, and instability parameters for the oral boards.

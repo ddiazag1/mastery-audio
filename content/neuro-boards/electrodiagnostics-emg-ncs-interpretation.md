@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Peripheral Nerve"
 subcategory: "Diagnostics"
 difficulty: 3
+questions:
+  - q: State the master rule that answers most electrodiagnostic questions.
+    a: Demyelination slows conduction: prolonged latency and reduced velocity with relatively preserved amplitude. Axonal loss removes conducting fibres: reduced amplitude with relatively preserved velocity, because surviving fibres still conduct normally.
+    probe: Why can axonal loss still slow the velocity a little?
+  - q: What is conduction block and what does it predict?
+    a: Focal failure of transmission across a segment: a drop in amplitude of more than about fifty percent stimulating proximal versus distal to the lesion, with preserved distal responses. It is the electrophysiological signature of neurapraxia and predicts good recovery.
+    probe: What is temporal dispersion and what does it suggest?
+  - q: Radiculopathy or plexopathy? Give me the two discriminators.
+    a: Radiculopathy: denervation across muscles sharing a root but different peripheral nerves, denervation in the paraspinals because the dorsal ramus branches at the root, and a normal sensory nerve action potential because the lesion is proximal to the dorsal root ganglion. Plexopathy: abnormal sensory potentials and normal paraspinals.
+    probe: Explain why the sensory potential survives in a root lesion.
+  - q: Describe the motor unit potential changes over time after denervation.
+    a: Acutely morphology is normal because surviving units have not changed. Over weeks to months, surviving axons sprout to reinnervate orphaned fibres, enlarging the unit and producing large amplitude, long duration, polyphasic potentials, the signature of chronic denervation with reinnervation. Early reinnervation gives small short polyphasic nascent units.
+    probe: What do myopathic units look like instead?
+  - q: Neurogenic or myopathic recruitment?
+    a: Neurogenic: reduced recruitment, fewer units firing rapidly to generate force, giving an incomplete interference pattern. Myopathic: early or full recruitment, many small units recruited at low force because each contributes little.
+    probe: Which conduction studies accompany each?
+  - q: Painless progressive wasting with normal sensation. What must you exclude before operating?
+    a: Motor neuron disease. Widespread denervation with fasciculations across multiple root and nerve territories and body regions, with entirely normal sensory studies. Examiners construct the patient sent for cervical decompression who actually has amyotrophic lateral sclerosis, and electrodiagnosis is how you catch it.
+    probe: What treatable condition mimics it, and how would you spot that?
+  - q: Name the technical pitfalls before I use one against you.
+    a: Limb temperature is the big one: cooling slows conduction and prolongs latency, so warm to thirty two to thirty four degrees. Excessive stimulation spreads to neighbouring nerves. Distance measurement errors corrupt velocity, worst across short segments. And anomalous innervation such as Martin-Gruber mimics conduction block.
+    probe: How does the inching study reduce one of those?
+  - q: Bound your own evidence: what can this test not do?
+    a: It assesses large myelinated fibres only, so pure small fibre neuropathy gives a normal study. It is operator dependent and uncomfortable, limiting sampling. Roughly ten to fifteen percent of genuine carpal tunnel syndrome has a normal study. And an incidental abnormality in an asymptomatic nerve is not an indication to operate.
+    probe: So how should the report be used?
+cases:
+  - label: The wrong operation nearly happened
+    stem: A 61-year-old man is referred for cervical decompression. He has eight months of progressive painless weakness and wasting of both hands with difficulty turning keys, and MRI shows multilevel cervical spondylosis with mild cord compression at C5-6. There is no neck pain and no sensory symptoms.
+    q1: What about this history is not adding up?
+    a1: Painless, progressive, symmetrical wasting with no sensory symptoms does not fit a compressive radiculopathy or myelopathy, and the imaging findings are common and often incidental at this age. Sensory sparing is the discordant feature, and I would not operate on the basis of imaging that matches the population rather than the patient.
+    q2: What do you request and what specifically do you ask for?
+    a2: Electrodiagnostic studies, and I would tell the electromyographer the hypothesis: query motor neuron disease versus cervical radiculopathy, please sample multiple root and nerve territories in more than one body region including bulbar and thoracic paraspinal muscles, and assess sensory responses.
+    q3: The study shows widespread denervation with fasciculations in cervical, thoracic and lumbosacral segments, and entirely normal sensory studies. What is the diagnosis and what do you do?
+    a3: Motor neuron disease, not compressive myelopathy. Normal sensory studies with widespread multi-segment motor denervation is the pattern. I would refer to neurology rather than operate, because decompression will not help and surgery in this population carries real risk of accelerating decline.
+    q4: Before you close the door on treatment, what else should you have considered?
+    a4: Multifocal motor neuropathy with conduction block, which mimics motor neuron disease with asymmetric painless weakness and normal sensation but is immune-mediated and treatable with intravenous immunoglobulin. It is distinguished by finding motor conduction block outside usual entrapment sites, and it is the must-not-miss in this presentation.
 ---
 
 Let's master electrodiagnostic interpretation for the oral boards.

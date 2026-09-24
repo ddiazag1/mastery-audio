@@ -29,6 +29,42 @@ figures:
     credit: Khizar A, Khan FI, Mehmood Qadri H, Zahid H, Abid A, Adnan OB, Tanweer M, Khan H, Fawad Ul Hassan M, Irshad S, Bashir A. (2026) Cureus. PMC12924690
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12924690/
+questions:
+  - q: Separate open from closed dysraphism by embryology and by urgency.
+    a: Open lesions come from failed primary neurulation at three to four weeks, with the posterior neuropore closing about day twenty seven; they need closure within days. Closed lesions come from failed secondary neurulation, forming the conus and filum below S2, and are managed electively.
+    probe: Which structures does secondary neurulation produce?
+  - q: Folic acid: dose, timing, and why the timing matters.
+    a: Four hundred micrograms daily for all women of childbearing age, four milligrams for a previous affected pregnancy, starting at least a month before conception and through the first trimester. Timing matters because the neural tube closes before most women know they are pregnant.
+    probe: Name the drugs and maternal conditions that raise the risk.
+  - q: What are the lemon and banana signs?
+    a: Prenatal ultrasound cranial signs of myelomeningocele. The lemon sign is scalloping of the frontal bones; the banana sign is the curved cerebellum wrapped around the brainstem with an effaced cisterna magna, reflecting the Chiari two malformation.
+    probe: What biochemical marker accompanies them?
+  - q: Summarise MOMS honestly, both sides.
+    a: Prenatal repair before twenty six weeks reduced shunting at twelve months, roughly forty percent versus eighty two, and improved motor and mental outcomes at thirty months with less hindbrain herniation. The cost was prematurity, uterine dehiscence at the hysterotomy, maternal morbidity, and mandatory caesarean for this and all later pregnancies.
+    probe: Who is eligible, and who is not?
+  - q: Baby is delivered. Your first hour.
+    a: Protect the placode with moist saline non-adherent dressing, nurse prone or lateral, latex-free precautions from the very first contact, broad spectrum antibiotics, thermoregulation. Document the functional neurological level, head ultrasound for baseline ventricular size, and renal and bladder ultrasound.
+    probe: Why latex precautions on day one?
+  - q: Describe the closure and name the one technical point that matters most.
+    a: Dissect the placode free at the junction with cutaneous ectoderm, excising dysplastic epithelium to prevent later inclusion dermoid; neurulate the placode into a tube to reduce the surface available for retethering; then close dura, fascia and skin in separate layers. Watertight dural closure is the key point, because leak drives breakdown, infection and ventriculitis.
+    probe: The defect is too large to close primarily. Now what?
+  - q: A shunted child with myelomeningocele develops stridor and apnoea. Sequence your actions.
+    a: Symptomatic Chiari two, and it is the leading cause of death in infants with myelomeningocele. But first evaluate and treat shunt malfunction, because a failing shunt is the commonest trigger and revision alone often resolves the symptoms. Only then consider posterior fossa decompression.
+    probe: What happens to the candidate who decompresses first?
+  - q: Every repaired myelomeningocele has a low-lying conus. So when do you untether?
+    a: Never on the image alone. Untether for documented progressive deterioration: new or worsening weakness, increasing spasticity, new or progressive scoliosis, changing urodynamics, new pain, or progressive foot deformity. And first exclude shunt malfunction, symptomatic Chiari and syringomyelia, which produce identical decline.
+    probe: Which objective test best documents that progression?
+cases:
+  - label: Delivery room to lifelong care
+    stem: A term infant is delivered by caesarean with a 4-centimetre lumbosacral myelomeningocele, the placode exposed and leaking cerebrospinal fluid. Head circumference is on the 75th centile. Lower limbs show hip flexion and knee extension but no ankle movement.
+    q1: Predict her function from that examination.
+    a1: Preserved hip flexion and knee extension with absent ankle movement puts the functional level at about L3 to L4. L3 permits household ambulation with bracing and crutches; L4 adds medial hamstrings and tibialis anterior and generally permits community ambulation with ankle foot orthoses. The functional level from examination is more informative than the anatomical level on imaging.
+    q2: You close within 48 hours. On day four the fontanelle is full and head circumference has crossed a centile. Explain and manage.
+    a2: Hydrocephalus, which affects about eighty percent of these children and characteristically manifests or worsens after closure because the defect had been decompressing the system. Monitor head circumference, fontanelle, sutures and ventricular size on ultrasound, and place a shunt when indicated, typically in the first weeks.
+    q3: At four months she develops inspiratory stridor and poor feeding with episodes of apnoea. What is happening and what is your order of action?
+    a3: Symptomatic Chiari two with brainstem dysfunction, from vocal cord paralysis and lower cranial nerve involvement. This is an emergency. But the first step is to evaluate the shunt, because malfunction is the commonest precipitant and revision frequently resolves the symptoms. Posterior fossa decompression is considered only once the shunt is confirmed working.
+    q4: She is now six. Her scoliosis curve has progressed rapidly over a year and she is wetting again after being dry. What do you think and what do you order?
+    a4: Progressive scoliosis with changing continence in a child with repaired myelomeningocele means tethered cord syndrome until proven otherwise, but I must first exclude shunt malfunction, symptomatic Chiari and syringomyelia, which mimic it exactly. I would obtain whole-spine MRI, cranial imaging with a shunt series, and formal urodynamics, and I would treat documented progression, not the radiographically low conus that every one of these children has.
 ---
 
 Let's master myelomeningocele and spinal dysraphism for the oral boards.

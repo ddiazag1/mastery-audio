@@ -17,6 +17,42 @@ figures:
     credit: White JA, Izquierdo-Pretel G, Shams E. (2026) Cureus. PMC13338755
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13338755/
+questions:
+  - q: Explain, from first principles, why a patient can look stable and then crash.
+    a: The Monro-Kellie doctrine. The skull is a fixed box; added volume is first buffered by displacing cerebrospinal fluid and compressing the venous compartment. Those buffers are finite, so the compliance curve is flat and then turns steeply upward, and a small extra volume produces a large pressure rise.
+    probe: What sign on the intracranial pressure trace warns you before the mean rises?
+  - q: Uncal herniation. Walk me through the structures in the order they fail.
+    a: Third nerve first, parasympathetic pupillomotor fibres being superficial, so a dilated sluggish then fixed ipsilateral pupil before any extraocular weakness. Then the cerebral peduncle giving contralateral hemiparesis, then the posterior cerebral artery giving occipital infarction, then the reticular activating system and consciousness.
+    probe: The hemiparesis is on the same side as the blown pupil. Explain.
+  - q: What are Duret haemorrhages and what do they mean?
+    a: Brainstem haemorrhages in the pons and midbrain caused by shearing of perforating branches of the basilar artery as the brainstem is driven downward in central herniation. They indicate a terminal event and carry a grim prognosis, and I would say so plainly.
+    probe: How does that change the family conversation?
+  - q: A child with a posterior fossa tumour and hydrocephalus gets an external ventricular drain and deteriorates. Why?
+    a: Upward transtentorial herniation. Releasing supratentorial pressure creates a gradient that drives the vermis and midbrain up through the incisura, compressing the superior cerebellar arteries and the aqueduct. Drain cautiously at a high level, and proceed promptly to definitive posterior fossa decompression.
+    probe: How would you have set the drain to reduce that risk?
+  - q: Give me your cerebral perfusion pressure target and justify both ends.
+    a: Roughly sixty to seventy millimetres of mercury. Driving higher with vasopressors risks acute respiratory distress syndrome; below about fifty risks ischaemia. After injury autoregulation is often lost, so flow becomes pressure passive and both hypotension and hypertension are directly harmful.
+    probe: What is the equation you are using?
+  - q: Mannitol or hypertonic saline?
+    a: Mannitol at roughly zero point two five to one gram per kilogram, monitoring osmolality and volume status, works rheologically then osmotically but causes diuresis. Hypertonic saline expands intravascular volume rather than depleting it, so it is preferred in the hypotensive or hypovolaemic patient.
+    probe: What sodium are you targeting and what is the risk of overshoot?
+  - q: Where does hyperventilation belong?
+    a: As a bridge, never a therapy. It lowers pressure by hypocapnic vasoconstriction, which by definition risks ischaemia, and the effect wanes within hours as bicarbonate buffering equilibrates. Target thirty to thirty five millimetres of mercury while the theatre is being readied.
+    probe: What happens if you stop it abruptly?
+  - q: Summarise the decompressive craniectomy evidence without overstating it.
+    a: DECRA applied early decompression for moderately raised pressure and found worse functional outcomes. RESCUEicp applied it as last-tier therapy for refractory hypertension and reduced mortality but shifted survivors into greater dependency. So it is salvage, not routine, and the family must be counselled about quality of survival.
+    probe: How big does the flap need to be, and why?
+cases:
+  - label: The deteriorating head injury
+    stem: A 24-year-old motorcyclist arrives with a GCS of 8, intubated at scene. Pupils equal at 3 millimetres. CT shows bifrontal contusions with mild effacement of the basal cisterns, no evacuable collection. An intracranial pressure monitor reads 18 millimetres of mercury on admission to intensive care.
+    q1: Set out your management for the first hours.
+    a1: Tier zero physiology: head up thirty degrees, neck midline with no constricting collar, adequate sedation and analgesia, normothermia, normocapnia, seizure prophylaxis, correction of coagulopathy, and strict avoidance of hypotension and hypoxia, both of which independently worsen outcome. Maintain cerebral perfusion pressure at sixty to seventy.
+    q2: Six hours later the pressure is 28 and the trace shows P two exceeding P one. Interpret and act.
+    a2: P two above P one means compliance is exhausted, which precedes a rise in the mean value and is an early warning. With sustained pressure above twenty two I escalate: drain cerebrospinal fluid if a ventricular catheter is in place, give hyperosmolar therapy, and repeat the CT to exclude a new surgical lesion.
+    q3: Repeat CT shows expansion of the contusions with effaced cisterns but still nothing focally evacuable. Pressure is now 35 despite tier two measures. Options?
+    a3: This is refractory intracranial hypertension. The tier three options are barbiturate coma titrated to burst suppression, therapeutic hypothermia, or decompressive craniectomy. Barbiturates cause hypotension and remove the neurological examination; hypothermia lowers pressure but has not shown outcome benefit. I would proceed to bifrontal decompressive craniectomy.
+    q4: The family asks whether the operation will make him better. What do you say?
+    a4: I would be honest: it reliably lowers pressure and it saves lives, but RESCUEicp showed that the survival it buys includes a shift toward greater dependency, including vegetative state and severe disability. I would say we are choosing survival with an uncertain quality, not a return to normal, and that we will reassess as he declares himself.
 ---
 
 Let's master the herniation syndromes and their imaging correlates for the oral boards.

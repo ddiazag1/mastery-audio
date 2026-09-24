@@ -11,6 +11,42 @@ figures:
     credit: Radder S, Radder N. (2025) Cureus. PMC12671249
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12671249/
+questions:
+  - q: State Virchow's law and derive scaphocephaly from it.
+    a: Premature fusion restricts growth perpendicular to the suture and compensatory growth occurs parallel to it. The sagittal suture runs anteroposteriorly, so transverse growth is restricted and anteroposterior growth compensates, giving a long narrow head with frontal bossing and an occipital prominence, and a cephalic index below about seventy five.
+    probe: Now derive the metopic deformity.
+  - q: Lambdoid synostosis or positional plagiocephaly? Give me three discriminators.
+    a: In lambdoid synostosis the ipsilateral ear is displaced posteriorly and inferiorly, there is ipsilateral mastoid bulging, and the head from above is a trapezoid. In positional plagiocephaly the ear is displaced anteriorly, there is ipsilateral frontal bossing, no mastoid bulge, and the head is a parallelogram.
+    probe: Why did positional plagiocephaly become so much commoner?
+  - q: Which syndromes, and how do you tell them apart at the bedside?
+    a: Crouzon: bicoronal synostosis, midface hypoplasia, proptosis, and normal hands and feet, which is the discriminator. Apert: the same plus symmetric complex syndactyly, the mitten hand. Pfeiffer: broad medially deviated thumbs and great toes. Muenke: FGFR3, coronal synostosis with sensorineural hearing loss. Saethre-Chotzen: TWIST1, low frontal hairline and ptosis.
+    probe: So what do you examine after you have looked at the head?
+  - q: How common is raised intracranial pressure here, and by what mechanisms?
+    a: Roughly four to fifteen percent in single-suture nonsyndromic disease, rising above forty percent in multisuture and syndromic cases. Mechanisms are a vault that cannot accommodate brain growth, associated hydrocephalus, venous outflow obstruction from jugular foramen stenosis, and obstructive sleep apnoea from midface hypoplasia.
+    probe: How would you detect it, given papilloedema is insensitive in infants?
+  - q: Endoscopic strip craniectomy or open vault remodelling?
+    a: Endoscopic before three to four months, ideally two to three, with a helmet for six to twelve months; shorter operating time, far less blood loss, shorter stay. Open vault remodelling from around six to twelve months; immediate controlled correction, no helmet, applicable to later presentation, but longer and bloodier.
+    probe: What determines which one this particular baby gets?
+  - q: Blood loss in an infant cranial vault case. Plan it for me.
+    a: Type and cross before incision; tranexamic acid, which has good evidence here; cell salvage; consider preoperative erythropoietin and iron; meticulous haemostasis; continuous communication with anaesthesia. Watch for dilutional coagulopathy, hyperkalaemia and citrate toxicity with large-volume transfusion in a child whose circulating volume may be under a litre.
+    probe: Name the other intraoperative catastrophe and how you would detect it.
+  - q: What is the technical hazard specific to a sagittal strip craniectomy?
+    a: Injury to the superior sagittal sinus directly beneath the fused suture, with the risk of rapid exsanguination and venous air embolism in a head-up position. That is why the strip is taken with great care and why the anaesthetic team must be primed before the bone is lifted.
+    probe: You get air embolism. What do you do?
+  - q: Justify operating on a nonsyndromic single-suture baby without overstating the case.
+    a: The honest indications are normalisation of skull shape and growth, prevention of progressive deformity, protection of vision where relevant, treatment of raised pressure where present, and the psychosocial consequences of an abnormal head shape. I would not promise cognitive benefit, because subtle deficits are described and are not reliably abolished by surgery.
+    probe: Which arguments would you avoid making to a parent?
+cases:
+  - label: The head shape referral
+    stem: A 3-month-old is referred with an abnormal head shape noticed since birth. The head is long and narrow with frontal bossing and a prominent occiput. There is a palpable ridge along the midline vertex. Cephalic index is 70. Development is normal and the fontanelle is soft.
+    q1: Diagnose it and say what you would image.
+    a1: Sagittal synostosis producing scaphocephaly, the commonest single-suture synostosis, with a cephalic index of seventy well below the normal seventy six to eighty one. I would image with three-dimensional CT using a dose-reduction protocol, or ultrasound of the sutures, which is radiation-free and excellent under about six months in experienced hands.
+    q2: He is three months old. What are his options and which would you recommend?
+    a2: At three months he is just within the window for endoscopic strip craniectomy with postoperative helmet moulding, which relies on rapid brain growth to remodel. The alternative is open total or subtotal vault remodelling from around six months. I would favour endoscopic now, provided the family can commit to helmet wear and close follow-up for six to twelve months.
+    q3: The family cannot reliably attend for helmet fitting and live four hours away. Does that change your recommendation?
+    a3: Yes, materially. Endoscopic surgery without helmet compliance gives a poor result, so the operation depends on a social factor, not just an anatomical one. I would recommend waiting and performing open vault remodelling at six to twelve months, which achieves correction in a single controlled procedure without requiring a helmet.
+    q4: You proceed with open remodelling. What do you warn the parents about for the first week?
+    a4: Significant blood loss with a likely transfusion, which I would have planned for with tranexamic acid and cross-matched blood. Marked periorbital swelling that routinely closes the eyes for several days, which distresses parents unless forewarned. Plus infection, cerebrospinal fluid leak, seroma, and the possibility of persistent bony defects requiring secondary grafting, with relapse and reoperation being much more likely in syndromic than nonsyndromic disease.
 ---
 
 Let's master craniosynostosis for the oral boards.

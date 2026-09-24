@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Imaging"
 subcategory: "Modality"
 difficulty: 3
+questions:
+  - q: I show you a brain MRI with no labels. How do you work out the sequence?
+    a: Look at the cerebrospinal fluid first. Dark fluid with bright white matter is T1. Bright fluid is T2. Dark fluid with bright lesions is FLAIR. Cross-check with fat: orbital fat and clival marrow are bright on T1.
+    probe: The fluid is bright and the lesion is brighter still. Which sequence, and what do you want next?
+  - q: A lesion is bright on non-contrast T1. Give me the differential.
+    a: Fat, subacute blood in the methaemoglobin phase, melanin, high protein content, and some mineralisation. So dermoid, subacute haemorrhage, melanoma metastasis, or a proteinaceous cyst such as a Rathke cleft or colloid cyst.
+    probe: How would you separate fat from subacute blood?
+  - q: Why would a tumour be dark on T2, and what does that tell you?
+    a: T2 darkness implies little free water: high cellularity, haemorrhage, calcification, or flow. A densely cellular tumour such as lymphoma or medulloblastoma has a high nuclear to cytoplasmic ratio and appears relatively dark.
+    probe: Which sequence confirms the cellularity interpretation?
+  - q: You say there is restricted diffusion. What exactly do you mean, and what is the trap?
+    a: Bright on the diffusion weighted image with corresponding low signal on the apparent diffusion coefficient map. The trap is T2 shine through, where a bright DWI merely reflects underlying T2 brightness. Always cite the ADC map.
+    probe: Name the differential for genuine restriction.
+  - q: Date this haemorrhage: bright on T1, dark on T2.
+    a: Early subacute, roughly three to seven days, intracellular methaemoglobin. The sequence runs oxyhaemoglobin, deoxyhaemoglobin, intracellular then extracellular methaemoglobin, then haemosiderin, tracked as dark-dark, dark-bright, bright-bright, bright-dark, dark-dark on T1 then T2.
+    probe: Now bright on both T1 and T2. How old?
+  - q: Which sequence separates spin echo from gradient echo behaviour, and why does it matter surgically?
+    a: Gradient echo omits the refocusing pulse, so local field distortion persists and blood, calcium and metal bloom. That is why susceptibility weighted imaging finds microhaemorrhage, cavernomas and diffuse axonal injury, and why it is worst near the skull base and hardware.
+    probe: How would you screen a family for multiple cavernomas?
+  - q: Order a pituitary study for me properly.
+    a: A dedicated protocol: thin sections through the sella in coronal and sagittal planes with dynamic contrast acquisition, because a microadenoma enhances later than the normal gland. Say the words dynamic and thin section; that is what distinguishes it from a routine brain study.
+    probe: And for an epilepsy protocol?
+  - q: Your patient has a glomerular filtration rate of twenty and you need perfusion. What do you do?
+    a: Arterial spin labelling, which uses magnetically labelled arterial blood water as an endogenous tracer and needs no gadolinium. Gadolinium is relatively contraindicated in severe renal impairment because of nephrogenic systemic fibrosis, though macrocyclic agents carry substantially lower risk than linear agents.
+    probe: What else would you screen for before any MRI?
+cases:
+  - label: Sequence selection under pressure
+    stem: A 52-year-old presents with three weeks of headache and a new left homonymous hemianopia. A CT shows a right occipital mass with surrounding low attenuation. You are asked what imaging you want.
+    q1: Specify the study, sequence by sequence, and justify each.
+    a1: MRI with and without gadolinium. T1 for anatomy and as the contrast substrate; T2 and FLAIR to define the infiltrative margin versus vasogenic oedema; diffusion with ADC to assess cellularity and to separate abscess from necrotic tumour; susceptibility weighted imaging for haemorrhage and calcification; and post-contrast T1 for the enhancement pattern.
+    q2: The lesion shows a thick irregular enhancing rim with central non-enhancement, and the cavity does not restrict. What does that combination mean?
+    a2: Thick irregular rim favours high grade neoplasm over abscess, and absence of central restriction supports necrotic tumour rather than pus. I would add perfusion, expecting elevated relative cerebral blood volume in the rim, and spectroscopy, expecting elevated choline rather than amino acids.
+    q3: The FLAIR abnormality extends well beyond the enhancing margin. Why does that matter?
+    a3: In a high grade glioma that peritumoural FLAIR signal is infiltrating tumour, not simply oedema, which is why resection to the enhancing margin leaves disease behind and why the extent of resection debate exists. In a metastasis the same region is pure vasogenic oedema with low perfusion.
+    q4: You resect. When do you image, and why that window?
+    a4: Within twenty four to forty eight hours, before reactive surgical enhancement develops along the cavity margin and is mistaken for residual tumour. Include diffusion, because a rim of peri-operative ischaemic injury will later enhance and mimic recurrence.
 ---
 
 Let's master magnetic resonance sequences and their selection for the oral boards.

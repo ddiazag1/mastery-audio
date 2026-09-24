@@ -23,6 +23,42 @@ figures:
     credit: Jeong H, Lee S, Kim J, Yoo C, Joo M. (2026) Diagnostics (Basel, Switzerland). PMC13298242
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13298242/
+questions:
+  - q: Schwannoma or neurofibroma: the operative distinction.
+    a: Schwannoma grows eccentrically, displacing fascicles to one side, is truly encapsulated, and can usually be enucleated with preserved function. Neurofibroma grows within the nerve with functioning fascicles running through it and is not encapsulated, so resection usually costs the fascicles or the segment.
+    probe: How does the histology mirror that difference?
+  - q: Give me the histology and immunohistochemistry of each.
+    a: Schwannoma: biphasic Antoni A with nuclear palisading forming Verocay bodies, and loose myxoid Antoni B; diffusely and strongly S one hundred positive, and SOX ten. Neurofibroma: spindle cells in myxoid and collagenous stroma with the shredded carrot collagen appearance; only patchily S one hundred positive, reflecting its mixed cell population.
+    probe: What happens to S one hundred in malignant transformation?
+  - q: A bag of worms on palpation. What is it and what does it commit you to?
+    a: A plexiform neurofibroma, essentially pathognomonic of neurofibromatosis type one. It involves multiple fascicles over a long segment, is difficult or impossible to resect completely, and carries a significant lifetime risk of malignant transformation, so it commits the patient to surveillance.
+    probe: What lifetime risk figure would you quote?
+  - q: List the red flags for malignant transformation.
+    a: Rapid growth of a previously stable lesion; new or worsening pain, particularly constant and nocturnal rather than positional; new or progressive deficit; size above roughly five centimetres; heterogeneity with ill-defined margins, invasion, central necrosis and peritumoural oedema; loss of the target sign; and high metabolic uptake on fluorodeoxyglucose PET.
+    probe: What standardised uptake value would concern you?
+  - q: What is the single most dangerous thing you can do in this topic?
+    a: Shell out a lesion you have not characterised. Unplanned intralesional excision of a malignant peripheral nerve sheath tumour contaminates the field, compromises limb salvage and worsens outcome. With red flags present, you biopsy first, through a tract that can be excised with the specimen.
+    probe: Who else should be in the room before that biopsy?
+  - q: Explain the NF1 genetics well enough to counsel, and name the modern therapy.
+    a: NF1 on chromosome seventeen encodes neurofibromin, a GTPase activating protein that switches off RAS; loss of function drives RAS and downstream MEK signalling. That is precisely why MEK inhibitors such as selumetinib now have a role in symptomatic inoperable plexiform neurofibroma in children.
+    probe: Why must you be cautious with radiation in these patients?
+  - q: Foot drop with a progressive painful peroneal palsy. What is the lesion and what is the operative principle?
+    a: An intraneural ganglion cyst at the fibular head. By the articular theory, synovial fluid tracks from the superior tibiofibular joint along the articular branch and dissects proximally within the epineurium. Durable treatment requires disconnecting the articular branch and addressing the joint; decompression or aspiration alone recurs.
+    probe: What would you see on ultrasound or MRI?
+  - q: Describe the imaging signs that argue a nerve sheath tumour is benign.
+    a: Fusiform shape oriented along the nerve with an entering and exiting nerve at the poles, the tail or string sign; the split fat sign, a preserved rim of fat indicating a slow intermuscular process; the target sign of central low T2 with peripheral high signal; and the fascicular sign. Enhancement alone does not indicate malignancy.
+    probe: Which of those is most specific, and how much do you trust it?
+cases:
+  - label: A lump that changed
+    stem: A 34-year-old with known neurofibromatosis type 1 has had a soft mass in the posterior thigh for a decade. Over four months it has enlarged noticeably and now wakes him at night with constant pain. He has new weakness of ankle dorsiflexion. The mass is 8 centimetres.
+    q1: What has happened, and what will you not do?
+    a1: This is malignant transformation of a plexiform neurofibroma until proven otherwise: rapid growth after years of stability, new constant nocturnal pain, new neurological deficit, and size over five centimetres. What I will not do is enucleate it. An unplanned intralesional excision would contaminate the compartment and compromise limb salvage.
+    q2: Set out the workup.
+    a2: MRI of the whole lesion looking for heterogeneity, necrosis, invasion and loss of the target sign; fluorodeoxyglucose PET both to assess metabolic activity and to select the most avid region for biopsy within a large heterogeneous lesion; and staging CT of the chest, because the lungs are the dominant metastatic site. I would refer to a sarcoma multidisciplinary service before any tissue is taken.
+    q3: How is the biopsy done and why does the route matter?
+    a3: Image-guided core needle biopsy, or a carefully planned longitudinal incisional biopsy whose tract lies within the future resection field so it can be excised en bloc. A transversely placed or poorly sited biopsy tract seeds tissue outside the planned resection and can convert a limb-salvageable tumour into an amputation.
+    q4: Histology confirms a high grade malignant peripheral nerve sheath tumour. Outline treatment and give him a prognosis.
+    a4: Wide local excision with negative margins, which here will mean sacrificing the sciatic nerve or its peroneal division and may mean amputation if margins cannot be achieved. Adjuvant radiotherapy for high grade disease and close margins; chemotherapy has limited efficacy and is largely for metastatic or unresectable disease. Five year survival is commonly quoted around thirty five to fifty percent, and is worse in the NF1 population and with large proximal high grade lesions.
 ---
 
 Let's master peripheral nerve tumors for the oral boards.

@@ -11,6 +11,42 @@ figures:
     credit: Peker I, Alaamel A, Cengiz N. (2026) Diagnostics (Basel, Switzerland). PMC13465334
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13465334/
+questions:
+  - q: Why is thenar sensation spared, and what does it mean if it is not?
+    a: The palmar cutaneous branch arises five to seven centimetres proximal to the wrist and passes superficial to the transverse carpal ligament, outside the tunnel. If the thenar eminence is numb the lesion is proximal to the wrist, so think proximal median neuropathy, cervical radiculopathy or brachial plexopathy.
+    probe: Which incision detail protects that branch?
+  - q: Which thenar muscle do you test, and which is not median?
+    a: Abductor pollicis brevis, tested by abducting the thumb perpendicular to the palm against resistance. Adductor pollicis is ulnar innervated, which is why thumb adduction is preserved and why testing it misleads you.
+    probe: Which branch supplying abductor pollicis brevis is at risk in surgery, and why?
+  - q: Grade severity electrically and tell me what changes with each step.
+    a: Prolonged distal sensory latency first with preserved amplitude; then falling sensory amplitude; then prolonged distal motor latency; finally needle denervation of abductor pollicis brevis. Sensory-only disease earns a genuine conservative trial; any motor axonal loss argues for prompt release because atrophy may not reverse.
+    probe: The study is normal but the story is classic. What do you do?
+  - q: A Martin-Gruber anastomosis. What is it and why do you care?
+    a: A crossover of motor fibres from the median or anterior interosseous nerve to the ulnar nerve in the forearm, present in roughly fifteen to twenty percent. It can preserve thenar function unexpectedly in a median lesion and produces characteristic electrodiagnostic artefacts that mimic conduction block.
+    probe: And the Riche-Cannieu connection?
+  - q: Older patient, bilateral disease, spontaneous biceps rupture, lumbar stenosis. What are you thinking?
+    a: Transthyretin amyloidosis, for which carpal tunnel syndrome is often the earliest manifestation by several years. I would send tenosynovium for Congo red staining at the time of release, because disease-modifying therapy now exists and the diagnosis changes his cardiac management.
+    probe: What about a dialysis patient?
+  - q: Describe your incision and the two structures it protects.
+    a: In line with the radial border of the ring finger, ulnar to the thenar crease, from the distal wrist crease toward Kaplan cardinal line. Staying ulnar protects the palmar cutaneous branch; dividing the ligament along its ulnar margin protects the recurrent motor branch; staying proximal to Kaplan line protects the superficial palmar arch.
+    probe: How do you confirm the release is complete?
+  - q: Endoscopic or open? Defend your choice.
+    a: Both relieve symptoms in roughly ninety percent. Endoscopic gives faster return to work and less scar tenderness in the first weeks, equivalent at one year, with a slightly higher transient nerve injury rate in some series and a steeper learning curve. I would convert to open if visualisation were inadequate or a mass were present.
+    probe: When can endoscopic not be used at all?
+  - q: He is no better at six months. Work the list.
+    a: Was the diagnosis right, considering cervical radiculopathy, proximal median neuropathy and polyneuropathy. Was the release complete, particularly the distal forearm fascia. Is this recurrent scarring after initial improvement. Is there irreversible axonal loss from operating too late. Or is there a missed second lesion such as a ganglion.
+    probe: Which of those does revision surgery actually help?
+cases:
+  - label: Numb hand with a twist
+    stem: A 58-year-old woman describes eighteen months of nocturnal numbness in both hands that wakes her, relieved by shaking. Recently she has been dropping cups. On examination there is bilateral thenar wasting, worse on the right, and reduced sensation over the radial three and a half digits with normal sensation over the thenar eminences.
+    q1: What is your diagnosis and what are you obliged to exclude?
+    a1: Bilateral carpal tunnel syndrome with established motor loss. Thenar sparing places it at the wrist. I must exclude cervical radiculopathy, proximal median neuropathy, thoracic outlet syndrome, and a generalised polyneuropathy, and consider double crush, in which a proximal compression makes the distal nerve more vulnerable.
+    q2: Nerve conduction studies show prolonged distal motor latency bilaterally with fibrillations in abductor pollicis brevis. Does the conservative trial still apply?
+    a2: No. Denervation means axonal loss, and once there is wasting and fibrillation the window for full recovery has passed. Splinting and injection are for sensory-only disease. She needs release, and I would not delay further because the atrophy may not reverse.
+    q3: She also mentions a biceps tendon that ruptured spontaneously last year, and she is breathless climbing stairs. Does that change anything?
+    a3: Yes, substantially. Bilateral carpal tunnel syndrome, spontaneous tendon rupture and exertional breathlessness raise transthyretin amyloidosis, where carpal tunnel syndrome typically precedes cardiac presentation by several years. I would send tenosynovium for Congo red staining at surgery and refer for cardiac assessment.
+    q4: You release the right side. Six weeks later the nocturnal symptoms are gone but the wasting is unchanged and grip is weaker than before. Explain that to her.
+    a4: Both findings are expected. Nocturnal paraesthesia resolves within days because it reflects ischaemic conduction block; established wasting reflects lost axons and improves slowly if at all. The transient grip weakness is pillar pain and loss of the pulley effect of the ligament, which typically recovers over six to twelve weeks.
 ---
 
 Let's master carpal tunnel syndrome for the oral boards.

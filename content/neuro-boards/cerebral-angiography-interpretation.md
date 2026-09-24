@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Imaging"
 subcategory: "Vascular"
 difficulty: 4
+questions:
+  - q: A run appears on the screen. What are your first three statements?
+    a: Which vessel was injected, which projection, and which phase. For example: left internal carotid injection, lateral projection, arterial phase. If unsure of the vessel, reason from what fills: anterior and middle cerebral means internal carotid, vertebrobasilar means vertebral, middle meningeal and facial branches mean external carotid.
+    probe: How do you tell lateral from anteroposterior at a glance?
+  - q: What is the single most important abnormal finding on any angiogram?
+    a: Early venous drainage. Normal arterial to venous transit is roughly four to six seconds; a vein filling while arteries are still filling means arteriovenous shunting, which is an arteriovenous malformation or a dural arteriovenous fistula.
+    probe: How do you then tell those two apart?
+  - q: Name the two perforators you must protect and what their loss costs.
+    a: The anterior choroidal artery, supplying the posterior limb of the internal capsule, optic tract and parts of the thalamus, whose sacrifice gives contralateral hemiplegia, hemianaesthesia and homonymous hemianopia. And the recurrent artery of Heubner, supplying the caudate head and anterior limb, relevant in anterior communicating surgery.
+    probe: Which perforators are at risk during middle cerebral artery surgery?
+  - q: Quantify an aneurysm for me.
+    a: Maximal dome diameter, neck width, dome to neck ratio, and aspect ratio, which is dome height over neck width. A dome to neck ratio of roughly two or more and an aspect ratio above about one point six favour coiling and predict stability. Identify any daughter sac, which marks the rupture point.
+    probe: What have you forgotten to look for on the rest of the study?
+  - q: Grade this arteriovenous malformation and tell me what the grade buys you.
+    a: Spetzler-Martin: one, two or three points for size under three, three to six, or over six centimetres; one point for eloquent location; one point for deep venous drainage. The grade estimates surgical risk. I would also look for feeding artery or intranidal aneurysms and venous outflow stenosis, which raise haemorrhage risk.
+    probe: Which grade would make you reach for radiosurgery instead?
+  - q: What single feature determines how dangerous a dural arteriovenous fistula is?
+    a: Cortical venous reflux. Retrograde drainage into cortical veins converts a benign lesion into an aggressive one with substantial annual haemorrhage risk. Both the Borden and Cognard classifications encode exactly that. If I see it, I recommend treatment.
+    probe: Where does the arterial supply to these lesions come from?
+  - q: Distinguish vasospasm, atherosclerosis and vasculitis by pattern.
+    a: Vasospasm is smooth, tapered, often diffuse narrowing of proximal vessels in the days after subarachnoid haemorrhage. Atherosclerosis is focal and eccentric with irregularity. Vasculitis is beaded, with alternating stenoses and dilatations.
+    probe: And a long smooth tapered stenosis in the cervical carotid of a young patient?
+  - q: Consent this patient for a diagnostic angiogram.
+    a: Roughly one percent neurological complication rate overall, with permanent deficit in the range of a few tenths of a percent in experienced hands, from thromboembolism, dissection or air. Plus groin haematoma, retroperitoneal haemorrhage, pseudoaneurysm, contrast nephropathy, allergy and radiation.
+    probe: He becomes hypotensive an hour afterwards. What are you thinking?
+cases:
+  - label: Subarachnoid haemorrhage, negative first study
+    stem: A 46-year-old has a thunderclap headache. CT at four hours shows diffuse subarachnoid blood, thickest in the anterior interhemispheric fissure, with a small amount of intraventricular blood. She is drowsy but obeying commands.
+    q1: Grade her and predict the aneurysm location before any angiogram.
+    a1: Clinically Hunt and Hess grade two to three; on the scan modified Fisher grade four given thick blood with intraventricular haemorrhage, which is the grade that predicts vasospasm. Blood dominant in the anterior interhemispheric fissure points to an anterior communicating artery aneurysm.
+    q2: The catheter angiogram is negative. What do you do?
+    a2: A negative study in a convincing diffuse subarachnoid pattern is not the end. I would review the study for technical adequacy, ensure all four vessels were injected with the external carotid interrogated if a fistula is suspected, obtain three dimensional rotational imaging, and repeat the angiogram in roughly one to two weeks.
+    q3: Why might the first study miss it?
+    a3: Vasospasm of the parent vessel, thrombosis within the aneurysm, a very small or blister aneurysm, or inadequate projections obscuring the neck. The exception to repeat imaging is a true perimesencephalic pattern, which has an excellent prognosis and is often not re-imaged; this is not that pattern.
+    q4: On day seven she becomes confused with a new mild hemiparesis. Sodium is 128. Work it through.
+    a4: Delayed cerebral ischaemia from vasospasm until proven otherwise; I would obtain CT with perfusion and angiography and induce hypertension, with endovascular rescue if refractory. Separately, the hyponatraemia is most likely cerebral salt wasting rather than inappropriate antidiuresis, so treat with salt and volume rather than fluid restriction, which would worsen ischaemia.
 ---
 
 Let's master cerebral angiography interpretation for the oral boards.

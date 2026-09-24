@@ -17,6 +17,42 @@ figures:
     credit: Arshad MM, Kumar M, Kumar D, Iqbal MJ, Sayed S, Muhammad K. (2026) Cureus. PMC13528597
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13528597/
+questions:
+  - q: Ring enhancing lesion. Before you commit, what do you say?
+    a: State the differential first, so I do not anchor. MAGIC DR: metastasis, abscess, glioblastoma, subacute infarct, contusion, demyelination, radiation necrosis. Add lymphoma, and toxoplasmosis, neurocysticercosis and tuberculoma in the right host and epidemiology.
+    probe: Which single sequence narrows it fastest?
+  - q: How does diffusion separate abscess from necrotic tumour, and how good is it?
+    a: Pus is viscous, cellular and protein rich, so the cavity restricts: bright on DWI with low ADC. Necrotic tumour contains liquefied debris with relatively free water and generally does not restrict. Reported accuracy is in the ninety percent range, and it is the highest yield fact in this topic.
+    probe: Give me two other sequences that support the same call.
+  - q: Describe the rim of an abscess versus a high grade tumour.
+    a: Abscess: thin, smooth, uniform, regular, often T2 dark, and characteristically thinner on its medial or ventricular surface because the deep white matter supply limits capsule formation there. Tumour: thick, irregular, nodular, of variable thickness.
+    probe: Why does that medial thinning matter clinically?
+  - q: Stage this abscess and tell me how staging changes management.
+    a: Cerebritis in the first three days, late cerebritis days four to nine with central necrosis, early capsule days ten to thirteen giving the recognisable thin ring, and late capsule beyond two weeks. A lesion still in cerebritis has no capsule to aspirate and is treated medically with close imaging; an encapsulated abscess is a drainable target.
+    probe: What size threshold would push you to aspirate?
+  - q: Where did the infection come from? Talk me through the routes.
+    a: Contiguous spread from the paranasal sinuses seeds the frontal lobe; from the middle ear and mastoid the temporal lobe and cerebellum. Haematogenous spread from endocarditis, pulmonary arteriovenous malformation or a right to left shunt gives multiple lesions at the grey white junction. Penetrating trauma and prior surgery seed directly.
+    probe: Which investigations follow from that list?
+  - q: Immunocompromised patient, multiple ring enhancing lesions in the basal ganglia. Work it up.
+    a: Toxoplasmosis versus CNS lymphoma. Toxoplasmosis is typically multiple, favours basal ganglia and the grey white junction, may show an eccentric target sign, and is not metabolically avid. Lymphoma is often periventricular, may be solitary, is avid on PET or thallium SPECT, and associated with Epstein-Barr virus in cerebrospinal fluid. Treat empirically for toxoplasmosis and reimage at two weeks.
+    probe: If it does not respond, what then?
+  - q: Talk to me about steroids here.
+    a: Conditional, not blanket. If the patient is deteriorating from mass effect, treat, because clinical urgency outweighs diagnostic elegance. If stable and lymphoma is on the differential, hold them and obtain tissue first, because steroids can dissolve a lymphoma and leave you with a non-diagnostic biopsy and an unstaged patient.
+    probe: What is the risk of steroids if this turns out to be an abscess?
+  - q: An open ring of enhancement. What is that and why does it matter?
+    a: The open ring sign of tumefactive demyelination, with the incomplete portion facing grey matter and the enhancing portion facing white matter. It is relatively specific and genuinely valuable, because recognising it can spare a patient a craniotomy. I would look for other periventricular lesions and check cerebrospinal fluid for oligoclonal bands.
+    probe: What else produces gyriform rather than nodular enhancement?
+cases:
+  - label: Ring lesion in a well patient
+    stem: A 41-year-old plumber presents with a first generalised seizure. He is otherwise well, afebrile, with no focal deficit. MRI shows a single right frontal ring enhancing lesion, 3 centimetres, with surrounding T2 hyperintensity and mild mass effect.
+    q1: You have the differential. What do you ask and order next?
+    a1: History for immunosuppression, recent infection, dental work, sinusitis, otitis, endocarditis, intravenous drug use and travel. Examine for a source. Inflammatory markers and blood cultures before antibiotics if he is stable, and echocardiography if endocarditis is possible. On imaging I want diffusion with ADC, susceptibility weighted imaging, perfusion and spectroscopy.
+    q2: The cavity restricts diffusion brightly with low ADC, the rim is thin and smooth and T2 dark, perfusion is low, and spectroscopy shows amino acid peaks. Commit.
+    a2: That is a pyogenic abscess, not a necrotic tumour. Restriction, a thin smooth T2 dark capsule, low relative cerebral blood volume and amino acids rather than elevated choline all point the same way. I would involve infectious diseases and plan stereotactic aspiration.
+    q3: Why aspirate rather than excise, and what do you send?
+    a3: Stereotactic or navigated aspiration is the workhorse: it gives diagnosis and decompression with low morbidity even in deep or eloquent locations. Send Gram stain and culture including anaerobes and fungi, plus molecular testing. Open excision is for superficial well encapsulated, multiloculated, fungal, or foreign-body-containing lesions, or aspiration failure.
+    q4: Culture grows Streptococcus intermedius. Antibiotics, duration, and what else are you obliged to do?
+    a4: Culture-directed therapy, typically six to eight weeks intravenously with serial imaging, then often oral continuation, guided by infectious diseases. Streptococcus intermedius points strongly to a contiguous or dental source, so I would obtain dedicated sinus and dental imaging and arrange review. I would also give seizure prophylaxis and counsel that supratentorial abscess carries a substantial long-term epilepsy risk.
 ---
 
 Let's master the ring enhancing lesion and its differential for the oral boards.

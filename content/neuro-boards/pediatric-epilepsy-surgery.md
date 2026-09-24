@@ -11,6 +11,42 @@ figures:
     credit: Lenge M, Fiori S, Cappelletto P, Droghini A, Barbi E, Buccoliero AM, Donatelli G, Tosetti M, Giordano F, Barba C, Guerrini R. (2026) Neuroradiology...
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13577987/
+questions:
+  - q: Define drug resistance and justify the number.
+    a: Failure of two adequate trials of appropriately chosen, tolerated antiseizure medications. The justification is probabilistic: about half achieve freedom on the first drug, roughly another ten percent on the second, and the yield of each subsequent drug falls into the low single digits. Cycling further is a low-yield strategy.
+    probe: So what should happen at that point?
+  - q: Why operate early in a child rather than as a last resort?
+    a: Uncontrolled seizures in a developing brain cause developmental arrest and regression, plus injury risk, sudden unexpected death, medication effects on cognition, and educational harm. Meanwhile the young brain reorganises, so function can transfer in ways impossible in an adult. Both arguments point the same way: earlier.
+    probe: What does the historical referral delay cost these children?
+  - q: Read me a semiology and localise it.
+    a: Epigastric rising sensation, fear, déjà vu, oroalimentary automatisms and contralateral dystonic posturing means mesial temporal. Hypermotor bicycling with nocturnal clustering and brief duration means frontal. Elementary visual phenomena and forced eye deviation means occipital. Painful somatosensory aura with hypersalivation means insular or opercular.
+    probe: Why does the insula matter for temporal lobectomy failures?
+  - q: Stereo-EEG or subdural grids?
+    a: Stereo-EEG samples deep and sulcal structures in three dimensions, allows bilateral exploration, has a lower complication profile with about one percent haemorrhage risk, and permits therapeutic thermocoagulation. Grids give contiguous cortical surface coverage and extraoperative stimulation mapping, at the cost of a craniotomy and higher infection and haemorrhage rates.
+    probe: What does stereo-EEG require of you before you implant?
+  - q: Focal cortical dysplasia: classification and imaging.
+    a: Blümcke type one is abnormal lamination, type two has dysmorphic neurons subdivided by balloon cells into A and B, type three occurs with another lesion. On MRI look for cortical thickening, grey-white blurring, abnormal T2 and FLAIR signal, abnormal sulcal pattern, and the transmantle sign characteristic of type two B.
+    probe: MRI is negative. Does that exclude it?
+  - q: Which paediatric epilepsies have a specific non-surgical treatment you must not miss?
+    a: Glucose transporter type one deficiency responds to the ketogenic diet specifically. Pyridoxine-dependent epilepsy responds to pyridoxine. Infantile spasms in tuberous sclerosis respond to vigabatrin. Autoimmune encephalitis responds to immunotherapy. And Dravet syndrome is worsened by sodium channel blockers, which is the classic trap.
+    probe: Which drugs specifically must you avoid in Dravet?
+  - q: Counsel a family about hemispherotomy.
+    a: Seizure freedom is high, commonly seventy to eighty percent, best in acquired unilateral pathology such as perinatal infarction and Rasmussen. The child will have a permanent contralateral homonymous hemianopia and lose fine motor control of the contralateral hand, but usually retains or achieves ambulation with a hemiparetic gait, and if operated young can transfer language. It is often a net functional gain because the seizures were preventing development.
+    probe: Which pathology gives the least good result and why?
+  - q: What are you most worried about anaesthetically in an infant hemispherotomy?
+    a: Blood loss. Circulating volume may be under a litre, so this is a major haemorrhagic undertaking requiring cross-matched blood in theatre, tranexamic acid, cell salvage where feasible, active warming and close communication. Then hypothermia, coagulopathy, transfusion hyperkalaemia, and postoperatively aseptic meningitis and hydrocephalus.
+    probe: Does that risk justify waiting until the child is older?
+cases:
+  - label: Catastrophic infantile epilepsy
+    stem: A 7-month-old has had clusters of epileptic spasms since four months, with developmental regression. EEG shows hypsarrhythmia with a right hemispheric predominance. MRI shows an enlarged, dysplastic right hemisphere with abnormal gyral pattern and blurred grey-white differentiation. Vigabatrin and hormonal therapy have failed.
+    q1: What is the diagnosis and what does the failed medical therapy tell you?
+    a1: Hemimegalencephaly presenting as an epileptic encephalopathy with infantile spasms. Failure of hormonal therapy and vigabatrin in a child with a demonstrable unilateral structural lesion means this is a surgical problem, not a medication problem. Continuing to cycle drugs here would waste the developmental window.
+    q2: What operation, and why not a lesser resection?
+    a2: Hemispherotomy — a functional disconnection dividing the corpus callosum, internal capsule and corona radiata, temporal stem and fornix, through a lateral periinsular or vertical parasagittal approach. A lesser resection fails because the whole hemisphere is dysplastic and epileptogenic. Modern disconnection avoids the superficial cerebral haemosiderosis and late hydrocephalus of anatomical hemispherectomy.
+    q3: The parents ask whether it is safe to operate on a seven-month-old. Answer honestly.
+    a3: It carries real risk. Her circulating volume may be under a litre, so this is a major haemorrhagic undertaking needing cross-matched blood, tranexamic acid, active warming, and vigilance for coagulopathy and transfusion hyperkalaemia. But the developmental cost of waiting is severe and ongoing, and the balance favours proceeding now at an experienced centre rather than later.
+    q4: What outcome do you predict, and what will she definitely lose?
+    a4: She will definitely have a permanent left homonymous hemianopia and lose fine motor control of the left hand. She will most likely walk with a hemiparetic gait, and at this age language can develop in the remaining hemisphere. Seizure freedom is somewhat lower in hemimegalencephaly than in acquired unilateral pathology because contralateral abnormality is common, and I would say that plainly rather than quote the best-case figure.
 ---
 
 Let's master pediatric epilepsy surgery for the oral boards.

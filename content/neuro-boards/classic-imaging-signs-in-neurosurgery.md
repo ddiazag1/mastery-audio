@@ -143,6 +143,42 @@ figures:
     credit: Giuliano M, Borgione E, Lo Giudice M, Di Blasi FD, Santa Paola S, Vitello GA, Elia M, Russo R, Romano C, Scuderi C. (2025) Genes. PMC12469515
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12469515/
+questions:
+  - q: You see a hypodense area within a hyperdense acute extra-axial collection. Name it and act.
+    a: The swirl sign: unretracted, unclotted, fresh liquid blood, meaning active bleeding at the moment of the scan. It predicts rapid expansion and worse outcome. I would take this patient to theatre now rather than observe.
+    probe: What is the CT angiography equivalent in an intraparenchymal bleed?
+  - q: Describe the empty delta sign and its management implication.
+    a: A filling defect within the superior sagittal sinus on post-contrast imaging, where enhancing dura outlines non-enhancing central thrombus. It means dural venous sinus thrombosis, and the treatment is anticoagulation even in the presence of venous haemorrhagic infarction.
+    probe: What does the same thrombus look like before contrast?
+  - q: A mass has tapering dural enhancement extending from its margin. How confident are you?
+    a: That is the dural tail, classic for meningioma and present in a majority, but not pathognomonic. It also occurs with dural metastases, lymphoma and inflammatory disease. I would say classic for but not specific to meningioma.
+    probe: What other features would push you toward meningioma?
+  - q: How do you decide whether a mass is extra-axial before you offer any differential?
+    a: Look for a cerebrospinal fluid cleft, a rim of displaced cortical vessels, buckling of the grey white junction away from the lesion, a broad dural base, and bone reaction such as hyperostosis. That call is the first fork in every tumour differential.
+    probe: Why does getting this wrong cost you the whole case?
+  - q: Butterfly lesion crossing the corpus callosum. Differential and discriminators.
+    a: Glioblastoma, primary CNS lymphoma, and tumefactive demyelination. Lymphoma in the immunocompetent enhances homogeneously, is T2 dark from hypercellularity, restricts diffusion, and melts with steroids, which is exactly why you do not give steroids before biopsy.
+    probe: What does the demyelinating lesion look like instead?
+  - q: Periventricular hypodensity around dilated ventricles. What is it and what does it change?
+    a: Transependymal flow: cerebrospinal fluid forced across the ependyma under pressure. It makes the hydrocephalus acute or decompensated rather than chronic, and argues for urgent diversion.
+    probe: What is your most sensitive early sign of hydrocephalus?
+  - q: Sagging brainstem, effaced prepontine cistern, diffuse smooth pachymeningeal enhancement. What do you do?
+    a: This is intracranial hypotension, not hypertension. The treatment is an epidural blood patch or repair of the leak. Reaching for a shunt here is the trap, because the problem is too little cerebrospinal fluid, not too much.
+    probe: Which patients get this after surgery?
+  - q: Two adjacent vertebral bodies destroyed with loss of the intervening disc. Infection or tumour?
+    a: Infection. Pyogenic organisms have the proteolytic enzymes to destroy disc, whereas metastatic tumour characteristically spares it. Tuberculosis is the classic exception, relatively sparing disc with large paraspinal abscesses and subligamentous spread.
+    probe: What would make you say tuberculosis rather than a pyogenic organism?
+cases:
+  - label: Sign to decision
+    stem: A 39-year-old woman, six days postpartum, presents with a week of worsening headache, a seizure this morning, and mild left arm weakness. Non-contrast CT shows a right parasagittal area of mixed density and a hyperattenuating superior sagittal sinus.
+    q1: What are you looking at, and what single further study do you want?
+    a1: The hyperattenuating sinus is the dense triangle or cord sign of acute sinus thrombosis, and the parenchymal abnormality is likely venous haemorrhagic infarction, which does not respect an arterial territory. I want CT or MR venography, and would expect the empty delta sign on post-contrast imaging.
+    q2: Venography confirms extensive superior sagittal sinus thrombosis with cortical venous reflux. She has a parenchymal haemorrhage. Do you anticoagulate?
+    a2: Yes. Anticoagulation is indicated in cerebral venous sinus thrombosis even in the presence of venous haemorrhage, because the haemorrhage is a consequence of venous outflow obstruction and treating the thrombus treats the cause. I would use heparin and involve haematology given the peripartum state.
+    q3: Over twelve hours she becomes drowsy with a fixed dilated right pupil. Now what?
+    a3: This is malignant venous infarction with herniation. Secure the airway, hyperosmolar therapy, and proceed to decompressive craniectomy. Decompression for venous infarction has better outcomes than for arterial malignant middle cerebral artery infarction because the parenchyma is often salvageable once pressure is relieved.
+    q4: She survives. What do you tell her about future pregnancies?
+    a4: She needs a thrombophilia workup and haematology input. Prior cerebral venous thrombosis is not an absolute contraindication to further pregnancy, but it requires planned prophylactic anticoagulation through pregnancy and the puerperium, and I would not give a definitive answer without that workup.
 ---
 
 Let's master the classic imaging signs of neurosurgery for the oral boards.

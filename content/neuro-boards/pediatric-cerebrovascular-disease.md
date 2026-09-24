@@ -17,6 +17,42 @@ figures:
     credit: Nurimanov C, Menlibayeva K, Mammadinova I, Turzhanova A, Aidarov S, Batyrkhanov D, Kabykenova A, Makhambetov Y, Pochivalov D, Surdin D, Akshulakov ...
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13406446/
+questions:
+  - q: Why is vein of Galen malformation a misnomer?
+    a: It is not a malformation of the vein of Galen. It is an arteriovenous fistula draining into the persistent embryonic median prosencephalic vein of Markowski, the precursor of the vein of Galen, which fails to regress because of high flow. The true vein of Galen never forms.
+    probe: Name the two angioarchitectural subtypes and which presents worse.
+  - q: A neonate with this lesion is in extremis. What is actually killing him?
+    a: Not the brain. The enormous shunt diverts a large fraction of cardiac output, producing high-output congestive cardiac failure with cardiomegaly, pulmonary hypertension and multiorgan failure. A cranial bruit may be audible. The cardiac problem dominates the neonatal presentation.
+    probe: How does the presentation change by infancy?
+  - q: The infant is macrocephalic with hydrocephalus. Do you shunt?
+    a: No. The hydrocephalus is driven by venous hypertension impairing absorption, not obstruction. Shunting does not address the cause and can precipitate catastrophic deterioration including haemorrhage. Treat the fistula endovascularly, which lowers venous pressure and usually resolves the hydrocephalus; reserve shunting for the minority in whom it persists.
+    probe: What happens to the candidate who shunts first?
+  - q: When do you embolise, and what does the Bicêtre score do?
+    a: Stabilise medically and embolise electively at about four to six months when the child is larger and vessels tolerate catheters. The Bicêtre neonatal evaluation score grades cardiac, cerebral, respiratory, hepatic and renal function out of twenty one: above about twelve supports medical management, eight to twelve emergency embolisation, below eight suggests treatment may be futile.
+    probe: Why is staged rather than complete occlusion the aim?
+  - q: Moyamoya: children versus adults.
+    a: Children present with ischaemia — transient attacks and strokes, characteristically provoked by hyperventilation from crying, blowing or eating hot food, because hypocapnia constricts a bed with no reserve. Adults present more often with haemorrhage from rupture of the fragile collaterals. Paediatric ischaemia, adult haemorrhage.
+    probe: Name the conditions that produce moyamoya syndrome.
+  - q: Which operation in a small child, and why?
+    a: Indirect revascularisation, usually pial synangiosis, because direct superficial temporal to middle cerebral bypass needs a recipient vessel often under a millimetre in a small child. Indirect techniques exploit the robust paediatric angiogenic response over weeks to months. Name encephaloduroarteriosynangiosis, encephalomyosynangiosis and multiple burr holes as alternatives.
+    probe: Medical therapy alone: why is that not enough?
+  - q: Give me the perioperative protocol for a moyamoya child.
+    a: Hydrate intravenously before surgery rather than allowing a long fast; continue aspirin; maintain normotension and avoid any hypotension; maintain strict normocapnia, because hypocapnia constricts; normothermia and adequate haematocrit; and control pain and agitation aggressively afterwards, because a crying child hyperventilates and infarcts.
+    probe: When is the highest risk window?
+  - q: Why treat a paediatric arteriovenous malformation more aggressively than an adult one?
+    a: The annual haemorrhage risk is similar at roughly two to four percent, but a child has far more years remaining, so cumulative lifetime risk is very high. A three percent annual risk in a seven-year-old is an enormous burden. Also, children uniquely show angiographic recurrence after apparently complete resection, so follow-up angiography is mandatory.
+    probe: What tempers your enthusiasm for radiosurgery in a child?
+cases:
+  - label: The blue neonate with a bruit
+    stem: A term newborn develops respiratory distress and poor perfusion in the first 24 hours. There is cardiomegaly on chest radiograph and a loud cranial bruit on auscultation of the fontanelle. Cranial ultrasound shows a large midline vascular structure with turbulent flow.
+    q1: Diagnose it and explain the physiology to the neonatologist.
+    a1: Vein of Galen malformation, an arteriovenous fistula draining into the persistent median prosencephalic vein of Markowski. The presentation is cardiac, not neurological: the shunt steals a large fraction of cardiac output, producing high-output failure with pulmonary hypertension and multiorgan compromise. The bruit and the midline structure on ultrasound are the giveaways.
+    q2: How do you decide whether to intervene now or wait?
+    a2: With the Bicêtre neonatal evaluation score, grading cardiac, cerebral, respiratory, hepatic and renal function out of twenty one. Above about twelve I stabilise medically and plan elective embolisation at four to six months. Between about eight and twelve I would embolise emergently. Below eight, with established severe brain injury, I would discuss honestly that treatment may be futile.
+    q3: His score is 10 and he is failing maximal medical therapy. You embolise. Why staged and not complete?
+    a3: Abrupt complete occlusion of a high-flow shunt risks perfusion breakthrough haemorrhage, venous thrombosis and acute cardiac decompensation. The goal of the first stage is to reduce the shunt enough to control heart failure, not to cure. Access is transfemoral, or transumbilical in the smallest infants, using liquid embolic agents.
+    q4: At eight months he is macrocephalic with ventriculomegaly. The paediatricians ask for a shunt. What do you say?
+    a4: I would decline and explain why. The hydrocephalus reflects venous hypertension impairing cerebrospinal fluid absorption, not obstruction, so a shunt does not treat the cause and can precipitate intracranial haemorrhage and worsen venous congestion. The correct action is further staged embolisation to reduce venous pressure, reserving shunting for the minority in whom hydrocephalus persists after the fistula is treated.
 ---
 
 Let's master pediatric cerebrovascular disease for the oral boards.

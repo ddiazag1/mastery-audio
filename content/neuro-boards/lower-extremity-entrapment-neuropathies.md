@@ -11,6 +11,42 @@ figures:
     credit: Lee YH, Lee YC, Peng MC, Chen CP, Chene IH. (2025) Medicine. PMC12643711
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12643711/
+questions:
+  - q: Foot drop. Separate peroneal neuropathy from L5 radiculopathy at the bedside.
+    a: Test inversion, performed by tibialis posterior, which is tibial innervated but L5 supplied: weak in radiculopathy, preserved in peroneal neuropathy. Test hip abduction by gluteus medius, also L5: weak in radiculopathy, preserved peripherally. Then the sensory pattern and the presence or absence of back pain.
+    probe: Which single muscle is the best discriminator and why?
+  - q: Why is the peroneal division so much more vulnerable than the tibial?
+    a: Three structural reasons: fewer, larger fascicles with less protective epineurial connective tissue; greater tethering at the fibular head and sciatic notch; and a lateral position where compression and traction are greatest. That is why a sciatic injury produces a peroneal-predominant deficit.
+    probe: Foot drop after hip arthroplasty. Peroneal or sciatic?
+  - q: Meralgia paraesthetica. What excludes it instantly?
+    a: Any weakness. The lateral femoral cutaneous nerve is purely sensory, so weakness means it is something else, and I would say so rather than accept the referral diagnosis.
+    probe: Which neurosurgical procedure causes it iatrogenically?
+  - q: Femoral neuropathy in an anticoagulated patient. What is the emergency?
+    a: Retroperitoneal or iliopsoas haematoma compressing the nerve between psoas and iliacus. Prompt recognition with reversal, and sometimes evacuation, preserves function. It is the high-yield cause and the one that is time-critical.
+    probe: How do you distinguish it from an upper lumbar radiculopathy?
+  - q: Why is tarsal tunnel syndrome a trap?
+    a: It is overdiagnosed. The differential of plantar foot pain is dominated by plantar fasciitis, S1 radiculopathy and peripheral polyneuropathy, particularly diabetic. Release without a demonstrable structural lesion gives mediocre results, so I would confirm electrically and with imaging before operating.
+    probe: What structures run through the tunnel?
+  - q: Name the iatrogenic positioning injuries you are responsible for.
+    a: Lithotomy threatens the common peroneal nerve at the fibular head against the stirrup and the femoral nerve through prolonged hip flexion and abduction. Lateral position threatens the dependent peroneal nerve. Prone spinal surgery threatens the lateral femoral cutaneous nerve and the ulnar nerve. Iliac crest harvest threatens the lateral femoral cutaneous and cluneal nerves. Lateral transpsoas threatens the lumbar plexus and genitofemoral nerve.
+    probe: One occurs on your list. Walk me through what you do.
+  - q: What does ultrasound add in the lower limb?
+    a: The superficial nerves image well: focal enlargement at a compression point, intraneural ganglion or nerve sheath tumour, dynamic subluxation, and guidance for a diagnostic block. Magnetic resonance neurography is the study of choice for suspected pelvic and sciatic pathology and shows denervation oedema in target muscles.
+    probe: When would you image rather than just observe?
+  - q: How much do you believe in piriformis syndrome?
+    a: It is contested and I would treat it with appropriate scepticism. It is a diagnosis of exclusion after lumbar, hip and sacroiliac pathology have been excluded, supported by buttock tenderness and provocative manoeuvres such as the FAIR test. Management is physiotherapy and image-guided injection, with surgical release rarely.
+    probe: What would make you reconsider and image the pelvis?
+cases:
+  - label: Foot drop after surgery
+    stem: A 52-year-old woman undergoes a four-hour gynaecological procedure in lithotomy position. In recovery she cannot dorsiflex the right foot and reports numbness over the dorsum of the foot. Hip abduction and foot inversion are normal.
+    q1: Localise and explain the mechanism.
+    a1: Common peroneal neuropathy at the fibular head from compression against the stirrup during prolonged lithotomy positioning. Preserved inversion, which is L5 but tibial innervated, and preserved hip abduction exclude an L5 radiculopathy or lumbosacral plexopathy. The sensory loss fits the peroneal distribution.
+    q2: This is an iatrogenic injury. What do you do first, clinically and otherwise?
+    a2: Examine and document fully, including grading every relevant muscle, and disclose honestly to the patient what has happened and why. Then manage: an ankle foot orthosis to prevent tripping and preserve a plantigrade foot, physiotherapy to prevent contracture, and neuropathic analgesia if needed. Most positional palsies recover within weeks to a few months.
+    q3: When do you investigate, and with what?
+    a3: Electrodiagnostics at three to four weeks, not before, because Wallerian degeneration must occur for the study to distinguish neurapraxia from axonotmesis. I would look for conduction block across the fibular head, which predicts good recovery, and assess for denervation. Ultrasound can confirm focal nerve enlargement and exclude a structural lesion.
+    q4: At three months there is no clinical or electrical recovery and the study shows ongoing denervation without conduction block. What now?
+    a4: This is no longer a simple compressive neurapraxia. I would image with ultrasound or MRI to exclude a structural cause, specifically an intraneural ganglion arising from the superior tibiofibular joint, which is the lesion that must not be missed. If a ganglion is found, treatment is disconnection of the articular branch and addressing the joint, not simple decompression, which recurs. Otherwise I would explore and decompress, and counsel that beyond twelve to eighteen months the option becomes tendon transfer.
 ---
 
 Let's master the lower extremity entrapment neuropathies for the oral boards.

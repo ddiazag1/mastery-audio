@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Peripheral Nerve"
 subcategory: "Principles"
 difficulty: 4
+questions:
+  - q: Map Seddon onto Sunderland and tell me where the surgical line falls.
+    a: Neurapraxia is Sunderland one, axonotmesis is two, neurotmesis covers four and five, with three sitting between. The line is between three and four: degrees one to three recover spontaneously to varying extent, four and five will not and need surgery. Mackinnon added a sixth, a mixed-injury pattern, which is what you actually see.
+    probe: You cannot tell which degree at the bedside. So what governs your algorithm?
+  - q: Why can you not electrodiagnose a nerve injury on day two?
+    a: Wallerian degeneration has not happened. The distal segment still conducts, so motor responses persist to roughly seven to ten days and sensory to ten or eleven. Needle denervation, fibrillations and positive sharp waves, appears at two to three weeks proximally and three to six distally. Baseline study at three to four weeks.
+    probe: What can a day-two study still tell you?
+  - q: Give me the two numbers that govern every peripheral nerve decision.
+    a: Regeneration at roughly one millimetre per day, or an inch a month; and the motor endplate deadline at roughly twelve to eighteen months, beyond which denervated muscle will not accept reinnervation usefully. Everything else follows from the arithmetic between them.
+    probe: Injury at the elbow, target twenty five centimetres distal. Do the sum out loud.
+  - q: Sharp laceration, ragged avulsion, and a closed traction injury. Three different timings. Give them.
+    a: Sharp clean transection: primary repair acutely, ideally within seventy two hours. Blunt or ragged: tag the ends and repair at about three weeks once the zone of injury demarcates. Closed traction injury in continuity: observe with serial examination, baseline electrodiagnostics at three to four weeks, explore at three to six months if no recovery.
+    probe: Why wait three weeks for the ragged one?
+  - q: You have explored. What single test makes the decision?
+    a: A nerve action potential recorded across the lesion. Present means meaningful regeneration is occurring, the injury is functionally second or third degree, and I perform neurolysis only. Absent means fourth or fifth degree, so I resect back to healthy pouting fascicles and reconstruct.
+    probe: What does that test prevent you from doing wrongly in each direction?
+  - q: Talk me through repair technique and the one thing that ruins it.
+    a: Tension ruins it, by compromising the microcirculation. Repair epineurially with eight zero to ten zero monofilament, aligning by epineurial vessels and fascicular pattern, using as few sutures as will hold, under magnification, in a well vascularised bed. Group fascicular repair where motor and sensory groups separate, as in the ulnar nerve at the wrist.
+    probe: The gap will only close with the elbow flexed. What do you do?
+  - q: Name the nerve transfers you would actually use.
+    a: Oberlin: an ulnar fascicle to the biceps branch for elbow flexion, often doubled with a median fascicle to brachialis. Spinal accessory to suprascapular for shoulder abduction and external rotation. Triceps branch of radial to axillary. And anterior interosseous terminal branch to the deep ulnar motor branch for intrinsics in a high ulnar injury.
+    probe: What is the principle that unites all of them?
+  - q: When do you decide not to operate on the nerve at all?
+    a: Presentation beyond the endplate window with established fibrosis; progressive systemic neuropathy; an unreconstructable avulsion with no donors; or a patient better served by tendon transfer, free functioning muscle transfer or arthrodesis. Recognising futility and pivoting is a judgement, not a concession.
+    probe: What do you offer that patient instead?
+cases:
+  - label: Glass laceration to the forearm
+    stem: A 26-year-old chef lacerates his volar forearm on broken glass. In the emergency department he cannot flex the thumb interphalangeal joint or the index distal interphalangeal joint, and has numbness over the radial three and a half digits sparing the thenar eminence. The wound is clean.
+    q1: Localise the lesion precisely and say why thenar sensation matters.
+    a1: Median nerve injury in the forearm. Loss of flexor pollicis longus and the index profundus indicates anterior interosseous involvement. Sparing of thenar eminence sensation tells me nothing here about level, because the palmar cutaneous branch arises five to seven centimetres proximal to the wrist, so a forearm lesion distal to that branch spares it; the sensory pattern fits a lesion distal to the branch origin.
+    q2: What do you do, and when?
+    a2: This is a sharp clean transection: explore and repair primarily, ideally within seventy two hours and certainly within the first week, before the ends retract and scar. Delay makes fascicular matching harder and may convert a direct repair into a graft.
+    q3: At exploration there is a two centimetre gap after trimming back to healthy fascicles. Now what?
+    a3: Do not close it under tension. A two centimetre gap in a mixed motor nerve is a graft: sural nerve interposition, reversed so branching does not divert regenerating axons. Acellular allograft is a reasonable alternative at this length, but for a motor nerve I would favour autograft.
+    q4: He asks when his hand will work. What do you tell him?
+    a4: Regeneration at about a millimetre a day across two coaptations, so months rather than weeks, and I would follow an advancing Tinel sign. I would grade recovery with the Medical Research Council scale and set the realistic target at protective sensation and useful grip rather than normality, and start hand therapy immediately for range of motion, splinting and later sensory re-education.
 ---
 
 Let's master peripheral nerve injury classification and repair for the oral boards.

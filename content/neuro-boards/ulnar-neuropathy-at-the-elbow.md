@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Peripheral Nerve"
 subcategory: "Entrapment"
 difficulty: 3
+questions:
+  - q: Name the compression sites at the elbow in order.
+    a: Arcade of Struthers about eight centimetres above the medial epicondyle, the medial intermuscular septum, the retrocondylar groove, Osborne ligament forming the cubital tunnel roof, and the aponeurosis between the two heads of flexor carpi ulnaris.
+    probe: Distinguish the arcade of Struthers from the ligament of Struthers.
+  - q: Dorsal ulnar hand numbness: what does it tell you?
+    a: The lesion is proximal to the wrist, because the dorsal ulnar cutaneous branch arises five to eight centimetres above the wrist and passes outside Guyon canal. If dorsal sensation is spared and only the palmar ulnar digits are numb, the lesion is in Guyon canal.
+    probe: And if the medial forearm is numb as well?
+  - q: Explain the ulnar paradox.
+    a: A distal lesion at the wrist produces a more dramatic claw than a proximal lesion at the elbow. The proximal lesion also denervates the ulnar half of flexor digitorum profundus, so the deep flexors cannot generate the interphalangeal flexion that creates the claw. The more extensive injury looks less deformed.
+    probe: Which muscles create the claw when they are unopposed?
+  - q: Demonstrate Froment and tell me the physiology.
+    a: Ask the patient to pinch paper between thumb and index. Adductor pollicis is weak, so they compensate by flexing the thumb interphalangeal joint using median-innervated flexor pollicis longus, producing visible thumb flexion. Jeanne sign is the compensatory metacarpophalangeal hyperextension.
+    probe: What is Wartenberg sign and which muscle fails?
+  - q: Grade it and tell me what each grade means for prognosis.
+    a: McGowan. Grade one is sensory only; grade two is intrinsic weakness without wasting; grade three is wasting with severe weakness. Grade one deserves a real conservative trial, grade two warrants surgery without delay, and grade three predicts incomplete recovery whatever you do, which is the counselling point.
+    probe: What would you say to a grade three patient before consenting them?
+  - q: What does ultrasound add that electrodiagnosis cannot?
+    a: Dynamic assessment. It shows increased cross sectional area at the epicondyle, typically above about ten square millimetres, and lets you watch the nerve subluxate over the epicondyle as the elbow flexes, which directly changes the operation. It also finds ganglia, osteophytes, anconeus epitrochlearis and nerve sheath tumours.
+    probe: How would a subluxating nerve change your plan?
+  - q: In situ decompression or transposition? Give me the evidence and then a position.
+    a: Randomised trials and meta-analyses show broadly equivalent outcomes, with transposition carrying higher wound morbidity from a more extensive dissection. So the default is in situ decompression, with transposition reserved for demonstrated subluxation, cubitus valgus with tardy ulnar palsy, bony or intra-articular pathology, and revision.
+    probe: You transpose. What must you excise, and what happens if you forget?
+  - q: Why is the medial antebrachial cutaneous nerve the one that ruins your result?
+    a: Its branches cross the operative field, and injury produces a painful neuroma over the medial forearm. It is the commonest cause of postoperative dissatisfaction even when the ulnar symptoms resolve, so it must be identified and protected during the approach.
+    probe: Name the other failure modes after transposition.
+cases:
+  - label: Clumsy hand in a builder
+    stem: A 44-year-old bricklayer reports six months of numbness in the small and ring fingers and increasing clumsiness with fine tasks. He sleeps with his elbows bent. Examination shows guttering of the first dorsal interosseous, a positive Froment sign, reduced sensation over the small finger both dorsally and on the palm, and normal medial forearm sensation.
+    q1: Localise it, using every finding.
+    a1: Ulnar neuropathy at the elbow. Dorsal ulnar cutaneous involvement places it proximal to the wrist, excluding Guyon canal. Normal medial forearm sensation excludes a medial cord or lower trunk lesion, because the medial antebrachial cutaneous nerve is a medial cord branch, not an ulnar nerve branch. First dorsal interosseous wasting with a positive Froment indicates intrinsic denervation.
+    q2: Grade him and say whether a conservative trial is still reasonable.
+    a2: Visible wasting makes this McGowan grade three. A conservative trial is no longer appropriate: wasting means axonal loss, and delay worsens an already guarded prognosis for intrinsic recovery. Night extension splinting and elbow padding are adjuncts, not the plan.
+    q3: You obtain ultrasound. The nerve is enlarged at the epicondyle and subluxates anteriorly over it on flexion. Which operation now, and why?
+    a3: Anterior transposition rather than simple in situ decompression. Releasing Osborne ligament in a nerve that already subluxates risks worsening instability, and subluxation is one of the accepted indications for transposition along with cubitus valgus, bony pathology and revision surgery.
+    q4: Twelve weeks later the pain and paraesthesia have gone but the hand is no stronger and he cannot return to laying brick. What do you offer?
+    a4: I would be honest that pain and paraesthesia respond well while established intrinsic wasting frequently does not, because those axons were already lost and the regeneration distance is long. Options now are hand therapy, and tendon transfers for clawing and key pinch. I would also arrange occupational assessment rather than promising a return to his previous work.
 ---
 
 Let's master ulnar neuropathy at the elbow for the oral boards.
