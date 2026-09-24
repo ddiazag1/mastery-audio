@@ -390,6 +390,47 @@ a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
 .figure-gallery { white-space: normal; margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1rem; }
 .figure-gallery h3 { font-size: 0.95rem; color: var(--text-dim); margin: 0 0 0.5rem; font-weight: 600; }
 
+.selftest {
+  white-space: normal;
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--accent);
+}
+.selftest-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.selftest-head h3 { margin: 0; font-size: 1.05rem; color: var(--text); }
+.q-count {
+  display: inline-block; margin-left: 0.4rem; padding: 0.1rem 0.5rem;
+  font-size: 0.75rem; border-radius: 10px; background: var(--surface2); color: var(--text-dim);
+}
+.selftest-hint { margin: 0.4rem 0 1rem; font-size: 0.85rem; color: var(--text-dim); }
+.q-all {
+  background: none; border: 1px solid var(--border); color: var(--text-dim);
+  border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.78rem; cursor: pointer; white-space: nowrap;
+}
+.q-all:hover { color: var(--text); border-color: var(--accent); }
+.q-card {
+  display: flex; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.85rem;
+  background: var(--surface2); border: 1px solid var(--border); border-radius: 8px;
+}
+.q-num {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--surface);
+  color: var(--text-dim); font-size: 0.78rem; font-weight: 600;
+  display: flex; align-items: center; justify-content: center;
+}
+.q-body { flex: 1; min-width: 0; }
+.q-text { font-size: 0.95rem; line-height: 1.5; color: var(--text); }
+.q-btn {
+  margin-top: 0.6rem; background: none; border: 1px solid var(--border); color: var(--accent);
+  border-radius: 6px; padding: 0.28rem 0.7rem; font-size: 0.78rem; cursor: pointer;
+}
+.q-btn:hover { border-color: var(--accent); color: var(--accent-hover); }
+.q-ans {
+  margin-top: 0.7rem; padding-top: 0.7rem; border-top: 1px dashed var(--border);
+  font-size: 0.9rem; line-height: 1.6; color: var(--text-dim);
+}
+.q-probe { margin-top: 0.55rem; font-size: 0.85rem; color: var(--text-dim); }
+.q-probe span { color: var(--yellow, var(--orange)); font-weight: 600; }
+
 </style>
 </head>
 <body>
@@ -544,45 +585,49 @@ function onSearch(e) {
 
 // --- Reader View ---
 function parseFrontmatter(text) {
-  if (!text.startsWith('---')) return { meta: {}, figures: [], body: text };
+  // Declared inside the function on purpose: the patcher that splices this into
+  // index.html extracts whole functions only, so anything at module scope would
+  // silently fail to be injected and throw at runtime.
+  const LIST_KEYS = ['figures', 'questions'];
+  const empty = { meta: {}, figures: [], questions: [], body: text };
+  if (!text.startsWith('---')) return empty;
   const end = text.indexOf('\n---', 3);
-  if (end === -1) return { meta: {}, figures: [], body: text };
+  if (end === -1) return empty;
 
   const raw  = text.substring(3, end);
   const body = text.substring(end + 4).replace(/^\s*\n/, '');
 
   const meta = {};
-  const figures = [];
+  const lists = {};
+  for (const k of LIST_KEYS) lists[k] = [];
+
+  let listKey = null;
   let current = null;
-  let inFigures = false;
+  const flush = () => { if (listKey && current) lists[listKey].push(current); current = null; };
 
   for (const line of raw.split('\n')) {
     if (!line.trim()) continue;
 
-    if (/^figures:\s*$/.test(line)) { inFigures = true; continue; }
+    const opener = line.match(/^(\w+):\s*$/);
+    if (opener && LIST_KEYS.indexOf(opener[1]) !== -1) { flush(); listKey = opener[1]; continue; }
 
-    // a non-indented key ends the figures block
-    if (inFigures && !/^\s/.test(line)) { inFigures = false; if (current) { figures.push(current); current = null; } }
+    // any non-indented key closes the current list
+    if (listKey && !/^\s/.test(line)) { flush(); listKey = null; }
 
-    if (inFigures) {
-      const item = line.match(/^\s*-\s*(\w+):\s*(.*)$/);
-      if (item) {
-        if (current) figures.push(current);
-        current = {};
-        current[item[1]] = stripQuotes(item[2]);
-        continue;
-      }
-      const kv = line.match(/^\s+(\w+):\s*(.*)$/);
-      if (kv && current) { current[kv[1]] = stripQuotes(kv[2]); }
+    if (listKey) {
+      const item = line.match(/^\s*-\s*(\w+):\s*([\s\S]*)$/);
+      if (item) { flush(); current = {}; current[item[1]] = stripQuotes(item[2]); continue; }
+      const kv = line.match(/^\s+(\w+):\s*([\s\S]*)$/);
+      if (kv && current) current[kv[1]] = stripQuotes(kv[2]);
       continue;
     }
 
     const kv = line.match(/^(\w+):\s*(.*)$/);
     if (kv) meta[kv[1]] = stripQuotes(kv[2]);
   }
-  if (current) figures.push(current);
+  flush();
 
-  return { meta, figures, body };
+  return { meta, figures: lists.figures, questions: lists.questions, body };
 }
 
 function stripQuotes(s) {
@@ -641,6 +686,46 @@ function renderBody(body, figures, moduleId) {
   return html;
 }
 
+function questionsHtml(questions) {
+  if (!questions || !questions.length) return '';
+  const cards = questions.map((q, i) => {
+    if (!q || !q.q) return '';
+    const probe = q.probe
+      ? `<div class="q-probe"><span>Then they push:</span> ${escapeHtml(q.probe)}</div>` : '';
+    return `<div class="q-card">` +
+             `<div class="q-num">${i + 1}</div>` +
+             `<div class="q-body">` +
+               `<div class="q-text">${escapeHtml(q.q)}</div>` +
+               `<button class="q-btn" onclick="toggleAnswer(this)">Show answer</button>` +
+               `<div class="q-ans" hidden>${escapeHtml(q.a || '')}${probe}</div>` +
+             `</div>` +
+           `</div>`;
+  }).join('');
+  return `<div class="selftest">` +
+           `<div class="selftest-head">` +
+             `<h3>Self-test <span class="q-count">${questions.length}</span></h3>` +
+             `<button class="q-all" onclick="toggleAllAnswers(this)">Reveal all</button>` +
+           `</div>` +
+           `<p class="selftest-hint">Answer out loud before revealing. These are the questions an examiner would actually ask.</p>` +
+           cards +
+         `</div>`;
+}
+
+function toggleAnswer(btn) {
+  const ans = btn.parentNode.querySelector('.q-ans');
+  const open = !ans.hidden;
+  ans.hidden = open;
+  btn.textContent = open ? 'Show answer' : 'Hide answer';
+}
+
+function toggleAllAnswers(btn) {
+  const reveal = btn.textContent === 'Reveal all';
+  const root = btn.closest('.selftest');
+  root.querySelectorAll('.q-ans').forEach(a => { a.hidden = !reveal; });
+  root.querySelectorAll('.q-btn').forEach(b => { b.textContent = reveal ? 'Hide answer' : 'Show answer'; });
+  btn.textContent = reveal ? 'Hide all' : 'Reveal all';
+}
+
 async function openConcept(moduleId, slug) {
   const mdPath = `content/${moduleId}/${slug}.md`;
   try {
@@ -648,7 +733,7 @@ async function openConcept(moduleId, slug) {
     if (!resp.ok) throw new Error('not found');
     const text = await resp.text();
 
-    const { figures, body } = parseFrontmatter(text);
+    const { figures, questions, body } = parseFrontmatter(text);
 
     const mod = manifest.modules.find(m => m.id === moduleId);
     let concept = null;
@@ -660,13 +745,13 @@ async function openConcept(moduleId, slug) {
     }
 
     const title = concept ? concept.title : slug.replace(/-/g, ' ');
-    showReader(true, title, body, moduleId, slug, figures);
+    showReader(true, title, body, moduleId, slug, figures, questions);
   } catch {
-    showReader(true, slug.replace(/-/g, ' '), 'Content file not found.', moduleId, slug, []);
+    showReader(true, slug.replace(/-/g, ' '), 'Content file not found.', moduleId, slug, [], []);
   }
 }
 
-function showReader(show, title, text, moduleId, slug, figures) {
+function showReader(show, title, text, moduleId, slug, figures, questions) {
   const reader = document.getElementById('reader-view');
   const moduleView = document.getElementById('module-view');
 
@@ -683,7 +768,7 @@ function showReader(show, title, text, moduleId, slug, figures) {
       <span class="back" onclick="showReader(false)">&larr; Back</span>
       <h2>${escapeHtml(title)}</h2>
     </div>
-    <div class="reader-body">${renderBody(text, figures || [], moduleId)}</div>
+    <div class="reader-body">${renderBody(text, figures || [], moduleId)}${questionsHtml(questions || [])}</div>
   `;
   reader.classList.add('visible');
 }

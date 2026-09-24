@@ -17,6 +17,37 @@ figures:
     credit: Vierra A, Sinha M, Jamal L, Khan N, Liebert T, Bokhari A. (2026) Clinical practice and cases in emergency medicine. PMC13517980
     license: CC BY
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13517980/
+questions:
+  - q: I hand you a non-contrast head CT and say nothing. What are your first words?
+    a: Name the study before describing anything: this is a non-contrast axial CT of the head in brain windows. Then run the search pattern out loud - blood, cisterns, brain, ventricles, bone - every time, including when the abnormality is obvious.
+    probe: Why does naming the study first matter if the lesion is staring at you?
+  - q: There is a biconvex hyperdense extra-axial collection over the right temporal convexity. Describe it properly and tell me what you would do.
+    a: Acute epidural hematoma. Give the maximal thickness in millimetres, the midline shift measured at the septum pellucidum, and the state of the basal cisterns. Estimate volume with ABC over two. Then commit: this is surgical, emergent craniotomy and evacuation, with coagulation checked and reversed.
+    probe: What volume and thickness thresholds are you using, and what if the patient is neurologically intact?
+  - q: How do you estimate hematoma volume at the bedside?
+    a: ABC over two. Greatest diameter on the slice with the largest clot, times the perpendicular diameter on that slice, times the number of slices containing clot multiplied by slice thickness, all divided by two. That approximates the ellipsoid volume in cubic centimetres.
+    probe: Give me the number for a clot four centimetres by three centimetres across eight five-millimetre slices.
+  - q: Why does epidural blood form a lens and subdural blood a crescent?
+    a: The dura is adherent to the inner table at the sutures, so epidural blood between bone and dura is confined by those attachments and balloons into a biconvex shape. The subdural space has no such tethering, so blood spreads freely across the convexity, but it cannot cross the falx because the falx reaches the surface.
+    probe: So which one crosses suture lines, and which crosses the midline?
+  - q: The scan shows eight millimetres of midline shift but I cannot see a lesion big enough to explain it. What are you thinking?
+    a: Isodense subdural hematoma, typically one to three weeks old, where attenuation matches cortex. Look for indirect signs: unilateral sulcal effacement, inward buckling of the grey white junction, and a compressed ventricle without a visible cause. Ask for wider subdural windows, contrast, or magnetic resonance.
+    probe: And if the collections are bilateral and symmetric?
+  - q: Walk me through the cisterns and tell me why you bothered.
+    a: Suprasellar, which should look like a five or six pointed star; the ambient cisterns around the midbrain; the quadrigeminal cistern, normally a smile or W; and the prepontine cistern with the fourth ventricle. Two questions each: is there blood, and is it effaced. Effacement means brainstem compression and imminent herniation - stop describing and start managing.
+    probe: Blood filling the basal cisterns in a patient with no significant trauma. Next sentence?
+  - q: The ventricles are enlarged. Localise the obstruction from the pattern.
+    a: Lateral ventricles alone means the foramina of Monro. Lateral plus third with a normal fourth localises to the aqueduct. All four dilated means a communicating process or obstruction at the fourth ventricular outlets. Temporal horn dilation is the most sensitive early sign, and transependymal flow tells you it is acute.
+    probe: How do you separate this from atrophy in an eighty-year-old?
+  - q: You have described the brain and moved on. What have you forgotten?
+    a: Bone windows, and say so explicitly. Look for calvarial, skull base and temporal bone fractures, distinguish fracture from suture, and look for pneumocephalus, which means communication with the outside world and raises CSF leak and meningitis. Check the sinuses for opacification and the scalp for swelling, which points you to the impact site and the contrecoup.
+    probe: You see air splaying the frontal lobes apart. What is that and what do you do?
+  - q: A deeply comatose patient after a high-speed collision has an almost normal CT. What now?
+    a: Say that the clinical picture and the scan disagree, and that this pattern suggests diffuse axonal injury, which CT is insensitive to. Request magnetic resonance with susceptibility weighted imaging, looking at the grey white junction, the splenium of the corpus callosum and the dorsolateral brainstem.
+    probe: What else must you exclude before attributing coma to DAI?
+  - q: How sensitive is CT for subarachnoid haemorrhage, and why does the number matter?
+    a: Approaching ninety-eight to one hundred percent within the first six hours with a modern scanner and an expert reader, falling substantially after twelve to twenty-four hours as blood degrades. That decay is precisely why the lumbar puncture question exists in the delayed presenter.
+    probe: Patient presents thirty-six hours after a thunderclap headache with a normal CT. What do you do?
 ---
 
 Let's master systematic interpretation of the head CT for the oral boards.
