@@ -1,9 +1,9 @@
-﻿{
+{
     "modules":  [
                     {
                         "id":  "neuro-boards",
                         "label":  "Neuro Boards",
-                        "icon":  "ðŸ§ ",
+                        "icon":  "🧠",
                         "conceptCount":  61,
                         "totalWords":  177073,
                         "categories":  [
@@ -606,7 +606,7 @@
                     {
                         "id":  "ent-business",
                         "label":  "ENT Business",
-                        "icon":  "ðŸ“Š",
+                        "icon":  "📊",
                         "conceptCount":  30,
                         "totalWords":  98836,
                         "categories":  [
@@ -920,7 +920,7 @@
                     {
                         "id":  "leadership",
                         "label":  "Leadership",
-                        "icon":  "ðŸŽ¯",
+                        "icon":  "🎯",
                         "conceptCount":  33,
                         "totalWords":  108806,
                         "categories":  [
@@ -1251,7 +1251,7 @@
                     {
                         "id":  "capital-deployment",
                         "label":  "Capital Deployment",
-                        "icon":  "ðŸ’°",
+                        "icon":  "💰",
                         "conceptCount":  27,
                         "totalWords":  98714,
                         "categories":  [
