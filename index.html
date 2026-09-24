@@ -456,6 +456,34 @@ a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
 .case-a { margin-top: 0.6rem; font-size: 0.89rem; line-height: 1.6; color: var(--text-dim); }
 .case-done { margin-top: 0.8rem; font-size: 0.78rem; color: var(--text-dim); font-style: italic; }
 
+
+.ma-due-pill { background: var(--orange, var(--accent)); color: #000; padding: 0.05rem 0.45rem; border-radius: 10px; font-weight: 700; font-size: 0.78rem; }
+.ma-filter { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.ma-chip { background: var(--surface); border: 1px solid var(--border); color: var(--text-dim); border-radius: 14px; padding: 0.3rem 0.85rem; font-size: 0.8rem; cursor: pointer; }
+.ma-chip.on { color: #000; background: var(--accent); border-color: var(--accent); font-weight: 600; }
+.ma-pip { flex: 0 0 8px; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.6rem; background: var(--border); }
+.ma-pip.ma-learning { background: var(--orange, #ff9800); }
+.ma-pip.ma-review   { background: var(--accent); }
+.ma-pip.ma-mastered { background: var(--green, #4caf50); }
+.ma-duetag { color: var(--orange, #ff9800); font-weight: 600; }
+.ma-review { white-space: normal; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 2px solid var(--border); }
+.ma-review-head { display: flex; align-items: center; gap: 0.6rem; }
+.ma-state { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700; padding: 0.12rem 0.5rem; border-radius: 4px; background: var(--surface2); color: var(--text-dim); }
+.ma-state.ma-learning { color: var(--orange, #ff9800); }
+.ma-state.ma-review   { color: var(--accent); }
+.ma-state.ma-mastered { color: var(--green, #4caf50); }
+.ma-due { font-size: 0.82rem; color: var(--text-dim); }
+.ma-review-hint { margin: 0.45rem 0 0.8rem; font-size: 0.85rem; color: var(--text-dim); }
+.ma-btns { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.ma-btn { border: 1px solid var(--border); background: var(--surface2); color: var(--text); border-radius: 6px; padding: 0.45rem 0.9rem; font-size: 0.85rem; cursor: pointer; }
+.ma-btn.ma-missed:hover { border-color: var(--red, #f44336); color: var(--red, #f44336); }
+.ma-btn.ma-shaky:hover  { border-color: var(--orange, #ff9800); color: var(--orange, #ff9800); }
+.ma-btn.ma-got:hover    { border-color: var(--green, #4caf50); color: var(--green, #4caf50); }
+.ma-drill { white-space: normal; margin-top: 1.5rem; padding: 1rem; background: var(--surface2); border: 1px solid var(--accent); border-radius: 8px; }
+.ma-drill-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; }
+.ma-drill-body { font-size: 0.9rem; line-height: 1.6; color: var(--text-dim); white-space: pre-wrap; }
+.ma-drill-btn { margin-top: 1rem; background: none; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; padding: 0.4rem 0.9rem; font-size: 0.82rem; cursor: pointer; }
+
 </style>
 </head>
 <body>
@@ -537,7 +565,13 @@ async function init() {
 
 function renderStats() {
   const el = document.getElementById('stats');
-  el.textContent = `${manifest.totalConcepts} concepts \u00b7 ~${manifest.estHours}h audio`;
+  if (!el || typeof manifest === 'undefined' || !manifest.modules) return;
+  // init() calls this before setActiveModule(), so activeModule may still be
+  // undefined; fall back to the first module rather than reporting zero due.
+  const mid = (typeof activeModule !== 'undefined' && activeModule) ? activeModule : manifest.modules[0].id;
+  const due = maDueCount(mid);
+  el.innerHTML = `${manifest.totalConcepts} concepts` +
+    (due ? ` &middot; <span class="ma-due-pill">${due} due</span>` : ' &middot; all reviewed');
 }
 
 function renderTabs() {
@@ -563,12 +597,18 @@ function renderModuleView(filter = '') {
   const container = document.getElementById('module-view');
   const mod = manifest.modules.find(m => m.id === activeModule);
   if (!mod) { container.innerHTML = ''; return; }
+  const dueOnly = !!window.__maDueOnly;
 
-  let html = '';
+  let html = `<div class="ma-filter">` +
+    `<button class="ma-chip${dueOnly ? '' : ' on'}" onclick="maSetDueOnly(false)">All</button>` +
+    `<button class="ma-chip${dueOnly ? ' on' : ''}" onclick="maSetDueOnly(true)">Due only (${maDueCount(activeModule)})</button>` +
+    `</div>`;
+
   for (const cat of mod.categories) {
-    const concepts = filter
+    let concepts = filter
       ? cat.concepts.filter(c => c.title.toLowerCase().includes(filter) || c.subcategory.toLowerCase().includes(filter))
       : cat.concepts;
+    if (dueOnly) concepts = concepts.filter(c => maIsDue(maRec(c.slug)));
     if (concepts.length === 0) continue;
 
     html += `<div class="category">
@@ -579,27 +619,29 @@ function renderModuleView(filter = '') {
       const diffDots = Array.from({length: 5}, (_, i) =>
         `<div class="dot${i < c.difficulty ? ' filled' : ''}"></div>`
       ).join('');
+      const rec = maRec(c.slug);
+      const due = maIsDue(rec);
 
       html += `<div class="concept-card" data-slug="${c.slug}" onclick="openConcept('${activeModule}', '${c.slug}')">
-        <div class="play-btn" onclick="event.stopPropagation(); playConcept('${activeModule}', '${c.slug}', '${c.title.replace(/'/g, "\\'")}')">
-          <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
-        </div>
+        <div class="ma-pip ma-${rec.state}" title="${rec.state}"></div>
         <div class="info">
           <div class="title">${c.title}</div>
-          <div class="meta">
-            ${c.subcategory} &middot; <span class="difficulty">${diffDots}</span>
-          </div>
+          <div class="meta"><span class="difficulty">${diffDots}</span> ${c.subcategory}${due ? ' &middot; <span class="ma-duetag">due</span>' : ''}</div>
         </div>
         <div class="duration">~${c.estMinutes} min</div>
       </div>`;
     }
-
     html += '</div></div>';
   }
 
-  if (!html) html = '<p style="color:var(--text-dim);text-align:center;padding:2rem">No matching concepts.</p>';
+  if (html.indexOf('concept-card') === -1) {
+    html += `<p style="color:var(--text-dim);text-align:center;padding:2rem">` +
+            (dueOnly ? 'Nothing due. Switch to All.' : 'No matching concepts.') + `</p>`;
+  }
   container.innerHTML = html;
   container.style.display = '';
+  // keep the header pill in step when the module tab changes
+  renderStats();
 }
 
 function onSearch(e) {
@@ -799,6 +841,219 @@ function revealStage(btn) {
   }
 }
 
+function maCfg() {
+  return {
+    url:  'https://vxtaghytxnycegztmrml.supabase.co',
+    anon: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4dGFnaHl0eG55Y2VnenRtcm1sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwOTM2MzIsImV4cCI6MjA4NjY2OTYzMn0.3E0IFwp6LIcs7tChpj28jgaerf76zCB-oCbjRJkAtDU',
+    progressKey: 'ma_progress',
+    syncKey: 'ma_sync_key',
+  };
+}
+
+function maLoad() {
+  try { return JSON.parse(localStorage.getItem(maCfg().progressKey) || '{}'); }
+  catch { return {}; }
+}
+
+function maWrite(p) {
+  try { localStorage.setItem(maCfg().progressKey, JSON.stringify(p)); } catch {}
+}
+
+function maSyncKey() {
+  const c = maCfg();
+  let k = null;
+  try { k = localStorage.getItem(c.syncKey); } catch {}
+  if (!k) {
+    k = 'ma-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
+    try { localStorage.setItem(c.syncKey, k); } catch {}
+  }
+  return k;
+}
+
+function maRec(slug) {
+  const p = maLoad();
+  return p[slug] || {
+    ease_factor: 2.5, interval_days: 0, times_correct: 0, times_incorrect: 0,
+    state: 'new', last_reviewed: null, next_review: null,
+  };
+}
+
+function maSm2(rec, rating) {
+  const p = Object.assign({}, rec);
+  const now = new Date();
+  p.last_reviewed = now.toISOString();
+
+  if (rating === 'got') {
+    p.times_correct++;
+    p.ease_factor = Math.min(3.0, p.ease_factor + 0.1);
+    p.interval_days = Math.max(1, p.interval_days === 0 ? 1 : p.interval_days * 2);
+  } else if (rating === 'shaky') {
+    p.times_correct++;
+    p.interval_days = Math.max(1, p.interval_days === 0 ? 1 : p.interval_days * 1.5);
+  } else {
+    p.times_incorrect++;
+    p.ease_factor = Math.max(1.3, p.ease_factor - 0.2);
+    p.interval_days = 1;
+  }
+
+  if (p.interval_days > 21) p.state = 'mastered';
+  else if (p.interval_days > 3) p.state = 'review';
+  else if (p.times_correct + p.times_incorrect > 0) p.state = 'learning';
+  else p.state = 'new';
+
+  p.next_review = new Date(now.getTime() + p.interval_days * 86400000).toISOString();
+  return p;
+}
+
+function maIsDue(rec) {
+  if (!rec || rec.state === 'new' || !rec.next_review) return true;
+  return new Date(rec.next_review).getTime() <= Date.now();
+}
+
+function maDueCount(moduleId) {
+  const mod = manifest.modules.find(m => m.id === moduleId);
+  if (!mod) return 0;
+  let n = 0;
+  for (const cat of mod.categories) for (const c of cat.concepts) if (maIsDue(maRec(c.slug))) n++;
+  return n;
+}
+
+function maRate(slug, rating) {
+  const p = maLoad();
+  p[slug] = maSm2(maRec(slug), rating);
+  maWrite(p);
+  maCloudSave();
+  const bar = document.getElementById('ma-review-bar');
+  if (bar) bar.outerHTML = maReviewBarHtml(slug);
+  renderStats();
+}
+
+function maFmtDue(rec) {
+  if (!rec.next_review) return 'not started';
+  const days = Math.round((new Date(rec.next_review).getTime() - Date.now()) / 86400000);
+  if (days <= 0) return 'due now';
+  if (days === 1) return 'due tomorrow';
+  return 'due in ' + days + ' days';
+}
+
+function maReviewBarHtml(slug) {
+  const rec = maRec(slug);
+  const reps = rec.times_correct + rec.times_incorrect;
+  return `<div class="ma-review" id="ma-review-bar">` +
+           `<div class="ma-review-head">` +
+             `<span class="ma-state ma-${rec.state}">${rec.state}</span>` +
+             `<span class="ma-due">${maFmtDue(rec)}${reps ? ' &middot; ' + reps + ' review' + (reps === 1 ? '' : 's') : ''}</span>` +
+           `</div>` +
+           `<p class="ma-review-hint">Rate yourself after working the cases. This schedules when the concept comes back.</p>` +
+           `<div class="ma-btns">` +
+             `<button class="ma-btn ma-missed" onclick="maRate('${slug}','missed')">Missed it</button>` +
+             `<button class="ma-btn ma-shaky"  onclick="maRate('${slug}','shaky')">Shaky</button>` +
+             `<button class="ma-btn ma-got"    onclick="maRate('${slug}','got')">Got it</button>` +
+           `</div>` +
+         `</div>`;
+}
+
+function maCloudSave() {
+  const c = maCfg();
+  if (c.anon.indexOf('PLACEHOLDER') !== -1) return;
+  clearTimeout(window.__maSaveTimer);
+  window.__maSaveTimer = setTimeout(() => {
+    fetch(c.url + '/rest/v1/sm_cloud_sync?on_conflict=sync_key', {
+      method: 'POST',
+      headers: {
+        apikey: c.anon, Authorization: 'Bearer ' + c.anon,
+        'Content-Type': 'application/json',
+        Prefer: 'resolution=merge-duplicates,return=minimal',
+      },
+      body: JSON.stringify({
+        sync_key: maSyncKey(),
+        progress: maLoad(),
+        sessions: [],
+        updated_at: new Date().toISOString(),
+      }),
+    }).catch(() => {});
+  }, 1500);
+}
+
+async function maCloudLoad() {
+  const c = maCfg();
+  if (c.anon.indexOf('PLACEHOLDER') !== -1) return false;
+  try {
+    const r = await fetch(
+      c.url + '/rest/v1/sm_cloud_sync?sync_key=eq.' + encodeURIComponent(maSyncKey()) + '&select=progress',
+      { headers: { apikey: c.anon, Authorization: 'Bearer ' + c.anon } });
+    if (!r.ok) return false;
+    const rows = await r.json();
+    if (!rows.length || !rows[0].progress) return false;
+    const cloud = rows[0].progress, local = maLoad(), merged = Object.assign({}, local);
+    for (const slug of Object.keys(cloud)) {
+      const lt = local[slug]  && local[slug].last_reviewed  ? Date.parse(local[slug].last_reviewed)  : 0;
+      const ct = cloud[slug]  && cloud[slug].last_reviewed  ? Date.parse(cloud[slug].last_reviewed)  : 0;
+      if (ct > lt) merged[slug] = cloud[slug];
+    }
+    maWrite(merged);
+    return true;
+  } catch { return false; }
+}
+
+async function maDrill(moduleId, slug, title) {
+  const panel = document.getElementById('ma-drill');
+  if (!panel) return;
+  panel.hidden = false;
+  panel.innerHTML = `<div class="ma-drill-head"><strong>Socratic drill</strong>` +
+    `<button class="q-all" onclick="document.getElementById('ma-drill').hidden=true">Close</button></div>` +
+    `<div class="ma-drill-body" id="ma-drill-body">Starting…</div>`;
+
+  let source = '';
+  try {
+    const r = await fetch(`content/${moduleId}/${slug}.md`);
+    if (r.ok) {
+      let t = await r.text();
+      const end = t.indexOf('\n---', 3);
+      if (end !== -1) t = t.substring(end + 4);
+      // Send the whole chapter. The longest is ~22k characters (~5.5k tokens),
+      // which the tutor handles; truncating to a few thousand left it guessing
+      // about the back half of the material.
+      source = t.slice(0, 30000);
+    }
+  } catch {}
+
+  const mod = manifest.modules.find(m => m.id === moduleId);
+  let concept = null;
+  if (mod) for (const cat of mod.categories) { concept = cat.concepts.find(c => c.slug === slug); if (concept) break; }
+
+  try {
+    const res = await fetch(maCfg().url + '/functions/v1/socratic-tutor', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'start_session',
+        module: 'neuro_boards',
+        messages: [{ role: 'system', content: 'Source material for this concept:\n\n' + source }],
+        concepts: [{
+          name: title,
+          category: concept ? concept.category : '',
+          subcategory: concept ? concept.subcategory : '',
+          difficulty: concept ? concept.difficulty : 3,
+        }],
+        weakZones: [],
+        currentConcept: title,
+      }),
+    });
+    const data = await res.json();
+    const body = document.getElementById('ma-drill-body');
+    if (body) body.textContent = data.content || data.error || 'No response from tutor.';
+  } catch (e) {
+    const body = document.getElementById('ma-drill-body');
+    if (body) body.textContent = 'Tutor unavailable: ' + e.message;
+  }
+}
+
+function maSetDueOnly(v) {
+  window.__maDueOnly = v;
+  renderModuleView((document.getElementById('search') || {}).value ? document.getElementById('search').value.toLowerCase() : '');
+}
+
 async function openConcept(moduleId, slug) {
   const mdPath = `content/${moduleId}/${slug}.md`;
   try {
@@ -841,7 +1096,10 @@ function showReader(show, title, text, moduleId, slug, figures, questions, cases
       <span class="back" onclick="showReader(false)">&larr; Back</span>
       <h2>${escapeHtml(title)}</h2>
     </div>
-    <div class="reader-body">${renderBody(text, figures || [], moduleId)}${questionsHtml(questions || [])}${casesHtml(cases || [])}</div>
+    <div class="reader-body">${renderBody(text, figures || [], moduleId)}${questionsHtml(questions || [])}${casesHtml(cases || [])}` +
+      `<button class="ma-drill-btn" onclick="maDrill('${moduleId}','${slug}','${String(title).replace(/'/g, "\\'")}')">Drill this with the tutor</button>` +
+      `<div class="ma-drill" id="ma-drill" hidden></div>` +
+      maReviewBarHtml(slug) + `</div>
   `;
   reader.classList.add('visible');
 }
