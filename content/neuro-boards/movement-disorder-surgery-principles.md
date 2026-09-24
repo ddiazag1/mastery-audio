@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Functional"
 subcategory: "Movement"
 difficulty: 4
+questions:
+  - q: Who introduced the human stereotactic frame, and when?
+    a: Spiegel and Wycis in 1947. It enabled precise targeting of deep structures through a fixed coordinate system referenced to intracerebral landmarks rather than external skull markings, which is the foundation of everything in functional neurosurgery.
+    probe: Which intracerebral landmarks are still used?
+  - q: What is the AC-PC line and why does it matter?
+    a: The line between the anterior and posterior commissures, the internal reference for stereotactic atlases. Targets are expressed as coordinates relative to the midcommissural point, which normalises for variation in head size and position and makes atlas coordinates transferable between patients.
+    probe: What has largely superseded pure atlas-based targeting?
+  - q: Summarise VA CSP-468.
+    a: The definitive randomised comparison of subthalamic against pallidal stimulation, showing comparable motor outcomes at twenty-four months with differences in secondary outcomes: STN allowed greater medication reduction while GPi had fewer cognitive and behavioural adverse effects.
+    probe: So how do you choose between them in practice?
+  - q: Which dystonia does best, and quote the figure.
+    a: DYT1-positive generalised dystonia, with seventy to ninety percent improvement in the Burke-Fahn-Marsden Dystonia Rating Scale at one to three years postoperatively — the best surgical outcome of any dystonia subtype. Vidailhet 2005 in NEJM established the level one evidence.
+    probe: Which dystonias respond least well?
+  - q: What did Elias 2016 establish?
+    a: Level one evidence for magnetic resonance–guided focused ultrasound thalamotomy in essential tremor, with a forty-seven percent reduction in hand tremor score against sham at three months. It brought an incisionless ablative option into mainstream practice.
+    probe: What are its practical limitations?
+  - q: What did EARLYSTIM change?
+    a: Published in NEJM in 2013, it showed subthalamic stimulation was superior to best medical therapy in early-stage Parkinson disease with recent onset of motor complications, expanding the window for surgical intervention beyond advanced disease.
+    probe: What is the risk of applying that too liberally?
+  - q: What is microelectrode recording for, and is it essential?
+    a: Physiological confirmation of target: characteristic firing patterns identify the subthalamic nucleus, pallidum and thalamic nuclei, and can refine the final trajectory. It is not essential — asleep, imaging-guided implantation shows equivalent clinical outcomes — so it is a tool rather than a requirement.
+    probe: What does MER add that imaging cannot?
+  - q: What are the complications specific to this surgery?
+    a: Intracranial haemorrhage along the trajectory, the principal serious risk and higher with multiple passes. Infection requiring hardware removal. Lead migration or fracture. Stimulation-induced side effects including dysarthria, paraesthesia, diplopia and mood or behavioural change, which are often reprogrammable. And hardware erosion.
+    probe: Which of those is reversible and which is not?
+cases:
+  - label: From frame to programming
+    stem: A 58-year-old woman with 11 years of Parkinson disease has disabling motor fluctuations. On formal levodopa challenge her UPDRS Part III improves by 50 percent from off to on. Neuropsychology is normal. She has no significant axial symptoms in the on state. She is referred for deep brain stimulation.
+    q1: Confirm she is a candidate and say what predicts her result.
+    a1: She is. A fifty percent improvement on formal levodopa challenge exceeds the mandatory thirty percent threshold and is the best single predictor of stimulation success. Normal neuropsychology and absence of on-state axial symptoms are both favourable, because stimulation essentially reproduces the best on-state — anything levodopa does not fix, stimulation will not fix either.
+    q2: How do you choose the target?
+    a2: VA CSP-468 showed comparable motor outcomes between subthalamic and pallidal targets at twenty-four months, so the decision rests on secondary outcomes. STN permits greater medication reduction; GPi produces fewer cognitive and behavioural adverse effects. With normal neuropsychology and a wish to reduce her drug burden, subthalamic stimulation is reasonable, and I would discuss both explicitly with her.
+    q3: Awake with microelectrode recording, or asleep under imaging guidance?
+    a3: Either is defensible. Retrospective studies and one prospective trial show equivalent clinical outcomes between awake physiological targeting and asleep imaging-guided implantation. Microelectrode recording gives physiological confirmation and can refine the trajectory, but it adds passes, and each additional pass raises haemorrhage risk. I would choose based on her tolerance of an awake procedure and the team's expertise.
+    q4: Three weeks after implantation, before programming, she is noticeably better. Then at six weeks she deteriorates. Explain.
+    a4: The microlesion effect: mechanical disruption from electrode passage produces a transient benefit that resolves over weeks, and its disappearance is often misread by patients and families as device failure. I would explain this in advance. It is actually a favourable sign, because a good microlesion effect suggests accurate targeting. Programming then builds the durable benefit, and I would check lead position on imaging only if the response to stimulation is poor rather than because the microlesion effect has faded.
 ---
 
 Welcome to this session on movement disorder surgery principles. This is a high-yield topic for the oral boards and one that rewards precise, systematic thinking. We will cover the historical evolution of surgical treatment, basal ganglia circuitry, patient selection with case-based reasoning, ablative and neuromodulatory techniques, and the key evidence you need to cite. Let us begin.

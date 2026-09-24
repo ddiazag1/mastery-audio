@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Trauma"
 difficulty: 4
+questions:
+  - q: Why must you separate upper from subaxial cervical injury?
+    a: Because the two regions have entirely different bony anatomy, ligamentous stabilisers, injury patterns and classification systems. Upper cervical injuries each have their own named classification; the subaxial spine has one unifying framework in SLIC. Blurring them is how candidates get lost.
+    probe: Name the upper cervical classifications.
+  - q: Name the named classifications for the upper cervical spine.
+    a: Anderson-Montesano for occipital condyle fractures, Traynelis for atlanto-occipital dislocation, Anderson-D'Alonzo for odontoid fractures, and Levine-Edwards for hangman's fractures. The AO Spine upper cervical classification was developed to provide a more comprehensive and reliable system building on those.
+    probe: Which one has a Grauer modification and why?
+  - q: What does the Grauer modification add?
+    a: It subdivides Anderson-D'Alonzo type II odontoid fractures: IIA with minimal displacement, IIB with displacement in a direction favourable for anterior screw fixation, and IIC with comminution or an unfavourable fracture line. It guides the choice between anterior screw and posterior fusion.
+    probe: Which fracture line direction favours an anterior screw?
+  - q: Seventy-eight-year-old with a type II odontoid fracture. Halo or surgery?
+    a: Not a halo. The Tashjian study, JBJS 2000, showed halo vest immobilisation in patients over sixty-five with type II odontoid fractures carried a forty percent mortality and eighty percent nonunion rate, with significantly better outcomes from surgical fixation. Those two numbers settle it.
+    probe: Which operation would you choose for her?
+  - q: What is the rule of Spence threshold?
+    a: Six point nine millimetres of combined lateral mass overhang of C1 on C2 in a Jefferson fracture, suggesting transverse ligament disruption. Modern practice weights magnetic resonance evidence of ligamentous integrity heavily alongside it rather than relying on the number alone.
+    probe: Why does the transverse ligament matter more than the bone here?
+  - q: Describe C1-C2 fixation options and the imaging you need first.
+    a: Goel-Harms C1 lateral mass and C2 pars or pedicle screws, or the Magerl transarticular screw technique placing bilateral screws from posterior C2 across the C1-C2 facet joint. Magerl screws require preoperative CT angiography, because an anomalous medially positioned vertebral artery at C2 is a contraindication on that side.
+    probe: What do you do if the artery is anomalous on one side only?
+  - q: Give me SLIC and its thresholds.
+    a: The Subaxial Injury Classification and Severity Scale, Vaccaro 2007, scores morphology, discoligamentous complex integrity and neurological status. Five or more is operative, three or less is non-operative, and four is a judgement call. It is the single unifying framework for the subaxial spine.
+    probe: Which component is hardest to assess and how do you assess it?
+  - q: How do you clear a cervical spine in an obtunded patient?
+    a: Current practice in most centres is to remove the collar on the basis of a high-quality negative CT alone, though some still obtain magnetic resonance to assess the ligaments. I would present it as contested rather than assert one answer. What I would not do is obtain flexion-extension films acutely.
+    probe: Why not flexion-extension films?
+cases:
+  - label: Elderly odontoid fracture
+    stem: An 80-year-old woman falls from standing and strikes her forehead. She has severe neck pain but no neurological deficit. CT shows a Type II odontoid fracture with 4 millimetres of posterior displacement and a transverse fracture line. She lives alone, has COPD and takes apixaban.
+    q1: Classify it precisely and say what worries you about her age.
+    a1: Anderson-D'Alonzo type II, a fracture through the base of the dens, which is the commonest and most problematic for nonunion. Risk factors for nonunion include displacement over five millimetres, angulation over ten degrees, age over fifty and posterior displacement — she has age and posterior displacement. Her age is itself a major factor in how she tolerates treatment.
+    q2: The team proposes a halo vest. Respond with evidence.
+    a2: I would advise against it. The Tashjian study, JBJS 2000, showed halo vest immobilisation in patients over sixty-five with type II odontoid fractures carried a forty percent mortality and an eighty percent nonunion rate, with significantly better outcomes from surgical fixation. In an eighty-year-old with COPD, a halo also seriously compromises respiratory function.
+    q3: Which operation, and what determines the choice?
+    a3: The Grauer modification guides it: her transverse fracture line with posterior displacement is unfavourable for an anterior odontoid screw, which needs a fracture line oblique in the right direction and good bone quality. At eighty with likely osteoporosis, I would favour posterior C1-C2 fusion, most likely Goel-Harms C1 lateral mass and C2 pars screws.
+    q4: If you were considering Magerl transarticular screws instead, what must you have first?
+    a4: Preoperative CT angiography to assess the course of the vertebral artery. An anomalous medially positioned vertebral artery at C2 is a contraindication to transarticular screw placement on that side, and injuring it is catastrophic. If the anatomy is unfavourable on one side, I would place a unilateral transarticular screw with contralateral alternative fixation, or abandon Magerl in favour of Goel-Harms, which is more forgiving of that anatomy.
 ---
 
 Welcome to this viva-style teaching session on cervical spine trauma management. This is a high-yield oral board topic, and the examiners expect precise classification knowledge, sound surgical decision-making, and awareness of the classic traps. Let's build this from the ground up.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Deformity"
 difficulty: 5
+questions:
+  - q: What sagittal vertical axis threshold predicts disability, and on whose evidence?
+    a: Nine point five centimetres. Glassman's 2005 study in Spine established it as the inflection point, using a large multicentre database correlating standing radiographic parameters with the SF-36 and Oswestry Disability Index. Above it, disability correlates strongly and reliably.
+    probe: What is the routine target you aim for surgically?
+  - q: Give me the SRS-Schwab classification in full.
+    a: A coronal curve type — T thoracic, L lumbar, D double, N no major coronal deformity — plus three sagittal modifiers: pelvic incidence minus lumbar lordosis, sagittal vertical axis, and pelvic tilt, each graded zero, plus or double plus.
+    probe: Which pelvic tilt grade is the most severe modifier?
+  - q: What pelvic tilt defines the most severe modifier?
+    a: Greater than thirty degrees. High pelvic tilt means the patient is retroverting the pelvis to stay upright, so it is a marker of compensation rather than a primary deformity, and it is what fails first when they fatigue.
+    probe: Name the other compensatory mechanisms you would look for.
+  - q: Name the osteotomy grades and their correction.
+    a: Bridwell's grading from one to six. Smith-Petersen osteotomy occupies the lower grades, giving roughly ten degrees per level. Pedicle subtraction osteotomy is a three-column osteotomy giving around thirty degrees at a single level. Vertebral column resection is the highest grade with the greatest correction and the greatest risk.
+    probe: Which would you choose for a fixed flat-back after a prior fusion?
+  - q: Where do you site a pedicle subtraction osteotomy, and why?
+    a: In the lower lumbar spine, typically L3 or L4, because lordosis is normally maximal there and correction at that level most efficiently restores the sagittal vertical axis. In flat-back after a prior L4-5 fusion, I would site it above the fusion mass at L3.
+    probe: What is the trade-off of going lower rather than higher?
+  - q: What is the rod fracture rate at a PSO site, and what do you do about it?
+    a: Fifteen to twenty-five percent with a single rod construct. Accessory rods are strongly recommended — satellite or four-rod constructs across the osteotomy — because the three-column osteotomy concentrates stress precisely at the site where the construct is most vulnerable.
+    probe: What else reduces mechanical failure in these constructs?
+  - q: When would you stage the operation?
+    a: In long, high-blood-loss reconstructions or frail patients. Staging can mean an anterior release followed by posterior instrumented fusion, or a posterior-only approach divided into two sessions separated by a few days, allowing resuscitation, correction of coagulopathy and reassessment between stages.
+    probe: What are the risks of staging?
+  - q: What are your three surgical targets?
+    a: Sagittal vertical axis under five centimetres, pelvic tilt under twenty degrees, and pelvic incidence minus lumbar lordosis under ten degrees. Pelvic incidence itself is fixed and cannot be changed — you change lordosis to match it.
+    probe: What happens if you under-correct the PI-LL mismatch?
+cases:
+  - label: Flat back after prior fusion
+    stem: A 64-year-old woman had an L4-5 fusion eight years ago. She now cannot stand upright for more than ten minutes, walks with flexed knees, and has severe back pain. Standing 36-inch films show a sagittal vertical axis of 11 centimetres, pelvic incidence 58 degrees, lumbar lordosis 22 degrees, and pelvic tilt 34 degrees.
+    q1: Interpret those numbers and say what her body is doing.
+    a1: A sagittal vertical axis of eleven centimetres is well above the nine point five threshold Glassman established for disability. Pelvic incidence minus lumbar lordosis is fifty-eight minus twenty-two, a mismatch of thirty-six degrees against a target under ten. Pelvic tilt of thirty-four is above thirty, the most severe SRS-Schwab modifier. She is retroverting her pelvis and flexing her knees to stay upright, and she has run out of compensation.
+    q2: What correction do you need and by what technique?
+    a2: She needs roughly thirty-five degrees of lordosis restored. A Smith-Petersen osteotomy gives about ten degrees per level and relies on a mobile anterior column, which she does not have across a solid L4-5 fusion. So this is a pedicle subtraction osteotomy, a three-column osteotomy giving around thirty degrees at a single level, sited at L3 above the fusion mass.
+    q3: What is the main mechanical risk and how do you mitigate it?
+    a3: Rod fracture at the osteotomy site, which approaches fifteen to twenty-five percent with a single rod construct because the three-column osteotomy concentrates stress there. I would use accessory or satellite rods across the osteotomy, ensure meticulous bone grafting to achieve fusion, and consider extending the construct to the pelvis given the magnitude of correction.
+    q4: She is 64 with osteoporosis. Would you stage it, and what do you tell her about risk?
+    a4: I would consider staging, either anterior release then posterior instrumentation, or a posterior-only approach split across two sessions days apart, allowing resuscitation and correction of coagulopathy between. I would be frank that adult deformity surgery carries major complication rates in the tens of percent — blood loss, infection, neurological injury, proximal junctional kyphosis, pseudarthrosis and reoperation — and I would optimise her bone density and nutrition first, because operating on untreated osteoporosis invites junctional failure.
 ---
 
 Welcome to this oral board teaching session on adult spinal deformity principles. This is one of the higher-yield spine topics for the ABNS oral examination because it integrates radiographic analysis, classification systems, surgical decision-making, and complication management into a single clinical problem. If you can command this topic, you demonstrate the kind of systematic thinking examiners reward. Let's build from the ground up.

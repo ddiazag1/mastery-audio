@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Cranial"
 subcategory: "Tumor"
 difficulty: 3
+questions:
+  - q: Give me the WHO grades and their proportions.
+    a: Grade 1 benign, eighty to eighty-five percent. Grade 2 atypical, fifteen to twenty percent. Grade 3 anaplastic or malignant, only one to three percent. Grade 1 subtypes include meningothelial, fibrous, transitional, psammomatous, angiomatous, microcystic, secretory, lymphoplasmacyte-rich and metaplastic.
+    probe: What makes a tumour grade 2?
+  - q: Which subtypes are automatically upgraded regardless of mitotic count?
+    a: Clear cell and chordoid are automatically grade 2. Papillary and rhabdoid are automatically grade 3. Those four are worth memorising because they bypass the usual criteria entirely.
+    probe: What are the usual grade 2 criteria then?
+  - q: Recite the Simpson grades with their recurrence rates.
+    a: Grade I: gross total resection with excision of the dural attachment, abnormal bone, and involved sinus. Grade II: gross total with coagulation of the attachment rather than excision. Grade III: gross total without treating the attachment, twenty-nine percent recurrence. Grade IV: subtotal, forty-four percent recurrence.
+    probe: For which tumours does the Simpson grade actually predict recurrence?
+  - q: What is the critical nuance about Simpson grading?
+    a: It is most prognostically significant for WHO grade 1 meningiomas. For grade 2 and 3 tumours, recurrence rates are high regardless of the Simpson grade achieved, and adjuvant therapy enters the picture. Quoting Simpson without that caveat misleads.
+    probe: So what do you do differently for a grade 2?
+  - q: How common is the dural tail, and how much does it mean?
+    a: Present in sixty to seventy percent of cases — linear enhancement of thickened dura extending from the tumour margin. It is characteristic but not pathognomonic, and it may represent reactive change rather than tumour infiltration, which is relevant to how aggressively you pursue it.
+    probe: Do you resect the tail?
+  - q: Quote long-term control for a grade 1 meningioma.
+    a: Ninety to ninety-five percent tumour control at five to ten years after adequate resection. That excellent figure is precisely why aggressive attempts at Simpson grade I in a benign tumour are justified where safe, and why morbidity from over-aggression is hard to defend.
+    probe: What recurrence rate would you quote for grade 2 after gross total resection?
+  - q: Grade 2 atypical, Simpson grade II resection. Now what?
+    a: Discuss adjuvant radiotherapy. Grade 2 atypical meningiomas recur in thirty to forty percent at five years even after gross total resection. Current practice increasingly favours adjuvant radiation after gross total resection, and it is essentially mandatory after subtotal resection.
+    probe: What does RTOG 0539 add?
+  - q: Explain RTOG 0539 stratification.
+    a: It stratified by risk: grade 1 with gross total resection as low risk; grade 2 with gross total resection as intermediate risk; and grade 2 with subtotal resection or any grade 3 as high risk. For grade 3 anaplastic tumours, adjuvant radiotherapy at fifty-four to sixty Gray is standard after any extent of resection.
+    probe: Which risk group is the genuinely contested one?
+cases:
+  - label: Olfactory groove meningioma
+    stem: A 55-year-old woman presents with twelve months of progressive personality change noticed by her family, and anosmia she had not reported. MRI shows a 5-centimetre olfactory groove meningioma with bilateral frontal involvement, a prominent dural tail, and surrounding oedema. Vision is normal.
+    q1: What approach and why?
+    a1: A five-centimetre tumour with bilateral frontal involvement warrants bilateral exposure — a bifrontal craniotomy. Some surgeons advocate a unilateral subfrontal approach for smaller olfactory groove meningiomas, but that will not give adequate access here. I would plan for early devascularisation at the skull base, and counsel that anosmia is almost certainly permanent.
+    q2: What is your resection goal and what defines it?
+    a2: Simpson grade I: gross total resection with excision of the dural attachment and any involved hyperostotic bone at the cribriform plate and planum. In a presumed grade 1 tumour that offers ninety to ninety-five percent control at five to ten years, which justifies pursuing it where safe.
+    q3: Histology returns atypical meningioma, WHO grade 2, and you achieved Simpson grade II. What changes?
+    a3: Considerably. Grade 2 tumours recur in thirty to forty percent at five years even after gross total resection, and crucially the Simpson grade is most prognostic for grade 1 tumours — for grade 2 and 3 the recurrence rate is high regardless. On RTOG 0539 she is intermediate risk, and current practice increasingly favours adjuvant radiotherapy even after gross total resection.
+    q4: The examiner changes it: the tumour has completely occluded the superior sagittal sinus. Does that change your resection?
+    a4: It can make a more aggressive resection possible rather than less. If the sinus is completely occluded and collateral venous drainage has developed, the involved segment can be resected with the tumour to achieve a Simpson grade I. The danger is a partially patent sinus, where resection risks venous infarction — so I would confirm occlusion and collateral pathways on venography before committing.
 ---
 
 Let's work through meningioma grading and surgical planning. This is a high-yield oral board topic because meningiomas are the most common primary intracranial tumor, accounting for thirty-seven percent of all primary brain tumors. They arise from arachnoid cap cells of the meninges. There is a clear female predominance, roughly two to one, and incidence increases with age. Risk factors include prior ionizing radiation and neurofibromatosis type 2, the latter associated with multiple meningiomas. Now, understanding the WHO grading system and the Simpson grading system is absolutely essential, so let's build that foundation first.

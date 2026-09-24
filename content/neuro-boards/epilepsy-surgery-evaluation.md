@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Functional"
 subcategory: "Epilepsy"
 difficulty: 4
+questions:
+  - q: What did Wiebe 2001 establish?
+    a: The landmark NEJM randomised trial comparing surgery with continued medical therapy for temporal lobe epilepsy. Fifty-eight percent of surgical patients were seizure-free at one year against only eight percent in the medical group. It is the evidence that surgery is not a last resort.
+    probe: What did Engel 2012 add?
+  - q: Recite the Engel classification.
+    a: Class I: free of disabling seizures. Class II: rare disabling seizures, almost seizure-free. Class III: worthwhile improvement, a meaningful reduction in frequency. Class IV: no worthwhile improvement. When we quote surgical outcomes we almost always mean the percentage achieving Engel Class I.
+    probe: Why does that convention matter when comparing series?
+  - q: Quote outcomes for temporal versus extratemporal surgery.
+    a: Anterior temporal lobectomy achieves sixty to eighty percent Engel Class I. Extratemporal cases run forty to sixty percent — harder to localise, more variable semiology, and lower success rates. Quoting a single figure for epilepsy surgery misleads the patient.
+    probe: Why are extratemporal cases harder?
+  - q: How does laser interstitial thermal therapy compare with open surgery?
+    a: Minimally invasive with a typical hospital stay of one to two days, against several days for open surgery. Seizure-free rates are slightly lower — fifty-five to sixty-five percent Engel Class I against sixty to eighty percent for open anterior temporal lobectomy. It is a genuine trade-off of efficacy against morbidity.
+    probe: Which patient would you steer toward laser therapy?
+  - q: What defines drug resistance, and why that threshold?
+    a: Failure of two adequate trials of appropriately chosen and tolerated antiseizure medications. The threshold is probabilistic: roughly half respond to the first drug and about ten percent more to the second, after which the yield of each subsequent agent falls into the low single digits.
+    probe: So what should happen the moment that threshold is crossed?
+  - q: What does a presurgical evaluation actually consist of?
+    a: Convergence of independent lines of evidence: detailed semiology, video-EEG capturing habitual seizures, high-resolution MRI with an epilepsy protocol, PET showing interictal hypometabolism, ictal SPECT with SISCOM, magnetoencephalography, neuropsychology, and language lateralisation by functional MRI or the intracarotid amobarbital test.
+    probe: What do you do when those lines disagree?
+  - q: When do you go invasive?
+    a: When the noninvasive data are discordant, when the MRI is negative, or when the suspected zone abuts eloquent cortex. Stereo-EEG samples deep and sulcal structures in three dimensions and allows bilateral exploration; subdural grids give contiguous surface coverage and extraoperative stimulation mapping.
+    probe: What must you have before you implant electrodes?
+  - q: What are the specific risks of anterior temporal lobectomy?
+    a: Visual field defect from injury to Meyer's loop, producing a contralateral superior quadrantanopia, which affects driving. Verbal memory decline after dominant-side resection, which is why neuropsychology is mandatory. Plus infection, haemorrhage, and the manipulation hemiparesis from retraction near the internal capsule.
+    probe: How do you predict memory risk preoperatively?
+cases:
+  - label: Refractory temporal lobe epilepsy
+    stem: A 29-year-old woman has had seizures since age 14 despite trials of five antiseizure medications at adequate doses. Seizures begin with a rising epigastric sensation and déjà vu, followed by staring, lip-smacking and right hand dystonic posturing, lasting 90 seconds with postictal confusion. She has three to four per month. MRI shows left hippocampal atrophy with increased T2 signal.
+    q1: Characterise the semiology and localise it.
+    a1: Classical mesial temporal lobe seizures: an epigastric rising aura with déjà vu, oroalimentary automatisms, and contralateral dystonic posturing of the right hand, which lateralises to the left. With left hippocampal atrophy and T2 change, this is left mesial temporal sclerosis, and the semiology, imaging and lateralising sign are concordant.
+    q2: She has failed five drugs. What does that tell you and what should have happened sooner?
+    a2: She met the definition of drug resistance — failure of two adequate trials of appropriately chosen, tolerated drugs — many years and three drugs ago. The yield of each further agent falls into the low single digits after the second. Wiebe 2001 showed fifty-eight percent seizure-free at one year with surgery against eight percent with continued medical therapy. She should have been referred years earlier.
+    q3: What does her presurgical workup need, and what specifically worries you?
+    a3: Video-EEG capturing habitual seizures, epilepsy-protocol MRI, and neuropsychology with language and memory lateralisation by functional MRI or intracarotid amobarbital testing. What worries me is verbal memory: this is a dominant-hemisphere resection in a young woman, and decline in verbal memory is the principal cognitive risk, so I need to know her baseline and her contralateral reserve before committing.
+    q4: Data are concordant. Offer her the options with honest numbers.
+    a4: Anterior temporal lobectomy gives sixty to eighty percent Engel Class I seizure freedom, the highest figure available. Laser interstitial thermal therapy is minimally invasive with a one to two day stay, but Engel Class I rates are slightly lower at fifty-five to sixty-five percent. I would also warn her about a contralateral superior quadrantanopia from injury to Meyer's loop, which has implications for driving, and about verbal memory decline. Given concordant data and mesial temporal sclerosis, I would recommend open resection while presenting laser therapy as a genuine alternative.
 ---
 
 Let's work through epilepsy surgery evaluation. This is a core functional neurosurgery topic and a near-guaranteed appearance on your oral boards. You need to know the presurgical workup inside and out, understand when to move from Phase I to Phase II, know your surgical options and their outcomes cold, and be ready for the trap questions the examiners love to throw at candidates on this topic.

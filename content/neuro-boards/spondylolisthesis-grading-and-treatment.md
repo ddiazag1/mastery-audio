@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Degenerative"
 difficulty: 3
+questions:
+  - q: Give me the Wiltse aetiological classification.
+    a: Five types: dysplastic, isthmic, degenerative, traumatic and pathological. It is the standard aetiological classification and you must know all five, because the type determines the natural history and the operation far more than the grade does.
+    probe: Which type appears in an adolescent athlete?
+  - q: Grade it by Meyerding and tell me what grade V is.
+    a: Percentage translation of the superior body on the inferior: grade I up to twenty-five percent, II to fifty, III to seventy-five, IV to one hundred, and grade V — spondyloptosis — greater than one hundred percent, where the superior body has fallen completely off the front of the inferior one.
+    probe: Is the Meyerding grade your main surgical target?
+  - q: Why does a high pelvic incidence matter?
+    a: A pelvic incidence above sixty degrees predisposes to high-grade slip, because the sacrum is more vertical and greater shear force is placed across L5-S1. It is an anatomical driver of progression, not an incidental measurement, and it also shapes the reconstruction.
+    probe: How does that feed into the Hresko classification?
+  - q: What is the Hresko classification for?
+    a: Proposed in 2007 and refined by the Spinal Deformity Study Group, it classifies high-grade spondylolisthesis by pelvic incidence and sacropelvic balance into two subtypes: a balanced pelvis with low pelvic incidence, manageable with in situ fusion, and an unbalanced pelvis with high pelvic incidence, which requires reduction to restore sagittal balance.
+    probe: So what decides whether you reduce?
+  - q: What do you actually try to correct in a high-grade slip?
+    a: The slip angle, not the Meyerding grade. I aim to bring the slip angle from say forty degrees to under ten, restoring lumbosacral alignment, and to reduce translation only partially — to about a grade I. Chasing a complete anatomical reduction is where patients get hurt.
+    probe: Quantify the risk of full reduction.
+  - q: What is the risk of reducing a high-grade slip completely?
+    a: Twenty to thirty percent risk of L5 nerve root palsy, because the L5 root is draped over the posterosuperior corner of the sacrum and is stretched during reduction. That figure is why partial reduction with slip angle correction is the safer goal.
+    probe: How would you monitor for it intraoperatively?
+  - q: Why circumferential fusion in high-grade slips?
+    a: Because posterior-only fusion in grade III to V slips has pseudarthrosis rates of twenty to forty percent, against roughly five to ten percent with circumferential fusion. Adding an anterior interbody — through a separate anterior approach or an ALIF — addresses the anterior column under shear.
+    probe: What does a TLIF give you that a posterolateral fusion does not?
+  - q: First-line management of an adolescent with an acute pars stress reaction?
+    a: Conservative: activity modification, avoidance of hyperextension activities, core strengthening with physiotherapy, and a trial of a thoracolumbosacral orthosis for six to twelve weeks if the pain is acute and thought to represent an active pars stress reaction. Most settle without surgery.
+    probe: How would you confirm the lesion is active rather than chronic?
+cases:
+  - label: High-grade isthmic slip in a young adult
+    stem: A 19-year-old gymnast has worsening low back pain radiating to both legs, with hamstring tightness and a crouched, short-strided gait. Standing lateral radiograph shows a Grade III isthmic spondylolisthesis at L5-S1 with a slip angle of 40 degrees and a pelvic incidence of 72 degrees. She has new weakness of ankle dorsiflexion.
+    q1: Describe what the gait tells you and classify the problem.
+    a1: The crouched, short-strided gait with hamstring tightness is the Phalen-Dickson gait, reflecting lumbosacral kyphosis and sagittal imbalance. This is a Wiltse isthmic spondylolisthesis, Meyerding grade III, with a high slip angle of forty degrees and a pelvic incidence of seventy-two degrees, which predisposes to high-grade slip because the vertical sacrum increases shear at L5-S1.
+    q2: Where does she sit on the Hresko classification, and what does that mean?
+    a2: A high pelvic incidence of seventy-two with an unbalanced pelvis and a crouched compensatory posture places her in the unbalanced, high pelvic incidence subtype. Hresko's point is that this group requires reduction to restore sagittal balance, unlike the balanced low-incidence subtype which can be managed with in situ fusion.
+    q3: How much do you reduce, and why not all the way?
+    a3: I correct the slip angle, not the Meyerding grade — bringing forty degrees to under ten — and reduce translation only partially, to about a grade I. Complete reduction of a grade III or IV slip carries a twenty to thirty percent risk of L5 nerve root palsy, because the L5 root is draped over the posterosuperior corner of the sacrum and is stretched during reduction.
+    q4: What construct, and why not posterior instrumentation alone?
+    a4: Circumferential fusion: posterior instrumented fusion combined with an anterior interbody, either through a separate anterior approach or an ALIF. Posterior-only fusion in high-grade slips has pseudarthrosis rates of twenty to forty percent against roughly five to ten percent circumferentially, because the anterior column is under enormous shear. I would use intraoperative neuromonitoring throughout, watching the L5 roots specifically during any reduction.
 ---
 
 Let's master spondylolisthesis grading and treatment for the oral boards.

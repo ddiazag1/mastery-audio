@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Congenital"
 difficulty: 3
+questions:
+  - q: Define the Chiari subtypes and the one distinction examiners test.
+    a: Chiari I is tonsillar descent below the foramen magnum without brainstem descent. Chiari 1.5 adds brainstem descent, specifically the obex below the foramen magnum. Chiari II is tonsillar and brainstem descent with myelomeningocele — and by definition Chiari II without myelomeningocele is incorrect. That last point is the one they test.
+    probe: What about Chiari 0?
+  - q: How common is syringomyelia in Chiari I, and what does that oblige you to do?
+    a: Twenty-five to sixty-five percent depending on the series. The range is wide but the association is strong enough that every Chiari I workup demands full spine imaging, not just the craniocervical junction.
+    probe: Does the presence of a syrinx alone justify surgery?
+  - q: Describe the headache that should make you think Chiari.
+    a: Suboccipital headache provoked by cough, Valsalva, straining or exertion, brief and pressure-like. That cough headache pattern is highly characteristic and should immediately raise suspicion for Chiari I in any young adult.
+    probe: What other symptoms would you ask about?
+  - q: What other clinical features do you look for?
+    a: Dysphagia from lower cranial nerve compression, downbeat nystagmus which is the classic neuro-ophthalmological finding, palsies of the ninth through twelfth nerves, and central cord syndrome from an associated syrinx. Central sleep apnoea from brainstem compression is an additional and sometimes decisive indication.
+    probe: Why is central sleep apnoea decisive?
+  - q: What is the one uncontroversial statement in this topic?
+    a: Asymptomatic Chiari I without syringomyelia does not require surgery. Almost everything else — the millimetre threshold, whether to open the dura, whether to resect tonsils — is debated, but that one is not, and stating it clearly is worth more than picking a side elsewhere.
+    probe: So who do you operate on?
+  - q: Describe the operation and when you extend it.
+    a: Suboccipital craniectomy with C1 laminectomy. With low-lying tonsils or a Chiari 1.5 pattern, a C2 laminectomy may be needed for adequate decompression. Whether to open the dura, perform duraplasty, or manipulate the tonsils remains contested, and I would state my practice while acknowledging the debate.
+    probe: What are the arguments for and against opening the dura?
+  - q: A child with Chiari II and myelomeningocele develops stridor and apnoea. What is it and what do you do first?
+    a: Symptomatic brainstem compression from the Chiari II malformation, which is life-threatening. But the first action is to evaluate the shunt: malfunction acutely worsens hindbrain herniation by increasing the pressure gradient driving posterior fossa contents downward, and revision alone often resolves it.
+    probe: What happens to the candidate who decompresses first?
+  - q: What supportive investigations can help in a borderline case?
+    a: Cine phase contrast imaging to demonstrate impaired cerebrospinal fluid flow at the foramen magnum, and in selected cases intracranial pressure or flow studies. These are not strictly required for diagnosis but provide supportive evidence, and are particularly helpful in borderline cases or in the debated Chiari 0.
+    probe: Would a normal flow study stop you operating on a clearly symptomatic patient?
+cases:
+  - label: Cough headache with a syrinx
+    stem: A 24-year-old woman describes eighteen months of severe occipital headache brought on by coughing and laughing, lasting seconds to minutes. Recently she has noticed she burns her fingers without feeling it and has dropped objects. MRI shows 9 millimetres of tonsillar descent and a cervicothoracic syrinx from C4 to T6.
+    q1: Put the picture together.
+    a1: Symptomatic Chiari I with a large associated syrinx causing a central cord syndrome — the dissociated sensory loss of a cape distribution explains the painless burns. The cough headache pattern is highly characteristic. Syringomyelia occurs in twenty-five to sixty-five percent of Chiari I, which is why full spine imaging is mandatory in every workup.
+    q2: Does she need surgery? Justify against the one uncontroversial rule.
+    a2: Yes. The uncontroversial rule is that asymptomatic Chiari I without syringomyelia does not require surgery — she is neither asymptomatic nor syrinx-free. She has characteristic symptoms, progressive myelopathy from the syrinx, and objective sensory loss. Progressive neurological deficit with a symptomatic syrinx is a clear indication.
+    q3: Describe the operation and what determines its extent.
+    a3: Suboccipital craniectomy with C1 laminectomy. Extent is determined by how low the tonsils sit — with low-lying tonsils or a Chiari 1.5 pattern I would add a C2 laminectomy for adequate decompression. Whether to open the dura and perform a duraplasty is contested; given a large syrinx I would open the dura and perform duraplasty, aiming to restore cerebrospinal fluid flow at the foramen magnum.
+    q4: Six months later the headaches are gone but the syrinx is unchanged on MRI. Is that a failure?
+    a4: Not necessarily, and I would resist reoperating on an image. Syrinx resolution often lags symptomatic improvement by many months, and some syrinxes never fully collapse despite a durable clinical result. What matters is her clinical trajectory. I would reoperate for recurrent or progressive symptoms with evidence of inadequate decompression or re-obstruction, not for a persistent cavity in a patient who is better.
 ---
 
 Welcome back. This session covers Chiari malformation management, a topic that appears frequently on the ABNS oral boards and one where the examiners expect precise definitions, clear surgical decision-making, and an understanding of when not to operate. We are going to work through all the Chiari subtypes, walk through a clinical case, and then I am going to hit you with the exact questions an examiner would ask. Let's get into it.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Cranial"
 subcategory: "Tumor"
 difficulty: 4
+questions:
+  - q: Give me the Koos grades.
+    a: Grade 1: purely intracanalicular, under one centimetre. Grade 2: extends into the cerebellopontine angle, under two centimetres, not contacting brainstem. Grade 3: fills the CPA cistern, contacts brainstem, two to three centimetres. Grade 4: compresses brainstem and displaces the fourth ventricle, over three centimetres.
+    probe: Which grade is the middle fossa approach designed for?
+  - q: Define serviceable hearing by Gardner-Robertson.
+    a: Class one is a pure tone average of thirty decibels or better with speech discrimination of seventy percent or better. Class two is also serviceable: pure tone average thirty-one to fifty with discrimination fifty to sixty-nine percent. Class three or worse is non-serviceable.
+    probe: A pure tone average of 45 with 52 percent discrimination. Which class?
+  - q: Recite House-Brackmann.
+    a: Six points. One normal. Two slight weakness on close inspection, complete eye closure, slight smile asymmetry. Three obvious but not disfiguring, complete eye closure with effort, slight mouth asymmetry. Four obvious disfiguring weakness with incomplete eye closure. Five barely perceptible motion. Six no movement. Grade four and beyond are poor outcomes requiring intervention.
+    probe: Why is incomplete eye closure the dividing line?
+  - q: Which approach for non-serviceable hearing?
+    a: Translabyrinthine. It sacrifices hearing by definition, so it is preferred when hearing is already non-serviceable — Gardner-Robertson class three or worse. It gives early identification of the facial nerve at the fundus and avoids cerebellar retraction.
+    probe: What is its main drawback?
+  - q: And the retrosigmoid?
+    a: Versatile, suitable for medium to large tumours, Koos grades two through four, and offers the possibility of hearing preservation. It is the leading option for a Koos three tumour with serviceable hearing, providing adequate exposure for a two-and-a-half centimetre CPA tumour while keeping hearing preservation on the table.
+    probe: What is the trade-off compared with translabyrinthine?
+  - q: When is the middle fossa approach right?
+    a: A hearing preservation approach designed specifically for small intracanalicular tumours — Koos grade one, generally one and a half centimetres or less. It gives access to the lateral internal auditory canal that the retrosigmoid cannot reach, at the cost of temporal lobe retraction and a facial nerve lying superficial to the tumour.
+    probe: Why is the facial nerve position a problem in that approach?
+  - q: What facial nerve outcome would you quote?
+    a: House-Brackmann grade one or two in greater than ninety-five percent of patients in experienced hands for appropriately selected tumours. That figure sets the standard against which any proposed operation must be judged, and it falls with increasing tumour size.
+    probe: How do you counsel a Koos four patient differently?
+  - q: When is observation appropriate?
+    a: Small tumours, particularly Koos grade one; elderly patients with significant comorbidity; and patients who decline intervention. The protocol is serial MRI every six months for two years then annually, paired with serial audiometry. For a Koos three tumour contacting brainstem in a younger patient it is less ideal, though still an option if they understand the trajectory.
+    probe: What would trigger intervention during observation?
+cases:
+  - label: Koos 3 with serviceable hearing
+    stem: A 45-year-old teacher reports two years of progressive right-sided hearing loss and tinnitus, with recent unsteadiness. MRI shows a 2.5-centimetre right cerebellopontine angle tumour filling the cistern and contacting the brainstem, with an intracanalicular component. Audiometry shows a right pure tone average of 45 decibels and speech discrimination of 52 percent. Facial function is normal.
+    q1: Classify him fully.
+    a1: Koos grade three: fills the CPA cistern, contacts the brainstem, two to three centimetres. Hearing is Gardner-Robertson class two — pure tone average thirty-one to fifty with discrimination fifty to sixty-nine percent — which is still serviceable. Facial function is House-Brackmann grade one.
+    q2: Lay out the three options honestly.
+    a2: Observation with six-monthly MRI and audiometry for two years then annually — defensible but less ideal here because the tumour already contacts brainstem. Stereotactic radiosurgery, with good tumour control and facial preservation but gradual hearing loss over years and no tissue. Microsurgical resection, which is definitive and decompresses the brainstem. All three are defensible and the examiner wants each considered before I commit.
+    q3: Which do you recommend, and by which route?
+    a3: Microsurgical resection via the retrosigmoid approach. He is forty-five with a tumour contacting brainstem, so the trajectory over decades favours definitive treatment. Retrosigmoid is versatile for Koos two to four and keeps hearing preservation possible, unlike translabyrinthine which sacrifices hearing by definition and is reserved for non-serviceable hearing.
+    q4: He wakes with House-Brackmann grade 5 despite the nerve being anatomically intact. Explain and manage.
+    a4: Anatomical continuity with poor function indicates neurapraxia or axonotmesis from manipulation and stretching rather than transection, so recovery is possible over months. Immediate priority is the eye: incomplete closure at grade four and beyond risks exposure keratopathy, so lubrication, taping, and ophthalmology input, with consideration of a tarsorrhaphy or gold weight if recovery is slow. I would counsel that improvement typically occurs over six to twelve months and reassess before considering any reanimation procedure.
 ---
 
 Welcome to this viva-style teaching session on vestibular schwannoma management. This is a high-yield oral board topic that demands fluency in classification systems, a clear management algorithm, and nuanced surgical decision-making. Let's build from the foundation up.

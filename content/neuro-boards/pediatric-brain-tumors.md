@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Cranial"
 subcategory: "Tumor"
 difficulty: 5
+questions:
+  - q: Define standard-risk medulloblastoma. All criteria.
+    a: All of: age over three years; gross total or near-total resection with less than one and a half square centimetres of residual tumour; no metastatic disease, designated M0; and absence of high-risk histological or molecular features. Miss any one and the child is high risk.
+    probe: Why is the residual threshold expressed as an area?
+  - q: What did Taylor 2012 establish?
+    a: It defined the four molecular subgroups of medulloblastoma — WNT, SHH, Group 3 and Group 4 — and demonstrated that molecular classification predicts outcome better than histology alone. WNT has the best prognosis, Group 3 the worst, and that drives modern risk-adapted therapy.
+    probe: Which subgroup is being de-escalated in current trials, and why?
+  - q: How is posterior fossa ependymoma classified now?
+    a: WHO grade 2 or grade 3 histologically, with molecular classification recognising two posterior fossa groups, PFA and PFB. PFA occurs in younger children, is laterally located and carries a worse prognosis; PFB occurs in older children and adults with better outcomes.
+    probe: What determines outcome most in ependymoma regardless of group?
+  - q: What happened to diffuse intrinsic pontine glioma in the 2021 classification?
+    a: It was unified with related tumours under the molecular designation diffuse midline glioma, H3 K27-altered, regardless of anatomical location. The molecular alteration defines the entity, and prognosis is poor wherever it arises.
+    probe: Do you biopsy these?
+  - q: Distinguish the three commonest posterior fossa tumours of childhood on imaging.
+    a: Medulloblastoma arises from the roof, fills the fourth ventricle, is hyperdense on CT and restricts diffusion from high cellularity. Ependymoma arises from the floor and extrudes plastically through the foramina of Luschka and Magendie — the toothpaste sign. Pilocytic astrocytoma is a hemispheric cyst with an enhancing mural nodule.
+    probe: Which of those restricts diffusion and why?
+  - q: How common is cerebellar mutism and what is it?
+    a: Twenty to twenty-five percent of children after posterior fossa surgery. Delayed onset of mutism with emotional lability and often ataxia and hypotonia, appearing a day or two postoperatively rather than immediately. Most recover speech over weeks to months, but deficits frequently persist.
+    probe: How do you reduce the risk surgically?
+  - q: What staging does a child with medulloblastoma need?
+    a: Whole neuraxis MRI, ideally preoperatively to avoid postoperative artefact confusing the spine, plus lumbar cerebrospinal fluid cytology taken at least two weeks after surgery to avoid a false positive from surgical debris. Metastatic status is one of the four risk criteria.
+    probe: Why two weeks?
+  - q: What are the late effects you must counsel about?
+    a: Neurocognitive decline from craniospinal irradiation, worst in the very young, which is why radiotherapy is avoided or delayed under three. Endocrinopathy including growth hormone deficiency and hypothyroidism, spinal growth impairment, hearing loss from platinum chemotherapy, and second malignancies.
+    probe: How does that change treatment in a two-year-old?
+cases:
+  - label: Midline posterior fossa mass in a child
+    stem: A 6-year-old presents with six weeks of morning vomiting, headache and worsening unsteadiness. MRI shows a midline fourth ventricular mass that is hyperdense on CT, restricts diffusion, and causes obstructive hydrocephalus. There is no extension through the foramina of Luschka.
+    q1: Which tumour, and what makes you say so?
+    a1: Medulloblastoma. A midline tumour arising from the roof and filling the fourth ventricle, hyperdense on CT and restricting diffusion because of its high nuclear-to-cytoplasmic ratio, is characteristic. Ependymoma arises from the floor and extrudes through the outlet foramina, which is absent here. Pilocytic astrocytoma would be a hemispheric cyst with a mural nodule.
+    q2: What staging do you need and when?
+    a2: Whole neuraxis MRI, ideally preoperatively, because postoperative blood and debris in the spinal canal make interpretation unreliable. Lumbar cerebrospinal fluid cytology, but taken at least two weeks after surgery to avoid a false positive from surgical debris. Metastatic status is one of the four standard-risk criteria.
+    q3: How do you manage the hydrocephalus and plan the approach?
+    a3: External ventricular drain at the start of the case, then resection in the same session, rather than shunting and waiting — which risks upward herniation and commits many children unnecessarily to permanent diversion. I would use a telovelar approach through the cerebellomedullary fissure, preserving the vermis, because that reduces cerebellar mutism compared with a transvermian route.
+    q4: Resection is gross total with 0.8 square centimetres residual, staging is M0, and molecular subgroup is WNT. Risk-stratify and counsel.
+    a4: Standard risk: over three years, residual under one and a half square centimetres, M0, and no high-risk features. WNT subgroup carries the best prognosis of Taylor's four subgroups, and is the group in which current trials de-escalate therapy to reduce late toxicity. I would counsel about neurocognitive decline from craniospinal irradiation, endocrinopathy, spinal growth impairment, platinum-related hearing loss, and cerebellar mutism, which affects twenty to twenty-five percent after posterior fossa surgery.
 ---
 
 Welcome to this oral board preparation session on pediatric brain tumors. This is one of the highest-yield topics you will encounter on the ABNS oral examination because it tests your knowledge of tumor biology, surgical decision-making, molecular classification, and adjuvant therapy all in a single case. Let's build your framework from the ground up.

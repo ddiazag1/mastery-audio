@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Functional"
 subcategory: "Movement"
 difficulty: 3
+questions:
+  - q: Separate the two tremors clinically.
+    a: Essential tremor is a postural and kinetic tremor, typically bilateral, often affecting head and voice, improved by alcohol, with a family history in many. Parkinsonian tremor is a rest tremor, asymmetric, pill-rolling, that suppresses with action, accompanied by bradykinesia and rigidity.
+    probe: Which one affects the head and voice?
+  - q: What is the mandatory prerequisite before offering DBS in Parkinson disease?
+    a: A formal levodopa challenge demonstrating at least thirty percent improvement in the UPDRS motor score comparing off-medication to on-medication states. Levodopa responsiveness is the single best predictor of stimulation success, and it is a mandatory prerequisite rather than a formality.
+    probe: What is the one symptom that does not follow that rule?
+  - q: Which diagnoses must you exclude, and what happens if you do not?
+    a: The atypical parkinsonian syndromes: multiple system atrophy, progressive supranuclear palsy and corticobasal degeneration. They do not respond to deep brain stimulation, and implanting a patient with one of these is a board-level error. That is why the levodopa challenge and careful diagnosis matter.
+    probe: What clinical features would make you suspect one of them?
+  - q: What target for essential tremor, and what are the options?
+    a: The ventral intermediate nucleus of the thalamus. Options are VIM deep brain stimulation, which is adjustable and reversible; radiofrequency thalamotomy; and magnetic resonance–guided focused ultrasound thalamotomy, which is incisionless.
+    probe: Which of those would you offer a patient on anticoagulation?
+  - q: What did Elias 2016 establish?
+    a: A randomised controlled trial in NEJM of magnetic resonance–guided focused ultrasound thalamotomy for essential tremor, demonstrating significant tremor reduction in the treated hand against sham at three months — a forty-seven percent reduction in hand tremor score — with sustained benefit at one and two years. It provided level one evidence for MRgFUS.
+    probe: What is the main limitation of that technique?
+  - q: Why is bilateral thalamotomy avoided?
+    a: Because bilateral lesioning of the ventral intermediate nucleus carries a substantial risk of dysarthria, dysphagia and gait disturbance. That asymmetry of risk is precisely why deep brain stimulation, which is adjustable and reversible, is preferred when bilateral treatment is needed.
+    probe: So when is a unilateral lesion the right answer?
+  - q: First-line medical therapy for essential tremor?
+    a: Propranolol and primidone, either alone or in combination. Surgery is reserved for tremor that is functionally disabling and refractory to adequate trials of both, and I would confirm genuinely adequate dosing before declaring medical failure.
+    probe: What limits propranolol in an older patient?
+  - q: Which parkinsonian symptoms do not improve with stimulation?
+    a: The levodopa-unresponsive features — axial symptoms including postural instability and freezing of gait that do not respond to levodopa, autonomic dysfunction, and cognitive decline. Broadly, stimulation reproduces the patient's best on-state, so anything levodopa does not fix, stimulation will not fix either.
+    probe: What is the exception to that rule?
+cases:
+  - label: Tremor in a surgeon's hands
+    stem: A 67-year-old retired dentist has a 15-year history of bilateral hand tremor, worse when holding a cup or writing, absent at rest, improved after a glass of wine. His father had the same. He now cannot eat soup in public. Propranolol caused bradycardia and primidone caused intolerable sedation. Examination shows no bradykinesia or rigidity.
+    q1: Diagnose him and justify against the alternative.
+    a1: Essential tremor. The tremor is postural and kinetic rather than at rest, bilateral, alcohol-responsive, with a positive family history, and crucially there is no bradykinesia or rigidity. Parkinsonian tremor is a rest tremor, asymmetric and pill-rolling, that suppresses with action and comes with bradykinesia — none of which he has.
+    q2: He has failed medical therapy. What are his surgical options?
+    a2: All target the ventral intermediate nucleus of the thalamus. Bilateral VIM deep brain stimulation, which is adjustable and reversible and can treat both hands. Radiofrequency thalamotomy. Or magnetic resonance–guided focused ultrasound thalamotomy, which is incisionless — Elias 2016 in NEJM showed a forty-seven percent reduction in hand tremor score against sham at three months, sustained at one and two years.
+    q3: He wants focused ultrasound on both sides. What do you tell him?
+    a3: I would not do both sides with a lesion. Bilateral ventral intermediate nucleus lesioning carries a substantial risk of dysarthria, dysphagia and gait disturbance. Focused ultrasound is an excellent option for his dominant hand, but if he needs bilateral treatment, deep brain stimulation is the safer answer because it is adjustable and reversible, and stimulation can be reduced if side effects emerge.
+    q4: Two years after a successful left thalamotomy his tremor is creeping back. Why, and what do you offer?
+    a4: Tolerance or habituation is well described after both thalamotomy and thalamic stimulation, and disease progression also contributes. I would first confirm the tremor is genuinely recurrent rather than a new tremor type, and reassess the diagnosis — a late emergence of rest tremor, bradykinesia or rigidity would make me reconsider parkinsonism. Options then are contralateral deep brain stimulation, or stimulation on the treated side, accepting that reoperating in a lesioned thalamus is more complex.
 ---
 
 Welcome to this oral board review session on essential tremor versus Parkinson tremor. These are the two most common movement disorders you will encounter in clinical practice, and the examiner expects you to differentiate them cleanly at the bedside, select the right workup, manage them medically, and know when and how to refer for surgery. The surgical targets are different, the patient selection criteria are different, and the pitfalls are real. Let's build this systematically.

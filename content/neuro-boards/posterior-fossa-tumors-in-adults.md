@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Cranial"
 subcategory: "Tumor"
 difficulty: 4
+questions:
+  - q: Give me the classic imaging of a haemangioblastoma.
+    a: WHO grade 1, highly vascular, well circumscribed, and in approximately sixty percent of cases a cystic lesion with a brightly enhancing mural nodule. The nodule is the tumour — the cyst wall is not — which is precisely why you resect the nodule and do not chase the wall.
+    probe: What is the commonest posterior fossa tumour in an adult overall?
+  - q: What syndrome must you exclude, and how often?
+    a: Von Hippel-Lindau. Twenty-five percent of all haemangioblastomas are VHL-associated, and a cerebellar haemangioblastoma may be the initial presenting feature of the syndrome. That obliges screening: retina, spine, kidneys, adrenals and pancreas, plus genetic counselling and family screening.
+    probe: Which tumours would you screen for specifically?
+  - q: A posterior fossa tumour with hydrocephalus. Shunt first or resect first?
+    a: Neither in isolation. The most widely accepted approach, and the one to articulate on boards, is to place an external ventricular drain at the start of the case and then proceed with tumour resection in the same operative session. That controls pressure without committing to permanent diversion.
+    probe: What is the danger of shunting alone and waiting?
+  - q: Why not simply shunt and come back later?
+    a: Two reasons. Relieving supratentorial pressure in the presence of a posterior fossa mass creates a gradient that can precipitate upward transtentorial herniation. And many patients will not need permanent diversion once the mass is removed, so a shunt commits them unnecessarily to lifelong dependence and its revision burden.
+    probe: How would you set the drain to reduce that risk?
+  - q: What is the risk of the sitting position and what does it demand?
+    a: Venous air embolism, at ten to forty-five percent. It demands precordial Doppler, transoesophageal echocardiography, a right atrial catheter, and a preoperative bubble study to exclude a patent foramen ovale, which would allow paradoxical embolism. Those four are the answer.
+    probe: You detect air. What do you do?
+  - q: Which approach to the fourth ventricle, and why?
+    a: The telovelar approach, opening the cerebellomedullary fissure through the tela choroidea and inferior medullary velum. It preserves the vermis and reduces the risk of cerebellar mutism compared with transvermian approaches, while giving comparable access to the fourth ventricle.
+    probe: What is cerebellar mutism and who gets it?
+  - q: What are the specific hazards of the floor of the fourth ventricle?
+    a: The facial colliculus and the hypoglossal and vagal trigones sit in the floor, so dissection there risks facial palsy and lower cranial nerve injury with aspiration. I would use floor mapping with stimulation and avoid working on the floor wherever the plane allows.
+    probe: How would you manage the airway risk postoperatively?
+  - q: What is the immediate postoperative concern after posterior fossa surgery?
+    a: Haematoma in a non-compliant compartment, which produces rapid deterioration, brainstem compression and obstructive hydrocephalus with little warning. Any decline demands immediate imaging and a low threshold for return to theatre. Swelling and delayed hydrocephalus are the other two.
+    probe: How long would you keep the external ventricular drain?
+cases:
+  - label: Cerebellar mass with hydrocephalus
+    stem: A 41-year-old man presents with six weeks of morning headache, vomiting and worsening balance. CT shows a cystic cerebellar lesion with an enhancing mural nodule, effacement of the fourth ventricle, and dilated lateral and third ventricles with periventricular low attenuation. He is drowsy but rousable.
+    q1: What is the lesion and what else must you look for?
+    a1: A haemangioblastoma is the leading diagnosis: a cystic cerebellar lesion with a brightly enhancing mural nodule is the classic appearance in around sixty percent of cases, and it is a WHO grade 1 tumour. Twenty-five percent are von Hippel-Lindau associated, and this may be the presenting feature, so I would image the whole neuraxis and screen retina, kidneys, adrenals and pancreas.
+    q2: He has obstructive hydrocephalus with transependymal flow. How do you manage that?
+    a2: External ventricular drain at the start of the case, then proceed to tumour resection in the same operative session. I would not shunt and wait: relieving supratentorial pressure with a posterior fossa mass in situ creates a gradient that can precipitate upward transtentorial herniation, and most patients will not need permanent diversion once the mass is removed.
+    q3: The anaesthetist proposes the sitting position. What do you require before agreeing?
+    a3: A preoperative bubble study to exclude a patent foramen ovale, because a right-to-left shunt allows paradoxical air embolism. Then precordial Doppler, transoesophageal echocardiography and a right atrial catheter for detection and aspiration. Venous air embolism occurs in ten to forty-five percent of sitting cases, so this is a routine requirement rather than a precaution.
+    q4: What is your operative principle for the tumour itself, and what would you not do?
+    a4: Resect the mural nodule en bloc without entering it — these lesions are highly vascular and piecemeal debulking causes torrential bleeding. I would obtain preoperative angiography in a large or solid lesion and consider embolisation. I would not chase the cyst wall: it is compressed gliotic brain, not tumour, and removing it adds morbidity without improving cure.
 ---
 
 Welcome back. Today we are covering posterior fossa tumors in adults. This is a high-yield oral board topic because it tests your differential diagnosis, your understanding of tumor biology, your surgical technique, and your ability to manage hydrocephalus all in one case. The examiners love it because there are several trap questions built into this topic, and if you do not know the cardinal rules of hemangioblastoma surgery, you will fail this station. So let us build this from the ground up.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Functional"
 subcategory: "Pain"
 difficulty: 3
+questions:
+  - q: What is first-line medical therapy, and what must you check first in some patients?
+    a: Carbamazepine. In patients of Asian descent, HLA-B*15:02 testing should be performed before starting it, because carriers are at high risk of Stevens-Johnson syndrome and toxic epidermal necrolysis. That pharmacogenomic point is specifically examinable.
+    probe: What is the second-line agent?
+  - q: Quote the durability of microvascular decompression.
+    a: Seventy percent pain-free at ten years, which establishes it as the durable gold standard surgical treatment. No ablative procedure matches that durability, which is the central argument for offering MVD to a fit patient with a demonstrated neurovascular conflict.
+    probe: What is the trade-off against the ablative options?
+  - q: Which vessel is usually responsible, and where?
+    a: The superior cerebellar artery in the majority, compressing the nerve at the root entry zone, where central myelin transitions to peripheral — the region most vulnerable to demyelination from pulsatile compression. The anterior inferior cerebellar artery and veins account for most of the remainder.
+    probe: What imaging would you obtain to demonstrate it?
+  - q: Classical or secondary? How do you tell and why does it matter?
+    a: Imaging. Classical trigeminal neuralgia has neurovascular compression; secondary has a structural cause — most importantly multiple sclerosis, a cerebellopontine angle tumour, or a vascular malformation. It matters because the treatment differs entirely, and MVD will not help a demyelinating plaque in the pons.
+    probe: What clinical features suggest a secondary cause?
+  - q: Young patient with bilateral symptoms and sensory loss. What are you thinking?
+    a: Multiple sclerosis until proven otherwise. Bilateral disease, young age, objective sensory loss and atypical features all point away from classical trigeminal neuralgia. I would obtain dedicated MRI looking for demyelinating plaques including in the pons at the trigeminal root entry zone.
+    probe: How would you treat that patient?
+  - q: Compare the ablative options.
+    a: Percutaneous procedures — radiofrequency thermocoagulation, balloon compression, glycerol rhizolysis — give rapid relief with lower durability and cause some sensory loss. Stereotactic radiosurgery is non-invasive but has a latency of weeks to months and lower long-term pain-free rates. All are preferable to MVD in the frail or those with limited life expectancy.
+    probe: Which carries the risk of anaesthesia dolorosa?
+  - q: What is anaesthesia dolorosa?
+    a: Painful deafferentation in a numb territory following an ablative procedure — a devastating and largely untreatable complication. It is the strongest argument against aggressive ablation in a young patient, and a reason to prefer microvascular decompression where the patient is fit for it.
+    probe: How would you manage it if it occurred?
+  - q: Consent a patient for microvascular decompression.
+    a: Hearing loss from eighth nerve manipulation, which is why intraoperative brainstem auditory evoked potentials are used; facial numbness and weakness; cerebrospinal fluid leak; meningitis; cerebellar injury or haematoma; recurrence in a minority over years; and the usual anaesthetic risks. Mortality is low but not zero.
+    probe: Which complication would you monitor for intraoperatively?
+cases:
+  - label: Lancinating facial pain
+    stem: A 54-year-old woman describes eighteen months of electric shock-like pain in the right cheek and upper lip, lasting seconds, triggered by chewing, cold wind and touching her face while applying make-up. She is pain-free between attacks. Neurological examination including facial sensation is normal. Carbamazepine gave good relief initially but she now has dizziness and hyponatraemia on 1,000 milligrams daily.
+    q1: Characterise the pain and say what the normal examination tells you.
+    a1: Classical trigeminal neuralgia in the V2 distribution: paroxysmal, lancinating, seconds in duration, trigger-evoked, with complete freedom between attacks. A normal examination — specifically normal facial sensation — argues for classical rather than secondary trigeminal neuralgia, where objective sensory loss would point to a structural cause.
+    q2: What imaging and what are you looking for?
+    a2: High-resolution MRI with heavily T2-weighted steady-state sequences through the cerebellopontine angle, to demonstrate neurovascular conflict at the root entry zone, most often from the superior cerebellar artery. Equally important, I am excluding secondary causes: a cerebellopontine angle tumour, a vascular malformation, and demyelinating plaques of multiple sclerosis.
+    q3: Imaging shows clear superior cerebellar artery compression at the root entry zone. She is fit and 54. What do you recommend?
+    a3: Microvascular decompression. She has failed medical therapy through intolerance rather than lack of efficacy, which is a legitimate indication, and she has a demonstrated conflict. MVD gives seventy percent pain-free rates at ten years — no ablative procedure matches that durability, and at fifty-four with a long life expectancy durability matters.
+    q4: She asks why not just have the needle procedure her friend had. Answer her.
+    a4: Percutaneous ablative procedures — radiofrequency, balloon compression, glycerol — give rapid relief with a shorter recovery and are excellent options for frail patients or those with limited life expectancy. But they are less durable and they work by injuring the nerve, so they cause facial numbness and carry a risk of anaesthesia dolorosa, painful deafferentation in a numb face, which is devastating and largely untreatable. In a fit fifty-four-year-old I would rather decompress the nerve than damage it.
 ---
 
 Let's work through trigeminal neuralgia from presentation to treatment algorithm. This is a bread-and-butter functional neurosurgery topic that shows up on the oral boards consistently, and you need to be able to walk through the entire decision tree without hesitation.

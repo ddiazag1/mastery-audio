@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Degenerative"
 difficulty: 3
+questions:
+  - q: What defines dynamic instability on flexion-extension films?
+    a: White and Panjabi criteria: greater than three point five millimetres of translation, or greater than eleven degrees of angular change between adjacent segments on the lateral view. I obtain them specifically to answer whether decompression alone will suffice.
+    probe: When would you not obtain flexion-extension films at all?
+  - q: Give me your surgical indications.
+    a: Progressive neurological deficit, myelopathy, and intractable radicular pain that has failed an adequate conservative trial — generally six to twelve weeks of appropriate non-surgical treatment. Pain alone without an adequate trial is not an indication.
+    probe: Does mild static myelopathy need surgery?
+  - q: Four-level myelopathy. Anterior or posterior?
+    a: For three or more levels I favour a posterior approach. A four-level anterior construct carries pseudarthrosis rates of roughly fifteen to twenty percent, and the alternatives are corpectomy constructs with their own risks. Posterior decompression, with fusion depending on alignment, is generally safer at that number of levels.
+    probe: What single alignment factor would forbid a posterior-only approach?
+  - q: Who is a candidate for disc replacement?
+    a: Symptomatic single or two-level disc herniation or spondylosis causing radiculopathy or myelopathy, with no significant facet arthrosis at the index level, no instability, no ossification of the posterior longitudinal ligament, and preserved segmental motion. Those exclusions are the answer, not the indication.
+    probe: Why does facet arthrosis exclude them?
+  - q: What did Prestige ST show?
+    a: At seven-year follow-up, cervical disc replacement was non-inferior to ACDF for overall success and superior on some secondary endpoints, including neurological success and the rate of subsequent surgery at both the index and adjacent levels.
+    probe: Does that make arthroplasty the default?
+  - q: And Mobi-C?
+    a: The first FDA IDE trial to study two-level arthroplasty. At seven years, two-level disc replacement was statistically superior to two-level ACDF for overall success, with lower rates of adjacent segment disease and reoperation. That is a stronger result than the single-level data.
+    probe: Why might two levels favour arthroplasty more than one?
+  - q: Talk me through the anterior approach and what you must protect.
+    a: Transverse incision, plane between the sternocleidomastoid and carotid sheath laterally and the trachea and oesophagus medially. Protect the recurrent laryngeal nerve, the oesophagus, the carotid, the sympathetic chain along the longus colli, and the vertebral artery laterally if you stray outside the uncinate processes.
+    probe: Left or right side, and why is that debated?
+  - q: What complications do you consent for specifically?
+    a: Dysphagia, which is common early; recurrent laryngeal nerve palsy and hoarseness; oesophageal injury; vertebral artery injury; C5 palsy; dural tear and cerebrospinal fluid leak; pseudarthrosis, rising with the number of levels; adjacent segment disease; and hardware failure.
+    probe: What is a C5 palsy and why does it happen?
+cases:
+  - label: Progressive myelopathy
+    stem: A 61-year-old accountant reports twelve months of clumsy hands, difficulty buttoning shirts, and an unsteady gait. Examination shows hyperreflexia in all four limbs, a positive Hoffmann sign bilaterally, and a broad-based gait. MRI shows cord compression with T2 signal change at C4-5, C5-6 and C6-7, with congenital canal narrowing.
+    q1: What is the diagnosis and does conservative management have a role?
+    a1: Degenerative cervical myelopathy with cord signal change. Progressive myelopathy is a surgical indication in its own right and does not require a failed conservative trial, unlike radicular pain which warrants six to twelve weeks of non-surgical treatment first. Cord signal change indicates established injury and argues against watchful waiting.
+    q2: Three levels with congenital narrowing. Which approach?
+    a2: Posterior. At three or more levels I favour a posterior approach, because a three or four-level anterior construct carries pseudarthrosis rates around fifteen to twenty percent. Congenital canal narrowing also means the whole canal is tight, which posterior decompression addresses across levels rather than segment by segment.
+    q3: What must you check before committing to posterior surgery?
+    a3: Cervical alignment. Posterior decompression relies on the cord drifting backwards, which cannot happen in kyphosis, so a kyphotic spine mandates an anterior or combined approach. I would assess the C2-C7 sagittal vertical axis, the T1 slope and, in ossification of the posterior longitudinal ligament, the K line — if the ossified mass crosses it, he is K line negative and posterior-only will fail.
+    q4: He wakes with a profound deltoid and biceps weakness on the left. What is it and what do you do?
+    a4: A C5 palsy, a recognised complication after posterior decompression, thought to result from tethering of the C5 root as the cord drifts posteriorly, or from segmental cord ischaemia. I would first re-image urgently to exclude a compressive haematoma or inadequate decompression. If imaging is satisfactory, management is supportive with physiotherapy, and I would counsel that the majority recover over weeks to months, though not all fully.
 ---
 
 Let's master cervical disc herniation management for the oral boards.

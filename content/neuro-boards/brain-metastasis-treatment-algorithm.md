@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Cranial"
 subcategory: "Tumor"
 difficulty: 3
+questions:
+  - q: Define RPA Class I.
+    a: Age under sixty-five, Karnofsky performance status of seventy or higher, a controlled primary tumour, and no extracranial metastases. It is the best-prognosis group and the one in whom aggressive local therapy is most clearly justified.
+    probe: What does that imply for a patient who fails one of those criteria?
+  - q: What did Patchell 1990 establish?
+    a: NEJM 1990: in a single brain metastasis, surgical resection plus whole-brain radiotherapy was superior to whole-brain radiotherapy alone, with improved survival, better local control and longer functional independence. It is the trial that established surgery for a solitary accessible metastasis.
+    probe: Which patients did it select?
+  - q: And Patchell 1998?
+    a: It asked the next question: after complete resection of a single metastasis, is postoperative whole-brain radiotherapy needed? Randomising resection plus WBRT against resection plus observation, WBRT reduced recurrence — both local and distant — but conferred no survival benefit. That distinction is the whole point.
+    probe: So why did practice not simply adopt WBRT for everyone?
+  - q: What did Brown 2017 change?
+    a: The Alliance trial in JAMA compared postoperative stereotactic radiosurgery to the resection cavity against postoperative whole-brain radiotherapy. Cavity SRS preserved cognition better with comparable survival, which is why cavity radiosurgery has largely replaced adjuvant whole-brain radiotherapy after resection.
+    probe: What is the trade-off you accept with cavity SRS?
+  - q: What dosing paradigm governs radiosurgery here?
+    a: RTOG 90-05, the dose de-escalation study, which established maximum tolerated doses inversely related to lesion diameter — smaller lesions tolerate higher single-fraction doses, larger ones require reduction to limit radionecrosis. It is why size drives dose rather than the surgeon's preference.
+    probe: At what size does single-fraction SRS become problematic?
+  - q: What did RTOG 9508 show?
+    a: Andrews and colleagues compared whole-brain radiotherapy plus a stereotactic radiosurgery boost against whole-brain radiotherapy alone, showing benefit from the boost, most clearly in patients with a single metastasis and in good performance status groups.
+    probe: How does that sit alongside the modern move away from WBRT?
+  - q: Does systemic therapy now cross the blood-brain barrier?
+    a: For selected histologies, yes, and it has changed the algorithm. CheckMate 204 showed ipilimumab plus nivolumab achieved a fifty-five percent intracranial response rate in melanoma brain metastases. FLAURA demonstrated a twenty-one percent intracranial objective response with osimertinib in EGFR-mutant lung cancer.
+    probe: Does that mean you can defer local therapy?
+  - q: When do you still resect rather than radiate?
+    a: A large symptomatic lesion with mass effect, a posterior fossa lesion threatening the fourth ventricle, when tissue diagnosis is needed, when the lesion is radioresistant and accessible, and when the patient has good performance status with controlled systemic disease. Size and symptoms drive it more than number alone.
+    probe: How many metastases is too many to treat with radiosurgery?
+cases:
+  - label: Solitary metastasis, good performance status
+    stem: A 58-year-old woman with treated breast cancer, currently in systemic remission, presents with a two-week history of headache and mild right hemiparesis. MRI shows a solitary 3.5-centimetre left frontal enhancing lesion with surrounding oedema and 5 millimetres of midline shift. Karnofsky is 80. Staging shows no extracranial disease.
+    q1: Classify her prognostically and say what that buys you.
+    a1: She meets RPA Class I: under sixty-five, Karnofsky seventy or above, controlled primary, no extracranial metastases. That is the best-prognosis group, and it justifies aggressive local therapy because she has the survival to benefit from durable local control rather than palliation.
+    q2: Resection or radiosurgery? Commit.
+    a2: Resection. Patchell 1990 established that for a single brain metastasis, resection plus radiotherapy was superior to radiotherapy alone with improved survival and functional independence. At three and a half centimetres with oedema, mass effect and a deficit, this exceeds the comfortable size for single-fraction radiosurgery under the RTOG 90-05 dose paradigm, and she needs decompression.
+    q3: She has a complete resection. Do you give whole-brain radiotherapy?
+    a3: No — I would give stereotactic radiosurgery to the resection cavity. Patchell 1998 showed adjuvant whole-brain radiotherapy reduces recurrence but confers no survival benefit, and Brown 2017 showed cavity radiosurgery preserves cognition better than whole-brain radiotherapy with comparable survival. The trade-off is a higher rate of distant intracranial recurrence, which I would manage with close surveillance imaging.
+    q4: Eight months later she has four new small lesions, all under a centimetre, and remains KPS 80. What now?
+    a4: Radiosurgery to all four rather than whole-brain radiotherapy, given her performance status, small lesion size and the cognitive cost of whole-brain treatment. I would also review her systemic options with oncology, because intracranial activity of modern systemic agents is real — CheckMate 204 showed a fifty-five percent intracranial response in melanoma and FLAURA twenty-one percent with osimertinib — so the systemic regimen may itself contribute to intracranial control.
 ---
 
 Let's work through brain metastasis treatment algorithm, one of the highest-yield topics you will face on the oral boards. This comes up constantly because brain metastases are far and away the most common intracranial tumors. They outnumber primary brain tumors by a factor of ten to one. If you remember nothing else from this session, remember that ratio, because it frames everything that follows. Any ring-enhancing lesion you encounter in a patient over fifty should have metastasis at the top of your differential until proven otherwise.

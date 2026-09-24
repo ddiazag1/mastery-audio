@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Functional"
 subcategory: "Movement"
 difficulty: 4
+questions:
+  - q: STN or GPi for Parkinson disease? Give me the evidence.
+    a: VA CSP-468 randomised 299 patients to bilateral STN versus bilateral GPi and found equivalent motor outcomes at twenty-four months. COMPARE similarly found equivalent UPDRS Part III improvement at twelve months. The difference lies in secondary outcomes, not motor efficacy.
+    probe: What are those secondary differences?
+  - q: So what actually separates the two targets?
+    a: STN allows greater medication reduction, which matters in a patient troubled by dyskinesia or drug burden. GPi has fewer cognitive and behavioural adverse effects — VA CSP-468 showed slightly more cognitive and mood adverse effects in the STN group. So the target is chosen by the patient's profile.
+    probe: Which would you choose for a patient with mild cognitive impairment?
+  - q: Which dystonia responds best, and by how much?
+    a: Primary generalised dystonia with a DYT1 or TOR1A mutation — seventy to ninety percent improvement in the Burke-Fahn-Marsden Dystonia Rating Scale at one to three years. It is the best surgical outcome of any dystonia subtype.
+    probe: What target do you use?
+  - q: What did Vidailhet establish?
+    a: The 2005 NEJM randomised sham-controlled trial of bilateral GPi stimulation in primary generalised dystonia showed fifty-one percent improvement in the Burke-Fahn-Marsden motor score at one year, establishing level one evidence for deep brain stimulation in dystonia.
+    probe: Why was a sham-controlled design important there?
+  - q: What did SANTE show?
+    a: Published 2010, randomising one hundred and ten adults with medication-refractory focal epilepsy to bilateral anterior nucleus of thalamus stimulation versus sham. Forty percent seizure reduction at one year, rising to sixty-nine percent at five years. It established ANT stimulation for refractory focal epilepsy.
+    probe: Does it produce seizure freedom?
+  - q: What did PD SURG address?
+    a: Lancet Neurology 2010, comparing deep brain stimulation plus best medical therapy against best medical therapy alone in Parkinson disease, supporting surgery over medical management alone for appropriately selected patients with advanced disease and motor complications.
+    probe: How does EARLYSTIM extend that?
+  - q: Summarise EARLYSTIM and why it changed practice.
+    a: It examined subthalamic stimulation earlier in the disease course — within seven and a half years of onset and three years of motor fluctuations — rather than waiting for advanced disease, and showed superiority over best medical therapy for quality of life, motor disability, motor complications and time with good mobility without dyskinesia. It widened the surgical window.
+    probe: Does that mean you should operate on everyone early?
+  - q: Awake with microelectrode recording, or asleep under imaging guidance?
+    a: Retrospective studies and one prospective trial have shown equivalent clinical outcomes between the two approaches. So the choice turns on patient tolerance, the team's expertise, and whether physiological confirmation is needed, rather than on demonstrated superiority of either.
+    probe: Which patient could not tolerate an awake procedure?
+cases:
+  - label: Choosing a target
+    stem: A 61-year-old man has had Parkinson disease for nine years. He now has motor fluctuations with three hours of off time daily and troublesome peak-dose dyskinesia. His UPDRS Part III is 52 off and 23 on, and he takes 1,200 milligrams of levodopa daily. Neuropsychology shows mild executive dysfunction. There is no hallucination or depression.
+    q1: Is he a candidate? Show your reasoning with numbers.
+    a1: Yes. His levodopa challenge shows a fifty-five percent improvement, from fifty-two off to twenty-three on, comfortably exceeding the mandatory thirty percent threshold on the UPDRS motor score — the best predictor of stimulation success. He has motor fluctuations and dyskinesia refractory to medical optimisation, which is the classic indication.
+    q2: STN or GPi? Argue both and commit.
+    a2: Motor outcomes are equivalent — VA CSP-468 at twenty-four months and COMPARE at twelve months both showed that. STN allows greater medication reduction, attractive given his twelve hundred milligrams and dyskinesia. GPi has fewer cognitive and behavioural adverse effects, and VA CSP-468 showed slightly more cognitive and mood problems with STN. Given his mild executive dysfunction, I would choose GPi.
+    q3: He asks whether he should have had this done years ago.
+    a3: Possibly, and EARLYSTIM is the reason. It studied subthalamic stimulation within seven and a half years of onset and three years of motor fluctuations, and showed superiority over best medical therapy for quality of life, motor disability and time with good mobility. That widened the window from advanced disease to earlier fluctuation. But it does not mean operating on everyone early — he still needed demonstrable levodopa-responsive fluctuations to benefit.
+    q4: Six months after implantation his motor score is better but his wife reports he is more impulsive and low in mood. What do you do?
+    a4: Take it seriously rather than attributing it to disease progression. Stimulation-induced mood and behavioural change is a recognised adverse effect, more so with subthalamic than pallidal targets. I would review the stimulation parameters and active contacts — a ventral contact spreading to limbic territory can produce exactly this — try reprogramming, and review his medication reduction, since rapid dopaminergic withdrawal can itself cause apathy and low mood. I would involve neuropsychiatry.
 ---
 
 Let's master deep brain stimulation targets for the oral boards.

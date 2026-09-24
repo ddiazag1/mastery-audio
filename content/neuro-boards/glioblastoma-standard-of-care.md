@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Cranial"
 subcategory: "Tumor"
 difficulty: 4
+questions:
+  - q: Define glioblastoma under the 2021 WHO classification.
+    a: A WHO grade 4 diffuse astrocytic glioma that is, by definition, IDH-wildtype. Incidence is roughly three point two per hundred thousand person-years. The 2021 classification made molecular biology, not histology, the defining feature.
+    probe: So what do you call an IDH-mutant tumour with grade 4 histology?
+  - q: An IDH-mutant tumour has necrosis and microvascular proliferation. What is it, and what is its prognosis?
+    a: Astrocytoma, IDH-mutant, WHO grade 4 — not glioblastoma. Median survival is three to five years, dramatically better than IDH-wildtype glioblastoma. Calling it glioblastoma is the classic 2021 classification error.
+    probe: Why does that distinction matter beyond nomenclature?
+  - q: Which molecular features upgrade a histologically lower-grade IDH-wildtype astrocytoma to glioblastoma?
+    a: Any one of three: TERT promoter mutation, EGFR amplification, or combined whole-chromosome gain of chromosome 7 with loss of chromosome 10 — plus seven, minus ten. They confer a prognosis equivalent to histologically classic glioblastoma.
+    probe: Why did the classification move in that direction?
+  - q: What does MGMT methylation predict, and with what numbers?
+    a: Response to temozolomide. In Hegi's subanalysis of the Stupp trial, methylated patients receiving temozolomide had a median overall survival of twenty-one point seven months against twelve point seven months in unmethylated tumours. It is predictive as well as prognostic.
+    probe: Would an unmethylated tumour change your treatment?
+  - q: Recite the Stupp protocol.
+    a: Sixty Gray in thirty fractions with concurrent temozolomide at seventy-five milligrams per square metre daily, followed by adjuvant temozolomide at one hundred fifty to two hundred milligrams per square metre on days one to five of twenty-eight-day cycles for six cycles. NEJM 2005: median overall survival fourteen point six months versus twelve point one with radiation alone.
+    probe: What has been added to that since?
+  - q: What did EF-14 establish, and what did AVAglio and RTOG 0825 refute?
+    a: EF-14 showed adding tumour treating fields to maintenance temozolomide improved median overall survival to twenty point nine months against sixteen point zero. AVAglio and RTOG 0825 both showed bevacizumab does not improve overall survival, either front-line or at recurrence.
+    probe: So what is bevacizumab still used for?
+  - q: Your patient is 78. Does he get the Stupp protocol?
+    a: Probably not in full — cumulative toxicity over the six-week concurrent phase is often not tolerated over seventy. The Perry trial, NEJM 2017, showed adding temozolomide to hypofractionated radiation of forty Gray in fifteen fractions over three weeks improved survival against hypofractionated radiation alone, nine point three versus seven point six months.
+    probe: What else would you weigh in an elderly patient?
+  - q: What did Stummer show about 5-ALA?
+    a: The randomised trial in Lancet Oncology showed 5-ALA-guided resection achieved gross total resection in sixty-five percent against thirty-six percent with conventional white light, translating into improved six-month progression-free survival. It is the evidence base for fluorescence-guided surgery.
+    probe: What does 5-ALA not tell you?
+cases:
+  - label: New diagnosis to recurrence
+    stem: A 62-year-old presents with two weeks of expressive dysphasia and headache. MRI shows a 4-centimetre left frontal ring-enhancing mass with central necrosis and extensive surrounding FLAIR signal crossing toward the corpus callosum. Karnofsky is 80.
+    q1: What is your operative aim and what would you use to achieve it?
+    a1: Maximal safe resection, because extent of resection correlates with survival. Given the dominant hemisphere and proximity to language, I would use functional imaging and tractography for planning, awake craniotomy with direct cortical and subcortical stimulation for the resection margin, and 5-ALA fluorescence — Stummer showed gross total resection in sixty-five percent against thirty-six percent with white light.
+    q2: Histology shows an IDH-wildtype astrocytoma with necrosis and microvascular proliferation. Classify it and tell me what else you need.
+    a2: Glioblastoma, IDH-wildtype, WHO grade 4 — glioblastoma is IDH-wildtype by definition under the 2021 classification. I need MGMT promoter methylation status, because it is predictive of temozolomide response: Hegi's Stupp subanalysis showed twenty-one point seven months median survival in methylated against twelve point seven in unmethylated tumours.
+    q3: MGMT is methylated. Set out his adjuvant treatment.
+    a3: The Stupp protocol: sixty Gray in thirty fractions with concurrent temozolomide seventy-five milligrams per square metre daily, then adjuvant temozolomide one hundred fifty to two hundred milligrams per square metre days one to five of twenty-eight-day cycles for six cycles. I would discuss adding tumour treating fields to maintenance, which EF-14 showed improved median survival to twenty point nine months against sixteen.
+    q4: Three months after chemoradiation the enhancing volume has grown and he is stable clinically. What do you do?
+    a4: This timing is classic for pseudoprogression, which occurs within the first three to six months after chemoradiation. In a clinically stable patient my approach is to continue current therapy and repeat imaging in four to six weeks, supported by perfusion and spectroscopy — elevated relative cerebral blood volume and choline favour true progression, low perfusion favours treatment effect. I would not stop effective therapy on a single scan.
 ---
 
 Welcome to this oral board review session on glioblastoma standard of care. This is one of the highest-yield topics you will encounter on the ABNS oral boards. Examiners love it because it spans surgical decision-making, molecular diagnostics, adjuvant therapy, and complication management. Let's build from the foundation up and then walk through a clinical case the way an examiner would push you.

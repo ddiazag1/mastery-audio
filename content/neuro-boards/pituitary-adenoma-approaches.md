@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Cranial"
 subcategory: "Tumor"
 difficulty: 3
+questions:
+  - q: Give me the Knosp classification.
+    a: Grades cavernous sinus invasion against tangent lines drawn on the cavernous carotid. Grade 1: tumour medial to the medial tangent. Grade 2: between medial and lateral tangents. Grade 3: lateral to the lateral tangent. Grade 4: total encasement of the cavernous segment of the internal carotid.
+    probe: Which grades are effectively unresectable for cure?
+  - q: Which Knosp grades change your operative goal?
+    a: Three and four are essentially unresectable for cure via surgery. That does not mean you do not operate — you may still debulk for mass effect or chiasmal compression — but the conversation about biochemical cure in a functioning adenoma changes entirely, and adjuvant medical or radiation therapy becomes central.
+    probe: How would you counsel a Cushing's patient with a Knosp 4 tumour?
+  - q: Which functioning adenoma is not primarily surgical?
+    a: Prolactinoma. First-line treatment is a dopamine agonist — cabergoline — which achieves biochemical control and tumour shrinkage in the large majority, even in giant tumours with chiasmal compression. Operating first on a prolactinoma is a classic error.
+    probe: When would you operate on a prolactinoma?
+  - q: What must be checked before any pituitary operation?
+    a: Full anterior pituitary axis assessment and formal visual fields with acuity. Endocrine because unrecognised hypocortisolism is lethal perioperatively and must be replaced before surgery; visual fields because they are both an indication and the baseline against which you judge success.
+    probe: Which hormone do you replace before anything else?
+  - q: Describe pituitary apoplexy and its management.
+    a: Sudden headache, visual loss, ophthalmoplegia and altered consciousness from haemorrhage or infarction into an adenoma. Immediate priority is steroid replacement, because acute hypoadrenalism kills. Urgent surgical decompression is indicated for visual compromise or deteriorating consciousness; selected patients without visual loss can be managed conservatively.
+    probe: Which cranial nerve is most often affected and why?
+  - q: Endoscopic endonasal or transcranial?
+    a: Endonasal for the great majority — sellar and suprasellar extension with a favourable midline configuration. Transcranial is reserved for significant lateral extension beyond the carotid, a dumbbell configuration with a narrow waist at the diaphragma, or fibrous tumours that will not descend, where pulling blindly risks the optic apparatus.
+    probe: What anatomical variant makes the endonasal route hazardous?
+  - q: What are the specific complications you consent for?
+    a: Cerebrospinal fluid rhinorrhoea and the associated meningitis risk; diabetes insipidus, usually transient; hypopituitarism requiring replacement; visual deterioration; carotid injury, which is rare and catastrophic; epistaxis; and sinonasal morbidity including altered smell.
+    probe: How do you manage a postoperative CSF leak?
+  - q: Sodium is 126 on day eight after transsphenoidal surgery. What is it?
+    a: Delayed hyponatraemia, most often the syndrome of inappropriate antidiuresis, which characteristically peaks around day seven to ten and is the commonest cause of readmission after transsphenoidal surgery. Distinguish from cerebral salt wasting by volume status; treat SIADH with fluid restriction and correct slowly.
+    probe: How fast may you correct it?
+cases:
+  - label: Macroadenoma with visual loss
+    stem: A 48-year-old man presents with six months of deteriorating peripheral vision and reduced libido. Fields show a bitemporal hemianopia. MRI shows a 3-centimetre sellar mass with suprasellar extension elevating the chiasm, and extension to the lateral tangent line of the right cavernous carotid. Prolactin is 1,900 mIU/L.
+    q1: What is the first question you must answer, and why?
+    a1: Is this a prolactinoma or a non-functioning adenoma with stalk effect? A prolactin of nineteen hundred is modestly elevated, which fits stalk compression rather than a true prolactinoma — a macroprolactinoma of this size would usually produce a far higher level. The distinction is critical because a prolactinoma is treated medically with cabergoline first, not surgically.
+    q2: You confirm a non-functioning adenoma. What else before theatre?
+    a2: Full anterior pituitary axis assessment with replacement of any deficiency before surgery — unrecognised hypocortisolism is lethal perioperatively, so cortisol is replaced first. Formal visual fields and acuity as both indication and baseline. And careful review of the Knosp grade: extension to the lateral tangent line makes this Knosp grade three.
+    q3: What does Knosp 3 mean for your goal?
+    a3: Knosp three and four are essentially unresectable for cure. In a non-functioning adenoma that matters less than it would in a secreting tumour, because my goal here is chiasmal decompression and preservation of pituitary function rather than biochemical cure. I would aim for maximal safe debulking of the sellar and suprasellar components, accept residual cavernous disease, and plan surveillance with radiotherapy held in reserve.
+    q4: He does well and is discharged on day three. On day eight he returns confused, and sodium is 126. Work it through.
+    a4: Delayed hyponatraemia after transsphenoidal surgery, characteristically peaking around day seven to ten, and the commonest cause of readmission. Most often the syndrome of inappropriate antidiuresis; the alternative is cerebral salt wasting, distinguished by volume status — SIADH is euvolaemic or mildly hypervolaemic, salt wasting is hypovolaemic. SIADH is treated with fluid restriction, salt wasting with salt and volume. Either way I would correct by no more than ten to twelve millimoles per litre in twenty-four hours to avoid osmotic demyelination, and recheck his cortisol, because hypoadrenalism also causes hyponatraemia.
 ---
 
 Let's talk about pituitary adenoma approaches. This is a high-yield oral board topic because it tests your endocrine knowledge, your surgical anatomy, your judgment about when to operate and when not to operate, and your ability to handle complications. There are several classic traps the examiners love, and we are going to walk through every one of them.

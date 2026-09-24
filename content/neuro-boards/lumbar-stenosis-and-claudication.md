@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Degenerative"
 difficulty: 3
+questions:
+  - q: Neurogenic or vascular claudication? Separate them.
+    a: Neurogenic claudication is relieved by flexion and positional change rather than simply by stopping — the shopping cart sign — and walking uphill or cycling is better tolerated than walking downhill. Vascular claudication is relieved by stopping regardless of posture, with absent pulses and trophic changes.
+    probe: What is your screening test for the vascular cause?
+  - q: What ankle-brachial index confirms peripheral vascular disease?
+    a: Less than zero point nine. It is the screening test, it is cheap, and it prevents you from decompressing a spine in a patient whose legs hurt because of their arteries.
+    probe: What if both are present?
+  - q: Describe the shopping cart sign as a patient would.
+    a: He can walk the whole supermarket leaning on the trolley without symptoms, but walking across the car park without it is limited to fifty yards. The flexed posture increases canal diameter; extension narrows it. It is close to pathognomonic.
+    probe: Which activity would you expect him to tolerate well?
+  - q: What do epidural injections actually achieve here?
+    a: Modest short-term benefit. The MILD trial and subsequent meta-analyses show symptom improvement lasting roughly two to six weeks. They are reasonable for symptom control and can have diagnostic value, but they are not a durable solution and I would say so honestly.
+    probe: Would a good response predict a good surgical outcome?
+  - q: State your surgical indications.
+    a: Failure of adequate conservative management for three to six months, progressive neurological deficit at any time, and cauda equina syndrome, which is an emergency. Pain severity alone without a trial is not an indication.
+    probe: What does SPORT say about the benefit of surgery?
+  - q: Summarise the SPORT stenosis data.
+    a: The as-treated analysis at four years showed patients who underwent surgery had significantly greater improvement in bodily pain, physical function and Oswestry Disability Index than those treated conservatively. The intention-to-treat analysis was muddied by substantial crossover, which is the caveat to state.
+    probe: Why does crossover matter so much in that trial?
+  - q: Grade 1 degenerative spondylolisthesis at L4-5 with stenosis. Decompress alone?
+    a: No — add fusion. SLIP II, Ghogawala, NEJM 2016, randomised exactly this population to decompression alone versus decompression plus fusion, and at four years the fusion group had significantly better SF-36 physical component scores, the primary outcome. That is level one evidence.
+    probe: What is the commonest error candidates make here?
+  - q: What criteria make you add fusion?
+    a: Spondylolisthesis greater than Meyerding grade one; any grade with dynamic instability, meaning more than three millimetres of translation on flexion-extension films; the need for a wide decompression removing more than half the facets bilaterally; recurrent stenosis after prior decompression; and significant deformity or scoliosis.
+    probe: How much facet can you take before the segment is unstable?
+cases:
+  - label: The man with the trolley
+    stem: A 68-year-old smoker with type 2 diabetes describes buttock and calf pain on walking for six months. He can push a supermarket trolley the length of the store but manages only 50 yards across the car park. He has had physiotherapy and two epidural injections with a few weeks of relief each. MRI shows severe central stenosis at L4-5 with a Grade 1 degenerative spondylolisthesis.
+    q1: What single investigation would you not skip, and why?
+    a1: Ankle-brachial index. He is a diabetic smoker, so peripheral vascular disease is a real competing diagnosis, and an index below zero point nine confirms it. The shopping cart sign strongly favours neurogenic claudication, but the two can coexist and decompressing a spine in a patient whose legs hurt from their arteries is a preventable failure.
+    q2: ABI is 1.05 and pulses are intact. Does he meet surgical indications?
+    a2: Yes. He has failed adequate conservative management well beyond three to six months, including physiotherapy and injections which gave only the expected two to six weeks of benefit that the MILD trial data predict. SPORT's as-treated analysis at four years supports surgery over continued conservative care for exactly this picture.
+    q3: Decompression alone or decompression plus fusion? Commit and justify.
+    a3: Decompression plus fusion. He has a Grade 1 degenerative spondylolisthesis at L4-5 with stenosis, which is precisely the population randomised in SLIP II, and at four years the fusion group had significantly better SF-36 physical component scores. Recommending decompression alone here is the classic error, because it ignores level one evidence.
+    q4: He is 68 with diabetes. How do you weigh the added morbidity of fusion?
+    a4: Honestly, and as a genuine trade-off. Fusion adds operative time, blood loss, hardware complications, adjacent segment disease and a higher infection risk, all amplified by diabetes. I would optimise his glycaemic control and smoking preoperatively, because smoking substantially raises pseudarthrosis rates. But the evidence favours fusion for this specific pathology, and I would not withhold it on age alone at sixty-eight.
 ---
 
 Let's master lumbar stenosis and claudication for the oral boards.

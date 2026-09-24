@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Tumor"
 difficulty: 4
+questions:
+  - q: What does NOMS stand for and where is it from?
+    a: Neurologic, Oncologic, Mechanical and Systemic. Developed at Memorial Sloan Kettering by Laufer, Bilsky and colleagues as a decision framework integrating all four dimensions into a single algorithm. Each component drives a specific treatment decision rather than contributing to a score.
+    probe: Which component decides whether you operate on the cord?
+  - q: Give me the Bilsky epidural compression scale.
+    a: Grade zero is bone-only disease with no epidural extension. Grade one is epidural impingement without cord compression. Grade two is cord compression with visible cerebrospinal fluid around the cord. Grade three is severe compression with no visible cerebrospinal fluid.
+    probe: Which grades push you toward separation surgery?
+  - q: Score SINS for me.
+    a: Six components, total zero to eighteen: location, pain character, bone lesion quality, spinal alignment, vertebral body collapse, and posterolateral involvement. Zero to six is stable; seven to twelve is indeterminate or potentially unstable warranting surgical consultation; thirteen to eighteen is unstable requiring stabilisation.
+    probe: Which locations score highest and why?
+  - q: Which spinal levels score three points for location?
+    a: The junctional segments: occipitocervical C1 to C2, cervicothoracic C7 to T2, and thoracolumbar T12 to L1. They score highest because the transition between a mobile and a rigid segment concentrates mechanical stress.
+    probe: Which region scores lowest?
+  - q: What does the revised Tokuhashi score do, and what are its cutoffs?
+    a: Predicts survival to guide how aggressive to be. Six parameters — Karnofsky performance status, extraspinal bone metastases, vertebral metastases, visceral metastases, primary tumour site, and degree of cord palsy — totalling zero to fifteen. Eight or less predicts under six months and favours palliation; nine to eleven predicts six months or more and supports surgery; twelve or more predicts twelve months or more and supports excisional surgery.
+    probe: Which single parameter carries the most weight?
+  - q: Summarise Patchell.
+    a: Lancet 2005, randomising direct decompressive surgery plus radiotherapy against radiotherapy alone for metastatic epidural cord compression. Eighty-four percent versus fifty-seven percent remained ambulatory. It established surgery plus radiation as superior for suitable patients.
+    probe: Which patients did it exclude?
+  - q: What is the Patchell caveat?
+    a: It excluded highly radiosensitive histologies such as lymphoma and myeloma, so it does not apply to those tumour types, which are treated with radiotherapy and systemic therapy rather than upfront surgery. Quoting Patchell without that caveat is a trap.
+    probe: Which other histologies are radiosensitive?
+  - q: Explain separation surgery plus SBRT.
+    a: Rather than attempting gross total resection, you create a few millimetres of separation between tumour and cord — enough to allow a safe radiosurgical dose gradient — then deliver stereotactic body radiotherapy. Institutional series from Memorial Sloan Kettering and MD Anderson show local control above eighty-five percent at one year, even for radioresistant histologies like renal cell and melanoma.
+    probe: Why does that paradigm work for radioresistant tumours?
+cases:
+  - label: Cord compression from renal cell
+    stem: A 62-year-old man with metastatic renal cell carcinoma develops mid-thoracic back pain and two days of progressive leg weakness. He is now unable to stand. MRI shows a T8 lesion with vertebral body collapse and circumferential epidural tumour with no visible CSF around the cord. Karnofsky is 70. He has lung metastases but no other visceral disease.
+    q1: Work him through NOMS.
+    a1: Neurologic: Bilsky grade three epidural compression with a progressive myelopathy — high-grade compression with a deficit. Oncologic: renal cell is radioresistant to conventional radiotherapy. Mechanical: vertebral body collapse at T8. Systemic: Karnofsky seventy with lung metastases but reasonable reserve. Every axis points toward intervention rather than radiotherapy alone.
+    q2: Score his SINS and say what it means.
+    a2: T8 is a rigid segment so location scores low, but he has vertebral body collapse, a lytic lesion, and mechanical pain, which will place him in the indeterminate to unstable range of seven and above. Anything at seven or more warrants surgical consultation, and thirteen to eighteen mandates stabilisation. He needs instrumented stabilisation as well as decompression.
+    q3: What is his predicted survival and does that justify surgery?
+    a3: By revised Tokuhashi, a Karnofsky of seventy, renal cell as primary, vertebral and visceral metastases — he is likely to fall in the nine to eleven band, predicting six months or more, which supports surgical intervention. Eight or less would have favoured palliation. Survival prediction is what stops us performing a major operation on someone who will not live to benefit.
+    q4: Would you attempt gross total resection?
+    a4: No. I would perform separation surgery: circumferential decompression creating a few millimetres of separation between tumour and cord, with posterior instrumented fixation at least two levels above and below, followed by stereotactic body radiotherapy. Renal cell is radioresistant to conventional fractionated radiotherapy, but series from Memorial Sloan Kettering and MD Anderson show local control above eighty-five percent at one year with this paradigm, without the morbidity of attempting en bloc resection in metastatic disease.
 ---
 
 Welcome to this board review session on metastatic spine disease and the NOMS decision framework. This is a high-yield spine oncology topic that the examiners love because it tests your ability to synthesize multiple scoring systems, oncologic principles, and surgical decision-making into a coherent treatment plan. Let's build this from the ground up.

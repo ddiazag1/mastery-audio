@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Tumor"
 difficulty: 4
+questions:
+  - q: Divide the compartment and give me the commonest tumour in each.
+    a: Intradural extramedullary: schwannoma and meningioma predominate. Intramedullary: ependymoma is commonest in adults, astrocytoma in children. Extradural is usually metastatic. Getting the compartment right before naming a tumour is the first discipline.
+    probe: How do you tell intramedullary from extramedullary on imaging?
+  - q: What resection do you aim for in a spinal meningioma?
+    a: Simpson grade I or II — complete resection with excision or coagulation of the dural attachment. The Solero series demonstrated excellent outcomes with grade I and II resection, with recurrence rates under five percent at long-term follow-up.
+    probe: When would you accept a lesser resection?
+  - q: Why is ependymoma the favourable intramedullary tumour?
+    a: Because it has a cleavage plane. Ependymoma arises from the central canal and is typically well demarcated, so a gross total resection is achievable and, in a WHO grade one myxopapillary or grade two lesion, curative. Astrocytoma is infiltrative with no plane, so total resection is usually not achievable.
+    probe: What does that mean for how you approach each intraoperatively?
+  - q: Give me the McCormick grading scale.
+    a: A four-grade functional scale for intramedullary tumour patients: grade one neurologically normal with minimal signs, grade two sensorimotor deficit but independent ambulation, grade three more severe deficit requiring aids, grade four severe deficit requiring a wheelchair. It is the outcome language for this topic.
+    probe: What does preoperative grade predict?
+  - q: Which tumours are curable by complete removal?
+    a: The benign WHO grade one lesions — schwannoma, meningioma, and myxopapillary ependymoma when removed intact. Complete removal is curative, which is precisely why you should be aggressive with a clean plane and conservative where there is none.
+    probe: What is the risk of piecemeal removal of a myxopapillary ependymoma?
+  - q: Set out your follow-up protocol.
+    a: Surveillance MRI every six to twelve months for the first three to five years, then annually. Recurrence is the long-term complication, particularly after subtotal resection of ependymoma and for astrocytoma, so surveillance is not optional even after an apparently complete resection.
+    probe: When would you stop scanning?
+  - q: What monitoring do you use, and why is one modality insufficient?
+    a: Somatosensory and motor evoked potentials together, plus D-wave monitoring where available. Somatosensory potentials alone monitor the dorsal columns and miss corticospinal injury, so a patient can wake paraplegic with normal traces. D-wave amplitude is the best predictor of motor outcome in intramedullary surgery.
+    probe: What do you do if motor potentials drop intraoperatively?
+  - q: What are the specific complications you consent for?
+    a: New or worsened sensory loss, particularly dorsal column dysfunction from the myelotomy; motor deficit; neuropathic pain; cerebrospinal fluid leak and pseudomeningocele; wound problems; post-laminectomy kyphotic deformity, especially in children, which is why laminoplasty is preferred; and recurrence requiring reoperation.
+    probe: How would you reduce the deformity risk in a child?
+cases:
+  - label: Intramedullary tumour with a plane
+    stem: A 38-year-old presents with two years of neck pain and progressive clumsiness of both hands, now with a spastic gait. He walks independently with a stick. MRI shows a C3-C6 intramedullary enhancing lesion with associated rostral and caudal cysts and a small area of low signal at the caudal pole.
+    q1: What is your leading diagnosis and why?
+    a1: Ependymoma. In an adult, an intramedullary lesion that is centrally located, well demarcated with enhancing tumour and associated polar cysts, and shows a haemosiderin cap at one pole — the low signal at the caudal pole — is characteristically ependymoma. That combination is far less typical of astrocytoma, which is eccentric, infiltrative and ill-defined.
+    q2: Grade him functionally and say why it matters.
+    a2: McCormick grade two: sensorimotor deficit with independent ambulation, albeit with a stick. It matters because preoperative functional grade is the strongest predictor of postoperative function — patients operated at grade one or two do far better than those allowed to progress to grade three or four, which is an argument against watchful waiting in a progressive lesion.
+    q3: Outline the operation and your monitoring.
+    a3: Laminoplasty rather than laminectomy where possible to reduce late kyphosis, midline myelotomy, and development of the plane, which ependymoma usually affords. Monitoring must include motor evoked potentials, not somatosensory alone — somatosensory potentials monitor the dorsal columns and a patient can wake paraplegic with normal traces. D-wave amplitude is the best predictor of motor outcome.
+    q4: Motor evoked potentials drop by 60 percent during the dissection. What do you do?
+    a4: Stop, and treat it as real rather than artefact until proven otherwise. Pause the dissection, irrigate with warm saline, raise the mean arterial pressure to improve cord perfusion, check for mechanical causes such as retraction, and allow time for recovery. If potentials recover I may proceed cautiously; if they do not, I would accept a subtotal resection. A residual ependymoma with an intact cord is a far better outcome than a complete resection in a paraplegic patient, and it can be followed with surveillance MRI.
 ---
 
 Welcome back. This session covers intradural spinal cord tumors, a topic the oral board examiners love because it tests anatomy, imaging interpretation, surgical judgment, and intraoperative decision-making all in one scenario. You need to be precise here. Let us build from the anatomy up, then walk through a clinical case, and then I will interrogate you the way the examiner will.

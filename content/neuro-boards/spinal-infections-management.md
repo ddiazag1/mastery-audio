@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Infection"
 difficulty: 3
+questions:
+  - q: How do you distinguish spinal infection from metastatic disease on imaging?
+    a: By the disc. Pyogenic infection involves two adjacent vertebral bodies and destroys the intervening disc, because bacteria possess proteolytic enzymes. Metastatic tumour characteristically spares the disc. Tuberculosis is the exception, relatively sparing disc with large paraspinal abscesses and subligamentous spread.
+    probe: What imaging do you order and with what?
+  - q: What is your diagnostic priority before antibiotics?
+    a: An organism. Blood cultures, and if negative, image-guided biopsy of the disc or vertebral body. Starting empirical antibiotics before obtaining tissue in a stable patient compromises the yield and commits them to prolonged broad-spectrum therapy without a target.
+    probe: When would you give antibiotics before you have an organism?
+  - q: Who does not need surgery?
+    a: The neurologically intact patient without instability, without a significant epidural collection causing compression, and without failure of medical therapy. Most vertebral osteomyelitis is treated medically, and the default is antibiotics with an organism, not an operation.
+    probe: So what are the surgical indications?
+  - q: State your surgical indications.
+    a: Neurological deficit from epidural compression, spinal instability or progressive deformity, failure of medical therapy with ongoing sepsis or progression, the need for tissue when biopsy has failed, and intractable pain. Deficit and instability are the two that force your hand.
+    probe: Would you instrument an infected spine?
+  - q: Do you put metal into an infected field?
+    a: Yes, when instability demands it. Modern practice accepts instrumentation in the presence of infection, because stability promotes fusion and eradication, and titanium has a relatively low biofilm affinity. Deformity and instability cause more long-term harm than the hardware does, provided the infection is treated adequately.
+    probe: What would change your mind?
+  - q: Summarise POET and what it changed.
+    a: Published in the New England Journal of Medicine in 2019, it demonstrated non-inferiority of switching from intravenous to oral antibiotics after an initial two-week intravenous course for bone and joint infections including vertebral osteomyelitis. It has changed practice, with transition at the two to four week mark in selected patients.
+    probe: Which patients would you not transition?
+  - q: Who is a candidate for oral transition, and when?
+    a: Patients improving clinically with inflammatory markers trending down, after at least two weeks of intravenous therapy, with a known organism sensitive to a high-bioavailability oral agent, and without endovascular infection or undrained collections. Infectious diseases should be jointly involved in that decision.
+    probe: How long is the total course?
+  - q: An epidural abscess with no deficit. Do you operate?
+    a: Not automatically. A neurologically intact patient with an identified organism can be managed medically with very close observation and serial imaging, but the threshold for surgery is low because deterioration can be rapid and recovery after established deficit is poor. I would not manage this on a general ward without immediate access to theatre.
+    probe: What would make you operate immediately?
+cases:
+  - label: Back pain, fever and a rising CRP
+    stem: A 57-year-old man with type 2 diabetes and recent dialysis line sepsis presents with four weeks of worsening thoracic back pain, now with night pain and fever. CRP is 180. MRI shows T7-T8 discitis with vertebral endplate destruction, a paravertebral collection, and a 6-millimetre ventral epidural collection with mild cord displacement but no cord signal change. He is neurologically intact.
+    q1: How does the imaging tell you this is infection rather than malignancy?
+    a1: The disc. Two adjacent vertebral bodies are involved with destruction of the intervening disc, and pyogenic organisms possess the proteolytic enzymes to destroy disc whereas metastatic tumour characteristically spares it. The endplate destruction and paravertebral collection reinforce it. Tuberculosis would be the exception to that rule, relatively sparing disc with a large paraspinal abscess.
+    q2: What do you do before starting antibiotics?
+    a2: Get an organism. Blood cultures first, and given his recent line sepsis the yield may be good. If negative, image-guided biopsy of the disc or vertebral body. In a stable, neurologically intact patient I would not start empirical antibiotics before tissue, because it compromises yield and commits him to prolonged broad-spectrum therapy without a target.
+    q3: Does the epidural collection mandate surgery?
+    a3: Not automatically. He is neurologically intact with only mild cord displacement and no cord signal change, so medical management with an identified organism is reasonable. But the threshold is low: deterioration can be rapid and recovery after established deficit is poor. I would nurse him somewhere with immediate theatre access, examine him frequently, and re-image at the first neurological change.
+    q4: Cultures grow methicillin-sensitive Staphylococcus aureus. He improves and CRP falls to 40 by two weeks. What next?
+    a4: This is the POET population. That trial showed non-inferiority of switching from intravenous to oral antibiotics after an initial two-week intravenous course for bone and joint infections including vertebral osteomyelitis, and it has changed practice. With a sensitive organism, clinical improvement and falling inflammatory markers, I would transition to a high-bioavailability oral agent at around two to four weeks, jointly with infectious diseases, and continue for a total course of roughly six to twelve weeks with serial markers and repeat imaging.
 ---
 
 Welcome to this oral board preparation session on spinal infections management. This is a topic where the examiners expect precision, urgency, and a clear decision-making framework. You will be tested on your ability to differentiate the three major spinal infection entities, identify surgical emergencies, and articulate evidence-based antibiotic protocols. Let's build this from the ground up.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Spine"
 subcategory: "Trauma"
 difficulty: 4
+questions:
+  - q: Why do examiners still ask about Denis?
+    a: Because it underpins the concept of spinal stability and is still referenced. Denis proposed a three-column model — anterior, middle and posterior — and held that disruption of two or more columns constitutes instability. The middle column concept is its enduring contribution.
+    probe: What has largely replaced it, and why?
+  - q: Give me the AO Spine thoracolumbar types.
+    a: Three morphological types: Type A compression injuries, Type B distraction or tension band failure, and Type C translation or rotation, which is the most unstable. It has been validated with moderate to substantial inter-observer agreement, superior to Denis and Magerl.
+    probe: Which type represents failure of the posterior tension band?
+  - q: Score TLICS for me.
+    a: Three categories: morphology, posterior ligamentous complex integrity, and neurological status. Three or less favours non-operative management, exactly four is indeterminate and left to surgeon judgement, five or more is operative.
+    probe: State the neurological status points.
+  - q: What are the neurological points in TLICS, including the counterintuitive one?
+    a: Nerve root injury or radiculopathy scores two. Incomplete cord or conus injury scores three. Complete cord or conus injury scores only two — not three. That is the counterintuitive one and a classic trap, the logic being that an incomplete injury has more to protect.
+    probe: Explain the logic behind complete scoring lower.
+  - q: L1 burst fracture, neurologically intact, posterior ligamentous complex intact. Calculate and decide.
+    a: Burst morphology two, posterior ligamentous complex intact zero, neurologically intact zero — total two. Three or less is non-operative, so a thoracolumbosacral orthosis for eight to twelve weeks with serial upright radiographs at two, six and twelve weeks to monitor for progressive kyphosis or height loss.
+    probe: What would make you abandon the brace?
+  - q: What does STASCIS tell you about timing?
+    a: Fehlings and colleagues, 2012, showed patients decompressed within twenty-four hours had a significantly higher rate of at least a two-grade improvement on the ASIA Impairment Scale at six months compared with late surgery. It is the definitive study supporting early decompression in acute spinal cord injury.
+    probe: Does that apply to a complete injury too?
+  - q: Reconcile the vertebroplasty trials.
+    a: VERTOS II, Lancet 2010, compared vertebroplasty with conservative management and showed significant pain reduction at one month and one year. But two sham-controlled trials in NEJM in 2009 — Buchbinder and Kallmes — found no significant difference against sham. The discrepancy is the control: open comparison versus sham.
+    probe: So do you offer it?
+  - q: How do you reduce hardware failure in a short-segment construct?
+    a: Add index-level pedicle screws at the fractured vertebra. Mahar's biomechanical study showed roughly seventy percent increased construct stiffness, and Guven and colleagues confirmed clinically significantly lower failure rates with index-level screws.
+    probe: When would you extend the construct instead?
+cases:
+  - label: Burst fracture with a deficit
+    stem: A 42-year-old falls from scaffolding. He has bilateral lower limb weakness with loss of proprioception and saddle numbness, and cannot void. CT shows an L1 burst fracture with retropulsion. MRI shows disruption of the supraspinous and interspinous ligaments and conus compression.
+    q1: Classify and score him.
+    a1: AO Spine type A burst morphology with a type B component given tension band failure. TLICS: burst morphology two, posterior ligamentous complex disrupted three, and incomplete spinal cord or conus injury three — total eight. Five or more is operative, so this is unambiguously a surgical injury.
+    q2: How urgently, and on what evidence?
+    a2: Within twenty-four hours. STASCIS, Fehlings 2012, showed decompression within twenty-four hours gave significantly higher rates of at least a two-grade ASIA improvement at six months compared with late surgery. He has an incomplete injury, which is precisely the group with most to gain.
+    q3: What operation, and how do you protect the construct?
+    a3: Posterior instrumented stabilisation with decompression of the conus, direct or indirect. To reduce hardware failure in a short-segment construct I would add index-level pedicle screws at the fractured vertebra — Mahar showed about seventy percent increased stiffness biomechanically and Guven confirmed lower clinical failure rates.
+    q4: The examiner changes it: he is now neurologically complete rather than incomplete. Does the TLICS change, and does your plan?
+    a4: Yes to the score, and this is the trap. A complete cord or conus injury scores only two, not three, so the total falls from eight to seven. It is still operative at five or more, so the plan does not change — but I would note that the fall in score is counterintuitive and reflects that an incomplete injury has more function to protect. Surgery here is for stabilisation and mobilisation rather than neurological recovery, and I would counsel accordingly.
 ---
 
 Welcome back. Today we are covering thoracolumbar fracture classification, a topic that appears on nearly every oral board examination. By the end of this session you will be able to classify any thoracolumbar fracture using the AO Spine system, score it with TLICS, determine operative versus non-operative management, select the correct surgical approach, and handle the examiner trap questions that separate a pass from a fail. Let us begin.
