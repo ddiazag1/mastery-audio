@@ -431,6 +431,31 @@ a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
 .q-probe { margin-top: 0.55rem; font-size: 0.85rem; color: var(--text-dim); }
 .q-probe span { color: var(--yellow, var(--orange)); font-weight: 600; }
 
+.cases { white-space: normal; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 2px solid var(--orange, var(--accent)); }
+.cases-head h3 { margin: 0; font-size: 1.05rem; color: var(--text); }
+.case-card {
+  margin-bottom: 1.1rem; padding: 1rem;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-left: 3px solid var(--orange, var(--accent)); border-radius: 8px;
+}
+.case-head { font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--orange, var(--accent)); font-weight: 700; margin-bottom: 0.5rem; }
+.case-stem { font-size: 0.95rem; line-height: 1.6; color: var(--text); margin-bottom: 0.9rem; }
+.case-stage { padding-top: 0.75rem; margin-top: 0.75rem; border-top: 1px dashed var(--border); }
+.case-q { font-size: 0.92rem; line-height: 1.55; color: var(--text); }
+.case-step {
+  display: inline-block; margin-right: 0.45rem; padding: 0.08rem 0.45rem;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;
+  border-radius: 4px; background: var(--surface); color: var(--text-dim);
+}
+.case-btn {
+  margin-top: 0.55rem; background: none; border: 1px solid var(--border);
+  color: var(--orange, var(--accent)); border-radius: 6px; padding: 0.28rem 0.7rem;
+  font-size: 0.78rem; cursor: pointer;
+}
+.case-btn:hover { border-color: var(--orange, var(--accent)); }
+.case-a { margin-top: 0.6rem; font-size: 0.89rem; line-height: 1.6; color: var(--text-dim); }
+.case-done { margin-top: 0.8rem; font-size: 0.78rem; color: var(--text-dim); font-style: italic; }
+
 </style>
 </head>
 <body>
@@ -588,8 +613,8 @@ function parseFrontmatter(text) {
   // Declared inside the function on purpose: the patcher that splices this into
   // index.html extracts whole functions only, so anything at module scope would
   // silently fail to be injected and throw at runtime.
-  const LIST_KEYS = ['figures', 'questions'];
-  const empty = { meta: {}, figures: [], questions: [], body: text };
+  const LIST_KEYS = ['figures', 'questions', 'cases'];
+  const empty = { meta: {}, figures: [], questions: [], cases: [], body: text };
   if (!text.startsWith('---')) return empty;
   const end = text.indexOf('\n---', 3);
   if (end === -1) return empty;
@@ -627,7 +652,7 @@ function parseFrontmatter(text) {
   }
   flush();
 
-  return { meta, figures: lists.figures, questions: lists.questions, body };
+  return { meta, figures: lists.figures, questions: lists.questions, cases: lists.cases, body };
 }
 
 function stripQuotes(s) {
@@ -726,6 +751,54 @@ function toggleAllAnswers(btn) {
   btn.textContent = reveal ? 'Hide all' : 'Reveal all';
 }
 
+function casesHtml(cases) {
+  if (!cases || !cases.length) return '';
+
+  const blocks = cases.map((c, ci) => {
+    if (!c || !c.stem) return '';
+    const stages = [];
+    for (let n = 1; n <= 12; n++) {
+      const q = c['q' + n], a = c['a' + n];
+      if (!q) break;
+      stages.push({ q: q, a: a || '' });
+    }
+    const stageHtml = stages.map((s, si) =>
+      `<div class="case-stage" data-stage="${si}"${si === 0 ? '' : ' hidden'}>` +
+        `<div class="case-q"><span class="case-step">Step ${si + 1}</span> ${escapeHtml(s.q)}</div>` +
+        `<button class="case-btn" onclick="revealStage(this)">Commit, then reveal</button>` +
+        `<div class="case-a" hidden>${escapeHtml(s.a)}</div>` +
+      `</div>`).join('');
+
+    return `<div class="case-card" data-case="${ci}">` +
+             `<div class="case-head">Case ${ci + 1}${c.label ? ' &middot; ' + escapeHtml(c.label) : ''}</div>` +
+             `<div class="case-stem">${escapeHtml(c.stem)}</div>` +
+             `<div class="case-stages">${stageHtml}</div>` +
+           `</div>`;
+  }).join('');
+
+  return `<div class="cases">` +
+           `<div class="cases-head"><h3>Cases <span class="q-count">${cases.length}</span></h3></div>` +
+           `<p class="selftest-hint">Say your answer out loud and commit before revealing. The case escalates as it would in the room.</p>` +
+           blocks +
+         `</div>`;
+}
+
+function revealStage(btn) {
+  const stage = btn.parentNode;
+  const ans = stage.querySelector('.case-a');
+  ans.hidden = false;
+  btn.hidden = true;
+  const next = stage.nextElementSibling;
+  if (next && next.classList.contains('case-stage')) {
+    next.hidden = false;
+  } else {
+    const done = document.createElement('div');
+    done.className = 'case-done';
+    done.textContent = 'End of case.';
+    stage.parentNode.appendChild(done);
+  }
+}
+
 async function openConcept(moduleId, slug) {
   const mdPath = `content/${moduleId}/${slug}.md`;
   try {
@@ -733,7 +806,7 @@ async function openConcept(moduleId, slug) {
     if (!resp.ok) throw new Error('not found');
     const text = await resp.text();
 
-    const { figures, questions, body } = parseFrontmatter(text);
+    const { figures, questions, cases, body } = parseFrontmatter(text);
 
     const mod = manifest.modules.find(m => m.id === moduleId);
     let concept = null;
@@ -745,13 +818,13 @@ async function openConcept(moduleId, slug) {
     }
 
     const title = concept ? concept.title : slug.replace(/-/g, ' ');
-    showReader(true, title, body, moduleId, slug, figures, questions);
+    showReader(true, title, body, moduleId, slug, figures, questions, cases);
   } catch {
-    showReader(true, slug.replace(/-/g, ' '), 'Content file not found.', moduleId, slug, [], []);
+    showReader(true, slug.replace(/-/g, ' '), 'Content file not found.', moduleId, slug, [], [], []);
   }
 }
 
-function showReader(show, title, text, moduleId, slug, figures, questions) {
+function showReader(show, title, text, moduleId, slug, figures, questions, cases) {
   const reader = document.getElementById('reader-view');
   const moduleView = document.getElementById('module-view');
 
@@ -768,7 +841,7 @@ function showReader(show, title, text, moduleId, slug, figures, questions) {
       <span class="back" onclick="showReader(false)">&larr; Back</span>
       <h2>${escapeHtml(title)}</h2>
     </div>
-    <div class="reader-body">${renderBody(text, figures || [], moduleId)}${questionsHtml(questions || [])}</div>
+    <div class="reader-body">${renderBody(text, figures || [], moduleId)}${questionsHtml(questions || [])}${casesHtml(cases || [])}</div>
   `;
   reader.classList.add('visible');
 }

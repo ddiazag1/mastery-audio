@@ -48,6 +48,27 @@ questions:
   - q: How sensitive is CT for subarachnoid haemorrhage, and why does the number matter?
     a: Approaching ninety-eight to one hundred percent within the first six hours with a modern scanner and an expert reader, falling substantially after twelve to twenty-four hours as blood degrades. That decay is precisely why the lumbar puncture question exists in the delayed presenter.
     probe: Patient presents thirty-six hours after a thunderclap headache with a normal CT. What do you do?
+cases:
+  - label: Trauma, deteriorating
+    stem: A 68-year-old man is brought in by EMS, found down at home after an unwitnessed fall. GCS 7. Left pupil 5 millimetres and sluggish, right 3 millimetres and reactive. Blood pressure 178 over 95, heart rate 52. He is intubated in the bay. A non-contrast head CT is on the screen.
+    q1: Before you look at the scan, what have the observations already told you?
+    a1: Hypertension with bradycardia is the Cushing response, which with an asymmetric pupil means raised intracranial pressure with a probable uncal herniation on the left. That is a late, pre-terminal sign. I am already planning for the operating room while I read the film, and I would elevate the head, ensure the collar is not obstructing venous outflow, and give hyperosmolar therapy.
+    q2: The CT shows a left temporoparietal biconvex hyperdense extra-axial collection, two point two centimetres thick, with nine millimetres of midline shift and an effaced left ambient cistern. Describe and decide.
+    a2: Acute left epidural hematoma. By ABC over two this is well over thirty cubic centimetres, thickness exceeds fifteen millimetres, and shift exceeds five millimetres. With a GCS of seven and anisocoria it meets every surgical criterion. Emergent craniotomy and evacuation now. I would send coagulation studies and reverse any anticoagulant, but I would not wait for results to go.
+    q3: Within the collection there is a rounded area of lower attenuation. What is that and does it change anything?
+    a3: That is the swirl sign, unclotted fresh liquid blood, meaning he is actively bleeding at the moment of the scan. It predicts rapid expansion and worse outcome. It does not change the decision, it increases the urgency and tells me to expect brisk arterial bleeding, most likely middle meningeal artery, when I turn the flap.
+    q4: You evacuate. On post-operative day one he has not woken as expected. What now?
+    a4: Repeat non-contrast CT immediately. I am looking for a recurrent or contralateral collection, which is classic after decompression of one side, new contusions, infarction in the posterior cerebral artery territory from the herniation, and diffuse swelling. I would also exclude non-surgical causes: seizure, sedation, electrolytes, hypoxia, and hypotension.
+  - label: The quiet trap
+    stem: A 74-year-old woman on apixaban for atrial fibrillation is referred with three weeks of progressive confusion and unsteadiness. No recalled head injury. GCS 14. Mild right pronator drift. The non-contrast CT is reported as showing no acute intracranial abnormality.
+    q1: You are not reassured. What are you looking for and why?
+    a1: An isodense subdural hematoma. Between roughly one and three weeks a collection passes through a phase where its attenuation matches cortex and it becomes nearly invisible. The history of anticoagulation, a subacute course and a lateralising sign fit exactly. I am looking for indirect signs.
+    q2: Name the indirect signs specifically.
+    a2: Unilateral sulcal effacement, inward buckling of the grey white junction, midline shift disproportionate to any visible lesion, and a compressed ventricle with no apparent cause. I would also widen the windows to subdural settings, because a thin collection can hide against the inner table on standard brain windows.
+    q3: On subdural windows there is a left-sided isodense collection with eight millimetres of shift. She is on apixaban. How do you proceed?
+    a3: Reverse the apixaban, with andexanet alfa if available or four-factor prothrombin complex concentrate, and stop the anticoagulant. Given a lateralising deficit and eight millimetres of shift, evacuate. For a subacute collection I would plan a craniotomy or mini-craniotomy rather than relying on burr holes alone, because the clot may not be fully liquefied.
+    q4: She does well. The cardiologist asks when apixaban can restart. What do you say?
+    a4: I would give a considered answer rather than a number: it depends on her thromboembolic risk against the rebleeding risk, typically reassessed at around one to four weeks with repeat imaging, decided jointly with cardiology. I would also raise middle meningeal artery embolisation as an adjunct that reduces recurrence in chronic subdural disease, which is relevant if she must resume anticoagulation early.
 ---
 
 Let's master systematic interpretation of the head CT for the oral boards.
