@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Critical Care"
 subcategory: "Prevention"
 difficulty: 3
+questions:
+  - q: Why is this topic uncomfortable in neurosurgery specifically?
+    a: Because the two risks point in opposite directions. Neurosurgical patients are at high venous thromboembolism risk from immobility, malignancy and long operations, while the consequence of bleeding into the brain or spinal canal is catastrophic. Every decision is an explicit trade-off rather than a protocol.
+    probe: Which patients sit at the extreme of both risks?
+  - q: What do you start, and when?
+    a: Mechanical prophylaxis — intermittent pneumatic compression — from the outset, in essentially everyone, because it carries no bleeding risk. Chemical prophylaxis with low molecular weight or unfractionated heparin is then added once the surgeon judges haemostasis secure, commonly around twenty-four to forty-eight hours postoperatively.
+    probe: Which patient would make you delay chemical prophylaxis further?
+  - q: He develops a proximal deep vein thrombosis on day three after craniotomy. Now what?
+    a: This is the genuine dilemma. The standard approach is an intravenous heparin infusion titrated to a PTT of sixty to eighty seconds, then transition to therapeutic low molecular weight heparin such as enoxaparin one milligram per kilogram twelve-hourly, or a direct oral anticoagulant.
+    probe: Why start with an infusion rather than going straight to LMWH?
+  - q: Why choose an unfractionated heparin infusion first in that setting?
+    a: Because it is short-acting and fully reversible with protamine. In a patient days from craniotomy, the ability to switch it off and reverse it if he deteriorates is worth more than the convenience of a subcutaneous agent. Once you are confident, transition to a longer-acting agent.
+    probe: When would you consider a filter instead?
+  - q: When is an inferior vena cava filter appropriate?
+    a: When anticoagulation is genuinely contraindicated — an acute intracranial haemorrhage, a very recent craniotomy with high rebleeding risk — or when thromboembolism recurs despite adequate anticoagulation. It is a temporising measure with its own complications, so I would plan retrieval rather than leaving it indefinitely.
+    probe: What are those complications?
+  - q: Does chemical prophylaxis increase intracranial haemorrhage after craniotomy?
+    a: The evidence suggests that appropriately timed prophylactic-dose heparin does not meaningfully increase clinically significant intracranial haemorrhage, while substantially reducing thromboembolism. The controversy is about timing rather than whether to give it at all, and I would frame it that way.
+    probe: What about after spinal surgery with instrumentation?
+  - q: Which neurosurgical populations are highest risk?
+    a: Patients with malignant glioma, who have among the highest rates of any surgical population; those undergoing long cranial or complex spinal procedures; patients with paresis or paraplegia; the elderly; and those with prior thromboembolism or known thrombophilia. Malignancy plus immobility is the worst combination.
+    probe: Does that change your prophylaxis duration after discharge?
+  - q: A patient with a spinal epidural haematoma is diagnosed with pulmonary embolism. Approach it.
+    a: This is the sharpest version of the conflict, and I would not answer it unilaterally. Immediate priorities are haemodynamic stability and the spinal cord. I would involve haematology and respiratory medicine, consider a retrievable inferior vena cava filter to protect against further embolism while the cord is at risk, and defer anticoagulation until the haematoma is managed and stable.
+    probe: What determines when you can finally anticoagulate?
+cases:
+  - label: Clot after craniotomy
+    stem: A 64-year-old man is day 4 after craniotomy for a right parietal glioblastoma. He has left-sided weakness limiting mobility. He develops a swollen, painful left calf, and ultrasound confirms a proximal femoral deep vein thrombosis. Postoperative CT on day 1 showed a small amount of expected blood in the resection cavity.
+    q1: Why was he always going to be high risk?
+    a1: Malignant glioma is among the highest-risk surgical populations for venous thromboembolism, and he has the compounding factors: a long cranial procedure, hemiparesis limiting mobility, and age. Malignancy plus immobility is the worst combination, which is why mechanical prophylaxis should have started from the outset and chemical prophylaxis added once haemostasis was secure.
+    q2: He needs therapeutic anticoagulation four days after a craniotomy. How do you start it?
+    a2: With an intravenous unfractionated heparin infusion titrated to a PTT of sixty to eighty seconds, precisely because it is short-acting and reversible with protamine. Four days from craniotomy I want the ability to switch it off immediately if he deteriorates. Once I am confident, I would transition to therapeutic low molecular weight heparin — enoxaparin one milligram per kilogram twelve-hourly — or a direct oral anticoagulant.
+    q3: Twelve hours into the infusion he becomes drowsy with worsening left arm weakness. What do you do, in order?
+    a3: Stop the heparin immediately and reverse it with protamine. Urgent non-contrast CT. If there is haemorrhage into the resection cavity with mass effect, correct coagulation fully and consider evacuation. Anticoagulation does not resume until that is resolved and stable — the brain takes precedence over the leg.
+    q4: CT confirms haemorrhage into the cavity. He still has a proximal DVT. How do you protect him now?
+    a4: A retrievable inferior vena cava filter, which addresses the risk of pulmonary embolism without anticoagulation, with a clear plan for retrieval rather than leaving it indefinitely, because filters carry their own risks including migration, thrombosis and caval occlusion. Continue mechanical prophylaxis. Then reassess for anticoagulation once the haematoma is stable on serial imaging, ideally with haematology jointly involved.
 ---
 
 Welcome back. This session covers venous thromboembolism prophylaxis in neurosurgery. This is a guaranteed oral board topic. The examiners love it because it forces you to demonstrate that you can balance two competing catastrophic risks: intracranial hemorrhage on one side, fatal pulmonary embolism on the other. You need to know the epidemiology cold, your mechanical prophylaxis protocols, the exact timing of chemical prophylaxis for each procedure type, and what to do when a patient develops a clot in the acute postoperative period. Let's build this from the ground up.

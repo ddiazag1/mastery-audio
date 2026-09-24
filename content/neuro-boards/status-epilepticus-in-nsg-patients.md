@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Critical Care"
 subcategory: "Seizure"
 difficulty: 3
+questions:
+  - q: A post-craniotomy patient is not waking as expected. What is one of the first things you say?
+    a: Continuous electroencephalography to exclude non-convulsive status epilepticus. It is the diagnosis that is invisible without the test, and in a post-craniotomy patient who fails to wake it should be near the top of the list rather than an afterthought.
+    probe: What else is on that differential?
+  - q: Which tumours are most epileptogenic, and why the counterintuitive answer?
+    a: Low-grade gliomas, with seizure rates of sixty to ninety percent, because they grow slowly within cortex and create chronic irritative foci. High-grade gliomas cause seizures in thirty to fifty percent — less epileptogenic despite being more aggressive, because they destroy rather than irritate cortex.
+    probe: Does that change your prophylaxis decision?
+  - q: First-line drug, and what if you have no intravenous access?
+    a: A benzodiazepine. Without intravenous access, intramuscular midazolam ten milligrams is an acceptable alternative, as shown in the RAMPART trial. Under-dosing the benzodiazepine is the commonest early error.
+    probe: How soon do you move to second-line therapy?
+  - q: Second-line: which agent and on what evidence?
+    a: Levetiracetam, fosphenytoin or valproate — and ESETT showed they are equally effective for established status epilepticus, at roughly forty-five percent seizure cessation each. So the choice is driven by the patient's comorbidities and interactions, not by superiority.
+    probe: Which would you avoid in hepatic impairment?
+  - q: Sodium is 118 and she is seizing. How fast do you correct?
+    a: Carefully. Do not exceed ten to twelve milliequivalents per litre of correction in twenty-four hours, to avoid osmotic demyelination syndrome. Acute symptomatic hyponatraemia with seizures justifies a small, controlled bolus of hypertonic saline to raise sodium by a few millimoles and stop the seizure, then slow correction.
+    probe: What is the mechanism of osmotic demyelination?
+  - q: What did Temkin establish about post-traumatic seizure prophylaxis?
+    a: The 1990 study showed phenytoin reduced early post-traumatic seizures — those within seven days — but did not prevent late epilepsy. That is the basis for giving a short course of prophylaxis after severe traumatic brain injury and then stopping, rather than continuing indefinitely.
+    probe: So how long do you continue it?
+  - q: How do you define status epilepticus operationally now?
+    a: Five minutes of continuous seizure activity, or recurrent seizures without recovery of consciousness between them. The older thirty-minute definition described when neuronal injury begins; the five-minute definition is the treatment trigger, because self-termination beyond that point is unlikely.
+    probe: Why did the operational definition shorten?
+  - q: She is still seizing after second-line therapy. What now?
+    a: Refractory status epilepticus. Intubate if not already, and start a continuous infusion — midazolam, propofol or a barbiturate — titrated on continuous electroencephalography to seizure suppression or burst suppression. In parallel, hunt the cause relentlessly: imaging, electrolytes, infection, drug withdrawal, autoimmune encephalitis.
+    probe: What does super-refractory mean?
+cases:
+  - label: Not waking after craniotomy
+    stem: A 52-year-old woman is postoperative day one from a left frontal craniotomy for a WHO grade 2 diffuse astrocytoma. She was extubated and following commands in recovery, but overnight she has become progressively less responsive. She now opens eyes to pain only and does not speak. Pupils are equal and reactive. Sodium is 128.
+    q1: Give me your differential and your first investigation.
+    a1: Surgical causes — haematoma at the resection site, swelling, venous infarction, tension pneumocephalus. Non-surgical — non-convulsive status epilepticus, hyponatraemia, sedation and opioids, infection, metabolic derangement. My first investigation is an urgent CT to exclude a surgical cause, but running alongside it, continuous electroencephalography to exclude non-convulsive status.
+    q2: CT shows expected postoperative change with no haematoma or shift. Where does that leave you?
+    a2: It raises non-convulsive status considerably, and her tumour type makes it more likely: low-grade gliomas are the most epileptogenic, with seizure rates of sixty to ninety percent, because they grow slowly in cortex and create chronic irritative foci. Her sodium of one hundred and twenty-eight is also contributory and needs correcting.
+    q3: EEG confirms non-convulsive status. Treat her, and tell me what governs each step.
+    a3: A benzodiazepine first, adequately dosed — under-dosing is the commonest early error. Then second-line: levetiracetam, fosphenytoin or valproate, which ESETT showed are equally effective at around forty-five percent cessation each, so I choose on comorbidity and interactions. Simultaneously correct the sodium, but not by more than ten to twelve milliequivalents per litre in twenty-four hours, to avoid osmotic demyelination.
+    q4: She continues to seize despite adequate second-line therapy. What now?
+    a4: This is refractory status epilepticus. Intubate and start a continuous infusion — midazolam, propofol or a barbiturate — titrated on continuous EEG to seizure suppression or burst suppression. In parallel I keep hunting the cause: repeat imaging for an evolving lesion, exclude infection, review every drug, and consider autoimmune encephalitis. If it persists beyond twenty-four hours of anaesthesia, or recurs on weaning, it is super-refractory and needs specialist neurology input.
 ---
 
 Let's talk about status epilepticus in neurosurgical patients. This is a topic the board examiners love because it sits right at the intersection of critical care pharmacology, neurophysiology, and operative decision-making. You need to know the definitions cold, the drug doses by heart, and the neurosurgery-specific nuances that separate your answer from a neurologist's answer. Let's get into it.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Vascular"
 subcategory: "Hemorrhagic"
 difficulty: 4
+questions:
+  - q: Define delayed cerebral ischaemia precisely.
+    a: A new focal neurological deficit, or a decrease of at least two points on the Glasgow Coma Scale, lasting more than one hour, not explained by another cause, and occurring between day three and day fourteen after the haemorrhage. Each element of that definition matters.
+    probe: Which other causes must you exclude before you call it?
+  - q: Which grading scale predicts vasospasm, and which does not?
+    a: Modified Fisher grade is the strongest radiographic predictor, because clot burden drives risk: grade three, thick cisternal clot without intraventricular blood, and grade four, thick clot with intraventricular blood, carry the highest risk. Hunt and Hess predicts overall outcome, not vasospasm. Do not conflate them.
+    probe: So what would you say about a Hunt-Hess five with thin subarachnoid blood?
+  - q: Your patient is intubated and high grade, so you cannot examine her. How do you detect DCI?
+    a: You lose your best monitor, so lean on adjuncts. CT perfusion has an emerging role and identifies regions of reduced cerebral blood flow and prolonged mean transit time before infarction occurs. Transcranial Doppler trends, continuous electroencephalography, and angiography as indicated all contribute.
+    probe: What are the limitations of transcranial Doppler here?
+  - q: Nimodipine: evidence and mechanism.
+    a: The British aneurysm nimodipine trial of 1989 is the landmark and established benefit. Notably it improves outcome without reliably reversing angiographic narrowing, so the mechanism is thought to be neuroprotective and microcirculatory rather than simple large-vessel vasodilatation. It remains the one agent that works.
+    probe: What do you do if it drops her blood pressure?
+  - q: Three trials of things that do not work. Name them.
+    a: STASH, 2014, randomised 803 patients to simvastatin forty milligrams versus placebo with no difference in modified Rankin at six months. MASH-2, 2012, randomised 1,204 patients to intravenous magnesium sulphate with no benefit. HIMALAIA, 2017, showed prophylactic hypervolaemia with albumin did not reduce DCI compared with normovolaemia.
+    probe: What does HIMALAIA imply about triple-H therapy?
+  - q: What has replaced triple-H therapy?
+    a: Euvolaemia with induced hypertension. HIMALAIA showed prophylactic hypervolaemia gives no benefit and it carries real harm from pulmonary oedema and cardiac strain. So the modern approach is to maintain euvolaemia, and to induce hypertension only when delayed cerebral ischaemia is suspected, titrated to the neurological examination.
+    probe: How high would you push the pressure, and what stops you?
+  - q: Medical therapy fails. What next?
+    a: Endovascular rescue: intra-arterial vasodilators such as verapamil, nicardipine or milrinone for distal or diffuse spasm, and balloon angioplasty for proximal focal spasm, which gives a more durable result but carries a risk of vessel rupture. Timing matters, because the aim is to treat before infarction is established.
+    probe: Which spasm is not suitable for angioplasty?
+  - q: She has a troponin rise and reduced ejection fraction on day two. What is this?
+    a: Neurogenic myocardial stunning, also called takotsubo cardiomyopathy, which occurs in up to twenty percent of high-grade subarachnoid haemorrhage patients, with regional wall motion abnormalities, raised troponin and reduced ejection fraction. It matters because it constrains your ability to induce hypertension later.
+    probe: Does it change how you manage her fluid status?
+cases:
+  - label: Day six deterioration
+    stem: A 49-year-old woman presented Hunt-Hess grade three, modified Fisher grade four, from a ruptured anterior communicating artery aneurysm coiled on day zero. She has been stable on nimodipine with an external ventricular drain. On day six she becomes confused and develops a mild left hemiparesis.
+    q1: Why was she always going to be high risk?
+    a1: Modified Fisher grade four: thick cisternal clot with intraventricular haemorrhage. Clot burden drives vasospasm risk, and grades three and four carry the highest incidence, roughly thirty to forty percent clinical vasospasm. Her Hunt-Hess three predicts her overall outcome but not this specific risk.
+    q2: Before you call it vasospasm, what must you exclude?
+    a2: Hydrocephalus or a blocked drain, rebleeding, seizure including non-convulsive status, infection, and metabolic causes, particularly hyponatraemia. I would obtain an urgent non-contrast CT, check the drain, send electrolytes and inflammatory markers, and consider continuous electroencephalography. The definition of delayed cerebral ischaemia explicitly requires that no other cause explains it.
+    q3: CT excludes those. How do you confirm and treat?
+    a3: CT perfusion to demonstrate reduced cerebral blood flow and prolonged mean transit time, with CT angiography for large-vessel narrowing. Treatment is euvolaemia with induced hypertension titrated to the examination, continuing nimodipine. I would not use prophylactic hypervolaemia, because HIMALAIA showed no benefit and it causes harm.
+    q4: She improves with induced hypertension, then deteriorates again six hours later despite maximal pressure. What now, and what limits you?
+    a4: Endovascular rescue: intra-arterial vasodilator for diffuse or distal spasm, balloon angioplasty for proximal focal spasm, which is more durable but risks vessel rupture. The limit on induced hypertension is cardiac: if she has neurogenic myocardial stunning, seen in up to twenty percent of high-grade patients with raised troponin and reduced ejection fraction, her heart may not tolerate the pressures required, which pushes me toward endovascular treatment earlier.
 ---
 
 Welcome to cerebral vasospasm protocols. This is one of the highest-yield vascular topics you will face on the oral boards. Every examiner has a vasospasm scenario in their back pocket. You need to know the pathophysiology cold, the monitoring thresholds by number, the treatment algorithm step by step, and the trial data that supports each decision. Let's build that framework now.

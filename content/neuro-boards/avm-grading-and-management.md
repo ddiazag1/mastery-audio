@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Vascular"
 subcategory: "Malformation"
 difficulty: 4
+questions:
+  - q: Score Spetzler-Martin out loud.
+    a: Size: one point under three centimetres, two points three to six, three points over six. Eloquence of adjacent brain: one point. Deep venous drainage: one point. Sum is one to five. Spetzler later added grade VI for a lesion where surgical cure would produce unacceptable morbidity.
+    probe: A three-centimetre nidus sits at the boundary. How do you score it?
+  - q: What does the supplementary score add and what are its variables?
+    a: The Lawton-Young supplementary score adds age, haemorrhagic presentation, and nidal diffuseness. Combined with Spetzler-Martin the total runs three to eleven, and it discriminates far better within grade III, where a single score of three can arise from many different configurations.
+    probe: Give me the two extremes of a grade III and what you would do with each.
+  - q: Quote outcomes for grade I and II lesions.
+    a: Excellent. Obliteration rates exceeding ninety-five percent with major morbidity and mortality of zero to three percent in experienced hands. Spetzler's own series reported zero percent and two point nine percent for grades I and II respectively.
+    probe: Does that justify treating every unruptured grade I lesion?
+  - q: Your colleague cites ARUBA and says observe. Respond.
+    a: I would respectfully disagree with a blanket application. ARUBA randomised 226 patients with unruptured arteriovenous malformations to medical management versus intervention and favoured medical management, but it has critical limitations that stop it being the final word, and the takeaway is not that unruptured lesions are never treated.
+    probe: Name the limitations specifically.
+  - q: So when would you follow ARUBA?
+    a: In an older patient with an incidentally found high-grade lesion, a diffuse nidus and eloquent or deep drainage, where intervention carries substantial morbidity and the remaining life expectancy limits cumulative risk. That is the population where observation is defensible.
+    probe: And where would you ignore it?
+  - q: What is the Spetzler-Ponce classification for?
+    a: It simplified the five-tier system into three classes: Class A is grades I and II, recommended for surgery; Class B is grade III, requiring further stratification; Class C is grades IV and V, recommended for observation. Published in 2011, it is a practical decision framework rather than a new risk score.
+    probe: Which class needs the supplementary score most?
+  - q: Which angioarchitectural features raise haemorrhage risk?
+    a: Associated aneurysms, whether on feeding arteries or within the nidus, and venous outflow stenosis. Also deep location, exclusively deep venous drainage, and prior haemorrhage. I would look for all of these on catheter angiography rather than relying on cross-sectional imaging.
+    probe: Which of those would you treat first, and why?
+  - q: Why does a young patient change the calculus?
+    a: Cumulative lifetime risk. An annual haemorrhage risk of a few percent compounds over decades, so a twenty-eight-year-old with a grade II lesion faces an enormous cumulative burden, and microsurgical resection offers a cure that is complete and immediate. Age is precisely why the supplementary score weights it.
+    probe: What tempers enthusiasm for radiosurgery in that same young patient?
+cases:
+  - label: The unruptured AVM in a young patient
+    stem: A 28-year-old presents with new-onset seizures. Imaging shows a 3-centimetre right frontal AVM with a compact nidus, superficial cortical venous drainage only, and no eloquent cortex involved. There has been no haemorrhage. Angiography shows no associated aneurysm.
+    q1: Grade it fully and commit to a plan.
+    a1: Spetzler-Martin: size three centimetres, at the boundary, so one point; non-eloquent, zero; superficial drainage only, zero. Grade II. Supplementary Lawton-Young: age twenty-eight falls in the twenty to forty band for two points, unruptured adds one, compact nidus adds zero, so three. Combined five. This is a favourable lesion in a young patient and I would recommend microsurgical resection.
+    q2: Your consultant colleague says ARUBA mandates observation. Defend your position.
+    a2: ARUBA randomised 226 unruptured patients and favoured medical management, but it is not the final word here: short follow-up relative to a young patient's life expectancy, heterogeneous interventions with a high proportion of embolisation rather than surgery, slow recruitment and selection concerns, and few surgically treated low-grade lesions. For a grade I or II unruptured lesion in a young patient, microsurgical resection remains standard, and the cure is complete and immediate.
+    q3: He asks what the operation risks versus leaving it alone.
+    a3: For a grade II lesion in experienced hands, obliteration exceeds ninety-five percent with major morbidity and mortality of zero to three percent. Against that, an untreated lesion carries an annual haemorrhage risk of a few percent, which compounds across the fifty-plus years he is likely to live. I would give him both numbers rather than only the one that supports my recommendation.
+    q4: You resect. What do you do afterwards, and why is it not optional?
+    a4: Catheter angiography to confirm complete obliteration, because residual nidus carries ongoing haemorrhage risk and partial treatment does not reliably reduce it. In younger patients specifically there is a recognised rate of angiographic recurrence after apparently complete resection, so delayed follow-up angiography is warranted rather than assuming that an immediate postoperative study settles it permanently.
 ---
 
 Welcome to this viva-style teaching session on arteriovenous malformation grading and management. This is one of the bread-and-butter vascular topics for the oral boards, and it consistently appears because it tests your ability to integrate anatomy, pathophysiology, grading systems, treatment algorithms, and landmark trial data into a coherent management plan. Let's build this from the ground up.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Critical Care"
 subcategory: "Determination"
 difficulty: 3
+questions:
+  - q: What term do the current guidelines prefer, and why?
+    a: Death by neurologic criteria, adopted in the 2023 joint AAN, American Academy of Pediatrics and Child Neurology Society consensus guidelines, rather than brain death. The reasoning is that the patient is dead, and the qualifier clarifies how death was determined rather than implying a special category of death.
+    probe: Why does the wording matter when you talk to a family?
+  - q: What must you establish before testing begins?
+    a: An established, irreversible cause sufficient to explain the state; exclusion of confounders — sedatives, paralytics, severe metabolic and endocrine derangement, and hypothermia; and normal enough physiology to perform the examination, including adequate blood pressure. Testing a confounded patient is the commonest error.
+    probe: How do you exclude a drug confounder specifically?
+  - q: Your patient received a fentanyl infusion. How long do you wait?
+    a: Either wait five half-lives of the agent in question, adjusted for organ dysfunction which prolongs clearance, or obtain serum levels demonstrating subtherapeutic concentrations. Renal or hepatic impairment substantially extends that window, and I would say so rather than counting hours mechanically.
+    probe: What if he also received a neuromuscular blocker?
+  - q: He had targeted temperature management after cardiac arrest. What changes?
+    a: You must wait until he is rewarmed to at least thirty-six degrees Celsius, and until sufficient time has passed for sedatives and paralytics used during the cooling protocol to clear. Hypothermia both confounds the examination and prolongs drug clearance, so the two effects compound.
+    probe: What temperature threshold invalidates the examination?
+  - q: Walk me through the apnoea test.
+    a: Pre-oxygenate, confirm a normal starting carbon dioxide and adequate blood pressure, disconnect from the ventilator with oxygen delivered, and observe for respiratory effort while the carbon dioxide rises. A positive test is no respiratory effort with a carbon dioxide rise to sixty millimetres of mercury, or twenty above baseline in a chronic retainer.
+    probe: He becomes hypotensive and desaturates halfway through. What do you do?
+  - q: When do you use an ancillary test?
+    a: When the clinical examination or apnoea test cannot be completed or is confounded — severe facial trauma preventing cranial nerve testing, high cervical cord injury, severe chronic lung disease making apnoea testing unsafe, or unclearable drug effect. An ancillary test supplements the examination; it does not replace it as a shortcut.
+    probe: Name two and their pitfalls.
+  - q: Which reflexes are you testing, and which findings do not exclude the diagnosis?
+    a: Pupillary, corneal, oculocephalic, oculovestibular, gag and cough, plus absence of motor response to central pain. Spinally mediated movements — the Lazarus sign, triple flexion, deep tendon reflexes — do not exclude the diagnosis, and families must be prepared for them because they are deeply distressing to witness.
+    probe: How would you explain that to a family at the bedside?
+  - q: The family refuses to accept the diagnosis. How do you proceed?
+    a: With patience and clarity. Death by neurologic criteria is a determination of death, not a treatment decision, so it is not consented to. But I would ensure the determination is impeccable, involve senior colleagues and the ethics or palliative care team, allow reasonable accommodation of religious and cultural needs, and communicate repeatedly and consistently rather than confronting.
+    probe: Does organ donation change how you have that conversation?
+cases:
+  - label: A determination that cannot be rushed
+    stem: A 34-year-old is admitted after a cardiac arrest with prolonged downtime. He underwent targeted temperature management and has been rewarmed. He is unresponsive with absent brainstem reflexes on examination. He received fentanyl and rocuronium during cooling. Creatinine is 280. The family is asking whether he is brain dead.
+    q1: Can you determine death by neurologic criteria today? Justify.
+    a1: No, not yet. Two confounders remain. He received fentanyl and rocuronium, and his renal impairment with a creatinine of two hundred and eighty prolongs clearance considerably. I would either wait five half-lives adjusted for that impairment, or obtain serum levels showing subtherapeutic concentrations, and confirm neuromuscular blockade has cleared with a train-of-four.
+    q2: What else must be satisfied before you begin?
+    a2: Confirmed rewarming to at least thirty-six degrees Celsius, since hypothermia confounds the examination and prolongs drug clearance. An established irreversible cause sufficient to explain the state. Exclusion of severe metabolic and endocrine derangement. And adequate blood pressure to perform the examination and the apnoea test safely.
+    q3: Three days later confounders have cleared. During the apnoea test he becomes hypotensive and desaturates at four minutes with no respiratory effort. What do you do?
+    a3: Abort the test, reconnect the ventilator and restore physiology — this takes priority over completing the protocol. Draw a blood gas at the point of abortion; if the carbon dioxide has already reached sixty or risen twenty above baseline with no respiratory effort, the test may still be interpretable. If not, the test is incomplete and I would use an ancillary test rather than repeat an unsafe apnoea trial.
+    q4: His mother sees his arm flex when you perform sternal pressure and says he is responding. What do you say?
+    a4: I would sit down and explain that spinally mediated movements — triple flexion, the Lazarus sign, retained deep tendon reflexes — arise from the spinal cord, not the brain, and do not indicate awareness or brain function. They are well described and do not exclude the diagnosis. I would prepare families for them in advance wherever possible, because witnessing them without warning is profoundly distressing and undermines trust in everything else we say.
 ---
 
 Let's talk about brain death determination. This is one of the most procedurally rigorous things you will do as a neurosurgeon, and it is absolutely fair game on your oral boards. The examiners want to know that you understand every prerequisite, every reflex tested, every step of the apnea test, and every legal nuance. So let's go through this systematically.

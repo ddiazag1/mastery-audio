@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Trauma"
 subcategory: "Subdural"
 difficulty: 3
+questions:
+  - q: State the Bullock criteria for acute subdural evacuation.
+    a: Thickness over ten millimetres, midline shift over five millimetres, a GCS drop of two or more points from injury to admission, or intracranial pressure above twenty. Brain Trauma Foundation guidelines, and any single criterion suffices.
+    probe: Thickness eight millimetres, shift four, GCS stable. What now?
+  - q: Why does timing matter so much in acute subdural?
+    a: The Seelig data from 1981: mortality was thirty percent when evacuation occurred within four hours of injury versus ninety percent when delayed beyond four hours. That four-hour figure is the number to know and it drives everything about how these patients are prioritised.
+    probe: How does that compare with the epidural data?
+  - q: GCS 3 with bilateral fixed dilated pupils. What do you say?
+    a: Greater than ninety percent mortality. I would say that honestly rather than operating reflexively, and I would be discussing goals of care with the family. Surgical heroics in that setting convert death into survival with devastating disability at best.
+    probe: What would change your mind about operating?
+  - q: He is on warfarin with an INR of 2.8. Reverse him.
+    a: Intravenous vitamin K ten milligrams, plus four-factor prothrombin complex concentrate — Kcentra — at twenty-five to fifty units per kilogram. Vitamin K for sustained correction, the concentrate for immediate reversal, because vitamin K alone takes hours he does not have.
+    probe: And if he were on a direct oral anticoagulant instead?
+  - q: What did Santarius establish?
+    a: The 2009 randomised trial showed that placing a subdural drain after burr hole drainage reduced chronic subdural recurrence from twenty-four percent to nine point three percent. It is the reason a drain is standard rather than optional.
+    probe: How long do you leave it, and what are the risks?
+  - q: Where does middle meningeal artery embolisation sit now?
+    a: The EMBOLISH trial and multiple retrospective series show it reduces recurrence to roughly five to ten percent, against twenty-five to thirty percent in controls. It is particularly attractive in recurrent disease, in patients who must resume anticoagulation, and as an adjunct to surgery.
+    probe: Would you use it instead of surgery in a symptomatic patient with shift?
+  - q: Should you give dexamethasone for chronic subdural?
+    a: No. Dex-CSDH, 2020, a multicentre randomised trial, showed dexamethasone did not improve outcomes and caused harm, with more hyperglycaemia, infections and other steroid-related complications. It is a clear negative trial and I would not use it.
+    probe: Why was it ever thought to work?
+  - q: When can an acute subdural be managed without surgery?
+    a: Thickness under ten millimetres, shift under five millimetres, a stable GCS, and no neurological deterioration — all four together. That patient is observed with serial examination and repeat imaging, in a setting that can operate immediately if anything changes.
+    probe: What if he is also anticoagulated?
+cases:
+  - label: Acute subdural with a blown pupil
+    stem: A 71-year-old man on warfarin for atrial fibrillation falls down stairs. He arrives intubated with a GCS of 7 (E1 V1 M5 pre-intubation). The left pupil is 6 millimetres and non-reactive. CT shows a left acute subdural haematoma 15 millimetres thick with 12 millimetres of midline shift. INR is 2.8.
+    q1: Does he meet operative criteria, and how urgently?
+    a1: He meets them several times over: thickness over ten millimetres, shift over twelve, GCS of seven, and a blown pupil indicating uncal herniation. Urgency is extreme — the Seelig data show mortality of thirty percent if evacuated within four hours of injury against ninety percent beyond four hours. He goes to theatre now.
+    q2: Do you wait to reverse the INR?
+    a2: No, I reverse concurrently, not sequentially. Vitamin K ten milligrams intravenously plus four-factor prothrombin complex concentrate at twenty-five to fifty units per kilogram, given while the theatre is being prepared and en route. Waiting for a corrected INR before starting would squander the time window that determines his outcome.
+    q3: What operation, and why not burr holes?
+    a3: A large craniotomy, not burr holes. Acute subdural clot is solid and adherent and cannot be drained through burr holes. I would plan a large trauma flap allowing wide exposure, evacuation, haemostasis and inspection for a bleeding cortical vessel or bridging vein, with the option of leaving the bone flap out if the brain is swollen.
+    q4: Three months later he re-presents with a chronic subdural on the same side and mild confusion. How is the management different?
+    a4: Entirely different. Chronic collections are liquefied and drain through burr holes, and I would place a subdural drain afterwards, because Santarius 2009 showed that reduces recurrence from twenty-four percent to nine point three percent. I would not give dexamethasone, because Dex-CSDH showed no benefit and net harm. Given he needs to resume anticoagulation, I would also consider middle meningeal artery embolisation, which reduces recurrence to around five to ten percent.
 ---
 
 Welcome to this oral board teaching session on subdural hematoma management. This is one of the highest-yield trauma topics you will face on the ABNS oral boards, and you need to be completely fluent in the classification, surgical decision-making, anticoagulation reversal protocols, and the landmark evidence that drives modern practice. Let's build this from the ground up and then work through two clinical cases the way an examiner would interrogate you.

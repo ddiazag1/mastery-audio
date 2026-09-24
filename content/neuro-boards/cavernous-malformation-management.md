@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Vascular"
 subcategory: "Malformation"
 difficulty: 3
+questions:
+  - q: How common are these, and what proportion of vascular malformations?
+    a: Cavernous malformations account for roughly five to thirteen percent of all central nervous system vascular malformations. They are angiographically occult, so catheter angiography is normal, and the diagnosis rests on magnetic resonance appearance.
+    probe: Which sequence finds the ones you would otherwise miss?
+  - q: Give me the Zabramski classification.
+    a: Type one is subacute haemorrhage, hyperintense on T1. Type two is the classic popcorn lesion with mixed signal and a haemosiderin rim, reflecting haemorrhages of different ages. Type three is chronic haemorrhage, hypointense on T1 and T2. Type four is punctate, visible only on gradient echo or susceptibility weighted imaging.
+    probe: Which type is the one you see in familial disease screening?
+  - q: What is the two-point method and what is it for?
+    a: Described by Spetzler and colleagues for brainstem cavernous malformations: draw a line from the centre of the lesion through the point where it comes closest to a pial or ependymal surface, and extend it outward. Where that line exits dictates the craniotomy and the safe entry zone.
+    probe: Name a brainstem safe entry zone you would use.
+  - q: What outcomes would you quote for brainstem resection?
+    a: Series from Samii and colleagues in Hannover and Porter and colleagues at Barrow demonstrated that microsurgical resection of brainstem cavernous malformations is safe and effective in experienced hands, with gross total resection above ninety percent and acceptable morbidity. The caveat is experienced hands and careful selection.
+    probe: Who should not be offered that operation?
+  - q: A lesion is found incidentally in a non-eloquent frontal lobe with no haemorrhage. What do you do?
+    a: Observe. An asymptomatic, non-haemorrhagic, surgically accessible lesion still carries an operative risk that exceeds its natural history in most cases. I would image at intervals, counsel about symptoms that should prompt review, and reserve surgery for haemorrhage, progressive deficit or medically refractory seizures.
+    probe: What changes if that same lesion causes refractory epilepsy?
+  - q: What is the relationship with a developmental venous anomaly, and what is the trap?
+    a: Cavernous malformations are frequently associated with a developmental venous anomaly, which is a normal variant draining functional brain. The trap is sacrificing it during resection, which causes venous infarction. You resect the cavernoma and leave the venous anomaly alone, and you say so explicitly.
+    probe: How would you identify it before opening?
+  - q: Familial disease: genetics and what changes.
+    a: Familial cavernous malformation syndrome involves CCM1 (KRIT1), CCM2 and CCM3 (PDCD10), autosomal dominant, and characterised by multiple lesions. Screening is with susceptibility weighted imaging, which reveals punctate Zabramski type four lesions invisible on other sequences. It changes counselling, family screening, and the threshold for operating on any single lesion.
+    probe: Which gene carries the most aggressive phenotype?
+  - q: Is radiosurgery an answer here?
+    a: Contested and not a first-line answer. It does not obliterate the lesion the way it does an arteriovenous malformation, the purported reduction in rebleeding is confounded by temporal clustering of haemorrhages, and it carries a risk of radiation-induced change in eloquent locations. I would reserve it for surgically inaccessible, repeatedly haemorrhagic lesions and say the evidence is weak.
+    probe: What is temporal clustering and why does it confound those studies?
+cases:
+  - label: Brainstem cavernoma with a second bleed
+    stem: A 33-year-old teacher had a pontine haemorrhage eight months ago with diplopia and mild right hemiparesis that largely recovered. She now presents with a second episode: new left facial weakness, worse diplopia, and right-sided ataxia. MRI shows a 1.8-centimetre pontine cavernous malformation with mixed signal and a haemosiderin rim, abutting the floor of the fourth ventricle.
+    q1: Classify the lesion and say what the second bleed changes.
+    a1: Zabramski type two, the classic popcorn lesion with mixed signal and a complete haemosiderin rim. The second symptomatic haemorrhage changes the calculus substantially: brainstem cavernomas that have bled twice have a materially higher risk of further haemorrhage with cumulative neurological deficit, which moves this from observation toward resection.
+    q2: How do you plan the approach?
+    a2: The two-point method of Spetzler and colleagues: a line from the centre of the lesion through the point where it comes closest to a pial or ependymal surface, extended outward, defines the craniotomy and the safe entry zone. Here the lesion abuts the fourth ventricular floor, so a telovelar approach through a midline suboccipital craniotomy with entry at an established safe zone would be reasonable.
+    q3: What do you tell her about outcome?
+    a3: Series from Samii in Hannover and Porter at Barrow show gross total resection above ninety percent with acceptable morbidity in experienced hands. But I would be explicit that she should expect to be temporarily worse after surgery, that some deficits may be permanent, and that the goal is preventing cumulative deficit from further haemorrhages rather than restoring what she has already lost.
+    q4: Her sister has headaches and asks about screening. What do you advise?
+    a4: A single lesion is usually sporadic, but I would ask about family history and look at her own imaging for multiple lesions, which would suggest familial disease involving CCM1, CCM2 or CCM3, autosomal dominant. If multiple lesions are present, genetic counselling and family screening are indicated, and the screening sequence is susceptibility weighted imaging, which shows punctate Zabramski type four lesions that other sequences miss entirely.
 ---
 
 Welcome back. Today we are covering cavernous malformation management. This is a high-yield vascular topic that shows up on the oral boards with predictable regularity, and the examiners have very specific answers they want to hear. If you know the natural history numbers, the Zabramski classification, the brainstem safe entry zones, and the classic trap questions, you will handle this one cleanly. Let's build it from the ground up.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Critical Care"
 subcategory: "CSF"
 difficulty: 3
+questions:
+  - q: Name the congenital causes of hydrocephalus.
+    a: Aqueductal stenosis, Dandy-Walker malformation, the Chiari malformations, and myelomeningocele. Each has a different mechanism and a different implication for whether endoscopic third ventriculostomy can work.
+    probe: Which of those is most likely to succeed with an ETV?
+  - q: Define the Evans index and its threshold.
+    a: The ratio of the maximum width of the frontal horns to the maximum internal diameter of the skull on the same axial slice. Above zero point three indicates ventriculomegaly. In normal pressure hydrocephalus you look for ventriculomegaly out of proportion to sulcal enlargement.
+    probe: What imaging pattern supports shunt responsiveness beyond the Evans index?
+  - q: How useful is the tap test?
+    a: Limited. Sensitivity is only around fifty to sixty percent, so a negative tap test does not rule out shunt-responsive normal pressure hydrocephalus. A positive test is helpful; a negative one should not close the door, and extended lumbar drainage has better sensitivity.
+    probe: What would you do after a negative tap test in a convincing clinical picture?
+  - q: Wean a drain two ways.
+    a: Either raise the drain incrementally — ten to fifteen to twenty to twenty-five centimetres of water, twelve to twenty-four hours at each level, monitoring pressure and examination — or clamp it entirely and monitor pressure for twenty-four to forty-eight hours. Both are acceptable; the graded approach is gentler in a marginal patient.
+    probe: Which would you choose after subarachnoid haemorrhage?
+  - q: What defines a failed weaning trial?
+    a: Intracranial pressure consistently above twenty to twenty-two, clinical deterioration such as new lethargy or a worsening examination, or new or worsening hydrocephalus on CT. Any one of those means the trial has failed and the patient needs ongoing diversion.
+    probe: Failed trial in a subarachnoid patient. What are you recommending?
+  - q: What does the ETV Success Score do?
+    a: It guides patient selection for endoscopic third ventriculostomy by combining age, aetiology and whether there has been a previous shunt. It predicts the probability of success, and it is how you avoid offering an ETV to a patient whose physiology will defeat it.
+    probe: Which aetiologies score poorly?
+  - q: Where do you place the external ventricular drain and how do you reduce infection?
+    a: Kocher's point, aiming for the ipsilateral frontal horn. Infection risk rises with duration and with manipulation, so: strict aseptic technique, tunnelling the catheter a reasonable distance, antibiotic-impregnated catheters, minimising sampling and breaks in the circuit, and removing the drain as soon as it is no longer needed.
+    probe: How often would you routinely sample the fluid?
+  - q: GCS 7 with Fisher grade 4 subarachnoid haemorrhage and bilateral temporal horn dilation. Your immediate management?
+    a: This is a high-grade subarachnoid haemorrhage with acute hydrocephalus. She needs intubation for airway protection given a GCS of seven, and an external ventricular drain for the hydrocephalus. I would not drain aggressively before the aneurysm is secured, because a sudden fall in intracranial pressure can precipitate rebleeding.
+    probe: She improves to GCS 11 after coiling. What is the next decision?
+cases:
+  - label: From drain to shunt
+    stem: A 58-year-old woman presents with a Hunt-Hess grade 4 subarachnoid haemorrhage, Fisher grade 4 pattern, and acute hydrocephalus with bilateral temporal horn dilation. GCS is 7. An external ventricular drain is placed and her aneurysm is coiled on day zero. By day 5 she has improved to GCS 11.
+    q1: Why did she need the drain, and what caution applied before coiling?
+    a1: Acute hydrocephalus from intraventricular and cisternal blood, with bilateral temporal horn dilation as the sensitive early sign, in a patient whose GCS of seven also mandated airway protection. The caution before securing the aneurysm is not to drain aggressively, because an abrupt fall in intracranial pressure reduces the tamponade on the aneurysm and can precipitate rebleeding.
+    q2: She is improving. How do you wean the drain?
+    a2: Graded weaning: raise the drain incrementally from ten to fifteen to twenty to twenty-five centimetres of water, spending twelve to twenty-four hours at each level while monitoring intracranial pressure and the clinical examination. The alternative is a clamping trial for twenty-four to forty-eight hours, but after subarachnoid haemorrhage I prefer the graded approach because it is gentler in a marginal patient.
+    q3: At 20 centimetres she becomes more lethargic and the pressure runs at 24. Interpret and act.
+    a3: That is a failed weaning trial on two counts: pressure consistently above twenty to twenty-two, and clinical deterioration. I would drop the drain back to a level she tolerates, allow her to recover, and confirm with imaging that hydrocephalus has not worsened. A single failed trial does not automatically commit her to a shunt, but it makes shunt dependence considerably more likely.
+    q4: She fails a second trial a week later. What do you recommend, and what predicts this?
+    a4: A ventriculoperitoneal shunt. The predictors of shunt dependence after subarachnoid haemorrhage are higher Fisher grade, intraventricular haemorrhage, older age and posterior circulation haemorrhage — she has several. I would counsel the family that this is a recognised consequence of the haemorrhage rather than a complication of her care, and explain that a shunt brings lifelong dependence with a real revision burden.
 ---
 
 Let's talk about CSF diversion and EVD management. This is a bread-and-butter neurosurgical topic, one you will absolutely face on your oral boards, and one where the examiners expect crisp, confident answers. We are going to walk through CSF physiology, hydrocephalus classification, EVD placement technique, drainage management, weaning protocols, VP shunt fundamentals, alternative diversion procedures, and normal pressure hydrocephalus. Then we will work through a clinical case with examiner-style questions, including the traps they like to set.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Trauma"
 subcategory: "Pediatric"
 difficulty: 3
+questions:
+  - q: How do you assess conscious level in a pre-verbal child?
+    a: With the paediatric Glasgow Coma Scale, which modifies the verbal and motor responses for developmental stage. If the GCS equivalent is critically low you intubate for airway protection and ventilatory control, and if it is eight or less you place a formal intracranial pressure monitor, as in an adult.
+    probe: What else changes in an infant that does not apply to an adult?
+  - q: What proportion of abusive head trauma is missed at first presentation?
+    a: Thirty percent, from the Jenny study. That figure is the reason abuse must be actively considered rather than waiting for it to declare itself, because the missed cases return with further, often worse, injury.
+    probe: Why were those cases missed?
+  - q: Which cases were missed, and what does that teach you?
+    a: In the Jenny study the missed cases were more likely to involve younger infants, white families and two-parent households. The lesson is about implicit bias: clinicians failed to consider abuse in families who did not match their expectation of who abuses children. That is a bias to name explicitly and guard against.
+    probe: How do you guard against it in practice?
+  - q: Which imaging findings raise abusive head trauma?
+    a: Subdural haemorrhages of differing ages, interhemispheric subdural blood, bridging vein thrombosis, diffuse hypoxic-ischaemic injury, and skull fractures inconsistent with the reported mechanism, particularly complex, bilateral or crossing-suture fractures. Any injury inconsistent with the stated history or the child's developmental stage.
+    probe: What examination finding completes that triad?
+  - q: You suspect abuse. What are you obliged to do?
+    a: Report to child protection services — it is a mandatory obligation, not a discretionary one — and involve the safeguarding team. Then complete the workup: skeletal survey for occult fractures, dilated ophthalmological examination for retinal haemorrhages, coagulation screen to exclude bleeding disorders, and careful documentation of the history as given.
+    probe: What do you say to the parents while that is happening?
+  - q: Why does a skeletal survey matter if you already have the head imaging?
+    a: Because it finds occult and healing fractures of different ages, which establish a pattern of injury over time rather than a single event. Classic metaphyseal lesions and posterior rib fractures are particularly specific. It also protects the child by documenting objectively rather than relying on interpretation of a single scan.
+    probe: Would you repeat it, and when?
+  - q: What must you exclude before concluding abuse?
+    a: Genuine accidental mechanisms consistent with the developmental stage; bleeding disorders and coagulopathy; metabolic and genetic conditions such as osteogenesis imperfecta and glutaric aciduria type one; and birth-related injury in a neonate. A careful differential protects both the child and the family.
+    probe: Does an alternative diagnosis mean you stop the safeguarding process?
+  - q: How do paediatric thresholds differ for imaging a head injury?
+    a: Radiation matters across a lifetime, so validated decision rules — PECARN being the most widely used — identify children at very low risk in whom CT can be avoided, with observation as an alternative. Where imaging is needed, dose-reduction protocols and, increasingly, rapid-sequence MRI are preferred.
+    probe: Which children does PECARN say you can safely observe?
+cases:
+  - label: The inconsistent history
+    stem: A 4-month-old is brought in by both parents, who report he rolled off a sofa onto a carpeted floor. He is irritable with a tense fontanelle and a paediatric GCS equivalent of 12. CT shows bilateral subdural collections of differing density, one hyperdense and one hypodense, with no skull fracture.
+    q1: What about this does not fit, and what do you do about it?
+    a1: Two things. A four-month-old is not developmentally capable of rolling off a sofa in most cases, so the mechanism is inconsistent with the stage. And subdural collections of differing density imply haemorrhages of different ages, meaning more than one event. This is abusive head trauma until proven otherwise, and I am obliged to involve child protection now, not later.
+    q2: The parents are articulate, professional and clearly distressed. Does that change your threshold?
+    a2: No, and I would name why. The Jenny study showed thirty percent of abusive head trauma is missed at first presentation, and the missed cases were more likely to involve younger infants, white families and two-parent households. That is implicit bias, and the correct response is to apply the same threshold regardless of how the family presents.
+    q3: Complete the workup.
+    a3: Skeletal survey for occult and healing fractures, particularly classic metaphyseal lesions and posterior rib fractures. Dilated ophthalmological examination for retinal haemorrhages. Coagulation screen to exclude a bleeding disorder. Consider metabolic and genetic mimics such as osteogenesis imperfecta and glutaric aciduria type one. Meticulous contemporaneous documentation of the history exactly as given.
+    q4: He deteriorates overnight with a GCS equivalent of 7 and a tense fontanelle. What is your neurosurgical management?
+    a4: Secure the airway and place a formal intracranial pressure monitor, since the GCS equivalent is eight or less. Treat raised pressure in tiers as in an adult, remembering the infant has an open fontanelle and sutures that alter compliance. For a symptomatic subdural collection with raised pressure I would drain it, by subdural tap through the fontanelle or a subdural drain, and consider a subduro-peritoneal shunt if it reaccumulates. The safeguarding process continues in parallel and does not wait for him to stabilise.
 ---
 
 Welcome back. This session covers pediatric head trauma and non-accidental trauma, a topic that is both clinically critical and heavily tested on the oral boards. You will be expected to recognize injury patterns, initiate the correct workup without hesitation, and navigate the medical, surgical, and legal dimensions of suspected child abuse. Let's build this from the ground up.

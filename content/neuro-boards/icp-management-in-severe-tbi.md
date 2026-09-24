@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Trauma"
 subcategory: "TBI"
 difficulty: 4
+questions:
+  - q: Define severe traumatic brain injury.
+    a: A Glasgow Coma Scale score of three through eight, assessed after resuscitation rather than in the field. That definition matters because it is the threshold for intracranial pressure monitoring and for most of the guideline recommendations.
+    probe: Why after resuscitation rather than at scene?
+  - q: When is intracranial pressure monitoring indicated?
+    a: Brain Trauma Foundation Level IIB: a GCS of eight or less with an abnormal CT. With a normal CT and a GCS of eight or less, monitoring is still indicated if two or more of age over forty, systolic pressure below ninety, or motor posturing are present.
+    probe: Give me a patient who meets the normal-CT criteria.
+  - q: What cerebral perfusion pressure do you target, and why not higher?
+    a: Roughly sixty to seventy. Robertson's CPP trial showed that aggressively augmenting above seventy increases the risk of acute respiratory distress syndrome from the vasopressor load required, without improving neurological outcome. Higher is not better.
+    probe: And what stops you going lower?
+  - q: Reconcile DECRA and RESCUEicp in one answer.
+    a: DECRA, Cooper, NEJM 2011, applied decompression early for moderately raised pressure and found worse outcomes — evidence that premature decompression without adequate medical optimisation harms. RESCUEicp applied it after medical therapy was exhausted and reduced mortality. So: bad outcomes with early surgery, lives saved with appropriately timed surgery.
+    probe: What does RESCUEicp say about the quality of that survival?
+  - q: Does therapeutic hypothermia help?
+    a: No. The POLAR trial, Cooper 2018, showed no benefit, confirming earlier negative results. Hypothermia lowers intracranial pressure reliably but does not translate into better outcomes, and it carries coagulopathic and infectious risk. It is not a routine therapy.
+    probe: Is there any role left for it?
+  - q: Walk me up the tiers.
+    a: Tier zero is physiology: head up thirty degrees, neck midline with unobstructed venous drainage, sedation and analgesia, normothermia, normocapnia, seizure control, coagulopathy correction, and strict avoidance of hypotension and hypoxia. Tier one adds CSF drainage and hyperosmolar therapy. Tier two adds neuromuscular blockade. Tier three is barbiturate coma, hypothermia, or decompressive craniectomy.
+    probe: Which tier-zero item is most often neglected on the ward round?
+  - q: Why are hypotension and hypoxia singled out?
+    a: Because each independently worsens outcome in traumatic brain injury, and they are the two secondary insults most under your control. A single episode of systolic pressure below ninety is associated with significantly worse outcome, which is why resuscitation priorities precede any neurosurgical intervention.
+    probe: So what is your blood pressure floor in the field?
+  - q: You are considering decompression. How big is the flap and why does it matter?
+    a: Large — generally at least twelve centimetres in anteroposterior diameter. A small craniectomy causes cortical strangulation at the bone edges, venous infarction and external herniation through the defect, converting a decompression into an injury. If you are going to do it, do it properly.
+    probe: What complications do you warn the family about afterwards?
+cases:
+  - label: Refractory intracranial hypertension
+    stem: A 27-year-old is found at the scene of a car crash with a GCS of 6 (E1 V2 M3). CT shows multiple bifrontal and temporal contusions with compressed basal cisterns and no evacuable collection. He is intubated and admitted to intensive care.
+    q1: Does he need a monitor, and on what basis?
+    a1: Yes. GCS of six, which is eight or less, with an abnormal CT showing contusions and compressed cisterns. That is a Brain Trauma Foundation Level IIB indication for intracranial pressure monitoring. I would place a monitor, and given the contusions and the possibility of needing CSF drainage I would favour a ventricular catheter if the ventricles are accessible.
+    q2: Opening pressure is 24. Set out your first moves.
+    a2: Tier zero first and properly: head up thirty degrees, neck midline with the collar not obstructing jugular outflow, adequate sedation and analgesia, normothermia, normocapnia, seizure prophylaxis, correction of coagulopathy, and absolute avoidance of hypotension and hypoxia. Target cerebral perfusion pressure sixty to seventy. Then drain CSF and give hyperosmolar therapy.
+    q3: The intensivist suggests pushing CPP to 85 with noradrenaline. Respond.
+    a3: I would not. Robertson's CPP trial showed that augmenting above seventy increases acute respiratory distress syndrome risk from the vasopressor load, with no improvement in neurological outcome. Higher is not better here. I would hold at sixty to seventy and escalate intracranial pressure control instead of chasing perfusion pressure upward.
+    q4: Despite tier two measures the pressure sits at 35 with worsening cisternal effacement. What do you offer and how do you frame it?
+    a4: This is refractory intracranial hypertension, so tier three: barbiturate coma titrated to burst suppression, or decompressive craniectomy. I would decompress, with a large flap of at least twelve centimetres anteroposterior to avoid cortical strangulation. I would frame it with RESCUEicp honestly: appropriately timed decompression after exhausting medical therapy reduces mortality, but it shifts survivors toward greater dependency. This is salvage, not cure, and DECRA is the cautionary tale against doing it early and casually.
 ---
 
 Let's talk about ICP management in severe traumatic brain injury. This is one of the most commonly tested topics on the ABNS oral boards, and it is a scenario you will face repeatedly in clinical practice. The examiners expect you to move through this systematically, citing guidelines, knowing the evidence, and avoiding classic pitfalls. Let's build from the ground up.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Vascular"
 subcategory: "Ischemic"
 difficulty: 4
+questions:
+  - q: What is the NIHSS and what is it for?
+    a: A 42-point scale quantifying stroke severity across level of consciousness, gaze, visual fields, facial palsy, motor strength in all four limbs, limb ataxia, sensation, language, dysarthria and extinction. It stratifies severity, guides eligibility, and provides a reproducible serial measure.
+    probe: What NIHSS threshold appears in the thrombectomy trials?
+  - q: Explain ASPECTS and the number that matters.
+    a: A 10-point score applied to non-contrast CT, subtracting a point for each middle cerebral artery region showing early ischaemic change, so ten is normal. A score below six indicates a large established core and is a relative contraindication to thrombectomy, although SELECT2 in 2023 has begun to challenge that.
+    probe: Which trial required an ASPECTS of six or greater plus good collaterals?
+  - q: Give me the thrombolysis windows and where they came from.
+    a: NINDS in 1995 established benefit within three hours. ECASS III in 2008 extended to four and a half hours, with additional exclusions: age over eighty, NIHSS over twenty-five, combined history of diabetes and prior stroke, and oral anticoagulant use regardless of INR.
+    probe: Does thrombolysis change whether you proceed to thrombectomy?
+  - q: Name the five 2015 trials and what they collectively established.
+    a: MR CLEAN, ESCAPE, EXTEND-IA, SWIFT PRIME and REVASCAT. Together they established thrombectomy within six hours as standard of care for anterior circulation large vessel occlusion. MR CLEAN showed an absolute difference of thirteen and a half percentage points in functional independence at ninety days.
+    probe: What does functional independence mean in those trials?
+  - q: How did the window get to twenty-four hours?
+    a: Two trials with different selection logic. DAWN, 2018, extended to twenty-four hours using clinical-core mismatch, with core volume thresholds of twenty-one, thirty-one or fifty-one millilitres depending on the stratum. DEFUSE 3 extended to sixteen hours using perfusion mismatch with a ratio of one point eight or greater.
+    probe: So is selection now chronological or physiological?
+  - q: Aspiration or stent retriever first?
+    a: Either. ASTER in 2017 randomised contact aspiration versus stent retriever as first-line and COMPASS in 2019 showed non-inferiority of direct aspiration. So the choice is operator preference and clot characteristics rather than evidence favouring one.
+    probe: What do you do when the first pass fails?
+  - q: Basilar occlusion. What does the evidence actually say?
+    a: Mixed. BASICS in 2021 compared thrombectomy plus best medical therapy with medical therapy alone within six hours and did not show clear benefit. ATTENTION in 2022 enrolled within twelve hours and demonstrated clear benefit. Given the natural history is devastating with very high mortality on medical therapy alone, most major centres offer thrombectomy within twelve hours.
+    probe: Why is perfusion imaging less useful in the posterior circulation?
+  - q: How distal will you go?
+    a: Proximal M2 occlusions with significant clinical deficit are supported by ASTER 2 and registry data, and are widely treated. Beyond that the risk-benefit narrows, because vessel calibre falls and perforation risk rises, and the evidence thins considerably.
+    probe: What is your decision rule for an M2 in a patient with a low NIHSS?
+cases:
+  - label: Late-window large vessel occlusion
+    stem: A 68-year-old man was last seen well 11 hours ago and woke with a dense right hemiplegia and global aphasia. NIHSS is 20. Non-contrast CT shows no haemorrhage with an ASPECTS of 8. CT angiography shows a left M1 occlusion. He is not a thrombolysis candidate.
+    q1: Is he eligible for thrombectomy, and on what basis?
+    a1: Potentially yes, in the extended window. He is beyond six hours, so selection is physiological rather than chronological. I need CT perfusion to define core and penumbra and apply DAWN or DEFUSE 3 criteria: DAWN uses clinical-core mismatch out to twenty-four hours with core thresholds of twenty-one, thirty-one or fifty-one millilitres by stratum; DEFUSE 3 uses perfusion mismatch with a ratio of one point eight or more out to sixteen hours.
+    q2: Perfusion shows a 15-millilitre core with a 90-millilitre penumbra. Interpret and act.
+    a2: A mismatch ratio of six with a small core and a large penumbra: substantial salvageable tissue. He qualifies comfortably under both DAWN and DEFUSE 3. With an NIHSS of twenty, an ASPECTS of eight and an M1 occlusion, I would proceed to thrombectomy urgently, because the penumbra is dying while we discuss it.
+    q3: Had his ASPECTS been 4 with a 90-millilitre core, what would you have said?
+    a3: Standard teaching is that an ASPECTS below six indicates a large established core and is a relative contraindication, because reperfusing infarcted tissue risks haemorrhagic transformation without functional gain. But I would acknowledge that SELECT2 in 2023 explored thrombectomy in large-core patients and showed some benefit, so this is evolving evidence rather than a closed question.
+    q4: After successful recanalisation he deteriorates at 18 hours with a falling GCS. What are you thinking and what do you do?
+    a4: Haemorrhagic transformation of the infarct, or malignant middle cerebral artery oedema with herniation. Immediate non-contrast CT. If haemorrhagic, reverse any anticoagulation and control blood pressure. If malignant oedema in a large territory infarct, this is where decompressive hemicraniectomy is considered, and the discussion about age, dominant hemisphere involvement and acceptable disability must happen quickly with the family.
 ---
 
 This is ischemic stroke thrombectomy criteria, one of the highest-yield vascular topics on the ABNS oral boards. You will be expected to know the pathophysiology cold, recite trial data by name, apply inclusion and exclusion criteria to a clinical scenario, and manage complications. Let's build this from the ground up.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Trauma"
 subcategory: "Penetrating"
 difficulty: 4
+questions:
+  - q: What is the single strongest prognostic factor?
+    a: The Glasgow Coma Scale after resuscitation, not the field GCS. That distinction matters enormously, because a field number recorded before airway control and volume resuscitation systematically misrepresents the patient's true neurological state.
+    probe: So when exactly do you assess it?
+  - q: Give me the survival figures by GCS.
+    a: A GCS of eight or higher after resuscitation carries survival exceeding seventy-five percent. A GCS of three to five with bilateral fixed dilated pupils carries near one hundred percent mortality. The prognostic relationship between GCS, trajectory and survival comes from Kaufman and Levy.
+    probe: What do you do with the second group?
+  - q: GCS 3, bilateral fixed dilated pupils, bihemispheric transventricular trajectory. Your answer?
+    a: Mortality approaching one hundred percent. I would be thinking about goals of care and organ donation, not surgical heroics. Saying that clearly is the correct answer, and dressing it up as aggressive management would be both futile and unkind.
+    probe: How do you have that conversation with the family?
+  - q: Which trajectories are the lethal ones?
+    a: Bihemispheric, transventricular, and those crossing the midline. A bullet crossing both frontal lobes or traversing the ventricular system carries a dramatically worse prognosis than a single-lobe tangential track, independent of the entry site.
+    probe: Why is the transventricular trajectory so bad?
+  - q: What are the surgical indications in a salvageable patient?
+    a: Debridement of the contaminated entry wound and watertight dural closure, evacuation of significant mass lesions, and relief of raised intracranial pressure. Aggressive pursuit of deep retained fragments is not indicated, because chasing the bullet causes more injury than the fragment does.
+    probe: So when would you remove a fragment?
+  - q: Do you need vascular imaging, and when?
+    a: Yes. CT angiography to look for traumatic pseudoaneurysm, arteriovenous fistula and vessel injury, particularly with trajectories crossing the midline, near the skull base, or near the Sylvian fissure. Traumatic intracranial aneurysms are a recognised delayed cause of catastrophic haemorrhage.
+    probe: What would you do if you found one?
+  - q: Antibiotics and seizure prophylaxis?
+    a: Both. Broad-spectrum antibiotics given the contaminated tract, particularly with retained bone or foreign material. And antiepileptic prophylaxis, because penetrating injury carries one of the highest rates of post-traumatic epilepsy of any head injury.
+    probe: How long would you continue the antiepileptic?
+  - q: GCS 9, left frontal trajectory, bullet in the left basal ganglia, contusion without shift, normal CT angiography. What do you do?
+    a: This is a salvageable injury. Debride the contaminated entry wound and achieve watertight dural closure. Leave the deep fragment alone. Manage intracranial pressure, give antibiotics and seizure prophylaxis, and monitor. The operation is about the wound and the dura, not the bullet.
+    probe: He is already intubated. Was that appropriate at a GCS of 9?
+cases:
+  - label: Gunshot wound to the head
+    stem: A 24-year-old sustains a single gunshot wound to the left frontal region. At scene the GCS is recorded as 6. After intubation, volume resuscitation and reversal of hypotension, his GCS is 9 (E2 V-intubated M5) with reactive pupils. CT shows a left frontal trajectory with the bullet lodged in the left basal ganglia, surrounding contusion, and no significant midline shift.
+    q1: Which GCS do you act on, and why does it matter here?
+    a1: The post-resuscitation GCS of nine, not the field six. The field number was recorded before airway control and correction of hypotension, and using it would systematically underestimate him. That distinction changes him from a borderline case into a patient with survival above seventy-five percent.
+    q2: What imaging do you add before deciding on surgery?
+    a2: CT angiography, looking for traumatic pseudoaneurysm, arteriovenous fistula or direct vessel injury, particularly given a trajectory passing near the basal ganglia and perforating vessels. A traumatic intracranial aneurysm is a recognised delayed cause of catastrophic rebleeding and would change both the operation and the follow-up.
+    q3: Angiography is normal. What operation and what will you deliberately not do?
+    a3: Debridement of the contaminated entry wound with removal of accessible bone fragments and devitalised tissue, and watertight dural closure. I will deliberately not chase the deep fragment in the basal ganglia — pursuing retained fragments causes more injury than leaving them. Antibiotics and antiepileptic prophylaxis given the very high post-traumatic epilepsy rate.
+    q4: The examiner changes the case: the bullet crossed the midline through both frontal lobes and his post-resuscitation GCS is 5 with bilateral fixed pupils. What now?
+    a4: That is a different patient entirely. A bihemispheric transventricular trajectory with a GCS of three to five and bilateral fixed dilated pupils carries mortality approaching one hundred percent. I would not offer surgery. I would ensure the resuscitation was genuinely adequate and the examination reliable, then move to an honest conversation with the family about goals of care and, where appropriate, organ donation.
 ---
 
 Welcome back. This session covers penetrating brain injury, a topic the oral board examiners love because it tests your decision-making under pressure, your knowledge of ballistics, your surgical judgment about what to do and critically what not to do, and your understanding of delayed complications that will kill your patient if you forget to screen for them. Let's build this from the ground up.

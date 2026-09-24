@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Critical Care"
 subcategory: "Monitoring"
 difficulty: 3
+questions:
+  - q: Who gets a monitor?
+    a: Brain Trauma Foundation: a GCS of eight or less with an abnormal CT. With a normal CT and a GCS of eight or less, still consider monitoring if two or more of age over forty, unilateral or bilateral motor posturing, or systolic pressure below ninety are present.
+    probe: So a normal CT does not reassure you. Why not?
+  - q: Ventricular catheter or parenchymal monitor?
+    a: A ventricular catheter is the reference standard: it measures global pressure, can be recalibrated in situ, and uniquely allows therapeutic cerebrospinal fluid drainage. A parenchymal monitor is easier to place, particularly with slit ventricles, but measures local pressure and cannot be re-zeroed once in, so it drifts.
+    probe: Which would you choose in a swollen brain with compressed ventricles?
+  - q: Wean an external ventricular drain for me.
+    a: Raise the drain incrementally, typically from fifteen to twenty to twenty-five centimetres of water over twenty-four to forty-eight hours, monitoring pressure and the clinical examination at each level. If pressure stays below twenty to twenty-two through a clamping trial, remove it.
+    probe: What counts as a failed trial?
+  - q: What did BEST TRIP show, and what did it not show?
+    a: Chesnut, NEJM 2012, randomised patients in Bolivia to monitoring-based versus clinical and imaging-based management and found no difference in outcome. What it did not show is that pressure is unimportant — it showed that a protocol driven by examination and imaging can perform comparably where monitoring is unavailable.
+    probe: Does that change your practice here?
+  - q: Read me an intracranial pressure waveform.
+    a: Three peaks: P1 the percussion wave from arterial pulsation, P2 the tidal wave reflecting compliance, P3 the dicrotic wave. When P2 exceeds P1, compliance is exhausted, and that precedes any rise in the mean value. Lundberg A waves are sustained plateau elevations and are pathological; B waves are shorter oscillations indicating reduced compliance.
+    probe: Why is the P2 change more useful than the mean number?
+  - q: What are the complications of placing one?
+    a: Haemorrhage along the tract, infection and ventriculitis rising with duration of catheterisation, malposition requiring repassage, obstruction by blood or debris, and overdrainage. Catheter tip position away from choroid plexus and a strict insertion technique are the main mitigations.
+    probe: How would you reduce the infection risk specifically?
+  - q: Where is Kocher's point and what is your trajectory?
+    a: Roughly eleven centimetres posterior to the nasion and two to three centimetres lateral to the midline, in front of the coronal suture. Aim perpendicular to the skull toward the ipsilateral frontal horn, using the medial canthus and the tragus as the two aiming landmarks.
+    probe: You pass twice and get nothing. What now?
+  - q: What pressure do you treat, and is the number absolute?
+    a: Treatment is generally triggered above twenty to twenty-two millimetres of mercury sustained. But the number is not absolute: it is interpreted alongside the waveform, the cerebral perfusion pressure, the examination and the imaging. A pressure of eighteen with exhausted compliance and effaced cisterns worries me more than a transient twenty-five.
+    probe: Give me an example where you would not treat a pressure of twenty-five.
+cases:
+  - label: To monitor or not
+    stem: A 46-year-old is admitted after an assault. GCS is 8 (E2 V2 M4). CT shows scattered small contusions but normal basal cisterns and no midline shift. Systolic blood pressure on arrival was 85 and he has intermittent extensor posturing.
+    q1: Does he need a monitor? Justify it against guideline.
+    a1: Yes. His CT is close to normal, but the Brain Trauma Foundation criterion for a normal or near-normal CT applies: a GCS of eight or less plus two or more of age over forty, motor posturing, or systolic pressure below ninety. He has posturing and a systolic of eighty-five — two risk factors — so monitoring is indicated. A normal CT does not exclude raised pressure.
+    q2: Which device, and why?
+    a2: A ventricular catheter if the ventricles are accessible, because it is the reference standard, can be re-zeroed in situ, and allows therapeutic cerebrospinal fluid drainage, which is a treatment as well as a measurement. A parenchymal monitor is the fallback if the ventricles are slit-like, accepting that it measures local pressure and drifts because it cannot be recalibrated.
+    q3: Opening pressure is 12. The intensivist asks whether the monitor was necessary and cites BEST TRIP. Respond.
+    a3: BEST TRIP showed that in a setting without ready access to monitoring, a protocol driven by examination and imaging performed comparably. It did not show that intracranial pressure is unimportant or that monitoring is useless. Here it gives me an objective trend in a patient whose examination is confounded by sedation, and the catheter is also therapeutic.
+    q4: On day three the mean pressure is 16 but P2 now exceeds P1. What does that mean and what do you do?
+    a4: Compliance is exhausted, and that change precedes a rise in the mean value — it is an early warning, not a curiosity. I would not wait for the number to cross twenty-two. I would re-image to exclude an evolving lesion, tighten tier-zero physiology, and drain cerebrospinal fluid, escalating before he declares himself with a pressure crisis.
 ---
 
 Let's talk about ICP monitoring indications and techniques. This is one of those foundational critical care topics that the board examiners will absolutely test you on, and they will push deep into the technical details, the physiology, the decision-making, and the complications. You need to own this topic completely. Let's build from the ground up.

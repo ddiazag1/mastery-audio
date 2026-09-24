@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Critical Care"
 subcategory: "Workup"
 difficulty: 2
+questions:
+  - q: Give me a structured approach to postoperative fever.
+    a: Work through by timing and source. Early, within forty-eight hours: atelectasis, inflammatory response to surgery, transfusion, drug fever, and malignant hyperthermia. Later: wound, urinary tract, lines, chest, and venous thromboembolism. Then the neurosurgery-specific causes — meningitis, ventriculitis, shunt or drain infection, and chemical meningitis.
+    probe: Which of those is most often missed?
+  - q: What proportion of deep vein thromboses cause fever?
+    a: Approximately thirty percent of patients with deep vein thrombosis have an associated low-grade fever. That is why thromboembolism belongs on the fever differential rather than being considered only when the leg swells, particularly in an immobile neurosurgical patient.
+    probe: So what would you order in an immobile day-five craniotomy patient with a low-grade fever?
+  - q: Quote the spinal wound infection rates.
+    a: Two to five percent, higher with instrumentation. The presentation is often subtle rather than florid: persistent wound drainage, increasing back pain out of keeping with the postoperative course, and low-grade fever. A clean-looking wound does not exclude deep infection.
+    probe: What would you do about persistent drainage at ten days?
+  - q: The Gram stain is negative. How much does that reassure you?
+    a: Not much. Gram stain sensitivity is only sixty to ninety percent, so a negative result does not rule out bacterial infection. I would treat on the overall picture — cell count, glucose, protein, clinical trajectory — and wait for culture rather than being falsely reassured.
+    probe: What cerebrospinal fluid parameters would you weigh instead?
+  - q: How do you distinguish chemical from bacterial meningitis after posterior fossa surgery?
+    a: It is genuinely difficult, because both give neutrophilic pleocytosis. Chemical meningitis typically appears in the first days, is associated with blood or tumour contents in the cerebrospinal fluid, has a lower cell count with a normal or near-normal glucose, and settles with steroids. Bacterial infection has lower glucose, higher protein, and a positive culture — but culture takes time, so many are treated empirically.
+    probe: So what do you actually do on the day?
+  - q: A patient with an external ventricular drain spikes a fever. Approach it.
+    a: Sample the cerebrospinal fluid from the drain and send cell count, glucose, protein, Gram stain and culture, while looking for every other source. Rising cell count, falling glucose and rising protein over serial samples matter more than any single value, because the drain itself causes a reactive pleocytosis.
+    probe: Would you routinely sample daily?
+  - q: Which fever demands action within minutes rather than hours?
+    a: Fever with a declining conscious level, new deficit, or meningism in a patient with recent instrumentation — that is ventriculitis or an intracranial infection until proven otherwise. And malignant hyperthermia intraoperatively or immediately postoperatively, which is an anaesthetic emergency requiring dantrolene.
+    probe: What else accompanies malignant hyperthermia?
+  - q: The wound looks clean externally but he has had low-grade fevers for three days. What do you think?
+    a: A clean-looking wound does not exclude a deep infection, particularly with instrumentation. I would examine for fluctuance, tenderness and drainage, image with contrast-enhanced MRI to look for a deep collection or discitis, send inflammatory markers serially, and have a low threshold for exploration, because deep infection around hardware will not resolve with antibiotics alone.
+    probe: Do you remove the instrumentation?
+cases:
+  - label: Fever on day five
+    stem: A 60-year-old man is day 5 after a posterior fossa craniotomy for a metastasis, with an external ventricular drain in situ. He spikes to 38.6 degrees and is more drowsy. The wound looks clean. CSF from the drain shows 450 white cells with 80 percent neutrophils, glucose 2.8 with a serum glucose of 6.0, and protein 1.2. Gram stain is negative.
+    q1: How do you interpret those CSF results?
+    a1: Concerning for ventriculitis. A neutrophilic pleocytosis with a CSF-to-serum glucose ratio below about half and raised protein fits bacterial infection. The negative Gram stain does not reassure me — sensitivity is only sixty to ninety percent. But I must weigh chemical meningitis from blood and tumour contents after posterior fossa surgery, which can look similar.
+    q2: How would you separate the two?
+    a2: Trajectory over serial samples matters more than any single value: a rising cell count, falling glucose and rising protein favour infection, while chemical meningitis appears early, plateaus and settles. Chemical meningitis usually has a normal or near-normal glucose. Given his declining conscious level and an indwelling drain, I would treat empirically for ventriculitis while awaiting culture rather than wait to be proven right.
+    q3: What else is on your differential for this fever, and what would you not forget?
+    a3: Wound infection, urinary tract, lines, chest and atelectasis, drug fever. And venous thromboembolism, which I would not forget: roughly thirty percent of deep vein thromboses cause a low-grade fever, and he is an immobile day-five cranial patient with malignancy — among the highest-risk groups there is.
+    q4: Culture grows coagulase-negative staphylococcus. What do you do about the drain?
+    a4: Remove it. Hardware-associated infection is not reliably cleared with antibiotics while the device remains, so I would remove or exchange the drain, placing a new one at a fresh site if ongoing diversion is needed, and give culture-directed intravenous antibiotics with vancomycin as the empiric agent pending sensitivities. I would involve infectious diseases and confirm sterility before considering any permanent shunt.
 ---
 
 Let's master postoperative fever workup in neurosurgery for the oral boards.

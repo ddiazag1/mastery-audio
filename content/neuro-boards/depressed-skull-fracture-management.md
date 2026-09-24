@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Trauma"
 subcategory: "Fracture"
 difficulty: 3
+questions:
+  - q: What imaging do you want, and why that specifically?
+    a: CT with bone windows and three-dimensional reconstruction. Bone windows define the fracture and the degree of depression; the three-dimensional reconstruction shows the geometry for operative planning, particularly the relationship to sutures and to the dural venous sinuses.
+    probe: What are you looking for on the brain windows at the same time?
+  - q: What is the conventional threshold for elevation?
+    a: Depression greater than the thickness of the adjacent inner table, or roughly the full thickness of the skull, is the conventional indication for elevation. But it is a guide rather than a rule, and the clinical picture and the presence of an open wound weigh heavily.
+    probe: What else, besides depth, would push you to operate?
+  - q: Open versus closed depressed fracture: what changes?
+    a: An open fracture raises contamination, infection and the question of a dural tear with cerebrospinal fluid leak. It generally warrants debridement, irrigation, elevation and watertight dural repair, with antibiotics. A closed fracture without deficit or significant depression can often be managed conservatively.
+    probe: Does an open fracture always need the bone discarded?
+  - q: The fracture overlies the superior sagittal sinus. Now what?
+    a: Be very cautious. Elevating bone over a dural venous sinus risks catastrophic haemorrhage and air embolism, and conservative management is often the wiser course in the absence of significant mass effect or a compelling indication. If I must operate, I prepare for major blood loss with cross-matched blood and consider a neuro-interventional colleague on standby.
+    probe: How would you manage a sinus laceration if you encountered one?
+  - q: What are the specific complications you are trying to prevent?
+    a: Infection, particularly with an open fracture or a dural tear; post-traumatic epilepsy, for which depressed fracture is a recognised risk factor; underlying parenchymal injury and haematoma; cosmetic deformity; and cerebrospinal fluid leak with subsequent meningitis.
+    probe: Would you give antiepileptic prophylaxis, and for how long?
+  - q: There is pneumocephalus on the scan. What does that tell you?
+    a: That there is communication with the outside world — through the fracture, the paranasal sinuses or the mastoid air cells. It raises the question of a dural tear and cerebrospinal fluid leak, with the attendant meningitis risk, and it argues for exploration and watertight repair if there is a persistent leak.
+    probe: What is tension pneumocephalus and how would you recognise it?
+  - q: A child with a ping-pong fracture. Is that the same problem?
+    a: No. In infants the skull is plastic, so a depressed fracture can occur without a fracture line, producing a greenstick or ping-pong deformity. Many resolve spontaneously with growth, and intervention is largely for cosmesis, significant depth, or underlying injury. The threshold is different from an adult.
+    probe: What is a growing skull fracture and which children get it?
+  - q: Consent this patient for elevation.
+    a: Infection and wound problems; bleeding, including from a sinus if the fracture overlies one; injury to underlying brain with new deficit; cerebrospinal fluid leak; seizures; anaesthetic risk; cosmetic result, which may require later cranioplasty; and the possibility that the bone cannot be replaced if grossly contaminated.
+    probe: What would you say about his driving and return to work?
+cases:
+  - label: Open depressed fracture
+    stem: A 23-year-old is struck on the head with a metal bar in an assault. There is a 5-centimetre scalp laceration over the left parietal region with visible bone. GCS is 14, with no focal deficit. CT shows a depressed fracture with fragments depressed approximately 12 millimetres, pneumocephalus, and a small underlying contusion. The fracture lies 2 centimetres lateral to the midline.
+    q1: Classify the problem and say what worries you most.
+    a1: An open depressed skull fracture with pneumocephalus and an underlying contusion. What worries me most is contamination and the near-certainty of a dural tear given the air, which brings infection, meningitis and cerebrospinal fluid leak. The depth exceeds the adjacent skull thickness, which is the conventional threshold for elevation.
+    q2: Why does the position two centimetres from the midline matter?
+    a2: Because the superior sagittal sinus runs in the midline and the lacunae extend laterally. A fracture this close may involve or abut the sinus, and elevating bone off a torn sinus risks catastrophic haemorrhage and air embolism. I would study the three-dimensional reconstruction carefully, cross-match blood, and be prepared for major venous bleeding.
+    q3: Outline the operation.
+    a3: Debridement and copious irrigation of the contaminated wound, elevation of the depressed fragments, inspection of the dura, and watertight dural repair with a graft if needed. I would give antibiotics and consider antiepileptic prophylaxis given depressed fracture is a risk factor for post-traumatic epilepsy. Grossly contaminated bone may need to be discarded with later cranioplasty.
+    q4: Two weeks later he has clear fluid dripping from the nose. What has happened and what do you do?
+    a4: A cerebrospinal fluid leak from an unrecognised or inadequately repaired dural defect, possibly with a skull base component given rhinorrhoea. I would confirm it is cerebrospinal fluid with beta-2 transferrin, image with thin-section CT of the skull base and heavily T2-weighted MRI to localise the defect, and treat it, because a persistent leak carries a real meningitis risk. Initial measures may include bed rest and a lumbar drain, with surgical repair if it does not settle.
 ---
 
 Let's work through depressed skull fracture management. This is a bread-and-butter trauma topic for the oral boards, and the examiners expect you to move quickly through indications, operative technique, and the classic pitfalls. We'll build from foundational anatomy, walk through a clinical case, and then I'll push you with the kinds of interrogation questions that separate a pass from a fail.

@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Critical Care"
 subcategory: "Management"
 difficulty: 4
+questions:
+  - q: Give me the equation and the target.
+    a: Cerebral perfusion pressure equals mean arterial pressure minus intracranial pressure, with a target of roughly sixty to seventy millimetres of mercury. Both boundaries are evidence-based rather than arbitrary.
+    probe: Where is the arterial line zeroed, and why does it matter?
+  - q: Where does the upper boundary of seventy come from?
+    a: Robertson's randomised trial comparing a target of seventy against fifty found a fivefold increase in acute respiratory distress syndrome in the above-seventy group, driven by the fluid and vasopressor load required to sustain it, without improvement in neurological outcome.
+    probe: Does that mean a CPP of 75 is always harmful?
+  - q: And the lower boundary of sixty?
+    a: It derives from the work of Michael Rosner and the CPP-targeted approach, the Rosner doctrine, which holds that maintaining perfusion pressure breaks the vasodilatory cascade that drives pressure upward. Below about fifty the risk of ischaemia rises sharply.
+    probe: Explain the vasodilatory cascade.
+  - q: Contrast Rosner with the Lund protocol.
+    a: Rosner augments mean arterial pressure with fluids and vasopressors to maintain perfusion while treating pressure. Lund does the opposite: albumin and diuretics to reduce capillary hydrostatic pressure, avoidance of vasopressors, and acceptance of lower perfusion pressures of fifty to sixty, on the basis of reducing transcapillary leak across a disrupted blood-brain barrier.
+    probe: Which has been proven superior?
+  - q: So which do you follow?
+    a: Neither exclusively. No head-to-head randomised trial has proven one superior, and the Brain Trauma Foundation guidelines are essentially a middle ground: maintain sixty to seventy, which satisfies Rosner's minimum without the aggressive augmentation Robertson showed to be harmful.
+    probe: What patient would push you toward the Lund end?
+  - q: What is CPPopt and what is its evidence status?
+    a: An individualised optimal perfusion pressure derived from autoregulation indices such as the pressure reactivity index, on the premise that the best target differs between patients. It is conceptually attractive, but as of now there is no completed phase three randomised trial showing that prospectively targeting it improves outcome over standard guideline-based management.
+    probe: So would you use it?
+  - q: What is BOOST and what does it measure?
+    a: BOOST-II was a phase two randomised trial of brain tissue oxygen–guided therapy in addition to standard intracranial pressure–guided management versus pressure-guided management alone. BOOST-3 was initiated as the phase three trial to answer definitively whether tissue oxygen–guided management improves functional outcome after severe traumatic brain injury.
+    probe: What tissue oxygen threshold triggers intervention?
+  - q: Why does autoregulation matter for all of this?
+    a: Because intact autoregulation holds cerebral blood flow constant across a mean arterial pressure of roughly fifty to one hundred fifty, but after injury it is often lost, so flow becomes pressure-passive. In that state both hypotension and hypertension are directly harmful, and a single perfusion pressure target applied blindly may be wrong in either direction.
+    probe: How would you assess whether autoregulation is intact?
+cases:
+  - label: Chasing the number
+    stem: A 31-year-old with severe traumatic brain injury has an intracranial pressure of 25 and a mean arterial pressure of 80, giving a cerebral perfusion pressure of 55. He is on noradrenaline. The intensivist proposes increasing the vasopressor to achieve a CPP of 80.
+    q1: Do you agree? Argue it with evidence.
+    a1: No. Robertson's randomised trial comparing targets of seventy versus fifty found a fivefold increase in acute respiratory distress syndrome in the higher group from the fluid and vasopressor load, with no neurological benefit. Pushing to eighty would repeat exactly that experiment. I would target sixty to seventy.
+    q2: So how do you get his CPP from 55 into range?
+    a2: By attacking the other side of the equation. His perfusion pressure is low because his intracranial pressure is twenty-five, not because his mean arterial pressure is inadequate. Drain cerebrospinal fluid, optimise tier-zero physiology — head up, neck free, sedation, normothermia, normocapnia — and give hyperosmolar therapy. Lowering pressure raises perfusion pressure without the vasopressor penalty.
+    q3: He has bilateral pulmonary contusions and is already difficult to oxygenate. Does that change your approach?
+    a3: Yes, it pushes me further from aggressive augmentation. With injured lungs, the ARDS risk that Robertson demonstrated is not theoretical. This is the patient in whom the Lund philosophy has most appeal: albumin and diuretics to reduce capillary hydrostatic pressure, avoidance of vasopressors, and tolerance of a perfusion pressure at the lower end of range, accepting that this is not proven superior in a head-to-head trial.
+    q4: Someone suggests setting an individualised CPPopt target from his pressure reactivity index. Your view?
+    a4: Conceptually attractive and physiologically sensible, because autoregulation is often lost after injury and a single target applied blindly may be wrong in either direction. But there is no completed phase three trial showing that prospectively targeting CPPopt improves outcome over guideline-based management. I would use it as supporting information alongside a sixty to seventy target, not as the primary driver of therapy.
 ---
 
 Let's work through cerebral perfusion pressure optimization. This is a core critical care topic that the oral board examiners love because it bridges physiology, guidelines, monitoring technology, and bedside decision-making. You need to own this one completely.

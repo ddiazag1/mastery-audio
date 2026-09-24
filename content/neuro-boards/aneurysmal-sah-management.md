@@ -4,6 +4,42 @@ module: neuro_boards
 category: "Vascular"
 subcategory: "Hemorrhagic"
 difficulty: 4
+questions:
+  - q: Grade this patient for me: GCS 14, severe headache, mild confusion, thick cisternal clot with intraventricular blood.
+    a: Hunt and Hess grade three, WFNS grade two because it keys off the GCS, and modified Fisher grade four. I would quote all three, because they answer different questions.
+    probe: Which of those three predicts vasospasm, and which predicts outcome?
+  - q: Why did the original Fisher scale get modified?
+    a: Because original grade four, diffuse or absent subarachnoid blood with intraventricular or intracerebral haemorrhage, paradoxically implied lower vasospasm risk than grade three. The modified scale is more linearly predictive, with grades three and four carrying roughly thirty to forty percent incidence of clinical vasospasm.
+    probe: So which single radiographic variable drives vasospasm risk?
+  - q: Summarise ISAT and then tell me its caveats.
+    a: ISAT randomised 2,143 patients with ruptured aneurysms suitable for either treatment and found coiling gave a seven percent absolute reduction in death or dependency at one year. The caveats: mostly anterior circulation with coil-favourable anatomy, slightly higher long-term rebleeding in the coiled group, and retreatment of roughly seventeen percent versus four percent for clipping.
+    probe: So how do you actually choose for the patient in front of you?
+  - q: What anatomy makes an aneurysm coilable?
+    a: An adequate dome-to-neck ratio of at least two to one, and no critical branch vessels arising from the neck. With that, coiling is a reasonable first-line approach; without it, the neck cannot be secured endovascularly and clipping comes back into play.
+    probe: Name two situations where you would clip regardless of the ratio.
+  - q: GCS 14 and protecting her airway. Do you intubate?
+    a: Not at this moment, but with a low threshold. A GCS of fourteen with airway protection does not mandate intubation, and I would rather preserve the neurological examination; but this patient can deteriorate rapidly from rebleeding or hydrocephalus, so the decision is reassessed continuously.
+    probe: What would make you intubate immediately?
+  - q: Which prophylactic agents have failed in trials here?
+    a: Simvastatin in STASH, 2014, over eight hundred patients, no benefit for delayed cerebral ischaemia or outcome. Prophylactic hypervolaemia in HIMALAIA. Magnesium in MASH-2. The one that works is nimodipine, established by the British aneurysm nimodipine trial in 1989.
+    probe: By what mechanism does nimodipine help, given it does not reliably reverse angiographic narrowing?
+  - q: Wean an external ventricular drain for me.
+    a: Gradually. Raise the drain level progressively from ten to fifteen to twenty centimetres of water over forty-eight to seventy-two hours, monitoring intracranial pressure and the clinical examination at each level. If pressure stays above twenty or the patient worsens as the drain is raised, the trial has failed.
+    probe: Failed trial. What does that mean for her and what do you do?
+  - q: Who is at highest risk of needing a permanent shunt?
+    a: Higher Fisher grade, intraventricular haemorrhage, older age, and posterior circulation haemorrhage. I would counsel the family early that shunt dependence is a real possibility rather than presenting it as a complication if it happens.
+    probe: What proportion would you quote?
+cases:
+  - label: Day zero to day seven
+    stem: A 54-year-old woman collapses with the worst headache of her life. On arrival GCS is 14, eyes 4, verbal 4, motor 6. CT shows thick cisternal subarachnoid blood with intraventricular extension. CT angiography shows a 7-millimetre anterior communicating artery aneurysm with a 3-millimetre neck.
+    q1: Grade her three ways and state your immediate priorities.
+    a1: Hunt and Hess three, WFNS two, modified Fisher four. Priorities: airway assessment with a low threshold to intubate, blood pressure control to reduce rebleeding risk before the aneurysm is secured, nimodipine, analgesia, and urgent securing of the aneurysm. I would also assess for hydrocephalus given intraventricular blood.
+    q2: She becomes drowsier over two hours. What has happened and what do you do?
+    a2: Acute hydrocephalus from intraventricular blood is the commonest cause of early deterioration, and rebleeding is the other. I would repeat the CT immediately. If ventricles are enlarged, place an external ventricular drain, and I would not drain aggressively before the aneurysm is secured because a sudden drop in intracranial pressure can precipitate rebleeding.
+    q3: Dome-to-neck ratio is greater than two with no branch off the neck. Clip or coil, and on what basis?
+    a3: This anatomy is coil-favourable, and ISAT supports coiling in exactly this population: anterior circulation, favourable anatomy, seven percent absolute reduction in death or dependency at one year. I would coil, while acknowledging the higher retreatment rate of roughly seventeen percent versus four percent and committing to angiographic follow-up.
+    q4: Day seven she develops a new hemiparesis and drops two GCS points. Work it through.
+    a4: Delayed cerebral ischaemia until proven otherwise: new focal deficit or a drop of at least two GCS points lasting over an hour, unexplained, between days three and fourteen. Exclude hydrocephalus, rebleeding, seizure, infection and metabolic causes with CT and labs. Then induce hypertension, and obtain CT perfusion and angiography, with endovascular rescue by intra-arterial vasodilator or angioplasty if refractory. Her modified Fisher four put her in the highest risk group.
 ---
 
 Let's master aneurysmal subarachnoid hemorrhage management for the oral boards.
