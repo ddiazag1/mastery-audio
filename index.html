@@ -484,6 +484,31 @@ a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
 .ma-drill-body { font-size: 0.9rem; line-height: 1.6; color: var(--text-dim); white-space: pre-wrap; }
 .ma-drill-btn { margin-top: 1rem; background: none; border: 1px solid var(--accent); color: var(--accent); border-radius: 6px; padding: 0.4rem 0.9rem; font-size: 0.82rem; cursor: pointer; }
 
+
+.ma-listen-bar { white-space: normal; display: flex; gap: 0.5rem; align-items: center; margin-bottom: 1.25rem; }
+.ma-listen { background: var(--accent); color: #fff; border: none; border-radius: 6px; padding: 0.45rem 1.1rem; font-size: 0.85rem; cursor: pointer; font-weight: 600; }
+.ma-listen:hover { background: var(--accent-hover); }
+.ma-rate { background: none; border: 1px solid var(--border); color: var(--text-dim); border-radius: 6px; padding: 0.4rem 0.7rem; font-size: 0.78rem; cursor: pointer; }
+.ma-listen-note { font-size: 0.76rem; color: var(--text-dim); }
+.ma-chat-log { max-height: 340px; overflow-y: auto; margin: 0.6rem 0; padding-right: 0.3rem; }
+.ma-msg { margin-bottom: 0.7rem; }
+.ma-who { display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 0.2rem; }
+.ma-bubble { font-size: 0.88rem; line-height: 1.55; padding: 0.55rem 0.75rem; border-radius: 8px; white-space: pre-wrap; }
+.ma-assistant .ma-bubble { background: var(--surface); color: var(--text-dim); border: 1px solid var(--border); }
+.ma-user .ma-bubble { background: var(--accent); color: #fff; }
+.ma-typing { font-style: italic; opacity: 0.7; }
+.ma-bubble .ma-h { display: block; margin-bottom: 0.3rem; color: var(--text); }
+.ma-sched { display: inline-block; margin-top: 0.35rem; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.12rem 0.45rem; border-radius: 4px; border: 1px solid var(--border); color: var(--text-dim); }
+.ma-sched-got { border-color: var(--green, #4caf50); color: var(--green, #4caf50); }
+.ma-sched-missed { border-color: var(--red, #f44336); color: var(--red, #f44336); }
+.ma-chat-input { display: flex; gap: 0.5rem; align-items: flex-end; }
+.ma-chat-input textarea { flex: 1; background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 0.5rem; font-size: 0.88rem; font-family: inherit; resize: vertical; }
+.ma-chat-btns { display: flex; flex-direction: column; gap: 0.35rem; }
+.ma-send { background: var(--accent); color: #fff; border: none; border-radius: 6px; padding: 0.45rem 0.9rem; font-size: 0.82rem; cursor: pointer; }
+.ma-mic { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.35rem 0.7rem; font-size: 1rem; cursor: pointer; line-height: 1; }
+.ma-mic.ma-rec { background: var(--red, #f44336); border-color: var(--red, #f44336); animation: maPulse 1.2s infinite; }
+@keyframes maPulse { 0%,100% { opacity: 1 } 50% { opacity: 0.55 } }
+
 </style>
 </head>
 <body>
@@ -996,14 +1021,224 @@ async function maCloudLoad() {
   } catch { return false; }
 }
 
+function maSetDueOnly(v) {
+  window.__maDueOnly = v;
+  renderModuleView((document.getElementById('search') || {}).value ? document.getElementById('search').value.toLowerCase() : '');
+}
+
+function maSpeechState() {
+  if (!window.__maSpeech) {
+    window.__maSpeech = { utter: null, speaking: false, chunks: [], idx: 0, rate: 1 };
+  }
+  return window.__maSpeech;
+}
+
+function maChunkText(text, max) {
+  const limit = max || 220;
+  const hard = limit + 40;
+
+  // Chapters are full of list rows and colon-headed lines that never reach a
+  // full stop, so splitting on sentences alone leaves chunks of 600+ chars —
+  // long enough that some engines silently refuse to speak them. Break those
+  // down further: clause punctuation first, then words.
+  const split = (s) => {
+    if (s.length <= hard) return [s];
+    const pieces = [];
+    let rest = s;
+    while (rest.length > hard) {
+      let cut = -1;
+      for (const re of [/[;:]\s|\s[—–-]\s/g, /,\s/g, /\s/g]) {
+        re.lastIndex = 0;
+        let m;
+        while ((m = re.exec(rest)) && m.index + m[0].length <= hard) cut = m.index + m[0].length;
+        if (cut > 0) break;
+      }
+      if (cut <= 0) cut = hard;
+      pieces.push(rest.slice(0, cut).trim());
+      rest = rest.slice(cut);
+    }
+    if (rest.trim()) pieces.push(rest.trim());
+    return pieces;
+  };
+
+  const out = [];
+  const sentences = String(text).replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/);
+  let buf = '';
+  for (const raw of sentences) {
+    for (const s of split(raw)) {
+      if ((buf + ' ' + s).trim().length > limit && buf) { out.push(buf.trim()); buf = s; }
+      else { buf = (buf ? buf + ' ' : '') + s; }
+    }
+  }
+  if (buf.trim()) out.push(buf.trim());
+  return out;
+}
+
+function maSpeakChunks(chunks, startIdx) {
+  const st = maSpeechState();
+  st.chunks = chunks;
+  st.idx = startIdx || 0;
+  const next = () => {
+    if (st.idx >= st.chunks.length) { st.speaking = false; maSetListenLabel('Listen'); return; }
+    const u = new SpeechSynthesisUtterance(st.chunks[st.idx]);
+    u.rate = st.rate;
+    u.onend = () => { st.idx++; next(); };
+    u.onerror = () => { st.speaking = false; maSetListenLabel('Listen'); };
+    st.utter = u;
+    window.speechSynthesis.speak(u);
+  };
+  st.speaking = true;
+  maSetListenLabel('Stop');
+  next();
+}
+
+function maSetListenLabel(label) {
+  const b = document.getElementById('ma-listen-btn');
+  if (b) b.textContent = label;
+}
+
+function maStopSpeaking() {
+  const st = maSpeechState();
+  st.speaking = false;
+  st.chunks = [];
+  st.idx = 0;
+  try { window.speechSynthesis.cancel(); } catch {}
+  maSetListenLabel('Listen');
+}
+
+async function maListen(moduleId, slug, title) {
+  const st = maSpeechState();
+  if (st.speaking) { maStopSpeaking(); return; }
+
+  // iOS only lets speech start inside the click itself, and everything below
+  // this point is async. Speak a silent utterance now to unlock the channel.
+  if ('speechSynthesis' in window) {
+    try {
+      const prime = new SpeechSynthesisUtterance(' ');
+      prime.volume = 0;
+      window.speechSynthesis.speak(prime);
+    } catch {}
+  }
+
+  const audioPath = `audio/${moduleId}/${slug}.mp3`;
+  let hasFile = false;
+  try {
+    const r = await fetch(audioPath, { method: 'HEAD' });
+    hasFile = r.ok && (r.headers.get('content-type') || '').indexOf('audio') !== -1;
+  } catch { hasFile = false; }
+
+  if (hasFile && typeof playConcept === 'function') {
+    try { window.speechSynthesis.cancel(); } catch {}   // drop the priming utterance
+    playConcept(moduleId, slug, title);
+    return;
+  }
+
+  // no narration recorded for this concept: read the chapter aloud instead
+  if (!('speechSynthesis' in window)) {
+    alert('No recorded audio for this concept, and this browser cannot read it aloud.');
+    return;
+  }
+  try {
+    const resp = await fetch(`content/${moduleId}/${slug}.md`);
+    if (!resp.ok) return;
+    let t = await resp.text();
+    const end = t.indexOf('\n---', 3);
+    if (end !== -1) t = t.substring(end + 4);
+    t = t.replace(/\[\[fig:\d+\]\]/g, '');
+    maSpeakChunks(maChunkText(t), 0);
+  } catch {}
+}
+
+function maCycleSpeechRate() {
+  const st = maSpeechState();
+  const rates = [0.8, 1, 1.25, 1.5, 1.75];
+  st.rate = rates[(rates.indexOf(st.rate) + 1) % rates.length];
+  const b = document.getElementById('ma-rate-btn');
+  if (b) b.textContent = st.rate + 'x';
+  if (st.speaking) { // restart from the current chunk at the new rate
+    try { window.speechSynthesis.cancel(); } catch {}
+    maSpeakChunks(st.chunks, st.idx);
+  }
+}
+
+function maMdInline(raw) {
+  return escapeHtml(String(raw))
+    .replace(/^\s*(?:---+|___+|\*\*\*+)\s*$/gm, '––––––')
+    .replace(/^\s*#{1,6}\s+(.+)$/gm, '<strong class="ma-h">$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s).,;:!?]|$)/g, '$1<em>$2</em>')
+    .replace(/^\s*[-*]\s+/gm, '• ')
+    .replace(/\n{3,}/g, '\n\n')          // the bubble is pre-wrap, so runs of blank lines show as gaps
+    .trim();
+}
+
+function maDrillState() {
+  if (!window.__maDrill) window.__maDrill = { messages: [], source: '', moduleId: null, slug: null, title: null, busy: false };
+  return window.__maDrill;
+}
+
+function maApiMessages() {
+  const st = maDrillState();
+  const out = [];
+  for (const m of st.messages) {
+    if (m.role !== 'user' && m.role !== 'assistant') continue;
+    const content = String(m.content || '').trim();
+    if (!content) continue;
+    if (out.length && out[out.length - 1].role === m.role) {
+      out[out.length - 1].content += '\n\n' + content;   // merge consecutive same-role turns
+    } else {
+      out.push({ role: m.role, content: content });
+    }
+  }
+  if (!out.length || out[0].role === 'assistant') {
+    out.unshift({ role: 'user', content: 'Start the drill.' });
+  }
+  out[0] = {
+    role: 'user',
+    content: 'Source material for this concept — teach and question strictly from it:\n\n'
+           + st.source + '\n\n---\n\n' + out[0].content,
+  };
+  return out;
+}
+
+function maRenderDrill() {
+  const st = maDrillState();
+  const log = document.getElementById('ma-chat-log');
+  if (!log) return;
+  log.innerHTML = st.messages
+    .filter(m => m.role !== 'system')
+    .map(m => `<div class="ma-msg ma-${m.role}">` +
+                `<span class="ma-who">${m.role === 'user' ? 'You' : 'Tutor'}</span>` +
+                `<div class="ma-bubble">${maMdInline(m.content)}</div>` +
+                (m.rating ? `<span class="ma-sched ma-sched-${m.rating}">scheduled: ${m.rating}</span>` : '') +
+              `</div>`).join('') +
+    (st.busy ? `<div class="ma-msg ma-assistant"><span class="ma-who">Tutor</span><div class="ma-bubble ma-typing">thinking…</div></div>` : '');
+  log.scrollTop = log.scrollHeight;
+}
+
 async function maDrill(moduleId, slug, title) {
   const panel = document.getElementById('ma-drill');
   if (!panel) return;
-  panel.hidden = false;
-  panel.innerHTML = `<div class="ma-drill-head"><strong>Socratic drill</strong>` +
-    `<button class="q-all" onclick="document.getElementById('ma-drill').hidden=true">Close</button></div>` +
-    `<div class="ma-drill-body" id="ma-drill-body">Starting…</div>`;
+  const st = maDrillState();
+  st.messages = []; st.source = ''; st.moduleId = moduleId; st.slug = slug; st.title = title; st.busy = true;
 
+  panel.hidden = false;
+  panel.innerHTML =
+    `<div class="ma-drill-head"><strong>Socratic drill &middot; ${escapeHtml(title)}</strong>` +
+      `<button class="q-all" onclick="maCloseDrill()">Close</button></div>` +
+    `<div class="ma-chat-log" id="ma-chat-log"></div>` +
+    `<div class="ma-chat-input">` +
+      `<textarea id="ma-chat-text" rows="2" placeholder="Answer out loud, then type or dictate it…" ` +
+        `onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();maDrillSend();}"></textarea>` +
+      `<div class="ma-chat-btns">` +
+        `<button class="ma-mic" id="ma-mic-btn" onclick="maDictate()" title="Dictate your answer">🎤</button>` +
+        `<button class="ma-send" onclick="maDrillSend()">Send</button>` +
+      `</div>` +
+    `</div>`;
+  maRenderDrill();
+
+  // give the tutor the chapter as context so it stops improvising from a title
   let source = '';
   try {
     const r = await fetch(`content/${moduleId}/${slug}.md`);
@@ -1011,47 +1246,114 @@ async function maDrill(moduleId, slug, title) {
       let t = await r.text();
       const end = t.indexOf('\n---', 3);
       if (end !== -1) t = t.substring(end + 4);
-      // Send the whole chapter. The longest is ~22k characters (~5.5k tokens),
-      // which the tutor handles; truncating to a few thousand left it guessing
-      // about the back half of the material.
       source = t.slice(0, 30000);
     }
   } catch {}
+  st.source = source;
 
-  const mod = manifest.modules.find(m => m.id === moduleId);
+  await maTutor('start_session');
+}
+
+function maCloseDrill() {
+  const p = document.getElementById('ma-drill');
+  if (p) { p.hidden = true; p.innerHTML = ''; }
+  maStopDictation();
+}
+
+async function maDrillSend() {
+  const box = document.getElementById('ma-chat-text');
+  if (!box) return;
+  const text = box.value.trim();
+  if (!text) return;
+  const st = maDrillState();
+  if (st.busy) return;
+  box.value = '';
+  st.messages.push({ role: 'user', content: text });
+  maRenderDrill();
+  await maTutor('respond');
+}
+
+async function maTutor(action) {
+  const st = maDrillState();
+  st.busy = true;
+  maRenderDrill();
+
+  const mod = manifest.modules.find(m => m.id === st.moduleId);
   let concept = null;
-  if (mod) for (const cat of mod.categories) { concept = cat.concepts.find(c => c.slug === slug); if (concept) break; }
+  if (mod) for (const cat of mod.categories) { concept = cat.concepts.find(c => c.slug === st.slug); if (concept) break; }
 
   try {
     const res = await fetch(maCfg().url + '/functions/v1/socratic-tutor', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        action: 'start_session',
+        action: action,
         module: 'neuro_boards',
-        messages: [{ role: 'system', content: 'Source material for this concept:\n\n' + source }],
+        messages: maApiMessages(),
         concepts: [{
-          name: title,
+          name: st.title,
           category: concept ? concept.category : '',
           subcategory: concept ? concept.subcategory : '',
           difficulty: concept ? concept.difficulty : 3,
         }],
         weakZones: [],
-        currentConcept: title,
+        currentConcept: st.title,
       }),
     });
     const data = await res.json();
-    const body = document.getElementById('ma-drill-body');
-    if (body) body.textContent = data.content || data.error || 'No response from tutor.';
+    const content = data.content || data.error || 'No response from tutor.';
+    const turn = { role: 'assistant', content: content };
+
+    // the tutor grades the answer; feed that straight into SM-2. The rating
+    // rides on the turn rather than becoming a message of its own, so it never
+    // reaches the API as a second assistant turn.
+    if (data.evaluation) {
+      const map = { correct_confident: 'got', correct_hesitant: 'shaky', incorrect: 'missed' };
+      const rating = map[data.evaluation];
+      if (rating) { maRate(st.slug, rating); turn.rating = rating; }
+    }
+    st.messages.push(turn);
   } catch (e) {
-    const body = document.getElementById('ma-drill-body');
-    if (body) body.textContent = 'Tutor unavailable: ' + e.message;
+    st.messages.push({ role: 'assistant', content: 'Tutor unavailable: ' + e.message });
   }
+  st.busy = false;
+  maRenderDrill();
 }
 
-function maSetDueOnly(v) {
-  window.__maDueOnly = v;
-  renderModuleView((document.getElementById('search') || {}).value ? document.getElementById('search').value.toLowerCase() : '');
+function maDictate() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const btn = document.getElementById('ma-mic-btn');
+  if (!SR) { alert('This browser does not support voice input. Type your answer instead.'); return; }
+
+  if (window.__maRec) { maStopDictation(); return; }
+
+  const rec = new SR();
+  rec.continuous = true;
+  rec.interimResults = true;
+  rec.lang = 'en-GB';
+  const box = document.getElementById('ma-chat-text');
+  const base = box ? box.value : '';
+
+  rec.onresult = (e) => {
+    let finalText = '', interim = '';
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      if (e.results[i].isFinal) finalText += e.results[i][0].transcript;
+      else interim += e.results[i][0].transcript;
+    }
+    if (box) box.value = (base + ' ' + finalText + ' ' + interim).replace(/\s+/g, ' ').trim();
+  };
+  rec.onerror = () => maStopDictation();
+  rec.onend = () => { window.__maRec = null; if (btn) btn.classList.remove('ma-rec'); };
+
+  window.__maRec = rec;
+  if (btn) btn.classList.add('ma-rec');
+  try { rec.start(); } catch { maStopDictation(); }
+}
+
+function maStopDictation() {
+  const btn = document.getElementById('ma-mic-btn');
+  if (window.__maRec) { try { window.__maRec.stop(); } catch {} window.__maRec = null; }
+  if (btn) btn.classList.remove('ma-rec');
 }
 
 async function openConcept(moduleId, slug) {
@@ -1083,6 +1385,10 @@ function showReader(show, title, text, moduleId, slug, figures, questions, cases
   const reader = document.getElementById('reader-view');
   const moduleView = document.getElementById('module-view');
 
+  // speech is global, so it would otherwise keep reading the previous chapter
+  maStopSpeaking();
+  maStopDictation();
+
   if (!show) {
     reader.classList.remove('visible');
     moduleView.style.display = '';
@@ -1096,7 +1402,13 @@ function showReader(show, title, text, moduleId, slug, figures, questions, cases
       <span class="back" onclick="showReader(false)">&larr; Back</span>
       <h2>${escapeHtml(title)}</h2>
     </div>
-    <div class="reader-body">${renderBody(text, figures || [], moduleId)}${questionsHtml(questions || [])}${casesHtml(cases || [])}` +
+    <div class="reader-body">` +
+      `<div class="ma-listen-bar">` +
+        `<button class="ma-listen" id="ma-listen-btn" onclick="maListen('${moduleId}','${slug}','${String(title).replace(/'/g, "\\'")}')">Listen</button>` +
+        `<button class="ma-rate" id="ma-rate-btn" onclick="maCycleSpeechRate()">${maSpeechState().rate}x</button>` +
+        `<span class="ma-listen-note">Recorded narration where available, otherwise read aloud.</span>` +
+      `</div>` +
+      `${renderBody(text, figures || [], moduleId)}${questionsHtml(questions || [])}${casesHtml(cases || [])}` +
       `<button class="ma-drill-btn" onclick="maDrill('${moduleId}','${slug}','${String(title).replace(/'/g, "\\'")}')">Drill this with the tutor</button>` +
       `<div class="ma-drill" id="ma-drill" hidden></div>` +
       maReviewBarHtml(slug) + `</div>
