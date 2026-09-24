@@ -356,6 +356,40 @@ a:hover { color: var(--accent-hover); }
 ::-webkit-scrollbar-thumb:hover { background: #555; }
 
 .module-list-view { margin-bottom: 5rem; }
+
+.concept-figure {
+  display: block;
+  white-space: normal;
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.concept-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Tall sagittal spine images otherwise eat a whole screen each and break up
+     the prose; bound them while keeping the full image visible. */
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #000;
+}
+.concept-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+.concept-figure .fig-label { color: var(--text); font-weight: 600; }
+.concept-figure .fig-credit { display: block; margin-top: 0.35rem; font-size: 0.78rem; color: var(--text-dim); }
+a.fig-credit { color: var(--accent); text-decoration: none; }
+a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
+.figure-gallery { white-space: normal; margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+.figure-gallery h3 { font-size: 0.95rem; color: var(--text-dim); margin: 0 0 0.5rem; font-weight: 600; }
+
 </style>
 </head>
 <body>
@@ -509,20 +543,113 @@ function onSearch(e) {
 }
 
 // --- Reader View ---
+function parseFrontmatter(text) {
+  if (!text.startsWith('---')) return { meta: {}, figures: [], body: text };
+  const end = text.indexOf('\n---', 3);
+  if (end === -1) return { meta: {}, figures: [], body: text };
+
+  const raw  = text.substring(3, end);
+  const body = text.substring(end + 4).replace(/^\s*\n/, '');
+
+  const meta = {};
+  const figures = [];
+  let current = null;
+  let inFigures = false;
+
+  for (const line of raw.split('\n')) {
+    if (!line.trim()) continue;
+
+    if (/^figures:\s*$/.test(line)) { inFigures = true; continue; }
+
+    // a non-indented key ends the figures block
+    if (inFigures && !/^\s/.test(line)) { inFigures = false; if (current) { figures.push(current); current = null; } }
+
+    if (inFigures) {
+      const item = line.match(/^\s*-\s*(\w+):\s*(.*)$/);
+      if (item) {
+        if (current) figures.push(current);
+        current = {};
+        current[item[1]] = stripQuotes(item[2]);
+        continue;
+      }
+      const kv = line.match(/^\s+(\w+):\s*(.*)$/);
+      if (kv && current) { current[kv[1]] = stripQuotes(kv[2]); }
+      continue;
+    }
+
+    const kv = line.match(/^(\w+):\s*(.*)$/);
+    if (kv) meta[kv[1]] = stripQuotes(kv[2]);
+  }
+  if (current) figures.push(current);
+
+  return { meta, figures, body };
+}
+
+function stripQuotes(s) {
+  s = (s || '').trim();
+  if (s.length > 1 && ((s[0] === '"' && s.endsWith('"')) || (s[0] === "'" && s.endsWith("'")))) {
+    return s.slice(1, -1);
+  }
+  return s;
+}
+
+function figureHtml(fig, moduleId, index) {
+  if (!fig || !fig.file) return '';
+  const src = `figures/${moduleId}/${fig.file}`;
+  const alt = escapeHtml(fig.alt || fig.caption || `Figure ${index}`);
+
+  let credit = '';
+  if (fig.credit) {
+    const text = escapeHtml(fig.credit) + (fig.license ? ' &mdash; ' + escapeHtml(fig.license) : '');
+    credit = fig.url
+      ? `<a class="fig-credit" href="${escapeHtml(fig.url)}" target="_blank" rel="noopener noreferrer">${text}</a>`
+      : `<span class="fig-credit">${text}</span>`;
+  }
+
+  // Emitted on a single line with no stray indentation: .reader-body sets
+  // `white-space: pre-wrap`, so any newline or leading space inside this
+  // markup would render as visible blank space in the reader.
+  return `<figure class="concept-figure">` +
+           `<img src="${escapeHtml(src)}" alt="${alt}" loading="lazy">` +
+           `<figcaption>` +
+             `<span class="fig-label">Figure ${index}.</span> ` +
+             (fig.caption ? escapeHtml(fig.caption) + ' ' : '') +
+             credit +
+           `</figcaption>` +
+         `</figure>`;
+}
+
+function renderBody(body, figures, moduleId) {
+  const used = new Set();
+  let html = escapeHtml(body).replace(/\[\[fig:(\d+)\]\]/g, (match, n) => {
+    const i = parseInt(n, 10);
+    const fig = figures[i - 1];
+    if (!fig) return '';
+    used.add(i);
+    return figureHtml(fig, moduleId, i);
+  });
+
+  const leftover = figures
+    .map((fig, idx) => ({ fig, n: idx + 1 }))
+    .filter(x => !used.has(x.n));
+
+  if (leftover.length) {
+    html += `<div class="figure-gallery"><h3>Figures</h3>` +
+            leftover.map(x => figureHtml(x.fig, moduleId, x.n)).join('') +
+            `</div>`;
+  }
+  return html;
+}
+
 async function openConcept(moduleId, slug) {
   const mdPath = `content/${moduleId}/${slug}.md`;
   try {
     const resp = await fetch(mdPath);
     if (!resp.ok) throw new Error('not found');
-    let text = await resp.text();
+    const text = await resp.text();
 
-    // Strip frontmatter
-    if (text.startsWith('---')) {
-      const end = text.indexOf('---', 3);
-      if (end !== -1) text = text.substring(end + 3).trim();
-    }
+    const { figures, body } = parseFrontmatter(text);
 
-    // Find concept info
     const mod = manifest.modules.find(m => m.id === moduleId);
     let concept = null;
     if (mod) {
@@ -533,14 +660,13 @@ async function openConcept(moduleId, slug) {
     }
 
     const title = concept ? concept.title : slug.replace(/-/g, ' ');
-    showReader(true, title, text, moduleId, slug);
+    showReader(true, title, body, moduleId, slug, figures);
   } catch {
-    // If file can't be loaded, show error
-    showReader(true, slug.replace(/-/g, ' '), 'Content file not found.', moduleId, slug);
+    showReader(true, slug.replace(/-/g, ' '), 'Content file not found.', moduleId, slug, []);
   }
 }
 
-function showReader(show, title, text, moduleId, slug) {
+function showReader(show, title, text, moduleId, slug, figures) {
   const reader = document.getElementById('reader-view');
   const moduleView = document.getElementById('module-view');
 
@@ -552,20 +678,12 @@ function showReader(show, title, text, moduleId, slug) {
 
   moduleView.style.display = 'none';
 
-  const mod = manifest.modules.find(m => m.id === moduleId);
-  const modLabel = mod ? mod.label : moduleId;
-
   reader.innerHTML = `
     <div class="reader-header">
       <span class="back" onclick="showReader(false)">&larr; Back</span>
-      <h2>${title}</h2>
+      <h2>${escapeHtml(title)}</h2>
     </div>
-    <button onclick="playConcept('${moduleId}', '${slug}', '${title.replace(/'/g, "\\'")}')"
-      style="background:var(--accent);color:#fff;border:none;border-radius:6px;padding:0.5rem 1.25rem;cursor:pointer;font-size:0.9rem;margin-bottom:1rem;display:inline-flex;align-items:center;gap:0.5rem;">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
-      Play Audio
-    </button>
-    <div class="reader-body">${escapeHtml(text)}</div>
+    <div class="reader-body">${renderBody(text, figures || [], moduleId)}</div>
   `;
   reader.classList.add('visible');
 }
