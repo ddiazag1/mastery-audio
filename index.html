@@ -515,6 +515,19 @@ a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
 .ma-mic.ma-rec { background: var(--red, #f44336); border-color: var(--red, #f44336); animation: maPulse 1.2s infinite; }
 @keyframes maPulse { 0%,100% { opacity: 1 } 50% { opacity: 0.55 } }
 
+/* Curricula strip: cross-module study resources that live outside the manifest */
+.resources { max-width: 1200px; margin: 1.25rem auto 0; padding: 0 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.res-label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); }
+.res-card { display: flex; align-items: center; gap: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 0.9rem 1.25rem; color: var(--text); transition: all 0.15s; }
+.res-card:hover { border-color: var(--accent); background: var(--surface2); color: var(--text); }
+.res-icon { font-size: 1.4rem; flex-shrink: 0; }
+.res-info { flex: 1; min-width: 0; }
+.res-title { font-weight: 500; font-size: 0.95rem; }
+.res-meta { font-size: 0.8rem; color: var(--text-dim); margin-top: 2px; }
+.res-arrow { color: var(--accent); font-size: 1.1rem; flex-shrink: 0; }
+.content:has(.reader.visible) ~ .resources, body:has(.reader.visible) .resources { display: none; }
+@media (max-width: 640px) { .resources { padding: 0 1rem; } .res-card { flex-wrap: wrap; } }
+
 </style>
 </head>
 <body>
@@ -527,6 +540,18 @@ a.fig-credit:hover { color: var(--accent-hover); text-decoration: underline; }
 </div>
 
 <div class="tabs" id="tabs"></div>
+
+<div class="resources" id="resources">
+  <div class="res-label">Curricula</div>
+  <a class="res-card" id="res-endoscopic-spine" href="https://claude.ai/artifact/65DN1sQf6praftp5ridjrL" target="_blank" rel="noopener">
+    <div class="res-icon">&#x1F52C;</div>
+    <div class="res-info">
+      <div class="res-title">Endoscopic Spine Curriculum</div>
+      <div class="res-meta">7 modules, interlaminar discectomy to endoscopic TLIF &middot; verified papers and videos &middot; 12-week schedule &middot; 2026-27 courses</div>
+    </div>
+    <div class="res-arrow">&#x2197;</div>
+  </a>
+</div>
 
 <div class="content">
   <div class="search-bar">
